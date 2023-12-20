@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.db.LocalInstanceMeta" version="2">
+	<guid>{FFBA67C6-AD4C-4AFF-A809-6C681EE87886}</guid>
+	<primaryType>traktor.mesh.MeshAsset</primaryType>
+	<blobs/>
+</object>
