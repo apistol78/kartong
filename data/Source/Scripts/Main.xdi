@@ -3,6 +3,7 @@
 	<text>
 	<![CDATA[
 #using \{720C0A68-B608-2F40-8EBA-F7E42EB27F61}
+#using \{97B60D98-6C09-7743-ADBC-16D2565DEDAD}
 
 import(traktor)
 
@@ -12,6 +13,16 @@ Main = Main or class("Main", Stage)
 
 function Main:new(params, environment)
 	Stage.new(self, params, environment)
+
+	self._inputMapping = environment.input.inputMapping
+
+	local kart = self.world:getEntity("Kart0")
+	local camera = self.world:getEntity("Camera0")
+	self._followCamera0 = FollowCamera(camera, kart)
+
+	local kart = self.world:getEntity("Kart1")
+	local camera = self.world:getEntity("Camera1")
+	self._followCamera1 = FollowCamera(camera, kart)
 end
 
 function Main:finalize()
@@ -19,24 +30,25 @@ end
 
 function Main:update(info)
 
+	-- Left Kart
+	local steer = self._inputMapping:getStateValue("STATE_STEER_0")
+	local throttle = self._inputMapping:getStateValue("STATE_THROTTLE_0")
+
 	local kart = self.world:getEntity("Kart0")
 	local vc = kart:getComponent(physics.VehicleComponent)
-	vc.engineThrottle = 1
+	vc.steerAngle = steer
+	vc.engineThrottle = throttle
 
+	self._followCamera0:update(info.simulationDeltaTime)
+
+
+	-- Right Kart
 	local kart = self.world:getEntity("Kart1")
 	local vc = kart:getComponent(physics.VehicleComponent)
 	vc.engineThrottle = 1
 
-end
+	self._followCamera1:update(info.simulationDeltaTime)
 
-function Main:postUpdate(info)
-	local kart = self.world:getEntity("Kart0")
-	local camera = self.world:getEntity("Camera0")
-	camera.transform = kart.transform * Transform(Vector4(0, 4, -8), Quaternion.identity)
-
-	local kart = self.world:getEntity("Kart1")
-	local camera = self.world:getEntity("Camera1")
-	camera.transform = kart.transform * Transform(Vector4(0, 4, -8), Quaternion.identity)
 end
 
 	]]>
