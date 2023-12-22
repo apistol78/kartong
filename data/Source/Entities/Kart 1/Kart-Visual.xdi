@@ -2,7 +2,7 @@
 <object type="traktor.mesh.MeshAsset" version="22">
 	<fileName>Models/Kart 1/Kart.blend</fileName>
 	<importFilter/>
-	<meshType>MtStatic</meshType>
+	<meshType>MtSkinned</meshType>
 	<materialShaders/>
 	<materialTextures/>
 	<scaleFactor>1</scaleFactor>

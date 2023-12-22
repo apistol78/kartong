@@ -10,18 +10,21 @@ function FollowCamera:new(cameraEntity, followEntity)
 end
 
 function FollowCamera:update(deltaTime)
-
-	local Toffset = Transform(
-		Vector4(0, 4, -8),
+	local ToffsetY = Transform(
+		Vector4(0, 4, 0),
+		Quaternion.identity
+	)
+	local ToffsetZ = Transform(
+		Vector4(0, 0, -8),
 		Quaternion.identity
 	)
 
-	local T = self._followEntity.transform * Toffset
+	local T = ToffsetY * self._followEntity.transform * ToffsetZ
 
 	local targetPosition = T.translation
 	local cameraPosition = self._cameraEntity.transform.translation
 
-	local position = Vector4.lerp(cameraPosition, targetPosition, 5 * deltaTime)
+	local position = Vector4.lerp(cameraPosition, targetPosition, 10 * deltaTime)
 
 	self._cameraEntity.transform = Transform.lookAt(
 		position,
@@ -30,7 +33,6 @@ function FollowCamera:update(deltaTime)
 	)
 
 end
-
 
 	]]>
 	</text>

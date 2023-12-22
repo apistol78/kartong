@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.script.Script" version="2">
+	<text>
+	<![CDATA[
+import(traktor)
+
+Kart = Kart or class("Kart", world.ScriptComponent)
+
+function Kart:new()
+end
+
+function Kart:update(contextObject, totalTime, deltaTime)
+
+	local skeletonComponent = self.owner:getComponent(animation.SkeletonComponent)
+	if skeletonComponent == nil then return end
+	
+	local vehicleComponent = self.owner:getComponent(physics.VehicleComponent)
+	if vehicleComponent == nil then return end
+
+	local wheelJoints = { "FL", "FR", "RL", "RR" }
+	for i = 1, #wheelJoints do
+
+		local Twheel = vehicleComponent.wheels:get(i - 1).transform
+		local Tjoint = skeletonComponent:getJointTransform(wheelJoints[i])
+
+		skeletonComponent:setPoseTransform(
+			wheelJoints[i],
+			Transform(Twheel, Twheel.rotation * Tjoint.rotation),
+			true		
+		)
+	end
+end
+
+	]]>
+	</text>
+</object>

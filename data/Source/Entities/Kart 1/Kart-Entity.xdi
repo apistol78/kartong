@@ -7,10 +7,7 @@
 		<rotation>0, 0, 0, 1</rotation>
 	</transform>
 	<components>
-		<item type="traktor.mesh.MeshComponentData" version="1">
-			<mesh>{FFBA67C6-AD4C-4AFF-A809-6C681EE87886}</mesh>
-		</item>
-		<item type="traktor.physics.RigidBodyComponentData">
+		<item type="traktor.physics.RigidBodyComponentData" version="1">
 			<bodyDesc type="traktor.physics.DynamicBodyDesc" version="6">
 				<shape type="traktor.physics.MeshShapeDesc" version="6,traktor.physics.ShapeDesc:6">
 					<localTransform>
@@ -27,87 +24,88 @@
 					<material>0</material>
 					<mesh>{0060B932-7438-40C7-B077-269AABAEA2AF}</mesh>
 				</shape>
-				<mass>3</mass>
+				<mass>2</mass>
 				<autoDeactivate>false</autoDeactivate>
 				<active>true</active>
 				<linearDamping>0.1</linearDamping>
-				<angularDamping>0.3</angularDamping>
-				<friction>0</friction>
+				<angularDamping>0.1</angularDamping>
+				<friction>0.5</friction>
 				<restitution>0</restitution>
 				<linearThreshold>0.8</linearThreshold>
 				<angularThreshold>1</angularThreshold>
 			</bodyDesc>
 			<eventCollide/>
+			<transformFilter>0.9</transformFilter>
 		</item>
-		<item type="traktor.physics.VehicleComponentData" version="1">
+		<item type="traktor.physics.VehicleComponentData" version="2">
 			<wheels>
 				<item type="traktor.physics.WheelData" version="2">
 					<steer>true</steer>
-					<drive>false</drive>
+					<drive>true</drive>
 					<breakFactor>0</breakFactor>
-					<radius>0.3</radius>
-					<anchor>-0.75, 1, 1, 1</anchor>
+					<radius>0.4</radius>
+					<anchor>-0.75, 0.5, 1, 1</anchor>
 					<axis>0.2, 1, 0, 0</axis>
 					<suspensionLength>
-						<min>0.5</min>
-						<max>1.4</max>
+						<min>0</min>
+						<max>0.8</max>
 					</suspensionLength>
-					<suspensionSpring>50</suspensionSpring>
-					<suspensionDamping>10</suspensionDamping>
+					<suspensionSpring>20</suspensionSpring>
+					<suspensionDamping>6</suspensionDamping>
 					<rollingFriction>0</rollingFriction>
-					<slipCornerForce>12</slipCornerForce>
-					<peakSlipAngle>0.20944</peakSlipAngle>
+					<slipCornerForce>30</slipCornerForce>
+					<peakSlipAngle>0.523599</peakSlipAngle>
 				</item>
 				<item type="traktor.physics.WheelData" version="2">
 					<steer>true</steer>
-					<drive>false</drive>
+					<drive>true</drive>
 					<breakFactor>0</breakFactor>
-					<radius>0.3</radius>
-					<anchor>0.75, 1, 1, 1</anchor>
+					<radius>0.4</radius>
+					<anchor>0.75, 0.5, 1, 1</anchor>
 					<axis>-0.2, 1, 0, 0</axis>
 					<suspensionLength>
-						<min>0.5</min>
-						<max>1.4</max>
+						<min>0</min>
+						<max>0.8</max>
 					</suspensionLength>
-					<suspensionSpring>50</suspensionSpring>
-					<suspensionDamping>10</suspensionDamping>
+					<suspensionSpring>20</suspensionSpring>
+					<suspensionDamping>6</suspensionDamping>
 					<rollingFriction>0</rollingFriction>
-					<slipCornerForce>12</slipCornerForce>
-					<peakSlipAngle>0.20944</peakSlipAngle>
+					<slipCornerForce>30</slipCornerForce>
+					<peakSlipAngle>0.523599</peakSlipAngle>
 				</item>
 				<item type="traktor.physics.WheelData" version="2">
 					<steer>false</steer>
 					<drive>true</drive>
 					<breakFactor>0</breakFactor>
-					<radius>0.3</radius>
-					<anchor>-0.75, 1, -1, 1</anchor>
+					<radius>0.4</radius>
+					<anchor>-0.75, 0.5, -1, 1</anchor>
 					<axis>0.2, 1, 0, 0</axis>
 					<suspensionLength>
-						<min>0.5</min>
-						<max>1.4</max>
+						<min>0</min>
+						<max>0.8</max>
 					</suspensionLength>
-					<suspensionSpring>50</suspensionSpring>
-					<suspensionDamping>10</suspensionDamping>
+					<suspensionSpring>20</suspensionSpring>
+					<suspensionDamping>6</suspensionDamping>
 					<rollingFriction>0</rollingFriction>
-					<slipCornerForce>12</slipCornerForce>
-					<peakSlipAngle>0.20944</peakSlipAngle>
+					<slipCornerForce>30</slipCornerForce>
+					<peakSlipAngle>0.523599</peakSlipAngle>
 				</item>
 				<item type="traktor.physics.WheelData" version="2">
 					<steer>false</steer>
 					<drive>true</drive>
 					<breakFactor>0</breakFactor>
-					<radius>0.3</radius>
-					<anchor>0.75, 1, -1, 1</anchor>
+					<radius>0.4</radius>
+					<anchor>0.75, 0.5, -1, 1</anchor>
 					<axis>-0.2, 1, 0, 0</axis>
 					<suspensionLength>
-						<min>0.5</min>
-						<max>1.4</max>
+						<min>0</min>
+						<max>0.8</max>
 					</suspensionLength>
-					<suspensionSpring>50</suspensionSpring>
-					<suspensionDamping>10</suspensionDamping>
+					<suspensionSpring>20</suspensionSpring>
+					<suspensionDamping>6</suspensionDamping>
 					<rollingFriction>0</rollingFriction>
-					<slipCornerForce>12</slipCornerForce>
-					<peakSlipAngle>0.20944</peakSlipAngle>
+					<slipCornerForce>30</slipCornerForce>
+					<peakSlipAngle>0.523599</peakSlipAngle>
 				</item>
 			</wheels>
 			<traceInclude>
@@ -116,12 +114,25 @@
 			<traceIgnore>
 				<item>{09CB1141-1924-3349-934A-CEB9728D7A61}</item>
 			</traceIgnore>
-			<steerAngleVelocity>0.872665</steerAngleVelocity>
+			<steerAngleVelocity>1.745329</steerAngleVelocity>
 			<fudgeDistance>0.2</fudgeDistance>
-			<swayBarForce>0.4</swayBarForce>
-			<maxVelocity>200</maxVelocity>
-			<engineForce>6</engineForce>
+			<swayBarForce>0.2</swayBarForce>
+			<maxVelocity>250</maxVelocity>
+			<engineForce>4</engineForce>
 			<breakingForce>4</breakingForce>
+			<ackermannCoeff>1.8</ackermannCoeff>
+		</item>
+		<item type="traktor.animation.SkeletonComponentData">
+			<skeleton>{5744246B-CB20-A54E-A7C8-1352702D317D}</skeleton>
+			<poseController/>
+		</item>
+		<item type="traktor.animation.AnimatedMeshComponentData" version="3">
+			<mesh>{FFBA67C6-AD4C-4AFF-A809-6C681EE87886}</mesh>
+		</item>
+		<item type="traktor.world.ScriptComponentData" version="2">
+			<class>{F07B8D04-912E-F246-BC33-3698C7A063F5}</class>
+			<properties/>
+			<editorSupport>true</editorSupport>
 		</item>
 	</components>
 </object>

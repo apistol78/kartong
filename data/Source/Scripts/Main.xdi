@@ -51,6 +51,9 @@ function Main:update(info)
 
 end
 
+function Main:postUpdate(info)
+end
+
 	]]>
 	</text>
 </object>

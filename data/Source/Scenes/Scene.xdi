@@ -4,7 +4,7 @@
 		<viewNearZ>0.1</viewNearZ>
 		<viewFarZ>1000</viewFarZ>
 		<exposureMode>Fixed</exposureMode>
-		<exposure>-0.05</exposure>
+		<exposure>-0.3</exposure>
 		<shadowSettings>
 			<disabled>
 				<farZ>100</farZ>
@@ -76,7 +76,7 @@
 			<id>{86DC2EA2-7C45-4B88-9579-480BAF8B92A3}</id>
 			<name>Environment</name>
 			<transform>
-				<translation>0, 0, 0, 0</translation>
+				<translation>-14.170444, 0, 1.713573, 0</translation>
 				<rotation>0, 0, 0, 1</rotation>
 			</transform>
 			<components>
@@ -92,7 +92,7 @@
 							<id>{C16C7A79-74E0-42B0-8E28-94852A861FAA}</id>
 							<name>Sky</name>
 							<transform>
-								<translation>0, 0, 0, 0</translation>
+								<translation>-14.170444, 0, 1.713573, 0</translation>
 								<rotation>0.405531, 0.325615, -0.15729, 0.839511</rotation>
 							</transform>
 							<components>
@@ -104,7 +104,7 @@
 								<item type="traktor.world.LightComponentData" version="12">
 									<lightType>Directional</lightType>
 									<color>1, 1, 1, 0</color>
-									<intensity>1</intensity>
+									<intensity>1.25</intensity>
 									<castShadow>true</castShadow>
 									<nearRange>0</nearRange>
 									<farRange>10</farRange>
@@ -119,7 +119,7 @@
 							<id>{381C8D7F-78C6-4A3A-ACDD-D70A25C5D59F}</id>
 							<name>Camera0</name>
 							<transform>
-								<translation>12.722446, 2.288646, -51.812317, 0</translation>
+								<translation>-1.447997, 2.288646, -50.098743, 0</translation>
 								<rotation>0, -0.285952, 0, 0.958244</rotation>
 							</transform>
 							<components>
@@ -135,7 +135,7 @@
 							<id>{6FE4FC4A-C546-4A6E-8813-3532A0A036A8}</id>
 							<name>Camera1</name>
 							<transform>
-								<translation>15.69852, 2.269807, -48.381554, 0</translation>
+								<translation>1.528076, 2.269807, -46.66798, 0</translation>
 								<rotation>0, -0.285952, 0, 0.958244</rotation>
 							</transform>
 							<components>
@@ -144,6 +144,43 @@
 									<fov>1.221731</fov>
 									<width>1</width>
 									<height>1</height>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{FFE0FE67-AA43-524C-B9AB-4C4409F2F239}</id>
+							<name>Irradiance</name>
+							<transform>
+								<translation>-14.170444, 0, 1.713573, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.world.VolumeComponentData">
+									<volumes>
+										<item>
+											<mn>-200, -50, -200, 1</mn>
+											<mx>200, 50, 200, 1</mx>
+										</item>
+									</volumes>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{FD76C0F7-A234-FD46-90EE-3219BD8A0A09}</id>
+							<name>Reflections</name>
+							<transform>
+								<translation>-53.759197, 36.269569, 0, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.world.ProbeComponentData">
+									<texture>{00000000-0000-0000-0000-000000000000}</texture>
+									<intensity>1</intensity>
+									<local>false</local>
+									<volume>
+										<mn>0, 0, 0, 1</mn>
+										<mx>0, 0, 0, 1</mx>
+									</volume>
 								</item>
 							</components>
 						</item>
@@ -201,7 +238,7 @@
 							<id>{886532C1-1C44-4327-8E2D-7A183F527913}</id>
 							<name>Kart0</name>
 							<transform>
-								<translation>7.003692, 1.227491, -44.607357, 0</translation>
+								<translation>7.389588, 1.393244, -44.869011, 0</translation>
 								<rotation>0, -0.305059, 0, 0.952334</rotation>
 							</transform>
 							<components/>
@@ -211,7 +248,7 @@
 							<id>{16C666D4-90CA-491A-A87A-DA4820D152BB}</id>
 							<name>Kart1</name>
 							<transform>
-								<translation>13.385988, 1.004659, -41.134575, 0</translation>
+								<translation>13.385988, 1.109167, -41.134575, 0</translation>
 								<rotation>0, -0.305059, 0, 0.952334</rotation>
 							</transform>
 							<components/>
