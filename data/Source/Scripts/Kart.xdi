@@ -23,10 +23,15 @@ function Kart:update(contextObject, totalTime, deltaTime)
 		local Twheel = vehicleComponent.wheels:get(i - 1).transform
 		local Tjoint = skeletonComponent:getJointTransform(wheelJoints[i])
 
+		local TjointRot = Transform(
+			Vector4.zero,
+			Tjoint.rotation
+		)
+
 		skeletonComponent:setPoseTransform(
 			wheelJoints[i],
-			Transform(Twheel, Twheel.rotation * Tjoint.rotation),
-			true		
+			Twheel * TjointRot,
+			false		
 		)
 	end
 end

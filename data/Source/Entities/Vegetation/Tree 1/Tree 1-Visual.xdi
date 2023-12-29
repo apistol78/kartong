@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <object type="traktor.mesh.MeshAsset" version="22">
-	<fileName>Models/Ground/Ground.blend</fileName>
+	<fileName>Models/Vegetation/Tree 1.blend</fileName>
 	<importFilter/>
 	<meshType>MtStatic</meshType>
 	<materialShaders/>

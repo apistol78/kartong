@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.script.Script" version="2">
+	<text>
+	<![CDATA[
+import(traktor)
+
+CheckPoint = CheckPoint or class("CheckPoint", world.ScriptComponent)
+
+function CheckPoint:new()
+end
+
+function CheckPoint:update(contextObject, totalTime, deltaTime)
+	local stage < const > = contextObject
+
+	local kart = stage.world:getEntity("Kart0")
+	local position = kart.transform.translation
+
+	if self.owner:getComponent(world.VolumeComponent):inside(position) then
+		print("KART 0 INSIDE CHECKPOINT")
+	end
+
+end
+
+	]]>
+	</text>
+</object>

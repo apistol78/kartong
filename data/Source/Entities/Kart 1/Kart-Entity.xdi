@@ -117,7 +117,7 @@
 			<steerAngleVelocity>1.745329</steerAngleVelocity>
 			<fudgeDistance>0.2</fudgeDistance>
 			<swayBarForce>0.2</swayBarForce>
-			<maxVelocity>250</maxVelocity>
+			<maxVelocity>20</maxVelocity>
 			<engineForce>4</engineForce>
 			<breakingForce>4</breakingForce>
 			<ackermannCoeff>1.8</ackermannCoeff>
