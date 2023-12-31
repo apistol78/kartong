@@ -7,11 +7,11 @@
 
 import(traktor)
 
--- Main
+-- Game
 
-Main = Main or class("Main", Stage)
+Game = Game or class("Game", Stage)
 
-function Main:new(params, environment)
+function Game:new(params, environment)
 	Stage.new(self, params, environment)
 
 	self._inputMapping = environment.input.inputMapping
@@ -25,10 +25,10 @@ function Main:new(params, environment)
 	self._followCamera1 = FollowCamera(camera, kart)
 end
 
-function Main:finalize()
+function Game:finalize()
 end
 
-function Main:update(info)
+function Game:update(info)
 
 	-- Left Kart
 	local steer = self._inputMapping:getStateValue("STATE_STEER_0")
@@ -55,7 +55,7 @@ function Main:update(info)
 
 end
 
-function Main:postUpdate(info)
+function Game:postUpdate(info)
 end
 
 	]]>

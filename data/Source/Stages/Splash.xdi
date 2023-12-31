@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.runtime.StageData" version="11">
+	<name>Splash</name>
+	<inherit>{00000000-0000-0000-0000-000000000000}</inherit>
+	<layers/>
+	<class>{C058AD3F-081A-4F31-862A-2ABBAFAFF9A6}</class>
+	<shaderFade>{00000000-0000-0000-0000-000000000000}</shaderFade>
+	<fadeOutUpdate>false</fadeOutUpdate>
+	<fadeRate>1.5</fadeRate>
+	<transitions>
+		<item>
+			<first>FRONTEND</first>
+			<second>{3E149A0C-E483-4931-8454-F726FF92C989}</second>
+		</item>
+	</transitions>
+	<resourceBundle>{00000000-0000-0000-0000-000000000000}</resourceBundle>
+	<properties/>
+</object>
