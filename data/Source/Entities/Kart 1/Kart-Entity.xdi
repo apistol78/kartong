@@ -35,7 +35,7 @@
 				<angularThreshold>1</angularThreshold>
 			</bodyDesc>
 			<eventCollide/>
-			<transformFilter>0.9</transformFilter>
+			<transformFilter>0.25</transformFilter>
 		</item>
 		<item type="traktor.physics.VehicleComponentData" version="2">
 			<wheels>

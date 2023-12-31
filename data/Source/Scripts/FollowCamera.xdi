@@ -24,7 +24,7 @@ function FollowCamera:update(deltaTime)
 	local targetPosition = T.translation
 	local cameraPosition = self._cameraEntity.transform.translation
 
-	local position = Vector4.lerp(cameraPosition, targetPosition, 10 * deltaTime)
+	local position = Vector4.lerp(cameraPosition, targetPosition, 16 * deltaTime)
 
 	self._cameraEntity.transform = Transform.lookAt(
 		position,

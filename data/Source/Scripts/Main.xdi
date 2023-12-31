@@ -43,9 +43,13 @@ function Main:update(info)
 
 
 	-- Right Kart
+	local steer = self._inputMapping:getStateValue("STATE_STEER_1")
+	local throttle = self._inputMapping:getStateValue("STATE_THROTTLE_1")
+
 	local kart = self.world:getEntity("Kart1")
 	local vc = kart:getComponent(physics.VehicleComponent)
-	vc.engineThrottle = 1
+	vc.steerAngle = steer
+	vc.engineThrottle = throttle
 
 	self._followCamera1:update(info.simulationDeltaTime)
 
