@@ -35,7 +35,7 @@ function Game:new(params, environment)
 		:setHorizontalAlign(Widget.ALIGN_CENTER)
 		:setVerticalAlign(Widget.ALIGN_CENTER)
 
-	Static(ct, "READY?")
+	self._stLabel = Static(ct, "READY?")
 		:setTextColor(Color4f(0, 0, 0, 1))
 		:setTextSize(60)
 
@@ -50,13 +50,50 @@ function Game:new(params, environment)
 	local kart = self.world:getEntity("Kart1")
 	local camera = self.world:getEntity("Camera1")
 	self._followCamera1 = FollowCamera(camera, kart)
+
+	-- Set game state.
+	self._updateFn = Game._updateStart
 end
 
 function Game:finalize()
 end
 
 function Game:update(info)
+	self:_updateFn(info)
+end
 
+function Game:postUpdate(info)
+	local dT < const > = info.simulationDeltaTime
+	self._followCamera0:update(dT)
+	self._followCamera1:update(dT)
+end
+
+-- private
+
+function Game:_updateStart(info)
+	if info.stateTime < 2 then
+		self._stLabel:setText("READY")
+	elseif info.stateTime < 4 then
+		self._stLabel:setText("SET")
+	else
+		self._stLabel:setText("GO!")
+		self._updateFn = Game._updateKickOff
+	end
+end
+
+function Game:_updateKickOff(info)
+	self:_updateKartInput(info)
+	if info.stateTime >= 6 then
+		self._stLabel:setText("")
+		self._updateFn = Game._updateRace
+	end
+end
+
+function Game:_updateRace(info)
+	self:_updateKartInput(info)
+end
+
+function Game:_updateKartInput(info)
 	-- Left Kart
 	local steer = self._inputMapping:getStateValue("STATE_STEER_0")
 	local throttle = self._inputMapping:getStateValue("STATE_THROTTLE_0")
@@ -74,14 +111,8 @@ function Game:update(info)
 	local vc = kart:getComponent(physics.VehicleComponent)
 	vc.steerAngle = steer
 	vc.engineThrottle = throttle
-
 end
 
-function Game:postUpdate(info)
-	local dT < const > = info.simulationDeltaTime
-	self._followCamera0:update(dT)
-	self._followCamera1:update(dT)
-end
 
 	]]>
 	</text>

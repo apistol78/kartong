@@ -27,7 +27,7 @@
 				<maskProject>{00000000-0000-0000-0000-000000000000}</maskProject>
 			</low>
 			<medium>
-				<farZ>100</farZ>
+				<farZ>150</farZ>
 				<resolution>1024</resolution>
 				<bias>0.001</bias>
 				<cascadingSlices>4</cascadingSlices>
@@ -37,7 +37,7 @@
 				<maskProject>{00000000-0000-0000-0000-000000000000}</maskProject>
 			</medium>
 			<high>
-				<farZ>100</farZ>
+				<farZ>150</farZ>
 				<resolution>1024</resolution>
 				<bias>0.001</bias>
 				<cascadingSlices>4</cascadingSlices>
@@ -47,7 +47,7 @@
 				<maskProject>{00000000-0000-0000-0000-000000000000}</maskProject>
 			</high>
 			<ultra>
-				<farZ>150</farZ>
+				<farZ>200</farZ>
 				<resolution>2048</resolution>
 				<bias>0.002</bias>
 				<cascadingSlices>4</cascadingSlices>
@@ -156,7 +156,7 @@
 							</transform>
 							<components>
 								<item type="traktor.world.VolumeComponentData">
-									<size>400, 100, 400, 1</size>
+									<size>400, 100, 400, 0</size>
 								</item>
 							</components>
 						</item>
@@ -434,7 +434,7 @@
 							<name>Tree 1-Entity</name>
 							<transform>
 								<translation>-118.153519, 1.114056, 107.663361, 0</translation>
-								<rotation>0, -0.990327, 0, -0.138754</rotation>
+								<rotation>0, 0.990327, 0, 0.138754</rotation>
 							</transform>
 							<components/>
 							<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
@@ -639,6 +639,150 @@
 							<components/>
 							<entityData>{40BB4C27-FEFD-4E0E-9D2E-6D0FA3A21A25}</entityData>
 						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{A7F09F07-4F78-458D-BB43-4ABE1954E78E}</id>
+							<name>Poles</name>
+							<transform>
+								<translation>0, 0, 0, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.world.GroupComponentData">
+									<entityData>
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+											<id>{E11EA0CC-F8F4-405B-A58D-786AC9BCCEEF}</id>
+											<name>Pole-Entity</name>
+											<transform>
+												<translation>38.084461, -0.745743, -59.269169, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components/>
+											<entityData>{74D8C70D-C149-45CA-A0F9-EB0ADCD6ACF9}</entityData>
+										</item>
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+											<id>{2C62C7D1-1108-4750-917B-DD41EC1A40AA}</id>
+											<name>Pole-Entity</name>
+											<transform>
+												<translation>38.918758, -0.745743, -62.1367, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components/>
+											<entityData>{74D8C70D-C149-45CA-A0F9-EB0ADCD6ACF9}</entityData>
+										</item>
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+											<id>{4CA86E43-9BB8-4065-B9B0-C8B4156CAE14}</id>
+											<name>Pole-Entity</name>
+											<transform>
+												<translation>39.335808, -0.745743, -64.653305, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components/>
+											<entityData>{74D8C70D-C149-45CA-A0F9-EB0ADCD6ACF9}</entityData>
+										</item>
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+											<id>{428BA691-C1BB-4291-8C12-D5629916CB4B}</id>
+											<name>Pole-Entity</name>
+											<transform>
+												<translation>39.575394, -0.745743, -67.1007, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components/>
+											<entityData>{74D8C70D-C149-45CA-A0F9-EB0ADCD6ACF9}</entityData>
+										</item>
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+											<id>{E9DCEBEE-332A-4E60-9634-E9463FBE2078}</id>
+											<name>Pole-Entity</name>
+											<transform>
+												<translation>39.636807, -0.873786, -69.582573, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components/>
+											<entityData>{74D8C70D-C149-45CA-A0F9-EB0ADCD6ACF9}</entityData>
+										</item>
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+											<id>{067368F4-0A51-4A32-8AB4-7D722E8BF487}</id>
+											<name>Pole-Entity</name>
+											<transform>
+												<translation>39.290237, -1.181325, -71.969803, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components/>
+											<entityData>{74D8C70D-C149-45CA-A0F9-EB0ADCD6ACF9}</entityData>
+										</item>
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+											<id>{FB338919-A1FF-48EC-A9D2-84FEFFF44B57}</id>
+											<name>Pole-Entity</name>
+											<transform>
+												<translation>38.810173, -1.489495, -74.043282, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components/>
+											<entityData>{74D8C70D-C149-45CA-A0F9-EB0ADCD6ACF9}</entityData>
+										</item>
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+											<id>{09AF3994-16E4-4495-8C64-2A30EF4CDC01}</id>
+											<name>Pole-Entity</name>
+											<transform>
+												<translation>38.321602, -1.563928, -75.988854, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components/>
+											<entityData>{74D8C70D-C149-45CA-A0F9-EB0ADCD6ACF9}</entityData>
+										</item>
+									</entityData>
+								</item>
+								<item type="traktor.shape.PrefabComponentData" version="1">
+									<id>{67D2D244-4112-42D7-97E7-7466D42CCAF5}</id>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{93E41339-E0A6-4271-807A-4D6B0DEBC1F4}</id>
+							<name>Poles</name>
+							<transform>
+								<translation>0, 0, 0, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.world.GroupComponentData">
+									<entityData>
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+											<id>{1A669749-0D81-469D-8EAD-65F4AE6E3EB3}</id>
+											<name>Pole-Entity</name>
+											<transform>
+												<translation>16.144274, 0.813701, -66.401756, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components/>
+											<entityData>{74D8C70D-C149-45CA-A0F9-EB0ADCD6ACF9}</entityData>
+										</item>
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+											<id>{A13A4424-712A-415F-989B-1787EF52B08C}</id>
+											<name>Pole-Entity</name>
+											<transform>
+												<translation>16.783291, 0.813701, -69.091026, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components/>
+											<entityData>{74D8C70D-C149-45CA-A0F9-EB0ADCD6ACF9}</entityData>
+										</item>
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+											<id>{A738A3E5-98B9-49C1-B180-FE3C2425977D}</id>
+											<name>Pole-Entity</name>
+											<transform>
+												<translation>16.164412, 0.813701, -71.684395, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components/>
+											<entityData>{74D8C70D-C149-45CA-A0F9-EB0ADCD6ACF9}</entityData>
+										</item>
+									</entityData>
+								</item>
+								<item type="traktor.shape.PrefabComponentData" version="1">
+									<id>{1734E94C-837F-4B3F-821D-AEA1661F61C7}</id>
+								</item>
+							</components>
+						</item>
 					</entityData>
 				</item>
 			</components>
@@ -774,7 +918,7 @@
 							<name>CheckPoint</name>
 							<transform>
 								<translation>-39.899368, 22.368542, 90.602013, 0</translation>
-								<rotation>-0.019922, -0.398112, 0.045837, 0.915975</rotation>
+								<rotation>-0.019922, -0.398112, 0.045837, 0.915974</rotation>
 							</transform>
 							<components/>
 							<entityData>{A6439ABE-2B82-4917-8EFF-218C007663A7}</entityData>
@@ -804,7 +948,7 @@
 							<name>CheckPoint</name>
 							<transform>
 								<translation>-120.274574, 1.619011, -16.741026, 0</translation>
-								<rotation>0.018859, -0.942831, 0.006654, -0.33267</rotation>
+								<rotation>-0.018859, 0.942831, -0.006654, 0.33267</rotation>
 							</transform>
 							<components/>
 							<entityData>{A6439ABE-2B82-4917-8EFF-218C007663A7}</entityData>
