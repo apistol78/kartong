@@ -253,8 +253,8 @@
 							<id>{3E574C6D-795E-4B17-A494-10BD07A5E172}</id>
 							<name>Tree 1-Entity</name>
 							<transform>
-								<translation>37.423054, 1.62196, 58.8288, 0</translation>
-								<rotation>0, -0.891207, 0, 0.453596</rotation>
+								<translation>37.423054, 3.192349, 58.8288, 0</translation>
+								<rotation>-0.042503, -0.844123, -0.067674, 0.53016</rotation>
 							</transform>
 							<components/>
 							<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
@@ -293,8 +293,8 @@
 							<id>{09F83244-E143-4C7D-AE26-7EF80E144D46}</id>
 							<name>Tree 1-Entity</name>
 							<transform>
-								<translation>-146.712296, 2.862326, 65.522873, 0</translation>
-								<rotation>0, -0.975723, 0, 0.219007</rotation>
+								<translation>-146.232269, 3.037374, 65.522873, 0</translation>
+								<rotation>-0.077975, -0.972603, 0.017502, 0.218307</rotation>
 							</transform>
 							<components/>
 							<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
@@ -543,8 +543,8 @@
 							<id>{6F153F49-C871-4CD1-96C9-00D418B6F09A}</id>
 							<name>Tire Stack-Entity</name>
 							<transform>
-								<translation>-108.785393, 4.550763, -68.063591, 0</translation>
-								<rotation>0.059916, -0.002398, 0.039917, 0.997402</rotation>
+								<translation>-108.7854, 4.527829, -68.063591, 0</translation>
+								<rotation>0.084459, 0, 0.049141, 0.995215</rotation>
 							</transform>
 							<components/>
 							<entityData>{40BB4C27-FEFD-4E0E-9D2E-6D0FA3A21A25}</entityData>
@@ -553,8 +553,8 @@
 							<id>{36A2E58B-F836-4BDD-B370-90045426F0B2}</id>
 							<name>Tire Stack-Entity</name>
 							<transform>
-								<translation>-106.104401, 4.892688, -68.166206, 0</translation>
-								<rotation>0.059964, 0, 0, 0.998201</rotation>
+								<translation>-106.104416, 4.810526, -68.166214, 0</translation>
+								<rotation>0.082885, 0, 0.049112, 0.995348</rotation>
 							</transform>
 							<components/>
 							<entityData>{40BB4C27-FEFD-4E0E-9D2E-6D0FA3A21A25}</entityData>
@@ -563,8 +563,8 @@
 							<id>{F32AC94B-42A0-4058-B1F7-44E9FBB6C4F4}</id>
 							<name>Tire Stack-Entity</name>
 							<transform>
-								<translation>-103.47789, 5.1114, -68.45298, 0</translation>
-								<rotation>0.059916, -0.002398, 0.039917, 0.997402</rotation>
+								<translation>-103.477898, 5.119133, -68.452972, 0</translation>
+								<rotation>0.082908, 0, 0.04822, 0.99539</rotation>
 							</transform>
 							<components/>
 							<entityData>{40BB4C27-FEFD-4E0E-9D2E-6D0FA3A21A25}</entityData>
@@ -573,8 +573,8 @@
 							<id>{3055C98A-73FC-48CE-87B5-9D0C292377B5}</id>
 							<name>Tire Stack-Entity</name>
 							<transform>
-								<translation>-94.202393, 8.608574, -85.97683, 0</translation>
-								<rotation>0.089879, 0, 0, 0.995953</rotation>
+								<translation>-94.202393, 8.752241, -85.976822, 0</translation>
+								<rotation>0.073244, 0, 0.040822, 0.996478</rotation>
 							</transform>
 							<components/>
 							<entityData>{40BB4C27-FEFD-4E0E-9D2E-6D0FA3A21A25}</entityData>
@@ -583,8 +583,8 @@
 							<id>{4688C978-923C-42C6-83A4-9D9E0BF97765}</id>
 							<name>Tire Stack-Entity</name>
 							<transform>
-								<translation>-96.368011, 8.414036, -85.990212, 0</translation>
-								<rotation>0.069943, 0, 0, 0.997551</rotation>
+								<translation>-96.368011, 8.578898, -85.990212, 0</translation>
+								<rotation>0.074797, 0, 0.040022, 0.996395</rotation>
 							</transform>
 							<components/>
 							<entityData>{40BB4C27-FEFD-4E0E-9D2E-6D0FA3A21A25}</entityData>
@@ -593,8 +593,8 @@
 							<id>{7CEBF1D5-5594-4B76-8ADC-1563FC97BCDC}</id>
 							<name>Tire Stack-Entity</name>
 							<transform>
-								<translation>-98.773483, 8.349934, -86.037056, 0</translation>
-								<rotation>0.069887, -0.002797, 0.039891, 0.996753</rotation>
+								<translation>-98.773483, 8.388647, -86.037041, 0</translation>
+								<rotation>0.076368, 0, 0.040124, 0.996272</rotation>
 							</transform>
 							<components/>
 							<entityData>{40BB4C27-FEFD-4E0E-9D2E-6D0FA3A21A25}</entityData>
@@ -603,8 +603,38 @@
 							<id>{C97894E7-358B-49C9-B8E8-E22357D483E0}</id>
 							<name>Tire Stack-Entity</name>
 							<transform>
-								<translation>-101.117279, 8.075231, -85.912598, 0</translation>
-								<rotation>0.089879, 0, 0, 0.995953</rotation>
+								<translation>-101.117294, 8.177492, -85.912605, 0</translation>
+								<rotation>0.076313, 0, 0.040992, 0.996241</rotation>
+							</transform>
+							<components/>
+							<entityData>{40BB4C27-FEFD-4E0E-9D2E-6D0FA3A21A25}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{29EB2951-91B0-4C1B-8C7B-4C0127101869}</id>
+							<name>Tire Stack-Entity</name>
+							<transform>
+								<translation>-100.623573, 2.848266, -52.500362, 0</translation>
+								<rotation>0.074223, 0, 0.055308, 0.995707</rotation>
+							</transform>
+							<components/>
+							<entityData>{40BB4C27-FEFD-4E0E-9D2E-6D0FA3A21A25}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{6EE23249-565E-4A84-B4F6-FB658CDE6476}</id>
+							<name>Tire Stack-Entity</name>
+							<transform>
+								<translation>-98.484818, 3.033095, -52.121361, 0</translation>
+								<rotation>0.072452, 0, 0.056165, 0.995789</rotation>
+							</transform>
+							<components/>
+							<entityData>{40BB4C27-FEFD-4E0E-9D2E-6D0FA3A21A25}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{E6CB5235-6422-463B-BE68-C9D6E01FD001}</id>
+							<name>Tire Stack-Entity</name>
+							<transform>
+								<translation>-95.849396, 3.302255, -51.933258, 0</translation>
+								<rotation>0.070965, 0, 0.056044, 0.995903</rotation>
 							</transform>
 							<components/>
 							<entityData>{40BB4C27-FEFD-4E0E-9D2E-6D0FA3A21A25}</entityData>
@@ -683,7 +713,7 @@
 							<id>{CFF625FC-9FA6-4C38-B966-76010EBD52C8}</id>
 							<name>Cone-Entity</name>
 							<transform>
-								<translation>-99.538734, 11.292174, -106.750374, 0</translation>
+								<translation>-99.538734, 11.372657, -106.750374, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components/>
@@ -693,7 +723,7 @@
 							<id>{2F94D227-08AE-4C28-84F8-9A81C131574B}</id>
 							<name>Cone-Entity</name>
 							<transform>
-								<translation>-101.303398, 11.292174, -108.10833, 0</translation>
+								<translation>-101.303391, 11.426977, -108.10833, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components/>
@@ -703,7 +733,7 @@
 							<id>{A6E322D0-ACE3-484C-9DA9-9F3D1E4B3725}</id>
 							<name>Cone-Entity</name>
 							<transform>
-								<translation>-102.991798, 11.292174, -109.366112, 0</translation>
+								<translation>-102.991798, 11.477613, -109.366112, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components/>
