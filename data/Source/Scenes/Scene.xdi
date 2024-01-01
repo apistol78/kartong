@@ -539,6 +539,76 @@
 							<components/>
 							<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
 						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{6F153F49-C871-4CD1-96C9-00D418B6F09A}</id>
+							<name>Tire Stack-Entity</name>
+							<transform>
+								<translation>-108.785393, 4.550763, -68.063591, 0</translation>
+								<rotation>0.059916, -0.002398, 0.039917, 0.997402</rotation>
+							</transform>
+							<components/>
+							<entityData>{40BB4C27-FEFD-4E0E-9D2E-6D0FA3A21A25}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{36A2E58B-F836-4BDD-B370-90045426F0B2}</id>
+							<name>Tire Stack-Entity</name>
+							<transform>
+								<translation>-106.104401, 4.892688, -68.166206, 0</translation>
+								<rotation>0.059964, 0, 0, 0.998201</rotation>
+							</transform>
+							<components/>
+							<entityData>{40BB4C27-FEFD-4E0E-9D2E-6D0FA3A21A25}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{F32AC94B-42A0-4058-B1F7-44E9FBB6C4F4}</id>
+							<name>Tire Stack-Entity</name>
+							<transform>
+								<translation>-103.47789, 5.1114, -68.45298, 0</translation>
+								<rotation>0.059916, -0.002398, 0.039917, 0.997402</rotation>
+							</transform>
+							<components/>
+							<entityData>{40BB4C27-FEFD-4E0E-9D2E-6D0FA3A21A25}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{3055C98A-73FC-48CE-87B5-9D0C292377B5}</id>
+							<name>Tire Stack-Entity</name>
+							<transform>
+								<translation>-94.202393, 8.608574, -85.97683, 0</translation>
+								<rotation>0.089879, 0, 0, 0.995953</rotation>
+							</transform>
+							<components/>
+							<entityData>{40BB4C27-FEFD-4E0E-9D2E-6D0FA3A21A25}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{4688C978-923C-42C6-83A4-9D9E0BF97765}</id>
+							<name>Tire Stack-Entity</name>
+							<transform>
+								<translation>-96.368011, 8.414036, -85.990212, 0</translation>
+								<rotation>0.069943, 0, 0, 0.997551</rotation>
+							</transform>
+							<components/>
+							<entityData>{40BB4C27-FEFD-4E0E-9D2E-6D0FA3A21A25}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{7CEBF1D5-5594-4B76-8ADC-1563FC97BCDC}</id>
+							<name>Tire Stack-Entity</name>
+							<transform>
+								<translation>-98.773483, 8.349934, -86.037056, 0</translation>
+								<rotation>0.069887, -0.002797, 0.039891, 0.996753</rotation>
+							</transform>
+							<components/>
+							<entityData>{40BB4C27-FEFD-4E0E-9D2E-6D0FA3A21A25}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{C97894E7-358B-49C9-B8E8-E22357D483E0}</id>
+							<name>Tire Stack-Entity</name>
+							<transform>
+								<translation>-101.117279, 8.075231, -85.912598, 0</translation>
+								<rotation>0.089879, 0, 0, 0.995953</rotation>
+							</transform>
+							<components/>
+							<entityData>{40BB4C27-FEFD-4E0E-9D2E-6D0FA3A21A25}</entityData>
+						</item>
 					</entityData>
 				</item>
 			</components>

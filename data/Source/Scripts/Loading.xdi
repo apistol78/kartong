@@ -3,6 +3,7 @@
 	<text>
 	<![CDATA[
 #using \{720C0A68-B608-2F40-8EBA-F7E42EB27F61}
+#using \{FC4400A2-BDB6-BA45-9A22-12B9676E71FA}
 
 import(traktor)
 
@@ -12,6 +13,31 @@ Loading = Loading or class("Loading", Stage)
 
 function Loading:new(params, environment)
 	Stage.new(self, params, environment)
+
+	-- Initialize UiKit.
+	Widget.initialize(
+		environment.resource.resourceManager,
+		{ "\{5ABEAE05-EB26-934F-932F-7F3C7C582383}" }
+	)
+
+	-- Create frame.
+	self._frame = Frame(
+		self.spark.root,
+		1280, 720,
+		FloodLayout(0, 0)
+	)
+	self._frame:update()
+
+	local ct = Container(self._frame, TableLayout({0}, {0}, 16, 16, 0, 16))
+		:setHorizontalAlign(Widget.ALIGN_CENTER)
+		:setVerticalAlign(Widget.ALIGN_CENTER)
+
+	Static(ct, "LOADING")
+		:setTextColor(Color4f(0, 0, 0, 1))
+		:setTextSize(60)
+
+	-- Ensure frame is properly layed out.
+	self._frame:layout()
 
 	self._loader = self:loadStageAsync("GAME", nil)
 end
@@ -26,8 +52,6 @@ function Loading:update(info)
 	end
 end
 
-function Loading:postUpdate(info)
-end
 
 	]]>
 	</text>

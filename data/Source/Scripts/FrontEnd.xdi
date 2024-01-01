@@ -26,8 +26,6 @@ function FrontEnd:update(info)
 	end
 end
 
-function FrontEnd:postUpdate(info)
-end
 
 	]]>
 	</text>

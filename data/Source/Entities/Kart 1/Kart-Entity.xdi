@@ -24,7 +24,7 @@
 					<material>0</material>
 					<mesh>{0060B932-7438-40C7-B077-269AABAEA2AF}</mesh>
 				</shape>
-				<mass>2</mass>
+				<mass>1.6</mass>
 				<autoDeactivate>false</autoDeactivate>
 				<active>true</active>
 				<linearDamping>0.1</linearDamping>
@@ -35,7 +35,7 @@
 				<angularThreshold>1</angularThreshold>
 			</bodyDesc>
 			<eventCollide/>
-			<transformFilter>0.25</transformFilter>
+			<transformFilter>0</transformFilter>
 		</item>
 		<item type="traktor.physics.VehicleComponentData" version="2">
 			<wheels>
@@ -118,8 +118,8 @@
 			<fudgeDistance>0.2</fudgeDistance>
 			<swayBarForce>0.2</swayBarForce>
 			<maxVelocity>20</maxVelocity>
-			<engineForce>4</engineForce>
-			<breakingForce>4</breakingForce>
+			<engineForce>6</engineForce>
+			<breakingForce>2</breakingForce>
 			<ackermannCoeff>1.8</ackermannCoeff>
 		</item>
 		<item type="traktor.animation.SkeletonComponentData">

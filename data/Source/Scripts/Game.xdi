@@ -3,6 +3,7 @@
 	<text>
 	<![CDATA[
 #using \{720C0A68-B608-2F40-8EBA-F7E42EB27F61}
+#using \{FC4400A2-BDB6-BA45-9A22-12B9676E71FA}
 #using \{97B60D98-6C09-7743-ADBC-16D2565DEDAD}
 
 import(traktor)
@@ -16,6 +17,32 @@ function Game:new(params, environment)
 
 	self._inputMapping = environment.input.inputMapping
 
+	-- Initialize UiKit.
+	Widget.initialize(
+		environment.resource.resourceManager,
+		{ "\{5ABEAE05-EB26-934F-932F-7F3C7C582383}" }
+	)
+
+	-- Create frame.
+	self._frame = Frame(
+		self.spark.root,
+		1280, 720,
+		FloodLayout(0, 0)
+	)
+	self._frame:update()
+
+	local ct = Container(self._frame, TableLayout({0}, {0}, 16, 16, 0, 16))
+		:setHorizontalAlign(Widget.ALIGN_CENTER)
+		:setVerticalAlign(Widget.ALIGN_CENTER)
+
+	Static(ct, "READY?")
+		:setTextColor(Color4f(0, 0, 0, 1))
+		:setTextSize(60)
+
+	-- Ensure frame is properly layed out.
+	self._frame:layout()
+
+	-- Create camera handlers.
 	local kart = self.world:getEntity("Kart0")
 	local camera = self.world:getEntity("Camera0")
 	self._followCamera0 = FollowCamera(camera, kart)
@@ -39,9 +66,6 @@ function Game:update(info)
 	vc.steerAngle = steer
 	vc.engineThrottle = throttle
 
-	self._followCamera0:update(info.simulationDeltaTime)
-
-
 	-- Right Kart
 	local steer = self._inputMapping:getStateValue("STATE_STEER_1")
 	local throttle = self._inputMapping:getStateValue("STATE_THROTTLE_1")
@@ -51,11 +75,12 @@ function Game:update(info)
 	vc.steerAngle = steer
 	vc.engineThrottle = throttle
 
-	self._followCamera1:update(info.simulationDeltaTime)
-
 end
 
 function Game:postUpdate(info)
+	local dT < const > = info.simulationDeltaTime
+	self._followCamera0:update(dT)
+	self._followCamera1:update(dT)
 end
 
 	]]>
