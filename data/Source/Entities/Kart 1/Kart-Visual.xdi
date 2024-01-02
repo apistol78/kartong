@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <object type="traktor.mesh.MeshAsset" version="22">
 	<fileName>Models/Kart 1/Kart.blend</fileName>
-	<importFilter/>
+	<importFilter>!Collision</importFilter>
 	<meshType>MtSkinned</meshType>
 	<materialShaders/>
 	<materialTextures/>

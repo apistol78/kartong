@@ -17,6 +17,9 @@ function Game:new(params, environment)
 
 	self._inputMapping = environment.input.inputMapping
 
+	-- Increase simulation frequency to make vehicles more stable.
+	-- environment.control.simulationFrequency = 240
+
 	-- Initialize UiKit.
 	Widget.initialize(
 		environment.resource.resourceManager,
@@ -65,7 +68,7 @@ end
 function Game:postUpdate(info)
 	local dT < const > = info.simulationDeltaTime
 	self._followCamera0:update(dT)
-	self._followCamera1:update(dT)
+	--self._followCamera1:update(dT)
 end
 
 -- private
@@ -112,7 +115,6 @@ function Game:_updateKartInput(info)
 	vc.steerAngle = steer
 	vc.engineThrottle = throttle
 end
-
 
 	]]>
 	</text>

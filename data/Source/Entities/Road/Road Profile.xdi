@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.mesh.MeshAsset" version="22">
+	<fileName>Models/Road/Road Profile.blend</fileName>
+	<importFilter/>
+	<meshType>MtStatic</meshType>
+	<materialShaders>
+		<item>
+			<first>mat_road_edge</first>
+			<second>{52276F86-BDC2-7744-89CB-704A1765977D}</second>
+		</item>
+	</materialShaders>
+	<materialTextures/>
+	<scaleFactor>1</scaleFactor>
+	<offset>0, 0, 0, 0</offset>
+	<renormalize>false</renormalize>
+	<center>false</center>
+	<grounded>false</grounded>
+	<lodSteps>8</lodSteps>
+	<lodMaxDistance>100</lodMaxDistance>
+	<lodCullDistance>200</lodCullDistance>
+	<previewAngle>0</previewAngle>
+</object>

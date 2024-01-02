@@ -6,7 +6,7 @@
 		<item type="traktor.runtime.SplitWorldLayerData">
 			<name>world</name>
 			<permitTransition>true</permitTransition>
-			<scene>{646C7F9F-A386-A74E-9279-DD00117958A2}</scene>
+			<scene>{F68333B8-BD46-0244-90EC-0FFA875DF326}</scene>
 		</item>
 		<item type="traktor.spark.SparkLayerData" version="1">
 			<name>spark</name>

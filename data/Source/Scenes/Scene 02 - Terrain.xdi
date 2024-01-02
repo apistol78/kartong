@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.scene.SceneAsset" version="9">
+	<worldRenderSettings type="traktor.world.WorldRenderSettings" version="39">
+		<viewNearZ>0.1</viewNearZ>
+		<viewFarZ>1000</viewFarZ>
+		<exposureMode>Fixed</exposureMode>
+		<exposure>0</exposure>
+		<shadowSettings>
+			<disabled>
+				<farZ>100</farZ>
+				<resolution>1024</resolution>
+				<bias>0.01</bias>
+				<cascadingSlices>4</cascadingSlices>
+				<cascadingLambda>1</cascadingLambda>
+				<quantizeProjection>true</quantizeProjection>
+				<maskDenominator>1</maskDenominator>
+				<maskProject>{00000000-0000-0000-0000-000000000000}</maskProject>
+			</disabled>
+			<low>
+				<farZ>100</farZ>
+				<resolution>1024</resolution>
+				<bias>0.0005</bias>
+				<cascadingSlices>4</cascadingSlices>
+				<cascadingLambda>1.65</cascadingLambda>
+				<quantizeProjection>true</quantizeProjection>
+				<maskDenominator>1</maskDenominator>
+				<maskProject>{00000000-0000-0000-0000-000000000000}</maskProject>
+			</low>
+			<medium>
+				<farZ>150</farZ>
+				<resolution>1024</resolution>
+				<bias>0.0005</bias>
+				<cascadingSlices>4</cascadingSlices>
+				<cascadingLambda>1.65</cascadingLambda>
+				<quantizeProjection>true</quantizeProjection>
+				<maskDenominator>1</maskDenominator>
+				<maskProject>{00000000-0000-0000-0000-000000000000}</maskProject>
+			</medium>
+			<high>
+				<farZ>150</farZ>
+				<resolution>1024</resolution>
+				<bias>0.0005</bias>
+				<cascadingSlices>4</cascadingSlices>
+				<cascadingLambda>1.65</cascadingLambda>
+				<quantizeProjection>true</quantizeProjection>
+				<maskDenominator>1</maskDenominator>
+				<maskProject>{00000000-0000-0000-0000-000000000000}</maskProject>
+			</high>
+			<ultra>
+				<farZ>200</farZ>
+				<resolution>2048</resolution>
+				<bias>0.0005</bias>
+				<cascadingSlices>4</cascadingSlices>
+				<cascadingLambda>1.65</cascadingLambda>
+				<quantizeProjection>true</quantizeProjection>
+				<maskDenominator>1</maskDenominator>
+				<maskProject>{00000000-0000-0000-0000-000000000000}</maskProject>
+			</ultra>
+		</shadowSettings>
+		<fogDistance>40</fogDistance>
+		<fogDensity>0.0005</fogDensity>
+		<fogDensityMax>0.2</fogDensityMax>
+		<fogColor>0.839216, 0.984314, 1, 1</fogColor>
+		<irradianceGrid>{2D8C2976-00FC-7548-BBFC-3A4CBF1A15AB}</irradianceGrid>
+		<imageProcess>
+			<disabled>{00000000-0000-0000-0000-000000000000}</disabled>
+			<low>{00000000-0000-0000-0000-000000000000}</low>
+			<medium>{00000000-0000-0000-0000-000000000000}</medium>
+			<high>{00000000-0000-0000-0000-000000000000}</high>
+			<ultra>{00000000-0000-0000-0000-000000000000}</ultra>
+		</imageProcess>
+		<colorGrading>{3DEEC673-EDF5-364A-B796-BAC7EF575258}</colorGrading>
+	</worldRenderSettings>
+	<layers>
+		<item type="traktor.world.EntityData" version="1">
+			<id>{CFC30078-4CDB-EE49-8E63-3E8491310900}</id>
+			<name>Environment</name>
+			<transform>
+				<translation>-14.170444, 0, 1.713573, 0</translation>
+				<rotation>0, 0, 0, 1</rotation>
+			</transform>
+			<components>
+				<item type="traktor.world.EditorAttributesComponentData">
+					<visible>true</visible>
+					<locked>false</locked>
+					<include>true</include>
+					<dynamic>false</dynamic>
+				</item>
+				<item type="traktor.world.GroupComponentData">
+					<entityData>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{1883566D-8F84-C04A-B490-7EF4984CE60D}</id>
+							<name>Sky</name>
+							<transform>
+								<translation>-14.170444, 0, 1.713573, 0</translation>
+								<rotation>0.405531, 0.325615, -0.15729, 0.839511</rotation>
+							</transform>
+							<components>
+								<item type="traktor.weather.SkyComponentData" version="4">
+									<shader>{4CF929EB-3A8B-C340-AA0A-0C5C80625BF1}</shader>
+									<texture>{00000000-0000-0000-0000-000000000000}</texture>
+									<intensity>1</intensity>
+								</item>
+								<item type="traktor.world.LightComponentData" version="12">
+									<lightType>Directional</lightType>
+									<color>1, 1, 1, 0</color>
+									<intensity>1.25</intensity>
+									<castShadow>true</castShadow>
+									<nearRange>0</nearRange>
+									<farRange>10</farRange>
+									<radius>1.570796</radius>
+									<flickerAmount>0</flickerAmount>
+									<flickerFilter>0</flickerFilter>
+									<bakeMode>LbmIndirect</bakeMode>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{ADD02FD9-977C-AD48-BC0E-F8131BAC160B}</id>
+							<name>Camera0</name>
+							<transform>
+								<translation>-56.396923, 19.568516, -124.204048, 0</translation>
+								<rotation>0, 0.620986, 0, 0.783822</rotation>
+							</transform>
+							<components>
+								<item type="traktor.world.CameraComponentData">
+									<projection>Perspective</projection>
+									<fov>1.919862</fov>
+									<width>1</width>
+									<height>1</height>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{D87865E7-E4D1-9C46-8F1A-BDF45476B13F}</id>
+							<name>Camera1</name>
+							<transform>
+								<translation>-71.837151, 9.042342, -110.974327, 0</translation>
+								<rotation>0, 0.992713, 0, 0.120503</rotation>
+							</transform>
+							<components>
+								<item type="traktor.world.CameraComponentData">
+									<projection>Perspective</projection>
+									<fov>1.919862</fov>
+									<width>1</width>
+									<height>1</height>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{98198494-3DF4-0943-9FA6-D830B31345F5}</id>
+							<name>Reflections</name>
+							<transform>
+								<translation>-53.759197, 36.269569, 0, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.world.ProbeComponentData">
+									<texture>{00000000-0000-0000-0000-000000000000}</texture>
+									<intensity>1</intensity>
+									<local>false</local>
+									<volume>
+										<mn>0, 0, 0, 1</mn>
+										<mx>0, 0, 0, 1</mx>
+									</volume>
+								</item>
+							</components>
+						</item>
+					</entityData>
+				</item>
+			</components>
+		</item>
+		<item type="traktor.world.EntityData" version="1">
+			<id>{C30C62EF-0EA2-334F-8D93-D1BECEA2C6A9}</id>
+			<name>Static</name>
+			<transform>
+				<translation>0, 0, 0, 0</translation>
+				<rotation>0, 0, 0, 1</rotation>
+			</transform>
+			<components>
+				<item type="traktor.world.EditorAttributesComponentData">
+					<visible>true</visible>
+					<locked>false</locked>
+					<include>true</include>
+					<dynamic>false</dynamic>
+				</item>
+				<item type="traktor.world.GroupComponentData">
+					<entityData>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{52B2318B-6FE9-714F-AB4F-123D439EFFB1}</id>
+							<name/>
+							<transform>
+								<translation>0, 0, 0, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.terrain.TerrainComponentData">
+									<terrain>{48950C38-B441-7549-BC5E-1A261A6DCCFE}</terrain>
+									<patchLodDistance>100</patchLodDistance>
+									<patchLodBias>0</patchLodBias>
+									<patchLodExponent>1</patchLodExponent>
+									<surfaceLodDistance>100</surfaceLodDistance>
+									<surfaceLodBias>0</surfaceLodBias>
+									<surfaceLodExponent>1</surfaceLodExponent>
+								</item>
+								<item type="traktor.physics.RigidBodyComponentData" version="1">
+									<bodyDesc type="traktor.physics.StaticBodyDesc" version="5">
+										<shape type="traktor.physics.HeightfieldShapeDesc" version="6,traktor.physics.ShapeDesc:6">
+											<localTransform>
+												<translation>0, 0, 0, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</localTransform>
+											<collisionGroup>
+												<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+											</collisionGroup>
+											<collisionMask>
+												<item>{09CB1141-1924-3349-934A-CEB9728D7A61}</item>
+												<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+											</collisionMask>
+											<material>0</material>
+											<heightfield>{7ECCB95D-2994-3145-A288-672C970FD9D8}</heightfield>
+										</shape>
+										<friction>0.75</friction>
+										<restitution>0</restitution>
+										<kinematic>false</kinematic>
+									</bodyDesc>
+									<eventCollide/>
+									<transformFilter>0</transformFilter>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{6DFC45BA-168F-0F4D-BB31-3A49C448A898}</id>
+							<name>Road</name>
+							<transform>
+								<translation>0, 3.950148, 0, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.world.GroupComponentData">
+									<entityData>
+										<item type="traktor.world.EntityData" version="1">
+											<id>{BD5D5FC7-0051-9946-9054-52DB87B821BC}</id>
+											<name>C</name>
+											<transform>
+												<translation>-111.840233, 8.177154, -126.426285, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components>
+												<item type="traktor.shape.ControlPointComponentData">
+													<scale>1</scale>
+												</item>
+											</components>
+										</item>
+										<item type="traktor.world.EntityData" version="1">
+											<id>{98397BC8-5FED-DA4A-9A24-ABA28B2EDE5C}</id>
+											<name>C</name>
+											<transform>
+												<translation>23.745529, 8.177154, -100.67366, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components>
+												<item type="traktor.shape.ControlPointComponentData">
+													<scale>1</scale>
+												</item>
+											</components>
+										</item>
+										<item type="traktor.world.EntityData" version="1">
+											<id>{DE134B51-1BE7-C84B-88D9-7014805F739C}</id>
+											<name>C</name>
+											<transform>
+												<translation>59.400208, 8.177154, -169.326187, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components>
+												<item type="traktor.shape.ControlPointComponentData">
+													<scale>1</scale>
+												</item>
+											</components>
+										</item>
+										<item type="traktor.world.EntityData" version="1">
+											<id>{E25EA28E-CDDC-FF42-B9A9-86F9D64BCA66}</id>
+											<name>C</name>
+											<transform>
+												<translation>34.194206, 8.177154, -243.051453, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components>
+												<item type="traktor.shape.ControlPointComponentData">
+													<scale>1</scale>
+												</item>
+											</components>
+										</item>
+										<item type="traktor.world.EntityData" version="1">
+											<id>{72E3D2C6-3B15-B14B-A393-46AC1D122C8C}</id>
+											<name>C</name>
+											<transform>
+												<translation>-71.367836, 31.454708, -278.99408, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components>
+												<item type="traktor.shape.ControlPointComponentData">
+													<scale>1</scale>
+												</item>
+											</components>
+										</item>
+										<item type="traktor.world.EntityData" version="1">
+											<id>{67DEB377-8791-9C43-95FA-72F2856D2AFD}</id>
+											<name>C</name>
+											<transform>
+												<translation>-90.798676, 29.953844, -344.043335, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components>
+												<item type="traktor.shape.ControlPointComponentData">
+													<scale>1</scale>
+												</item>
+											</components>
+										</item>
+										<item type="traktor.world.EntityData" version="1">
+											<id>{F988C413-B36C-A541-B054-776A948BC4F9}</id>
+											<name>C</name>
+											<transform>
+												<translation>-39.388699, 12.684148, -404.487946, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components>
+												<item type="traktor.shape.ControlPointComponentData">
+													<scale>1</scale>
+												</item>
+											</components>
+										</item>
+										<item type="traktor.world.EntityData" version="1">
+											<id>{2012AA4D-19AB-A842-81EF-B81A0E661A15}</id>
+											<name>C</name>
+											<transform>
+												<translation>73.528656, 3.102673, -361.607422, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components>
+												<item type="traktor.shape.ControlPointComponentData">
+													<scale>1</scale>
+												</item>
+											</components>
+										</item>
+										<item type="traktor.world.EntityData" version="1">
+											<id>{7021C852-B635-3F44-AB2F-BAE7D7AEFFB4}</id>
+											<name>C</name>
+											<transform>
+												<translation>153.044357, 8.177154, -297.599518, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components>
+												<item type="traktor.shape.ControlPointComponentData">
+													<scale>1</scale>
+												</item>
+											</components>
+										</item>
+										<item type="traktor.world.EntityData" version="1">
+											<id>{662CC2BE-9F24-3D42-A8EC-9C5D9523E873}</id>
+											<name>C</name>
+											<transform>
+												<translation>168.581665, 2.870701, -165.436752, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components>
+												<item type="traktor.shape.ControlPointComponentData">
+													<scale>1</scale>
+												</item>
+											</components>
+										</item>
+										<item type="traktor.world.EntityData" version="1">
+											<id>{4029C197-AAD0-C44F-990D-643C5D5007AC}</id>
+											<name>C</name>
+											<transform>
+												<translation>144.799606, 12.216733, -14.128952, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components>
+												<item type="traktor.shape.ControlPointComponentData">
+													<scale>1</scale>
+												</item>
+											</components>
+										</item>
+										<item type="traktor.world.EntityData" version="1">
+											<id>{0CEA4C93-5BB9-0348-838D-81041885725E}</id>
+											<name>C</name>
+											<transform>
+												<translation>237.301193, 13.062776, 76.995873, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components>
+												<item type="traktor.shape.ControlPointComponentData">
+													<scale>1</scale>
+												</item>
+											</components>
+										</item>
+										<item type="traktor.world.EntityData" version="1">
+											<id>{16D906DB-2C1A-1E4F-9E20-2D61FCDF6D3F}</id>
+											<name>C</name>
+											<transform>
+												<translation>262.962036, 12.444879, 156.052032, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components>
+												<item type="traktor.shape.ControlPointComponentData">
+													<scale>1</scale>
+												</item>
+											</components>
+										</item>
+										<item type="traktor.world.EntityData" version="1">
+											<id>{CFE22096-A027-4E4D-8702-C1075FE57BCD}</id>
+											<name>C</name>
+											<transform>
+												<translation>199.787857, 12.678372, 226.297562, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components>
+												<item type="traktor.shape.ControlPointComponentData">
+													<scale>1</scale>
+												</item>
+											</components>
+										</item>
+										<item type="traktor.world.EntityData" version="1">
+											<id>{6E0357FA-864A-1E4E-AD83-4613D853E379}</id>
+											<name>C</name>
+											<transform>
+												<translation>86.284767, 4.70832, 222.453827, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components>
+												<item type="traktor.shape.ControlPointComponentData">
+													<scale>1</scale>
+												</item>
+											</components>
+										</item>
+										<item type="traktor.world.EntityData" version="1">
+											<id>{F9AECA75-E78E-C648-8609-FCE29C455A02}</id>
+											<name>C</name>
+											<transform>
+												<translation>-141.178558, 12.371919, 110.120956, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components>
+												<item type="traktor.shape.ControlPointComponentData">
+													<scale>1</scale>
+												</item>
+											</components>
+										</item>
+										<item type="traktor.world.EntityData" version="1">
+											<id>{8EF10933-9722-B94B-AD5E-99484CE10C6E}</id>
+											<name>C</name>
+											<transform>
+												<translation>-171.36969, 4.4173, -7.008484, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components>
+												<item type="traktor.shape.ControlPointComponentData">
+													<scale>1</scale>
+												</item>
+											</components>
+										</item>
+										<item type="traktor.world.EntityData" version="1">
+											<id>{4BAAD495-95EF-1644-B99D-9C1FC6E2001D}</id>
+											<name>C</name>
+											<transform>
+												<translation>-137.345551, 8.177154, -100.657677, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components>
+												<item type="traktor.shape.ControlPointComponentData">
+													<scale>1</scale>
+												</item>
+											</components>
+										</item>
+									</entityData>
+								</item>
+								<item type="traktor.shape.SplineComponentData">
+									<collisionGroup>
+										<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+									</collisionGroup>
+									<collisionMask>
+										<item>{09CB1141-1924-3349-934A-CEB9728D7A61}</item>
+										<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+									</collisionMask>
+								</item>
+								<item type="traktor.shape.ExtrudeShapeLayerData">
+									<meshStart>{00000000-0000-0000-0000-000000000000}</meshStart>
+									<meshRepeat>{CAAFFFE1-B406-1041-A902-9F710DE99501}</meshRepeat>
+									<meshEnd>{00000000-0000-0000-0000-000000000000}</meshEnd>
+									<automaticOrientation>true</automaticOrientation>
+									<detail>10</detail>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{7F2348D8-F4F0-8544-9138-F6CD4DB4140E}</id>
+							<name>Tree 1-Entity</name>
+							<transform>
+								<translation>128.873795, 5.147568, -80.797203, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{EAF4E624-703A-D944-9CC1-A0C12ABB1A83}</id>
+							<name>Tree 1-Entity</name>
+							<transform>
+								<translation>148.511292, -1.207548, -175.184326, 0</translation>
+								<rotation>0.003864, 0, -0.085001, 0.996373</rotation>
+							</transform>
+							<components/>
+							<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{2175583D-13D6-E746-B97D-B0835D10F1CC}</id>
+							<name>Tree 1-Entity</name>
+							<transform>
+								<translation>127.131828, 7.231749, -175.184326, 0</translation>
+								<rotation>-0.071888, 0, -0.124857, 0.989567</rotation>
+							</transform>
+							<components/>
+							<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{66FE6620-8874-6541-959B-90E85F8AF842}</id>
+							<name>Tree 1-Entity</name>
+							<transform>
+								<translation>146.333511, 0.69749, -129.555588, 0</translation>
+								<rotation>-0.03893, -0, 0.027251, 0.99887</rotation>
+							</transform>
+							<components/>
+							<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{AA291193-7BCE-A44B-A077-CFF50351C4AD}</id>
+							<name>Tree 1-Entity</name>
+							<transform>
+								<translation>127.423004, 7.996506, -27.442471, 0</translation>
+								<rotation>-0.01559, 0, 0.035079, 0.999263</rotation>
+							</transform>
+							<components/>
+							<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{16C82D01-514C-D14D-99F8-9DCCCE13C679}</id>
+							<name>Tree 1-Entity</name>
+							<transform>
+								<translation>162.701691, 8.171334, 33.652538, 0</translation>
+								<rotation>0.102859, -0, 0.076192, 0.991774</rotation>
+							</transform>
+							<components/>
+							<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{3652B7C1-B8C0-854E-9ABC-9ECCD36BFF0B}</id>
+							<name>Tree 1-Entity</name>
+							<transform>
+								<translation>169.810501, 37.650883, 115.734085, 0</translation>
+								<rotation>-0.011671, 0, 0.050576, 0.998652</rotation>
+							</transform>
+							<components/>
+							<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{27CA1747-46AF-7145-A394-EA1BC555D958}</id>
+							<name>Tree 1-Entity</name>
+							<transform>
+								<translation>209.032028, 19.761763, 115.734085, 0</translation>
+								<rotation>-0.050219, -0, -0.069534, 0.996315</rotation>
+							</transform>
+							<components/>
+							<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{1C201621-15D4-F64B-8E49-9351A66C27DD}</id>
+							<name>Tree 1-Entity</name>
+							<transform>
+								<translation>154.42897, 2.450384, 196.744125, 0</translation>
+								<rotation>0.037212, -0.019205, -0.110268, 0.993019</rotation>
+							</transform>
+							<components/>
+							<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{F1DDCA6F-3E2F-C141-8BA6-E32CACBEF1F5}</id>
+							<name>Tree 1-Entity</name>
+							<transform>
+								<translation>12.544205, -1.773672, 156.524689, 0</translation>
+								<rotation>0.038951, -0, 0.019476, 0.999051</rotation>
+							</transform>
+							<components/>
+							<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{AE24283B-3570-1E4F-942E-BE1BF3AA77F9}</id>
+							<name>Tree 1-Entity</name>
+							<transform>
+								<translation>-157.671097, 3.010457, 54.288525, 0</translation>
+								<rotation>-0.046669, 0, -0.031118, 0.998426</rotation>
+							</transform>
+							<components/>
+							<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{5DA22B15-93BD-E143-9980-0575B9BD42DD}</id>
+							<name>Tree 1-Entity</name>
+							<transform>
+								<translation>-179.441391, -1.405808, -88.072556, 0</translation>
+								<rotation>0, 0, 0.003906, 0.999992</rotation>
+							</transform>
+							<components/>
+							<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{1FAEEAE4-4FD6-704D-A689-A1D38D57D694}</id>
+							<name>Goal-Entity</name>
+							<transform>
+								<translation>-13.202747, 9.108055, -102.826111, 0</translation>
+								<rotation>0, 0.681639, 0, 0.731688</rotation>
+							</transform>
+							<components/>
+							<entityData>{D66ACE66-EFED-4E7E-9C9E-3E7F2F37589B}</entityData>
+						</item>
+					</entityData>
+				</item>
+			</components>
+		</item>
+		<item type="traktor.world.EntityData" version="1">
+			<id>{111278F6-2D85-3F46-99D3-E265EDD7003B}</id>
+			<name>Dynamic</name>
+			<transform>
+				<translation>0, 0, 0, 0</translation>
+				<rotation>0, 0, 0, 1</rotation>
+			</transform>
+			<components>
+				<item type="traktor.world.EditorAttributesComponentData">
+					<visible>true</visible>
+					<locked>false</locked>
+					<include>true</include>
+					<dynamic>true</dynamic>
+				</item>
+				<item type="traktor.world.GroupComponentData">
+					<entityData>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{B358B25C-793A-F14F-B372-3BD5360F6475}</id>
+							<name>Kart0</name>
+							<transform>
+								<translation>-71.494553, 8.430513, -114.032677, 0</translation>
+								<rotation>0, 0.613117, 0, 0.789992</rotation>
+							</transform>
+							<components/>
+							<entityData>{3527F644-09BE-4B55-91E7-ECC6191F32C2}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{90ABFE17-47F9-4748-B4D7-227C19E3D752}</id>
+							<name>Kart1</name>
+							<transform>
+								<translation>-70.175697, 10.890114, -120.972656, 0</translation>
+								<rotation>0, 0.613117, 0, 0.789992</rotation>
+							</transform>
+							<components/>
+							<entityData>{3527F644-09BE-4B55-91E7-ECC6191F32C2}</entityData>
+						</item>
+					</entityData>
+				</item>
+			</components>
+		</item>
+	</layers>
+	<controllerData/>
+	<operationData/>
+</object>

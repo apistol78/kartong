@@ -24,12 +24,12 @@
 					<material>0</material>
 					<mesh>{0060B932-7438-40C7-B077-269AABAEA2AF}</mesh>
 				</shape>
-				<mass>1.6</mass>
+				<mass>1</mass>
 				<autoDeactivate>false</autoDeactivate>
 				<active>true</active>
-				<linearDamping>0.1</linearDamping>
-				<angularDamping>0.1</angularDamping>
-				<friction>0.5</friction>
+				<linearDamping>0.05</linearDamping>
+				<angularDamping>0.2</angularDamping>
+				<friction>0</friction>
 				<restitution>0</restitution>
 				<linearThreshold>0.8</linearThreshold>
 				<angularThreshold>1</angularThreshold>
@@ -43,14 +43,14 @@
 					<steer>true</steer>
 					<drive>true</drive>
 					<breakFactor>0</breakFactor>
-					<radius>0.4</radius>
-					<anchor>-0.75, 0.5, 1, 1</anchor>
-					<axis>0.2, 1, 0, 0</axis>
+					<radius>0.36</radius>
+					<anchor>-0.95, 0.5, 1, 1</anchor>
+					<axis>0, 1, 0, 0</axis>
 					<suspensionLength>
 						<min>0</min>
 						<max>0.8</max>
 					</suspensionLength>
-					<suspensionSpring>20</suspensionSpring>
+					<suspensionSpring>16</suspensionSpring>
 					<suspensionDamping>6</suspensionDamping>
 					<rollingFriction>0</rollingFriction>
 					<slipCornerForce>30</slipCornerForce>
@@ -60,14 +60,14 @@
 					<steer>true</steer>
 					<drive>true</drive>
 					<breakFactor>0</breakFactor>
-					<radius>0.4</radius>
-					<anchor>0.75, 0.5, 1, 1</anchor>
-					<axis>-0.2, 1, 0, 0</axis>
+					<radius>0.36</radius>
+					<anchor>0.95, 0.5, 1, 1</anchor>
+					<axis>0, 1, 0, 0</axis>
 					<suspensionLength>
 						<min>0</min>
 						<max>0.8</max>
 					</suspensionLength>
-					<suspensionSpring>20</suspensionSpring>
+					<suspensionSpring>16</suspensionSpring>
 					<suspensionDamping>6</suspensionDamping>
 					<rollingFriction>0</rollingFriction>
 					<slipCornerForce>30</slipCornerForce>
@@ -77,14 +77,14 @@
 					<steer>false</steer>
 					<drive>true</drive>
 					<breakFactor>0</breakFactor>
-					<radius>0.4</radius>
-					<anchor>-0.75, 0.5, -1, 1</anchor>
-					<axis>0.2, 1, 0, 0</axis>
+					<radius>0.36</radius>
+					<anchor>-0.95, 0.5, -1, 1</anchor>
+					<axis>0, 1, 0, 0</axis>
 					<suspensionLength>
 						<min>0</min>
 						<max>0.8</max>
 					</suspensionLength>
-					<suspensionSpring>20</suspensionSpring>
+					<suspensionSpring>16</suspensionSpring>
 					<suspensionDamping>6</suspensionDamping>
 					<rollingFriction>0</rollingFriction>
 					<slipCornerForce>30</slipCornerForce>
@@ -94,14 +94,14 @@
 					<steer>false</steer>
 					<drive>true</drive>
 					<breakFactor>0</breakFactor>
-					<radius>0.4</radius>
-					<anchor>0.75, 0.5, -1, 1</anchor>
-					<axis>-0.2, 1, 0, 0</axis>
+					<radius>0.36</radius>
+					<anchor>0.95, 0.5, -1, 1</anchor>
+					<axis>0, 1, 0, 0</axis>
 					<suspensionLength>
 						<min>0</min>
 						<max>0.8</max>
 					</suspensionLength>
-					<suspensionSpring>20</suspensionSpring>
+					<suspensionSpring>16</suspensionSpring>
 					<suspensionDamping>6</suspensionDamping>
 					<rollingFriction>0</rollingFriction>
 					<slipCornerForce>30</slipCornerForce>
@@ -115,10 +115,10 @@
 				<item>{09CB1141-1924-3349-934A-CEB9728D7A61}</item>
 			</traceIgnore>
 			<steerAngleVelocity>1.745329</steerAngleVelocity>
-			<fudgeDistance>0.2</fudgeDistance>
+			<fudgeDistance>0.1</fudgeDistance>
 			<swayBarForce>0.2</swayBarForce>
-			<maxVelocity>20</maxVelocity>
-			<engineForce>6</engineForce>
+			<maxVelocity>40</maxVelocity>
+			<engineForce>4</engineForce>
 			<breakingForce>2</breakingForce>
 			<ackermannCoeff>1.8</ackermannCoeff>
 		</item>

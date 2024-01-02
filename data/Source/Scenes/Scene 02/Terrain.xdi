@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.terrain.TerrainAsset" version="6">
+	<detailSkip>2</detailSkip>
+	<patchDim>257</patchDim>
+	<heightfield>{7ECCB95D-2994-3145-A288-672C970FD9D8}</heightfield>
+	<surfaceShader>{3BFB1971-7615-4F41-B7AC-7EBDA65BAC8F}</surfaceShader>
+</object>
