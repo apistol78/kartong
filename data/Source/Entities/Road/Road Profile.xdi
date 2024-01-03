@@ -5,6 +5,10 @@
 	<meshType>MtStatic</meshType>
 	<materialShaders>
 		<item>
+			<first>mat_road</first>
+			<second>{6ABFBB0C-8778-1649-B1C9-9AAE01C6EEA3}</second>
+		</item>
+		<item>
 			<first>mat_road_edge</first>
 			<second>{52276F86-BDC2-7744-89CB-704A1765977D}</second>
 		</item>

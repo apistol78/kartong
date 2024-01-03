@@ -243,7 +243,7 @@
 											<id>{BD5D5FC7-0051-9946-9054-52DB87B821BC}</id>
 											<name>C</name>
 											<transform>
-												<translation>-111.840233, 8.177154, -126.426285, 0</translation>
+												<translation>-106.319656, 8.177154, -124.394676, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components>
@@ -295,7 +295,7 @@
 											<id>{72E3D2C6-3B15-B14B-A393-46AC1D122C8C}</id>
 											<name>C</name>
 											<transform>
-												<translation>-71.367836, 31.454708, -278.99408, 0</translation>
+												<translation>-69.999275, 31.454708, -280.456329, 0</translation>
 												<rotation>0.007191, 0.982914, -0.039338, 0.17967</rotation>
 											</transform>
 											<components>
@@ -321,7 +321,7 @@
 											<id>{F988C413-B36C-A541-B054-776A948BC4F9}</id>
 											<name>C</name>
 											<transform>
-												<translation>-39.388699, 12.684147, -404.487946, 0</translation>
+												<translation>-37.703922, 12.684147, -398.314392, 0</translation>
 												<rotation>0.079771, 0.059772, -0.004792, 0.995008</rotation>
 											</transform>
 											<components>
@@ -336,6 +336,19 @@
 											<transform>
 												<translation>73.528656, 3.102673, -361.607422, 0</translation>
 												<rotation>0.019999, 0, 0, 0.9998</rotation>
+											</transform>
+											<components>
+												<item type="traktor.shape.ControlPointComponentData">
+													<scale>1</scale>
+												</item>
+											</components>
+										</item>
+										<item type="traktor.world.EntityData" version="1">
+											<id>{5C64A56E-2738-9D4B-9F37-09D4DD0811B8}</id>
+											<name>C</name>
+											<transform>
+												<translation>110.116142, 4.731007, -318.710144, 0</translation>
+												<rotation>-0.079914, 0, 0, 0.996802</rotation>
 											</transform>
 											<components>
 												<item type="traktor.shape.ControlPointComponentData">
@@ -451,7 +464,7 @@
 											<id>{8EF10933-9722-B94B-AD5E-99484CE10C6E}</id>
 											<name>C</name>
 											<transform>
-												<translation>-171.36969, 4.4173, -7.008484, 0</translation>
+												<translation>-169.844711, 4.4173, -7.008484, 0</translation>
 												<rotation>0.022551, 0.659088, -0.019779, 0.751467</rotation>
 											</transform>
 											<components>
@@ -464,7 +477,7 @@
 											<id>{4BAAD495-95EF-1644-B99D-9C1FC6E2001D}</id>
 											<name>C</name>
 											<transform>
-												<translation>-137.345551, 8.177154, -100.657677, 0</translation>
+												<translation>-151.344925, 8.177154, -90.539154, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components>
@@ -564,6 +577,16 @@
 							<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
 						</item>
 						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{D85E91E5-D8AA-AA42-A891-89AF71A58052}</id>
+							<name>Tree 1-Entity</name>
+							<transform>
+								<translation>211.122284, 19.761763, 143.738464, 0</translation>
+								<rotation>0.003817, -0.618697, -0.085688, 0.780933</rotation>
+							</transform>
+							<components/>
+							<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
 							<id>{27CA1747-46AF-7145-A394-EA1BC555D958}</id>
 							<name>Tree 1-Entity</name>
 							<transform>
@@ -574,11 +597,31 @@
 							<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
 						</item>
 						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{122FD9FD-B5CC-2C45-8CD7-67153BAA694B}</id>
+							<name>Tree 1-Entity</name>
+							<transform>
+								<translation>187.455917, 0.316114, 186.772049, 0</translation>
+								<rotation>0.041489, -0.00707, -0.057855, 0.997437</rotation>
+							</transform>
+							<components/>
+							<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{5B767328-A362-4E4A-B0F8-ABEC52B225CA}</id>
+							<name>Tree 1-Entity</name>
+							<transform>
+								<translation>139.970993, 1.025747, 203.403732, 0</translation>
+								<rotation>-0.003854, -0.002041, -0.015627, 0.999868</rotation>
+							</transform>
+							<components/>
+							<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
 							<id>{1C201621-15D4-F64B-8E49-9351A66C27DD}</id>
 							<name>Tree 1-Entity</name>
 							<transform>
-								<translation>154.42897, 2.450384, 196.744125, 0</translation>
-								<rotation>0.037212, -0.019205, -0.110268, 0.993019</rotation>
+								<translation>166.491394, -0.339907, 198.133453, 0</translation>
+								<rotation>0.053697, -0.002153, -0.04255, 0.997648</rotation>
 							</transform>
 							<components/>
 							<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
@@ -668,7 +711,7 @@
 							<name>Tree 1-Entity</name>
 							<transform>
 								<translation>120.347801, 3.130597, 204.840546, 0</translation>
-								<rotation>0.037212, -0.019205, -0.110268, 0.993019</rotation>
+								<rotation>0.066471, -0.017842, -0.079617, 0.994447</rotation>
 							</transform>
 							<components/>
 							<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
@@ -699,6 +742,96 @@
 							<transform>
 								<translation>30.882919, 4.878176, -179.75798, 0</translation>
 								<rotation>-0.068472, -0.898323, 0.07763, 0.426966</rotation>
+							</transform>
+							<components/>
+							<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{C4AC2EF8-4BB3-674A-A2E3-A87B779A37EF}</id>
+							<name>Tree 1-Entity</name>
+							<transform>
+								<translation>-94.245354, 19.091986, -55.710232, 0</translation>
+								<rotation>0.002039, -0.852934, -0.003332, -0.522004</rotation>
+							</transform>
+							<components/>
+							<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{995F2EC1-11CC-F449-81FF-F1595D6ABD5A}</id>
+							<name>Tree 1-Entity</name>
+							<transform>
+								<translation>-69.923149, 19.098402, -69.668831, 0</translation>
+								<rotation>-0.034936, 0, 0.054345, 0.997911</rotation>
+							</transform>
+							<components/>
+							<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{89683B66-3B82-D540-BA52-E67849FAEB19}</id>
+							<name>Tree 1-Entity</name>
+							<transform>
+								<translation>-125.618576, 3.010457, -98.597527, 0</translation>
+								<rotation>0.035587, -0.993517, -0.043357, -0.098885</rotation>
+							</transform>
+							<components/>
+							<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{696D04F5-D0A0-6845-8F21-FCDAE807EB74}</id>
+							<name>Tree 1-Entity</name>
+							<transform>
+								<translation>-89.764992, 3.010457, -108.209099, 0</translation>
+								<rotation>-0.006866, -0.756649, -0.05567, 0.65141</rotation>
+							</transform>
+							<components/>
+							<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{020A145C-B2B7-A145-A791-6014654267CB}</id>
+							<name>Tree 1-Entity</name>
+							<transform>
+								<translation>-138.210938, 3.010457, -72.545845, 0</translation>
+								<rotation>-0.006866, -0.756649, -0.05567, 0.65141</rotation>
+							</transform>
+							<components/>
+							<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{2FE57F33-14EC-4F48-A2B6-6F16605589FC}</id>
+							<name>Tree 1-Entity</name>
+							<transform>
+								<translation>145.819122, 2.032829, -263.423309, 0</translation>
+								<rotation>0.041096, 0, 0.164383, 0.98554</rotation>
+							</transform>
+							<components/>
+							<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{1B474F80-8789-CC4D-91DA-7BFD238BF676}</id>
+							<name>Tree 1-Entity</name>
+							<transform>
+								<translation>125.220367, -0.279541, -338.182312, 0</translation>
+								<rotation>-0.014948, 0.002737, 0.027345, 0.99951</rotation>
+							</transform>
+							<components/>
+							<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{1F4A0ADA-8CC6-4546-A6EC-FDBE4790269A}</id>
+							<name>Tree 1-Entity</name>
+							<transform>
+								<translation>49.858666, -1.416401, -350.708649, 0</translation>
+								<rotation>-0.046581, 0.003266, 0.050445, 0.997635</rotation>
+							</transform>
+							<components/>
+							<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{AF8716F8-A347-5E46-8893-2E9620C21621}</id>
+							<name>Tree 1-Entity</name>
+							<transform>
+								<translation>66.256844, -1.013929, -391.459961, 0</translation>
+								<rotation>-0.016201, -0.750318, -0.047922, 0.659138</rotation>
 							</transform>
 							<components/>
 							<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
