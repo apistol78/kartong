@@ -5,6 +5,7 @@
 #using \{720C0A68-B608-2F40-8EBA-F7E42EB27F61}
 #using \{FC4400A2-BDB6-BA45-9A22-12B9676E71FA}
 #using \{97B60D98-6C09-7743-ADBC-16D2565DEDAD}
+#using \{1DC37C6A-0C0C-A546-825E-B8F6E6088209}
 
 import(traktor)
 
@@ -17,13 +18,10 @@ function Game:new(params, environment)
 
 	self._inputMapping = environment.input.inputMapping
 
-	-- Increase simulation frequency to make vehicles more stable.
-	-- environment.control.simulationFrequency = 240
-
 	-- Initialize UiKit.
 	Widget.initialize(
 		environment.resource.resourceManager,
-		{ "\{5ABEAE05-EB26-934F-932F-7F3C7C582383}" }
+		{ "\{27DDC0FD-39DE-0946-BB1B-7D84A001C522}", "\{5ABEAE05-EB26-934F-932F-7F3C7C582383}" }
 	)
 
 	-- Create frame.
@@ -34,13 +32,8 @@ function Game:new(params, environment)
 	)
 	self._frame:update()
 
-	local ct = Container(self._frame, TableLayout({0}, {0}, 16, 16, 0, 16))
-		:setHorizontalAlign(Widget.ALIGN_CENTER)
-		:setVerticalAlign(Widget.ALIGN_CENTER)
-
-	self._stLabel = Static(ct, "READY?")
-		:setTextColor(Color4f(0, 0, 0, 1))
-		:setTextSize(60)
+	self._flipBook = Flipboard(self._frame)
+	self._hudView = HudView(self._flipBook)
 
 	-- Ensure frame is properly layed out.
 	self._frame:layout()
@@ -63,40 +56,61 @@ end
 
 function Game:update(info)
 	self:_updateFn(info)
+	Tween.update(info.simulationDeltaTime)
 end
 
 function Game:postUpdate(info)
 	local dT < const > = info.simulationDeltaTime
 	self._followCamera0:update(dT)
-	--self._followCamera1:update(dT)
+	self._followCamera1:update(dT)
 end
 
 -- private
 
 function Game:_updateStart(info)
+	self:_updateKartInput(info, 0)
 	if info.stateTime < 2 then
-		self._stLabel:setText("READY")
+	--	self._stLabel:setText("READY")
 	elseif info.stateTime < 4 then
-		self._stLabel:setText("SET")
+	--	self._stLabel:setText("SET")
 	else
-		self._stLabel:setText("GO!")
+	--	self._stLabel:setText("GO!")
 		self._updateFn = Game._updateKickOff
+		self._flipBook:showPage("HUD")
 	end
 end
 
 function Game:_updateKickOff(info)
-	self:_updateKartInput(info)
+	self:_updateKartInput(info, 1)
 	if info.stateTime >= 6 then
-		self._stLabel:setText("")
+	--	self._stLabel:setText("")
 		self._updateFn = Game._updateRace
 	end
 end
 
 function Game:_updateRace(info)
-	self:_updateKartInput(info)
+	self:_updateKartInput(info, 1)
+
+	-- Left kart
+	local kart = self.world:getEntity("Kart0")
+	local rb = kart:getComponent(physics.RigidBodyComponent)
+	local mps = rb.body.linearVelocity.length
+	local kph = mps * (60 * 60) / 1000
+
+	local playerView = self._hudView:getPlayerView0()
+	playerView:setSpeed(math.floor(kph))
+
+	-- Right kart
+	local kart = self.world:getEntity("Kart1")
+	local rb = kart:getComponent(physics.RigidBodyComponent)
+	local mps = rb.body.linearVelocity.length
+	local kph = mps * (60 * 60) / 1000
+
+	local playerView = self._hudView:getPlayerView1()
+	playerView:setSpeed(math.floor(kph))
 end
 
-function Game:_updateKartInput(info)
+function Game:_updateKartInput(info, throttleFactor)
 	-- Left Kart
 	local steer = self._inputMapping:getStateValue("STATE_STEER_0")
 	local throttle = self._inputMapping:getStateValue("STATE_THROTTLE_0")
@@ -104,7 +118,7 @@ function Game:_updateKartInput(info)
 	local kart = self.world:getEntity("Kart0")
 	local vc = kart:getComponent(physics.VehicleComponent)
 	vc.steerAngle = steer
-	vc.engineThrottle = throttle
+	vc.engineThrottle = throttle * throttleFactor
 
 	-- Right Kart
 	local steer = self._inputMapping:getStateValue("STATE_STEER_1")
@@ -113,7 +127,7 @@ function Game:_updateKartInput(info)
 	local kart = self.world:getEntity("Kart1")
 	local vc = kart:getComponent(physics.VehicleComponent)
 	vc.steerAngle = steer
-	vc.engineThrottle = throttle
+	vc.engineThrottle = throttle * throttleFactor
 end
 
 	]]>

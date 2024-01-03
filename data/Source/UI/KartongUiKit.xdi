@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.spark.MovieAsset" version="2">
+	<fileName>UI/KartongUiKit.svg</fileName>
+	<staticMovie>false</staticMovie>
+	<fonts>
+		<item>
+			<name>Arial</name>
+			<fileName>UI/Fonts/Kanit/Kanit-Regular.ttf</fileName>
+		</item>
+	</fonts>
+</object>

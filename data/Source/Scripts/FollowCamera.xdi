@@ -33,7 +33,7 @@ function FollowCamera:update(deltaTime)
 
 	self._cameraEntity.transform = Transform.lookAt(
 		position,
-		lookPosition,
+		self._followEntity.transform.translation, -- lookPosition,
 		Vector4(0, 1, 0)
 	)
 

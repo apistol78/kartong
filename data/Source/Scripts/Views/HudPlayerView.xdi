@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.script.Script" version="2">
+	<text>
+	<![CDATA[
+#using \{FC4400A2-BDB6-BA45-9A22-12B9676E71FA}
+
+HudPlayerView = HudPlayerView or class("HudPlayerView", Container)
+
+function HudPlayerView:new(parent)
+	Container.new(self, parent, FloodLayout(16, 16))
+
+	self._stSpeed = Static(self, "0 km/t")
+		:setHorizontalAlign(Widget.ALIGN_LEFT)
+		:setVerticalAlign(Widget.ALIGN_TOP)
+		:setTextSize(40)
+end
+
+function HudPlayerView:setSpeed(speed)
+	self._stSpeed:setText(speed .. " km/t")
+end
+
+
+	]]>
+	</text>
+</object>

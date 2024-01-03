@@ -188,7 +188,7 @@
 					<entityData>
 						<item type="traktor.world.EntityData" version="1">
 							<id>{52B2318B-6FE9-714F-AB4F-123D439EFFB1}</id>
-							<name/>
+							<name>Terrain</name>
 							<transform>
 								<translation>0, 0, 0, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
@@ -257,7 +257,7 @@
 											<name>C</name>
 											<transform>
 												<translation>23.745529, 8.177154, -100.67366, 0</translation>
-												<rotation>0, 0, 0, 1</rotation>
+												<rotation>-0.098712, 0.148692, 0.014919, 0.983831</rotation>
 											</transform>
 											<components>
 												<item type="traktor.shape.ControlPointComponentData">
@@ -270,7 +270,7 @@
 											<name>C</name>
 											<transform>
 												<translation>59.400208, 8.177154, -169.326187, 0</translation>
-												<rotation>0, 0, 0, 1</rotation>
+												<rotation>-0.03872, 0.688362, 0.132603, 0.712092</rotation>
 											</transform>
 											<components>
 												<item type="traktor.shape.ControlPointComponentData">
@@ -283,7 +283,7 @@
 											<name>C</name>
 											<transform>
 												<translation>34.194206, 8.177154, -243.051453, 0</translation>
-												<rotation>0, 0, 0, 1</rotation>
+												<rotation>-0.028827, -0.276231, -0.008289, 0.960623</rotation>
 											</transform>
 											<components>
 												<item type="traktor.shape.ControlPointComponentData">
@@ -296,7 +296,7 @@
 											<name>C</name>
 											<transform>
 												<translation>-71.367836, 31.454708, -278.99408, 0</translation>
-												<rotation>0, 0, 0, 1</rotation>
+												<rotation>0.007191, 0.982914, -0.039338, 0.17967</rotation>
 											</transform>
 											<components>
 												<item type="traktor.shape.ControlPointComponentData">
@@ -309,7 +309,7 @@
 											<name>C</name>
 											<transform>
 												<translation>-90.798676, 29.953844, -344.043335, 0</translation>
-												<rotation>0, 0, 0, 1</rotation>
+												<rotation>0.094158, 0.511029, -0.056441, 0.852525</rotation>
 											</transform>
 											<components>
 												<item type="traktor.shape.ControlPointComponentData">
@@ -321,8 +321,8 @@
 											<id>{F988C413-B36C-A541-B054-776A948BC4F9}</id>
 											<name>C</name>
 											<transform>
-												<translation>-39.388699, 12.684148, -404.487946, 0</translation>
-												<rotation>0, 0, 0, 1</rotation>
+												<translation>-39.388699, 12.684147, -404.487946, 0</translation>
+												<rotation>0.079771, 0.059772, -0.004792, 0.995008</rotation>
 											</transform>
 											<components>
 												<item type="traktor.shape.ControlPointComponentData">
@@ -335,7 +335,7 @@
 											<name>C</name>
 											<transform>
 												<translation>73.528656, 3.102673, -361.607422, 0</translation>
-												<rotation>0, 0, 0, 1</rotation>
+												<rotation>0.019999, 0, 0, 0.9998</rotation>
 											</transform>
 											<components>
 												<item type="traktor.shape.ControlPointComponentData">
@@ -348,7 +348,7 @@
 											<name>C</name>
 											<transform>
 												<translation>153.044357, 8.177154, -297.599518, 0</translation>
-												<rotation>0, 0, 0, 1</rotation>
+												<rotation>0.058885, -0.53831, 0.037743, 0.839839</rotation>
 											</transform>
 											<components>
 												<item type="traktor.shape.ControlPointComponentData">
@@ -361,7 +361,7 @@
 											<name>C</name>
 											<transform>
 												<translation>168.581665, 2.870701, -165.436752, 0</translation>
-												<rotation>0, 0, 0, 1</rotation>
+												<rotation>0.021534, -0.695822, 0.020881, 0.717588</rotation>
 											</transform>
 											<components>
 												<item type="traktor.shape.ControlPointComponentData">
@@ -373,8 +373,8 @@
 											<id>{4029C197-AAD0-C44F-990D-643C5D5007AC}</id>
 											<name>C</name>
 											<transform>
-												<translation>144.799606, 12.216733, -14.128952, 0</translation>
-												<rotation>0, 0, 0, 1</rotation>
+												<translation>144.799606, 12.216732, -14.128952, 0</translation>
+												<rotation>-0.063619, -0.603251, -0.048363, 0.793538</rotation>
 											</transform>
 											<components>
 												<item type="traktor.shape.ControlPointComponentData">
@@ -386,8 +386,8 @@
 											<id>{0CEA4C93-5BB9-0348-838D-81041885725E}</id>
 											<name>C</name>
 											<transform>
-												<translation>237.301193, 13.062776, 76.995873, 0</translation>
-												<rotation>0, 0, 0, 1</rotation>
+												<translation>237.301193, 13.062775, 76.995873, 0</translation>
+												<rotation>0.028566, -0.304921, 0.00915, 0.951905</rotation>
 											</transform>
 											<components>
 												<item type="traktor.shape.ControlPointComponentData">
@@ -399,8 +399,8 @@
 											<id>{16D906DB-2C1A-1E4F-9E20-2D61FCDF6D3F}</id>
 											<name>C</name>
 											<transform>
-												<translation>262.962036, 12.444879, 156.052032, 0</translation>
-												<rotation>0, 0, 0, 1</rotation>
+												<translation>262.962036, 12.444878, 156.052032, 0</translation>
+												<rotation>0.034461, -0.723382, 0.036199, 0.688637</rotation>
 											</transform>
 											<components>
 												<item type="traktor.shape.ControlPointComponentData">
@@ -412,8 +412,8 @@
 											<id>{CFE22096-A027-4E4D-8702-C1075FE57BCD}</id>
 											<name>C</name>
 											<transform>
-												<translation>199.787857, 12.678372, 226.297562, 0</translation>
-												<rotation>0, 0, 0, 1</rotation>
+												<translation>199.787857, 12.678371, 226.297562, 0</translation>
+												<rotation>0.009968, -0.978683, 0.048975, 0.199201</rotation>
 											</transform>
 											<components>
 												<item type="traktor.shape.ControlPointComponentData">
@@ -426,7 +426,7 @@
 											<name>C</name>
 											<transform>
 												<translation>86.284767, 4.70832, 222.453827, 0</translation>
-												<rotation>0, 0, 0, 1</rotation>
+												<rotation>0.003368, 0.985522, -0.019713, 0.168364</rotation>
 											</transform>
 											<components>
 												<item type="traktor.shape.ControlPointComponentData">
@@ -438,8 +438,8 @@
 											<id>{F9AECA75-E78E-C648-8609-FCE29C455A02}</id>
 											<name>C</name>
 											<transform>
-												<translation>-141.178558, 12.371919, 110.120956, 0</translation>
-												<rotation>0, 0, 0, 1</rotation>
+												<translation>-141.178558, 12.371918, 110.120956, 0</translation>
+												<rotation>0.027186, 0.919114, -0.064443, 0.387733</rotation>
 											</transform>
 											<components>
 												<item type="traktor.shape.ControlPointComponentData">
@@ -452,7 +452,7 @@
 											<name>C</name>
 											<transform>
 												<translation>-171.36969, 4.4173, -7.008484, 0</translation>
-												<rotation>0, 0, 0, 1</rotation>
+												<rotation>0.022551, 0.659088, -0.019779, 0.751467</rotation>
 											</transform>
 											<components>
 												<item type="traktor.shape.ControlPointComponentData">
@@ -528,7 +528,7 @@
 							<name>Tree 1-Entity</name>
 							<transform>
 								<translation>146.333511, 0.69749, -129.555588, 0</translation>
-								<rotation>-0.03893, -0, 0.027251, 0.99887</rotation>
+								<rotation>-0.03893, 0, 0.027251, 0.99887</rotation>
 							</transform>
 							<components/>
 							<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
@@ -548,7 +548,7 @@
 							<name>Tree 1-Entity</name>
 							<transform>
 								<translation>162.701691, 8.171334, 33.652538, 0</translation>
-								<rotation>0.102859, -0, 0.076192, 0.991774</rotation>
+								<rotation>0.102859, 0, 0.076192, 0.991774</rotation>
 							</transform>
 							<components/>
 							<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
@@ -568,7 +568,7 @@
 							<name>Tree 1-Entity</name>
 							<transform>
 								<translation>209.032028, 19.761763, 115.734085, 0</translation>
-								<rotation>-0.050219, -0, -0.069534, 0.996315</rotation>
+								<rotation>-0.050219, 0, -0.069534, 0.996315</rotation>
 							</transform>
 							<components/>
 							<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
@@ -588,7 +588,7 @@
 							<name>Tree 1-Entity</name>
 							<transform>
 								<translation>12.544205, -1.773672, 156.524689, 0</translation>
-								<rotation>0.038951, -0, 0.019476, 0.999051</rotation>
+								<rotation>0.038951, 0, 0.019476, 0.999051</rotation>
 							</transform>
 							<components/>
 							<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
@@ -622,6 +622,86 @@
 							</transform>
 							<components/>
 							<entityData>{D66ACE66-EFED-4E7E-9C9E-3E7F2F37589B}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{0071F828-A7C8-424E-86E5-8E7703719E20}</id>
+							<name>Tree 1-Entity</name>
+							<transform>
+								<translation>-151.529038, 3.010457, -21.36211, 0</translation>
+								<rotation>-0.046669, 0, -0.031118, 0.998426</rotation>
+							</transform>
+							<components/>
+							<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{593F884F-CAED-CB41-BDBC-20E7EC13D6E1}</id>
+							<name>Tree 1-Entity</name>
+							<transform>
+								<translation>-198.517761, -1.405808, 17.702499, 0</translation>
+								<rotation>0, 0, 0.003906, 0.999992</rotation>
+							</transform>
+							<components/>
+							<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{E503E1D0-029E-404D-A2C4-60D212A5CAE1}</id>
+							<name>Tree 1-Entity</name>
+							<transform>
+								<translation>-191.080978, -1.405808, 101.329002, 0</translation>
+								<rotation>0, 0, 0.003906, 0.999992</rotation>
+							</transform>
+							<components/>
+							<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{D0033454-15C2-2243-905B-DB5F20E15D3A}</id>
+							<name>Tree 1-Entity</name>
+							<transform>
+								<translation>-76.977997, 3.189742, 119.258614, 0</translation>
+								<rotation>0.038951, 0, 0.019476, 0.999051</rotation>
+							</transform>
+							<components/>
+							<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{7D1BC511-ECF3-A440-B20D-05BCCF931ED1}</id>
+							<name>Tree 1-Entity</name>
+							<transform>
+								<translation>120.347801, 3.130597, 204.840546, 0</translation>
+								<rotation>0.037212, -0.019205, -0.110268, 0.993019</rotation>
+							</transform>
+							<components/>
+							<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{E6EBB392-19B1-FE45-8D38-0DD080E98777}</id>
+							<name>Tree 1-Entity</name>
+							<transform>
+								<translation>290.9711, -0.410385, 167.127426, 0</translation>
+								<rotation>0.019327, 0, -0.081172, 0.996513</rotation>
+							</transform>
+							<components/>
+							<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{9F2A04F7-754D-FE47-9933-B25FF45D7C45}</id>
+							<name>Tree 1-Entity</name>
+							<transform>
+								<translation>85.302711, 1.198515, -221.235168, 0</translation>
+								<rotation>0.040995, 0.002874, 0.095049, 0.994624</rotation>
+							</transform>
+							<components/>
+							<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{96F4AA51-2064-3149-AF98-B9FC1C4BCF1D}</id>
+							<name>Tree 1-Entity</name>
+							<transform>
+								<translation>30.882919, 4.878176, -179.75798, 0</translation>
+								<rotation>-0.068472, -0.898323, 0.07763, 0.426966</rotation>
+							</transform>
+							<components/>
+							<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
 						</item>
 					</entityData>
 				</item>
@@ -662,6 +742,86 @@
 							</transform>
 							<components/>
 							<entityData>{3527F644-09BE-4B55-91E7-ECC6191F32C2}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{E9A04C91-E246-DA49-9C06-1C032F0CC001}</id>
+							<name>Cone-Entity</name>
+							<transform>
+								<translation>167.33902, 4.963388, -112.978325, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{E4D4D79B-CA05-4D23-A09B-055ECDBB6E60}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{99D011C7-EFC4-5D49-9AB1-B23871763BEF}</id>
+							<name>Cone-Entity</name>
+							<transform>
+								<translation>163.975891, 5.243479, -110.645058, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{E4D4D79B-CA05-4D23-A09B-055ECDBB6E60}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{069CD216-B099-2A4A-A7A1-31FC64AE0855}</id>
+							<name>Cone-Entity</name>
+							<transform>
+								<translation>162.823212, 5.533005, -107.631081, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{E4D4D79B-CA05-4D23-A09B-055ECDBB6E60}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{E6CF519C-5DEF-D248-B274-5F05BF169F38}</id>
+							<name>Cone-Entity</name>
+							<transform>
+								<translation>162.802368, 5.612346, -105.206093, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{E4D4D79B-CA05-4D23-A09B-055ECDBB6E60}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{0A7D9FE6-DE2C-6749-BC44-213153EE4BC5}</id>
+							<name>Cone-Entity</name>
+							<transform>
+								<translation>163.683563, 5.612346, -103.121239, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{E4D4D79B-CA05-4D23-A09B-055ECDBB6E60}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{A7A5AA83-3D92-DC4D-88F6-C85A4528FE0D}</id>
+							<name>Cone-Entity</name>
+							<transform>
+								<translation>164.658279, 5.612346, -101.448128, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{E4D4D79B-CA05-4D23-A09B-055ECDBB6E60}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{07A1915C-DD46-0B42-B7F2-A676B642C0A6}</id>
+							<name>Tire Stack-Entity</name>
+							<transform>
+								<translation>63.292751, 7.984637, -202.638504, 0</translation>
+								<rotation>0, 0, 0.099833, 0.995004</rotation>
+							</transform>
+							<components/>
+							<entityData>{40BB4C27-FEFD-4E0E-9D2E-6D0FA3A21A25}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{A0055138-5138-6441-9614-A4021E1BFE0D}</id>
+							<name>Tire Stack-Entity</name>
+							<transform>
+								<translation>60.597378, 7.471255, -203.915527, 0</translation>
+								<rotation>0, 0, 0.109778, 0.993956</rotation>
+							</transform>
+							<components/>
+							<entityData>{40BB4C27-FEFD-4E0E-9D2E-6D0FA3A21A25}</entityData>
 						</item>
 					</entityData>
 				</item>

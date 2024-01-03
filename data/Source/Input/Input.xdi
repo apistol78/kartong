@@ -53,24 +53,56 @@
 			</entries>
 			<operator>CoAdd</operator>
 		</item>
+		<item type="traktor.input.InReadValue">
+			<valueId>ID_GP0_LEFT_THUMB</valueId>
+		</item>
+		<item type="traktor.input.InCombine" version="1">
+			<entries>
+				<item>
+					<source ref="/object/inputNodes/item[7]"/>
+					<mul>0.3</mul>
+					<add>0</add>
+				</item>
+			</entries>
+			<operator>CoAdd</operator>
+		</item>
+		<item type="traktor.input.InReadValue">
+			<valueId>ID_GP0_RIGHT_TRIGGER</valueId>
+		</item>
+		<item type="traktor.input.InReadValue">
+			<valueId>ID_GP1_RIGHT_TRIGGER</valueId>
+		</item>
+		<item type="traktor.input.InReadValue">
+			<valueId>ID_GP1_LEFT_THUMB</valueId>
+		</item>
+		<item type="traktor.input.InCombine" version="1">
+			<entries>
+				<item>
+					<source ref="/object/inputNodes/item[11]"/>
+					<mul>0.3</mul>
+					<add>0</add>
+				</item>
+			</entries>
+			<operator>CoAdd</operator>
+		</item>
 	</inputNodes>
 	<positions>
 		<item>
 			<object type="traktor.input.InputStateData">
-				<source ref="/object/inputNodes/item[6]"/>
+				<source ref="/object/inputNodes/item[8]"/>
 			</object>
 			<position>
-				<x>983</x>
-				<y>152</y>
+				<x>1016</x>
+				<y>-124</y>
 			</position>
 		</item>
 		<item>
 			<object type="traktor.input.InputStateData">
-				<source ref="/object/inputNodes/item[5]"/>
+				<source ref="/object/inputNodes/item[9]"/>
 			</object>
 			<position>
-				<x>827</x>
-				<y>375</y>
+				<x>928</x>
+				<y>-300</y>
 			</position>
 		</item>
 		<item>
@@ -85,55 +117,164 @@
 		<item>
 			<object ref="/object/inputNodes/item"/>
 			<position>
-				<x>254</x>
-				<y>152</y>
+				<x>498</x>
+				<y>408</y>
 			</position>
 		</item>
 		<item>
 			<object ref="/object/inputNodes/item[1]"/>
 			<position>
-				<x>252</x>
-				<y>212</y>
+				<x>496</x>
+				<y>468</y>
 			</position>
 		</item>
 		<item>
 			<object ref="/object/inputNodes/item[2]"/>
 			<position>
-				<x>585</x>
-				<y>122</y>
+				<x>830</x>
+				<y>378</y>
 			</position>
 		</item>
 		<item>
 			<object ref="/object/inputNodes/item[3]"/>
 			<position>
-				<x>270</x>
-				<y>353</y>
+				<x>514</x>
+				<y>608</y>
 			</position>
 		</item>
 		<item>
 			<object ref="/object/inputNodes/item[4]"/>
 			<position>
-				<x>275</x>
-				<y>402</y>
+				<x>520</x>
+				<y>658</y>
 			</position>
 		</item>
 		<item>
 			<object ref="/object/inputNodes/item[5]"/>
 			<position>
-				<x>585</x>
-				<y>321</y>
+				<x>830</x>
+				<y>576</y>
 			</position>
 		</item>
 		<item>
 			<object ref="/object/inputNodes/item[6]"/>
 			<position>
-				<x>789</x>
-				<y>95</y>
+				<x>1034</x>
+				<y>350</y>
+			</position>
+		</item>
+		<item>
+			<object ref="/object/inputNodes/item[7]"/>
+			<position>
+				<x>462</x>
+				<y>-96</y>
+			</position>
+		</item>
+		<item>
+			<object ref="/object/inputNodes/item[8]"/>
+			<position>
+				<x>814</x>
+				<y>-166</y>
+			</position>
+		</item>
+		<item>
+			<object ref="/object/inputNodes/item[9]"/>
+			<position>
+				<x>548</x>
+				<y>-310</y>
+			</position>
+		</item>
+		<item>
+			<object type="traktor.input.InputStateData">
+				<source ref="/object/inputNodes/item[10]"/>
+			</object>
+			<position>
+				<x>972</x>
+				<y>18</y>
+			</position>
+		</item>
+		<item>
+			<object ref="/object/inputNodes/item[10]"/>
+			<position>
+				<x>492</x>
+				<y>36</y>
+			</position>
+		</item>
+		<item>
+			<object ref="/object/inputNodes/item[11]"/>
+			<position>
+				<x>500</x>
+				<y>142</y>
+			</position>
+		</item>
+		<item>
+			<object ref="/object/inputNodes/item[12]"/>
+			<position>
+				<x>817</x>
+				<y>118</y>
+			</position>
+		</item>
+		<item>
+			<object type="traktor.input.InputStateData">
+				<source ref="/object/inputNodes/item[12]"/>
+			</object>
+			<position>
+				<x>1004</x>
+				<y>158</y>
+			</position>
+		</item>
+		<item>
+			<object type="traktor.input.InputStateData">
+				<source ref="/object/inputNodes/item[8]"/>
+			</object>
+			<position>
+				<x>1014</x>
+				<y>-121</y>
 			</position>
 		</item>
 	</positions>
 	<sourceData type="traktor.input.InputMappingSourceData">
 		<sourceData>
+			<item>
+				<first>ID_GP0_LEFT_THUMB</first>
+				<second type="traktor.input.GenericInputSourceData" version="4">
+					<category>Joystick</category>
+					<controlType>ThumbLeftX</controlType>
+					<analogue>true</analogue>
+					<normalize>true</normalize>
+					<index>0</index>
+				</second>
+			</item>
+			<item>
+				<first>ID_GP0_RIGHT_TRIGGER</first>
+				<second type="traktor.input.GenericInputSourceData" version="4">
+					<category>Joystick</category>
+					<controlType>TriggerRight</controlType>
+					<analogue>true</analogue>
+					<normalize>true</normalize>
+					<index>0</index>
+				</second>
+			</item>
+			<item>
+				<first>ID_GP1_LEFT_THUMB</first>
+				<second type="traktor.input.GenericInputSourceData" version="4">
+					<category>Joystick</category>
+					<controlType>ThumbLeftX</controlType>
+					<analogue>true</analogue>
+					<normalize>true</normalize>
+					<index>1</index>
+				</second>
+			</item>
+			<item>
+				<first>ID_GP1_RIGHT_TRIGGER</first>
+				<second type="traktor.input.GenericInputSourceData" version="4">
+					<category>Joystick</category>
+					<controlType>TriggerRight</controlType>
+					<analogue>true</analogue>
+					<normalize>true</normalize>
+					<index>1</index>
+				</second>
+			</item>
 			<item>
 				<first>ID_KEY_DOWN</first>
 				<second type="traktor.input.KeyboardInputSourceData" version="1">
@@ -172,11 +313,19 @@
 		<stateData>
 			<item>
 				<first>STATE_STEER_0</first>
-				<second ref="/object/positions/item/object"/>
+				<second ref="/object/positions/item[18]/object"/>
+			</item>
+			<item>
+				<first>STATE_STEER_1</first>
+				<second ref="/object/positions/item[17]/object"/>
 			</item>
 			<item>
 				<first>STATE_THROTTLE_0</first>
 				<second ref="/object/positions/item[1]/object"/>
+			</item>
+			<item>
+				<first>STATE_THROTTLE_1</first>
+				<second ref="/object/positions/item[13]/object"/>
 			</item>
 		</stateData>
 	</stateData>

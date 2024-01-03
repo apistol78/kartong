@@ -17,7 +17,7 @@ function Splash:new(params, environment)
 	-- Initialize UiKit.
 	Widget.initialize(
 		environment.resource.resourceManager,
-		{ "\{5ABEAE05-EB26-934F-932F-7F3C7C582383}" }
+		{ "\{27DDC0FD-39DE-0946-BB1B-7D84A001C522}", "\{5ABEAE05-EB26-934F-932F-7F3C7C582383}" }
 	)
 
 	-- Create frame.
@@ -51,7 +51,6 @@ function Splash:update(info)
 		self._loader = nil
 	end
 end
-
 
 	]]>
 	</text>
