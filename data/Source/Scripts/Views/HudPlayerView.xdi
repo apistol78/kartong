@@ -7,16 +7,25 @@
 HudPlayerView = HudPlayerView or class("HudPlayerView", Container)
 
 function HudPlayerView:new(parent)
-	Container.new(self, parent, FloodLayout(16, 16))
+	Container.new(self, parent, TableLayout({ 100 }, { 0, 0 }, 16, 16, 0, 0))
 
 	self._stSpeed = Static(self, "0 km/t")
 		:setHorizontalAlign(Widget.ALIGN_LEFT)
 		:setVerticalAlign(Widget.ALIGN_TOP)
 		:setTextSize(40)
+
+	self._stLap = Static(self, "0")
+		:setHorizontalAlign(Widget.ALIGN_LEFT)
+		:setVerticalAlign(Widget.ALIGN_TOP)
+		:setTextSize(30)
 end
 
 function HudPlayerView:setSpeed(speed)
 	self._stSpeed:setText(speed .. " km/t")
+end
+
+function HudPlayerView:setLap(lap)
+	self._stLap:setText(lap)
 end
 
 

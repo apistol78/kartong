@@ -10,11 +10,9 @@ HudView = HudView or class("HudView", Container)
 HudView.__flipboardId = "HUD"
 
 function HudView:new(parent)
-	Container.new(self, parent, TableLayout({ 50, 50 }, { 100 }, 16, 16, 0, 0))
-
+	Container.new(self, parent, TableLayout({ 50, 50 }, { 100 }, 0, 0, 0, 0))
 	self._playerView0 = HudPlayerView(self)
 	self._playerView1 = HudPlayerView(self)
-
 end
 
 function HudView:getPlayerView0()
@@ -24,7 +22,6 @@ end
 function HudView:getPlayerView1()
 	return self._playerView1
 end
-
 
 	]]>
 	</text>

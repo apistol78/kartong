@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.script.Script" version="2">
+	<text>
+	<![CDATA[
+import(traktor)
+
+PlayerLogic = PlayerLogic or class("PlayerLogic")
+
+function PlayerLogic:new(kart, road)
+	self._kart = kart
+	self._road = road
+	self._t = 0
+	self._lap = 0
+	self._kph = 0
+end
+
+function PlayerLogic:update(info)
+	local rb = self._kart:getComponent(physics.RigidBodyComponent)
+
+	-- Calculate speed.
+	local mps = rb.body.linearVelocity.length
+	self._kph = mps * (60 * 60) / 1000
+
+	-- Evaluate progress.
+	local pt = self._road:getComponent(world.PathComponent)
+	local t = pt:findClosest(self._kart.transform.translation)
+	if self._t > 0.9 and t < 0.1 then
+		self._lap = self._lap + 1
+	elseif self._t < 0.1 and t > 0.9 then
+		self._lap = self._lap - 1
+	end
+	self._t = t
+end
+
+function PlayerLogic:getSpeed()
+	return math.floor(self._kph)
+end
+
+function PlayerLogic:getLap()
+	return math.max(self._lap, 0) + 1
+end
+
+
+	]]>
+	</text>
+</object>

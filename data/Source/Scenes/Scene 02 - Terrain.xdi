@@ -660,8 +660,8 @@
 							<id>{1FAEEAE4-4FD6-704D-A689-A1D38D57D694}</id>
 							<name>Goal-Entity</name>
 							<transform>
-								<translation>-13.202747, 9.108055, -102.826111, 0</translation>
-								<rotation>0, 0.681639, 0, 0.731688</rotation>
+								<translation>-106.9105, 6.635849, -123.276253, 0</translation>
+								<rotation>0, 0.724288, 0, 0.689498</rotation>
 							</transform>
 							<components/>
 							<entityData>{D66ACE66-EFED-4E7E-9C9E-3E7F2F37589B}</entityData>
@@ -860,8 +860,8 @@
 							<id>{B358B25C-793A-F14F-B372-3BD5360F6475}</id>
 							<name>Kart0</name>
 							<transform>
-								<translation>-71.494553, 8.430513, -114.032677, 0</translation>
-								<rotation>0, 0.613117, 0, 0.789992</rotation>
+								<translation>-121.096535, 9.578125, -118.751839, 0</translation>
+								<rotation>0, 0.757843, 0, 0.652437</rotation>
 							</transform>
 							<components/>
 							<entityData>{3527F644-09BE-4B55-91E7-ECC6191F32C2}</entityData>
@@ -870,8 +870,8 @@
 							<id>{90ABFE17-47F9-4748-B4D7-227C19E3D752}</id>
 							<name>Kart1</name>
 							<transform>
-								<translation>-70.175697, 10.890114, -120.972656, 0</translation>
-								<rotation>0, 0.613117, 0, 0.789992</rotation>
+								<translation>-122.253502, 9.384397, -125.949287, 0</translation>
+								<rotation>0, 0.757843, 0, 0.652437</rotation>
 							</transform>
 							<components/>
 							<entityData>{3527F644-09BE-4B55-91E7-ECC6191F32C2}</entityData>

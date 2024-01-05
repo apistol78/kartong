@@ -5,6 +5,8 @@
 #using \{720C0A68-B608-2F40-8EBA-F7E42EB27F61}
 #using \{FC4400A2-BDB6-BA45-9A22-12B9676E71FA}
 #using \{97B60D98-6C09-7743-ADBC-16D2565DEDAD}
+#using \{A348F9B0-E137-B24F-B5DC-6591E60A61DD}
+#using \{B3773DDC-1FE6-D54B-9677-2CAB45912BA0}
 #using \{1DC37C6A-0C0C-A546-825E-B8F6E6088209}
 
 import(traktor)
@@ -33,19 +35,26 @@ function Game:new(params, environment)
 	self._frame:update()
 
 	self._flipBook = Flipboard(self._frame)
+	self._countDownView = CountDownView(self._flipBook)
 	self._hudView = HudView(self._flipBook)
+	self._flipBook:showPage("CountDown")
 
 	-- Ensure frame is properly layed out.
 	self._frame:layout()
 
-	-- Create camera handlers.
-	local kart = self.world:getEntity("Kart0")
-	local camera = self.world:getEntity("Camera0")
-	self._followCamera0 = FollowCamera(camera, kart)
+	local kart0 = self.world:getEntity("Kart0")
+	local kart1 = self.world:getEntity("Kart1")
+	local road = self.world:getEntity("Road")
 
-	local kart = self.world:getEntity("Kart1")
+	-- Create camera handlers.
+	local camera = self.world:getEntity("Camera0")
+	self._followCamera0 = FollowCamera(camera, kart0)
 	local camera = self.world:getEntity("Camera1")
-	self._followCamera1 = FollowCamera(camera, kart)
+	self._followCamera1 = FollowCamera(camera, kart1)
+
+	-- Game logic.
+	self._logic0 = PlayerLogic(kart0, road)
+	self._logic1 = PlayerLogic(kart1, road)
 
 	-- Set game state.
 	self._updateFn = Game._updateStart
@@ -70,11 +79,11 @@ end
 function Game:_updateStart(info)
 	self:_updateKartInput(info, 0)
 	if info.stateTime < 2 then
-	--	self._stLabel:setText("READY")
+		self._countDownView:setText("READY...")
 	elseif info.stateTime < 4 then
-	--	self._stLabel:setText("SET")
+		self._countDownView:setText("SET...")
 	else
-	--	self._stLabel:setText("GO!")
+		self._countDownView:setText("GO!")
 		self._updateFn = Game._updateKickOff
 		self._flipBook:showPage("HUD")
 	end
@@ -82,35 +91,42 @@ end
 
 function Game:_updateKickOff(info)
 	self:_updateKartInput(info, 1)
+	self:_updateKartLimits()
+	self:_updateUI()
+
+	-- Update kart logic.
+	self._logic0:update(info)
+	self._logic1:update(info)
+
 	if info.stateTime >= 6 then
-	--	self._stLabel:setText("")
 		self._updateFn = Game._updateRace
 	end
 end
 
 function Game:_updateRace(info)
 	self:_updateKartInput(info, 1)
+	self:_updateKartLimits()
+	self:_updateUI()
 
+	-- Update kart logic.
+	self._logic0:update(info)
+	self._logic1:update(info)
+end
+
+function Game:_updateUI()
 	-- Left kart
-	local kart = self.world:getEntity("Kart0")
-	local rb = kart:getComponent(physics.RigidBodyComponent)
-	local mps = rb.body.linearVelocity.length
-	local kph = mps * (60 * 60) / 1000
-
 	local playerView = self._hudView:getPlayerView0()
-	playerView:setSpeed(math.floor(kph))
+	playerView:setSpeed(self._logic0:getSpeed())
+	playerView:setLap(self._logic0:getLap())
 
 	-- Right kart
-	local kart = self.world:getEntity("Kart1")
-	local rb = kart:getComponent(physics.RigidBodyComponent)
-	local mps = rb.body.linearVelocity.length
-	local kph = mps * (60 * 60) / 1000
-
 	local playerView = self._hudView:getPlayerView1()
-	playerView:setSpeed(math.floor(kph))
+	playerView:setSpeed(self._logic1:getSpeed())
+	playerView:setLap(self._logic1:getLap())
 end
 
 function Game:_updateKartInput(info, throttleFactor)
+
 	-- Left Kart
 	local steer = self._inputMapping:getStateValue("STATE_STEER_0")
 	local throttle = self._inputMapping:getStateValue("STATE_THROTTLE_0")
@@ -128,6 +144,37 @@ function Game:_updateKartInput(info, throttleFactor)
 	local vc = kart:getComponent(physics.VehicleComponent)
 	vc.steerAngle = steer
 	vc.engineThrottle = throttle * throttleFactor
+end
+
+function Game:_updateKartLimits()
+	local road = self.world:getEntity("Road")
+	local pt = road:getComponent(world.PathComponent)
+
+	-- Left Kart
+	local kart = self.world:getEntity("Kart0")
+	local t = pt:findClosest(kart.transform.translation)
+	local Tmin = pt:evaluateDirectional(t)
+	local dx = math.abs(Vector4.dot(Tmin.axisX, Tmin.translation - kart.transform.translation))
+	local dy = Vector4.dot(Tmin.axisY, Tmin.translation - kart.transform.translation)
+	if dx > 14 or dy > 2 then
+		kart.transform = Tmin * Transform(Vector4(-4, 1, 0), Quaternion.identity)
+		local rb = kart:getComponent(physics.RigidBodyComponent)
+		rb.body:reset()
+	end
+	self._followCamera0:reset()
+
+	-- Right Kart
+	local kart = self.world:getEntity("Kart1")
+	local t = pt:findClosest(kart.transform.translation)
+	local Tmin = pt:evaluateDirectional(t)
+	local dx = math.abs(Vector4.dot(Tmin.axisX, Tmin.translation - kart.transform.translation))
+	local dy = Vector4.dot(Tmin.axisY, Tmin.translation - kart.transform.translation)
+	if dx > 14 or dy > 2 then
+		kart.transform = Tmin * Transform(Vector4(4, 1, 0), Quaternion.identity)
+		local rb = kart:getComponent(physics.RigidBodyComponent)
+		rb.body:reset()
+	end
+	self._followCamera1:reset()
 end
 
 	]]>

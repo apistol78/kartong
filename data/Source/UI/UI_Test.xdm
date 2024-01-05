@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.db.LocalInstanceMeta" version="2">
+	<guid>{59D053B6-32CC-ED4E-8702-A3B3941BDA53}</guid>
+	<primaryType>traktor.uikit.Scaffolding</primaryType>
+	<blobs/>
+</object>

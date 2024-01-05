@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.script.Script" version="2">
+	<text>
+	<![CDATA[
+#using \{218D113A-66DC-9049-8424-701FF60F2BC4}
+#using \{FC4400A2-BDB6-BA45-9A22-12B9676E71FA}
+
+#using \{1DC37C6A-0C0C-A546-825E-B8F6E6088209}
+#using \{B3773DDC-1FE6-D54B-9677-2CAB45912BA0}
+
+import(traktor)
+
+UI_Scaffolding = UI_Scaffolding or class("UI_Scaffolding", Scaffolding)
+
+function UI_Scaffolding:setup(frame)
+
+--	local fb = Flipboard(frame)
+
+--	HudView(fb)
+
+	CountDownView(frame)
+		:setText("FOO")
+
+--	fb:showPage("CountDown")
+
+end
+
+function UI_Scaffolding:getResourceKits()
+	return { "\{43489F5B-5785-1249-A7BA-CB5259C3F064}", "\{27DDC0FD-39DE-0946-BB1B-7D84A001C522}", "\{5ABEAE05-EB26-934F-932F-7F3C7C582383}"  }
+end
+
+	]]>
+	</text>
+</object>

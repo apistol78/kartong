@@ -46,8 +46,15 @@
 		<item type="traktor.input.InCombine" version="1">
 			<entries>
 				<item>
-					<source ref="/object/inputNodes/item[2]"/>
-					<mul>0.3</mul>
+					<source ref="/object/inputNodes/item[5]"/>
+					<mul>1</mul>
+					<add>0</add>
+				</item>
+				<item>
+					<source type="traktor.input.InReadValue">
+						<valueId>ID_GP0_RIGHT_TRIGGER</valueId>
+					</source>
+					<mul>1</mul>
 					<add>0</add>
 				</item>
 			</entries>
@@ -59,16 +66,34 @@
 		<item type="traktor.input.InCombine" version="1">
 			<entries>
 				<item>
-					<source ref="/object/inputNodes/item[7]"/>
+					<source type="traktor.input.InClamp">
+						<source type="traktor.input.InCombine" version="1">
+							<entries>
+								<item>
+									<source ref="/object/inputNodes/item[2]"/>
+									<mul>1</mul>
+									<add>0</add>
+								</item>
+								<item>
+									<source ref="/object/inputNodes/item[7]"/>
+									<mul>1</mul>
+									<add>0</add>
+								</item>
+							</entries>
+							<operator>CoAdd</operator>
+						</source>
+						<limit>
+							<item>-1</item>
+							<item>1</item>
+						</limit>
+					</source>
 					<mul>0.3</mul>
 					<add>0</add>
 				</item>
 			</entries>
 			<operator>CoAdd</operator>
 		</item>
-		<item type="traktor.input.InReadValue">
-			<valueId>ID_GP0_RIGHT_TRIGGER</valueId>
-		</item>
+		<item ref="/object/inputNodes/item[6]/entries/item[1]/source"/>
 		<item type="traktor.input.InReadValue">
 			<valueId>ID_GP1_RIGHT_TRIGGER</valueId>
 		</item>
@@ -85,6 +110,21 @@
 			</entries>
 			<operator>CoAdd</operator>
 		</item>
+		<item ref="/object/inputNodes/item[8]/entries/item/source/source"/>
+		<item ref="/object/inputNodes/item[8]/entries/item/source"/>
+		<item type="traktor.input.InClamp">
+			<source ref="/object/inputNodes/item[6]"/>
+			<limit>
+				<item>-1</item>
+				<item>1</item>
+			</limit>
+		</item>
+		<item type="traktor.input.InReadValue">
+			<valueId>ID_KEY_RESET_0</valueId>
+		</item>
+		<item type="traktor.input.InReadValue">
+			<valueId>ID_KEY_RESET_1</valueId>
+		</item>
 	</inputNodes>
 	<positions>
 		<item>
@@ -98,11 +138,11 @@
 		</item>
 		<item>
 			<object type="traktor.input.InputStateData">
-				<source ref="/object/inputNodes/item[9]"/>
+				<source ref="/object/inputNodes/item[15]"/>
 			</object>
 			<position>
-				<x>928</x>
-				<y>-300</y>
+				<x>1416</x>
+				<y>359</y>
 			</position>
 		</item>
 		<item>
@@ -117,71 +157,71 @@
 		<item>
 			<object ref="/object/inputNodes/item"/>
 			<position>
-				<x>498</x>
-				<y>408</y>
+				<x>232</x>
+				<y>-114</y>
 			</position>
 		</item>
 		<item>
 			<object ref="/object/inputNodes/item[1]"/>
 			<position>
-				<x>496</x>
-				<y>468</y>
+				<x>230</x>
+				<y>-56</y>
 			</position>
 		</item>
 		<item>
 			<object ref="/object/inputNodes/item[2]"/>
 			<position>
-				<x>830</x>
-				<y>378</y>
+				<x>564</x>
+				<y>-144</y>
 			</position>
 		</item>
 		<item>
 			<object ref="/object/inputNodes/item[3]"/>
 			<position>
-				<x>514</x>
-				<y>608</y>
+				<x>359</x>
+				<y>319</y>
 			</position>
 		</item>
 		<item>
 			<object ref="/object/inputNodes/item[4]"/>
 			<position>
-				<x>520</x>
-				<y>658</y>
+				<x>365</x>
+				<y>369</y>
 			</position>
 		</item>
 		<item>
 			<object ref="/object/inputNodes/item[5]"/>
 			<position>
-				<x>830</x>
-				<y>576</y>
+				<x>675</x>
+				<y>287</y>
 			</position>
 		</item>
 		<item>
 			<object ref="/object/inputNodes/item[6]"/>
 			<position>
-				<x>1034</x>
-				<y>350</y>
+				<x>965</x>
+				<y>326</y>
 			</position>
 		</item>
 		<item>
 			<object ref="/object/inputNodes/item[7]"/>
 			<position>
-				<x>462</x>
-				<y>-96</y>
+				<x>470</x>
+				<y>60</y>
 			</position>
 		</item>
 		<item>
 			<object ref="/object/inputNodes/item[8]"/>
 			<position>
-				<x>814</x>
-				<y>-166</y>
+				<x>1276</x>
+				<y>-86</y>
 			</position>
 		</item>
 		<item>
-			<object ref="/object/inputNodes/item[9]"/>
+			<object ref="/object/inputNodes/item[6]/entries/item[1]/source"/>
 			<position>
-				<x>548</x>
-				<y>-310</y>
+				<x>510</x>
+				<y>461</y>
 			</position>
 		</item>
 		<item>
@@ -189,29 +229,29 @@
 				<source ref="/object/inputNodes/item[10]"/>
 			</object>
 			<position>
-				<x>972</x>
-				<y>18</y>
+				<x>2208</x>
+				<y>-252</y>
 			</position>
 		</item>
 		<item>
 			<object ref="/object/inputNodes/item[10]"/>
 			<position>
-				<x>492</x>
-				<y>36</y>
+				<x>1728</x>
+				<y>-236</y>
 			</position>
 		</item>
 		<item>
 			<object ref="/object/inputNodes/item[11]"/>
 			<position>
-				<x>500</x>
-				<y>142</y>
+				<x>1736</x>
+				<y>-140</y>
 			</position>
 		</item>
 		<item>
 			<object ref="/object/inputNodes/item[12]"/>
 			<position>
-				<x>817</x>
-				<y>118</y>
+				<x>2054</x>
+				<y>-162</y>
 			</position>
 		</item>
 		<item>
@@ -219,8 +259,8 @@
 				<source ref="/object/inputNodes/item[12]"/>
 			</object>
 			<position>
-				<x>1004</x>
-				<y>158</y>
+				<x>2240</x>
+				<y>-128</y>
 			</position>
 		</item>
 		<item>
@@ -228,8 +268,71 @@
 				<source ref="/object/inputNodes/item[8]"/>
 			</object>
 			<position>
-				<x>1014</x>
-				<y>-121</y>
+				<x>1476</x>
+				<y>-66</y>
+			</position>
+		</item>
+		<item>
+			<object type="traktor.input.InCombine" version="1">
+				<entries/>
+				<operator>CoAdd</operator>
+			</object>
+			<position>
+				<x>1894</x>
+				<y>133</y>
+			</position>
+		</item>
+		<item>
+			<object ref="/object/inputNodes/item[8]/entries/item/source/source"/>
+			<position>
+				<x>862</x>
+				<y>-118</y>
+			</position>
+		</item>
+		<item>
+			<object ref="/object/inputNodes/item[8]/entries/item/source"/>
+			<position>
+				<x>1064</x>
+				<y>-92</y>
+			</position>
+		</item>
+		<item>
+			<object ref="/object/inputNodes/item[15]"/>
+			<position>
+				<x>1190</x>
+				<y>307</y>
+			</position>
+		</item>
+		<item>
+			<object ref="/object/inputNodes/item[16]"/>
+			<position>
+				<x>538</x>
+				<y>633</y>
+			</position>
+		</item>
+		<item>
+			<object type="traktor.input.InputStateData">
+				<source ref="/object/inputNodes/item[16]"/>
+			</object>
+			<position>
+				<x>978</x>
+				<y>609</y>
+			</position>
+		</item>
+		<item>
+			<object ref="/object/inputNodes/item[17]"/>
+			<position>
+				<x>556</x>
+				<y>716</y>
+			</position>
+		</item>
+		<item>
+			<object type="traktor.input.InputStateData">
+				<source ref="/object/inputNodes/item[17]"/>
+			</object>
+			<position>
+				<x>926</x>
+				<y>683</y>
 			</position>
 		</item>
 	</positions>
@@ -292,6 +395,22 @@
 				</second>
 			</item>
 			<item>
+				<first>ID_KEY_RESET_0</first>
+				<second type="traktor.input.KeyboardInputSourceData" version="1">
+					<controlTypes>
+						<item>Key1</item>
+					</controlTypes>
+				</second>
+			</item>
+			<item>
+				<first>ID_KEY_RESET_1</first>
+				<second type="traktor.input.KeyboardInputSourceData" version="1">
+					<controlTypes>
+						<item>Key2</item>
+					</controlTypes>
+				</second>
+			</item>
+			<item>
 				<first>ID_KEY_RIGHT</first>
 				<second type="traktor.input.KeyboardInputSourceData" version="1">
 					<controlTypes>
@@ -311,6 +430,14 @@
 	</sourceData>
 	<stateData type="traktor.input.InputMappingStateData">
 		<stateData>
+			<item>
+				<first>STATE_RESET_0</first>
+				<second ref="/object/positions/item[24]/object"/>
+			</item>
+			<item>
+				<first>STATE_RESET_1</first>
+				<second ref="/object/positions/item[26]/object"/>
+			</item>
 			<item>
 				<first>STATE_STEER_0</first>
 				<second ref="/object/positions/item[18]/object"/>
