@@ -76,26 +76,6 @@
 			</position>
 			<value>0.5</value>
 		</item>
-		<item type="traktor.render.BundleSplit" version="traktor.render.Node:1">
-			<id>{FEA6F094-A90D-7644-8755-EB9D6488E065}</id>
-			<comment/>
-			<position>
-				<first>306</first>
-				<second>60</second>
-			</position>
-			<names>
-				<item>TexCoord0</item>
-			</names>
-		</item>
-		<item type="traktor.render.Swizzle" version="traktor.render.Node:1">
-			<id>{DA08F865-F105-E549-B20A-AFB82B2E6E87}</id>
-			<comment/>
-			<position>
-				<first>612</first>
-				<second>51</second>
-			</position>
-			<swizzle>xyx1</swizzle>
-		</item>
 		<item type="traktor.render.Texture" version="1,traktor.render.Node:1">
 			<id>{DB1A8CD4-CAB6-B64E-BE84-600E9C5486B7}</id>
 			<comment/>
@@ -150,27 +130,7 @@
 		</item>
 		<item type="traktor.render.Edge" version="1">
 			<source>
-				<node ref="/object/nodes/item"/>
-				<id>{9AE16BB1-EB68-45A0-A878-8D01C210082B}</id>
-			</source>
-			<destination>
 				<node ref="/object/nodes/item[7]"/>
-				<id>{D596E4E4-1A78-4D80-BC6B-6DEEF934EDEC}</id>
-			</destination>
-		</item>
-		<item type="traktor.render.Edge" version="1">
-			<source>
-				<node ref="/object/nodes/item[7]"/>
-				<id>{D596E4E4-1A78-4D80-BD6B-6DEEF934EDEC}</id>
-			</source>
-			<destination>
-				<node ref="/object/nodes/item[8]"/>
-				<id>{F2E22CA6-DFF3-4B20-A70A-0D7A44EACD8C}</id>
-			</destination>
-		</item>
-		<item type="traktor.render.Edge" version="1">
-			<source>
-				<node ref="/object/nodes/item[9]"/>
 				<id>{FFE19E4E-24A8-47A4-AE80-307495E31066}</id>
 			</source>
 			<destination>
