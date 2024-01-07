@@ -39,7 +39,7 @@ function Loading:new(params, environment)
 	-- Ensure frame is properly layed out.
 	self._frame:layout()
 
-	self._loader = self:loadStageAsync("GAME", nil)
+	self._loader = self:loadStageAsync("GAME", params)
 end
 
 function Loading:finalize()

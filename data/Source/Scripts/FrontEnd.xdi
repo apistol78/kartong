@@ -25,14 +25,10 @@ function FrontEnd:new(params, environment)
 		{ "\{27DDC0FD-39DE-0946-BB1B-7D84A001C522}", "\{5ABEAE05-EB26-934F-932F-7F3C7C582383}" }
 	)
 
-	PushButton:setStyle("background", traktor.Color4f(1.0, 1.0, 1.0, 1.0))
-	PushButton:setStyle("text", traktor.Color4f(0.0, 0.0, 0.0, 1.0))
-	PushButton:setStyle("textSize", 30)
-
 	-- Create frame.
 	self._frame = Frame(
 		self.spark.root,
-		1280, 720,
+		1280/2, 720/2,
 		FloodLayout()
 	)
 	self._frame:update()
@@ -63,7 +59,11 @@ end
 function FrontEnd:update(info)
 
 	if self._clicked then
-		local nxt = self:loadStage("LOADING", nil)
+		local params = {
+			player1 = "KALLE",
+			player2 = "ANKA"
+		}
+		local nxt = self:loadStage("LOADING", params)
 		self:gotoStage(nxt)
 	end
 

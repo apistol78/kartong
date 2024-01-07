@@ -7,6 +7,7 @@
 #using \{97B60D98-6C09-7743-ADBC-16D2565DEDAD}
 #using \{A348F9B0-E137-B24F-B5DC-6591E60A61DD}
 #using \{B3773DDC-1FE6-D54B-9677-2CAB45912BA0}
+#using \{FC207928-47BE-4597-9313-A7CD676CE810}
 #using \{1DC37C6A-0C0C-A546-825E-B8F6E6088209}
 
 import(traktor)
@@ -18,6 +19,7 @@ Game = Game or class("Game", Stage)
 function Game:new(params, environment)
 	Stage.new(self, params, environment)
 
+	self._params = params
 	self._inputMapping = environment.input.inputMapping
 
 	-- Initialize UiKit.
@@ -36,6 +38,7 @@ function Game:new(params, environment)
 
 	self._flipBook = Flipboard(self._frame)
 	self._countDownView = CountDownView(self._flipBook)
+	self._finishedView = FinishedView(self._flipBook)
 	self._hudView = HudView(self._flipBook)
 	self._flipBook:showPage("CountDown")
 
@@ -107,6 +110,21 @@ function Game:_updateRace(info)
 	self:_updateKartInput(info, 1)
 	self:_updateKartLimits()
 	self:_updateUI()
+
+	-- Update kart logic.
+	self._logic0:update(info)
+	self._logic1:update(info)
+
+	-- Check if any has finished.
+	if self._logic0:getLap() > 3 or self._logic1:getLap() > 3 then
+		self._updateFn = Game._updateFinished
+		self._flipBook:showPage("FINISHED")
+	end
+end
+
+function Game:_updateFinished(info)
+	self:_updateKartInput(info, 0)
+	self:_updateKartLimits()
 
 	-- Update kart logic.
 	self._logic0:update(info)
