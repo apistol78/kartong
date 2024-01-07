@@ -3,6 +3,10 @@
 	<text>
 	<![CDATA[
 #using \{720C0A68-B608-2F40-8EBA-F7E42EB27F61}
+#using \{FC4400A2-BDB6-BA45-9A22-12B9676E71FA}
+
+#using \{21076EFA-565B-E044-8E13-BC01DB4BA31E}
+#using \{126D6B63-5192-104A-BAE3-F178A1229D8C}
 
 import(traktor)
 
@@ -13,19 +17,58 @@ FrontEnd = FrontEnd or class("FrontEnd", Stage)
 function FrontEnd:new(params, environment)
 	Stage.new(self, params, environment)
 
-	self._loader = self:loadStageAsync("LOADING", nil)
+	self._clicked = false
+
+	-- Initialize UiKit.
+	Widget.initialize(
+		environment.resource.resourceManager,
+		{ "\{27DDC0FD-39DE-0946-BB1B-7D84A001C522}", "\{5ABEAE05-EB26-934F-932F-7F3C7C582383}" }
+	)
+
+	PushButton:setStyle("background", traktor.Color4f(1.0, 1.0, 1.0, 1.0))
+	PushButton:setStyle("text", traktor.Color4f(0.0, 0.0, 0.0, 1.0))
+	PushButton:setStyle("textSize", 30)
+
+	-- Create frame.
+	self._frame = Frame(
+		self.spark.root,
+		1280, 720,
+		FloodLayout()
+	)
+	self._frame:update()
+
+	local fb = Flipboard(self._frame)
+
+	MainView(fb)
+		:setHorizontalAlign(Widget.ALIGN_CENTER)
+		:setVerticalAlign(Widget.ALIGN_CENTER)
+		:setOnPlay(function() self._clicked = true end)
+		:setOnOptions(function() fb:showPage("OPTIONS") end)
+		:setOnExit(function() self:terminate() end)
+
+	OptionsView(fb)
+		:setHorizontalAlign(Widget.ALIGN_CENTER)
+		:setVerticalAlign(Widget.ALIGN_CENTER)
+		:setOnReturn(function() fb:showPage("MAIN") end)
+
+	fb:showPage("MAIN")
+
+	-- Ensure frame is properly layed out.
+	self._frame:layout()
 end
 
 function FrontEnd:finalize()
 end
 
 function FrontEnd:update(info)
-	if self._loader.ready then
-		self:gotoStage(self._loader:get())
-		self._loader = nil
-	end
-end
 
+	if self._clicked then
+		local nxt = self:loadStage("LOADING", nil)
+		self:gotoStage(nxt)
+	end
+
+	Tween.update(info.simulationDeltaTime)
+end
 
 	]]>
 	</text>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.script.Script" version="2">
+	<text>
+	<![CDATA[
+#using \{FC4400A2-BDB6-BA45-9A22-12B9676E71FA}
+
+MainView = MainView or class("MainView", Container)
+
+MainView.__flipboardId = "MAIN"
+
+function MainView:new(parent)
+	Container.new(self, parent, TableLayout({0}, {0}, 16, 16, 0, 16))
+
+	PushButton(self, "Play")
+		:setOnClick(function() self._fnPlay() end)
+	PushButton(self, "Options")
+		:setOnClick(function() self._fnOptions() end)
+	PushButton(self, "Exit")
+		:setOnClick(function() self:_onExit() end)
+
+	self._dlgExit = nil
+
+	self._fnPlay = function() end
+	self._fnOptions = function() end
+	self._fnExit = function() end
+end
+
+function MainView:setOnPlay(fn)
+	self._fnPlay = fn
+	return self
+end
+
+function MainView:setOnOptions(fn)
+	self._fnOptions = fn
+	return self
+end
+
+function MainView:setOnExit(fn)
+	self._fnExit = fn
+	return self
+end
+
+function MainView:_onExit()
+	self._dlgExit = Dialog(self:getAncestor(), TableLayout({0}, {100, 0}, 16, 16, 16, 16))
+	Static(self._dlgExit, "Are you sure?")
+
+	local ct = Container(self._dlgExit, TableLayout({0, 0}, {0}, 0, 0, 16, 16))
+		:setHorizontalAlign(Widget.ALIGN_CENTER)
+
+	PushButton(ct, "Yes")
+		:setOnClick(function()
+			self._dlgExit:remove()
+			self._dlgExit = nil
+			 self._fnExit()
+		end)
+	PushButton(ct, "No")
+		:setOnClick(function()
+			self._dlgExit:remove()
+			self._dlgExit = nil
+		end)
+
+	self._dlgExit:show()
+end
+
+	]]>
+	</text>
+</object>
