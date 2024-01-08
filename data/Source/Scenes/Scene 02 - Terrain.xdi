@@ -498,7 +498,7 @@
 											<id>{034E6259-4A18-5C41-89D5-AEE7A2207247}</id>
 											<name>C</name>
 											<transform>
-												<translation>18.383123, 6.794297, -88.34462, 0</translation>
+												<translation>-14.799912, 3.838805, -119.782959, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components>
@@ -511,7 +511,7 @@
 											<id>{179C754C-4671-264C-A0FB-C3E4832EFF5C}</id>
 											<name>C</name>
 											<transform>
-												<translation>38.03899, 6.122148, -93.313232, 0</translation>
+												<translation>8.392285, 4.222633, -114.815094, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components>
@@ -524,7 +524,7 @@
 											<id>{E9E4FF91-CC79-AB44-ADF1-000ABAD1B066}</id>
 											<name>C</name>
 											<transform>
-												<translation>56.523472, 6.412874, -111.34169, 0</translation>
+												<translation>27.672512, 3.873093, -122.293297, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components>
@@ -537,7 +537,7 @@
 											<id>{F4B8592B-68CC-C043-8D70-9AD94D756279}</id>
 											<name>C</name>
 											<transform>
-												<translation>70.443649, 5.868894, -144.411667, 0</translation>
+												<translation>41.177322, 4.210526, -147.280685, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components>
@@ -550,7 +550,7 @@
 											<id>{0BE4C4A9-7373-3B45-AD69-EBA692D18EBB}</id>
 											<name>C</name>
 											<transform>
-												<translation>74.373962, 5.308708, -185.339859, 0</translation>
+												<translation>43.484882, 3.143415, -181.656937, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components>
@@ -563,7 +563,7 @@
 											<id>{1B1B3703-F5A2-FF43-AEF7-728816CB1653}</id>
 											<name>C</name>
 											<transform>
-												<translation>64.31321, 3.439125, -229.374115, 0</translation>
+												<translation>37.585987, 2.995981, -213.924973, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components>
@@ -576,7 +576,7 @@
 											<id>{CA85978E-21DC-9E44-A8D8-AE82E7D38ACE}</id>
 											<name>C</name>
 											<transform>
-												<translation>35.587883, 6.231485, -259.946381, 0</translation>
+												<translation>26.266937, 6.123361, -231.610809, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components>
@@ -589,7 +589,7 @@
 											<id>{92CF1354-96D5-434F-BB5A-4D802CE2876C}</id>
 											<name>C</name>
 											<transform>
-												<translation>-6.43211, 15.333031, -274.663422, 0</translation>
+												<translation>3.154757, 12.722772, -241.516434, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components>
@@ -1156,7 +1156,7 @@
 			</components>
 		</item>
 		<item type="traktor.world.EntityData" version="1">
-			<id>{00000000-0000-0000-0000-000000000000}</id>
+			<id>{E4D88FA0-0CCD-476F-B8E8-4D66AF589ACD}</id>
 			<name>Terrain</name>
 			<transform>
 				<translation>0, 0, 0, 0</translation>
