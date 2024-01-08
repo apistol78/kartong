@@ -7,6 +7,7 @@ import(traktor)
 Kart = Kart or class("Kart", world.ScriptComponent)
 
 function Kart:new()
+	self._slideFxInstance = nil
 end
 
 function Kart:update(contextObject, totalTime, deltaTime)
@@ -17,10 +18,13 @@ function Kart:update(contextObject, totalTime, deltaTime)
 	local vehicleComponent = self.owner:getComponent(physics.VehicleComponent)
 	if vehicleComponent == nil then return end
 
+	local sliding = false
+
 	local wheelJoints = { "FL", "FR", "RL", "RR" }
 	for i = 1, #wheelJoints do
+		local wheel = vehicleComponent.wheels:get(i - 1)
 
-		local Twheel = vehicleComponent.wheels:get(i - 1).transform
+		local Twheel = wheel.transform
 		local Tjoint = skeletonComponent:getJointTransform(wheelJoints[i])
 
 		local TjointRot = Transform(
@@ -33,6 +37,21 @@ function Kart:update(contextObject, totalTime, deltaTime)
 			Twheel * TjointRot,
 			false		
 		)
+
+		sliding = sliding or wheel.sliding
+	end
+
+	if sliding and self._slideFxInstance == nil then
+		print("SLIDING")
+		local es = self.owner:getComponent(world.EventSetComponent)
+		self._slideFxInstance = es:raise("TIRE SMOKE")
+		if self._slideFxInstance == nil then
+			print("NO FX")
+		end
+	elseif not sliding and self._slideFxInstance ~= nil then
+		print("END SLIDING")
+		self._slideFxInstance:cancelEnd()
+		self._slideFxInstance = nil
 	end
 end
 

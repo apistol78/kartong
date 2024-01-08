@@ -134,5 +134,21 @@
 			<properties/>
 			<editorSupport>false</editorSupport>
 		</item>
+		<item type="traktor.world.EventSetComponentData">
+			<eventData>
+				<item>
+					<first>TIRE SMOKE</first>
+					<second type="traktor.spray.SpawnEffectEventData" version="3">
+						<effect>{2CD52C85-3468-4AB4-BB0E-7AC6EEDA46BD}</effect>
+						<transform>
+							<translation>0, 0, 0, 0</translation>
+							<rotation>0, 0, 0, 1</rotation>
+						</transform>
+						<follow>true</follow>
+						<useRotation>false</useRotation>
+					</second>
+				</item>
+			</eventData>
+		</item>
 	</components>
 </object>
