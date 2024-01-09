@@ -13,7 +13,7 @@
 		</item>
 	</layers>
 	<class>{73F76EB8-F60F-4DD5-801B-D3CAA2C696EC}</class>
-	<shaderFade>{00000000-0000-0000-0000-000000000000}</shaderFade>
+	<shaderFade>{1781A8FD-4099-7E43-9CCD-6F4F1F2DBC96}</shaderFade>
 	<fadeOutUpdate>false</fadeOutUpdate>
 	<fadeRate>1.5</fadeRate>
 	<transitions>

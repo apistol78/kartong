@@ -9,10 +9,13 @@
 			<time>0</time>
 			<duration>0.5</duration>
 			<emitter type="traktor.spray.EmitterData" version="7">
-				<source type="traktor.spray.PointSourceData">
+				<source type="traktor.spray.QuadSourceData">
 					<constantRate>4</constantRate>
 					<velocityRate>0.01</velocityRate>
-					<position>0, 0, 0, 1</position>
+					<center>0, 0, 0, 1</center>
+					<axis1>0.5, 0, 0, 0</axis1>
+					<axis2>0, 0, 0.5, 0</axis2>
+					<normal>0, 1, 0, 0</normal>
 					<velocity>
 						<min>0.75</min>
 						<max>0.8</max>
@@ -34,8 +37,8 @@
 						<max>0.6</max>
 					</mass>
 					<size>
-						<min>0.3</min>
-						<max>0.85</max>
+						<min>0.9</min>
+						<max>1.4</max>
 					</size>
 				</source>
 				<modifiers>
@@ -48,7 +51,7 @@
 				<shader>{A0A0B5FD-8A58-4797-8874-151928DA1F66}</shader>
 				<mesh>{00000000-0000-0000-0000-000000000000}</mesh>
 				<effect/>
-				<middleAge>0.05</middleAge>
+				<middleAge>0.45</middleAge>
 				<cullNearDistance>0.25</cullNearDistance>
 				<cullMeshDistance>100</cullMeshDistance>
 				<fadeNearRange>1</fadeNearRange>
