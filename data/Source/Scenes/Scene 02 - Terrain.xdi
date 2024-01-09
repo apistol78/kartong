@@ -474,6 +474,76 @@
 							<components/>
 							<entityData>{D66ACE66-EFED-4E7E-9C9E-3E7F2F37589B}</entityData>
 						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{2F308089-16FC-1B41-84ED-3A28AAD291E9}</id>
+							<name>Goal-Entity</name>
+							<transform>
+								<translation>169.719925, 6.635849, -185.407593, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{D66ACE66-EFED-4E7E-9C9E-3E7F2F37589B}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{EDADC6BC-211B-234B-85B9-D7F5497F9403}</id>
+							<name>Goal-Entity</name>
+							<transform>
+								<translation>168.626114, 6.635849, -196.990128, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{D66ACE66-EFED-4E7E-9C9E-3E7F2F37589B}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{5FE26B2E-2F98-FC46-B3BC-48FD962C7756}</id>
+							<name>Goal-Entity</name>
+							<transform>
+								<translation>167.825073, 6.635849, -208.302475, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{D66ACE66-EFED-4E7E-9C9E-3E7F2F37589B}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{6FA8624C-943F-3746-90AD-299B024141FA}</id>
+							<name>Goal-Entity</name>
+							<transform>
+								<translation>166.749878, 6.635849, -219.597107, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{D66ACE66-EFED-4E7E-9C9E-3E7F2F37589B}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{E816D46A-2153-1A48-9EC2-E198383FF7AA}</id>
+							<name>Goal-Entity</name>
+							<transform>
+								<translation>165.545883, 6.635849, -230.851502, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{D66ACE66-EFED-4E7E-9C9E-3E7F2F37589B}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{9CFE3A3A-9C5D-F747-9D12-BFEC8859D9B7}</id>
+							<name>Goal-Entity</name>
+							<transform>
+								<translation>163.939529, 6.635849, -242.574722, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{D66ACE66-EFED-4E7E-9C9E-3E7F2F37589B}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{05E34FF1-4B29-1243-9915-CE87CA42F761}</id>
+							<name>Goal-Entity</name>
+							<transform>
+								<translation>163.097687, 6.635849, -254.569717, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{D66ACE66-EFED-4E7E-9C9E-3E7F2F37589B}</entityData>
+						</item>
 						<item type="traktor.world.EntityData" version="1">
 							<id>{EA998754-8E59-7F40-AAED-17FE97FC9E66}</id>
 							<name>Poles</name>
@@ -781,7 +851,7 @@
 											<id>{9A7B001D-35DB-584E-84B5-B0D9932D2871}</id>
 											<name>Tree 1-Entity</name>
 											<transform>
-												<translation>145.819122, 2.032829, -263.423309, 0</translation>
+												<translation>143.829056, 2.032829, -270.743408, 0</translation>
 												<rotation>0.041096, 0, 0.164383, 0.98554</rotation>
 											</transform>
 											<components/>

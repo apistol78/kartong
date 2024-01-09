@@ -11,13 +11,8 @@ function Kart:new()
 end
 
 function Kart:update(contextObject, totalTime, deltaTime)
-
-	local skeletonComponent = self.owner:getComponent(animation.SkeletonComponent)
-	if skeletonComponent == nil then return end
-	
-	local vehicleComponent = self.owner:getComponent(physics.VehicleComponent)
-	if vehicleComponent == nil then return end
-
+	local skeletonComponent < const > = self.owner:getComponent(animation.SkeletonComponent)
+	local vehicleComponent < const > = self.owner:getComponent(physics.VehicleComponent)
 	local sliding = false
 
 	local wheelJoints = { "FL", "FR", "RL", "RR" }
@@ -26,7 +21,6 @@ function Kart:update(contextObject, totalTime, deltaTime)
 
 		local Twheel = wheel.transform
 		local Tjoint = skeletonComponent:getJointTransform(wheelJoints[i])
-
 		local TjointRot = Transform(
 			Vector4.zero,
 			Tjoint.rotation
@@ -41,15 +35,11 @@ function Kart:update(contextObject, totalTime, deltaTime)
 		sliding = sliding or wheel.sliding
 	end
 
+	-- Issue tire smoke if kart is sliding.
 	if sliding and self._slideFxInstance == nil then
-		print("SLIDING")
-		local es = self.owner:getComponent(world.EventSetComponent)
+		local es < const > = self.owner:getComponent(world.EventSetComponent)
 		self._slideFxInstance = es:raise("TIRE SMOKE")
-		if self._slideFxInstance == nil then
-			print("NO FX")
-		end
 	elseif not sliding and self._slideFxInstance ~= nil then
-		print("END SLIDING")
 		self._slideFxInstance:cancelEnd()
 		self._slideFxInstance = nil
 	end
