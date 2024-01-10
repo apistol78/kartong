@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.world.EntityData" version="1">
+	<id>{1B436EA3-82CE-A945-9702-B7EF96513375}</id>
+	<name>Pickup</name>
+	<transform>
+		<translation>0, 0, 0, 0</translation>
+		<rotation>0, 0, 0, 1</rotation>
+	</transform>
+	<components>
+		<item type="traktor.world.ScriptComponentData" version="2">
+			<class>{1F9A8153-351A-614E-8DE8-32038F3AD78F}</class>
+			<properties/>
+			<editorSupport>false</editorSupport>
+		</item>
+		<item type="traktor.world.FacadeComponentData">
+			<entityData>
+				<item type="traktor.world.EntityData" version="1">
+					<id>{3D91922F-0C3F-B64E-A7CC-41E4B460F13D}</id>
+					<name>Normal</name>
+					<transform>
+						<translation>0, 0, 0, 0</translation>
+						<rotation>0, 0, 0, 1</rotation>
+					</transform>
+					<components>
+						<item type="traktor.mesh.MeshComponentData" version="1">
+							<mesh>{814384CD-25B4-954F-A16A-4E0DAF3ED7F9}</mesh>
+						</item>
+						<item type="traktor.animation.RotatorComponentData">
+							<axis>Y</axis>
+							<rate>1</rate>
+						</item>
+					</components>
+				</item>
+			</entityData>
+			<show>Normal</show>
+		</item>
+	</components>
+</object>

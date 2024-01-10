@@ -7,66 +7,45 @@
    viewBox="0 0 176.38889 176.38889"
    version="1.1"
    id="svg1"
-   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
-   sodipodi:docname="Kobolt.svg"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="Kartong.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:traktor="http://www.pistol.one/namespaces/traktor">
   <sodipodi:namedview
      id="namedview1"
-     pagecolor="#000000"
+     pagecolor="#ffffff"
      bordercolor="#000000"
      borderopacity="0.25"
      inkscape:showpageshadow="false"
-     inkscape:pageopacity="0.0"
+     inkscape:pageopacity="0"
      inkscape:pagecheckerboard="true"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="pt"
      showborder="true"
-     inkscape:zoom="0.62893086"
-     inkscape:cx="221.00998"
-     inkscape:cy="217.03498"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="240.06275"
+     inkscape:cy="46.669048"
      inkscape:window-width="1350"
      inkscape:window-height="1237"
-     inkscape:window-x="4965"
-     inkscape:window-y="88"
+     inkscape:window-x="2458"
+     inkscape:window-y="2223"
      inkscape:window-maximized="0"
-     inkscape:current-layer="MC_CrossHair_1" />
+     inkscape:current-layer="MC_TextBackground"
+     showgrid="false" />
   <defs
      id="defs1" />
   <g
-     inkscape:label="MC_CrossHair_1"
+     inkscape:label="MC_TextBackground"
      inkscape:groupmode="layer"
-     id="MC_CrossHair_1"
+     id="MC_TextBackground"
      traktor:sprite="1">
-    <rect
-       style="fill:#f9f9f9;stroke-width:0.264583;opacity:0.8"
-       id="rect2"
-       width="7.5256386"
-       height="1.141016"
-       x="0"
-       y="14.907101" />
-    <rect
-       style="fill:#f9f9f9;stroke-width:0.264583;opacity:0.8"
-       id="rect3"
-       width="1.1410149"
-       height="7.5256386"
-       x="14.336594"
-       y="0.57050836" />
-    <rect
-       style="fill:#f9f9f9;stroke-width:0.264583;opacity:0.8"
-       id="rect4"
-       width="7.5618124"
-       height="1.141016"
-       x="22.252388"
-       y="14.907101" />
-    <rect
-       style="fill:#f9f9f9;stroke-width:0.264583;opacity:0.8"
-       id="rect5"
-       width="1.1410149"
-       height="7.5618124"
-       x="14.336594"
-       y="22.822897" />
+    <path
+       id="rect351"
+       style="opacity:1;fill:#001956;fill-opacity:0.779377;stroke:none;stop-color:#000000"
+       d="M 8.2979855,0.5 H 92.776784 L 85.368451,18.115956 H 0.88965166 Z"
+       sodipodi:nodetypes="ccccc" />
   </g>
 </svg>

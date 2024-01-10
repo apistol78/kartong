@@ -35,7 +35,7 @@ function UI_Scaffolding:setup(frame)
 
 	FinishedView(fb)
 
-	fb:showPage("MAIN")
+	fb:showPage("HUD")
 
 end
 

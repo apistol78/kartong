@@ -6,9 +6,10 @@ import(traktor)
 
 PlayerLogic = PlayerLogic or class("PlayerLogic")
 
-function PlayerLogic:new(kart, road)
+function PlayerLogic:new(kart, road, pickups)
 	self._kart = kart
 	self._road = road
+	self._pickups = pickups
 	self._t = 0
 	self._lap = 0
 	self._kph = 0
@@ -30,16 +31,33 @@ function PlayerLogic:update(info)
 		self._lap = self._lap - 1
 	end
 	self._t = t
+
+	-- Check pickups.
+	local position < const > = self._kart.transform.translation
+	for i = 0, self._pickups.size - 1 do
+		local p < const > = self._pickups:get(i)
+		local psc < const > = p:getComponent(world.ScriptComponent)
+		if psc:tryGrab(position) then
+			print("GRABBED PICKUP")
+		end
+	end
 end
 
+-- Get player's speed in km/h.
 function PlayerLogic:getSpeed()
 	return math.floor(self._kph)
 end
 
+-- Get player's current lap, 1 based to suite user interface.
 function PlayerLogic:getLap()
 	return math.max(self._lap, 0) + 1
 end
 
+-- Get the player's position in the race, can be used to compare
+-- position to other players.
+function PlayerLogic:getPosition()
+	return self._lap + self._t
+end
 
 	]]>
 	</text>

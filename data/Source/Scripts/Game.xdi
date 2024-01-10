@@ -12,6 +12,10 @@
 
 import(traktor)
 
+local function iif(c, f, t)
+	if not c then return f end; return t
+end
+
 -- Game
 
 Game = Game or class("Game", Stage)
@@ -25,7 +29,7 @@ function Game:new(params, environment)
 	-- Initialize UiKit.
 	Widget.initialize(
 		environment.resource.resourceManager,
-		{ "\{27DDC0FD-39DE-0946-BB1B-7D84A001C522}", "\{5ABEAE05-EB26-934F-932F-7F3C7C582383}" }
+		{ "\{43489F5B-5785-1249-A7BA-CB5259C3F064}", "\{27DDC0FD-39DE-0946-BB1B-7D84A001C522}", "\{5ABEAE05-EB26-934F-932F-7F3C7C582383}" }
 	)
 
 	-- Create frame.
@@ -48,6 +52,7 @@ function Game:new(params, environment)
 	local kart0 = self.world:getEntity("Kart0")
 	local kart1 = self.world:getEntity("Kart1")
 	local road = self.world:getEntity("Road")
+	local pickups = self.world:getEntities("Pickup")
 
 	-- Create camera handlers.
 	local camera = self.world:getEntity("Camera0")
@@ -56,8 +61,8 @@ function Game:new(params, environment)
 	self._followCamera1 = FollowCamera(camera, kart1)
 
 	-- Game logic.
-	self._logic0 = PlayerLogic(kart0, road)
-	self._logic1 = PlayerLogic(kart1, road)
+	self._logic0 = PlayerLogic(kart0, road, pickups)
+	self._logic1 = PlayerLogic(kart1, road, pickups)
 
 	-- Set game state.
 	self._updateFn = Game._updateStart
@@ -95,6 +100,7 @@ end
 function Game:_updateKickOff(info)
 	self:_updateKartInput(info, 1)
 	self:_updateKartLimits()
+	self:_updateKartBoost(0)
 	self:_updateUI()
 
 	-- Update kart logic.
@@ -109,6 +115,7 @@ end
 function Game:_updateRace(info)
 	self:_updateKartInput(info, 1)
 	self:_updateKartLimits()
+	self:_updateKartBoost(1)
 	self:_updateUI()
 
 	-- Update kart logic.
@@ -125,6 +132,7 @@ end
 function Game:_updateFinished(info)
 	self:_updateKartInput(info, 0)
 	self:_updateKartLimits()
+	self:_updateKartBoost(0)
 
 	-- Update kart logic.
 	self._logic0:update(info)
@@ -144,7 +152,6 @@ function Game:_updateUI()
 end
 
 function Game:_updateKartInput(info, throttleFactor)
-
 	-- Left Kart
 	local steer = self._inputMapping:getStateValue("STATE_STEER_0")
 	local throttle = self._inputMapping:getStateValue("STATE_THROTTLE_0")
@@ -193,6 +200,21 @@ function Game:_updateKartLimits()
 		rb.body:reset()
 	end
 	self._followCamera1:reset()
+end
+
+function Game:_updateKartBoost(boostFactor)
+	local p0 < const > = self._logic0:getPosition()
+	local p1 < const > = self._logic1:getPosition()
+
+	-- Left Kart
+	local kart = self.world:getEntity("Kart0")
+	local vc = kart:getComponent(physics.VehicleComponent)
+	vc.engineBoost = iif(p0 > p1, 0, 0.3) * boostFactor
+
+	-- Right Kart
+	local kart = self.world:getEntity("Kart1")
+	local vc = kart:getComponent(physics.VehicleComponent)
+	vc.engineBoost = iif(p1 > p0, 0, 0.3) * boostFactor
 end
 
 	]]>

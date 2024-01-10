@@ -151,7 +151,7 @@
 							<id>{98198494-3DF4-0943-9FA6-D830B31345F5}</id>
 							<name>Reflections</name>
 							<transform>
-								<translation>-53.759197, 36.269569, 0, 0</translation>
+								<translation>-53.759197, 74.367195, 0, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components>
@@ -468,7 +468,7 @@
 							<id>{1FAEEAE4-4FD6-704D-A689-A1D38D57D694}</id>
 							<name>Goal-Entity</name>
 							<transform>
-								<translation>-106.9105, 6.635849, -123.276253, 0</translation>
+								<translation>-106.9105, 3.946919, -123.276253, 0</translation>
 								<rotation>0, 0.724288, 0, 0.689498</rotation>
 							</transform>
 							<components/>
@@ -478,7 +478,7 @@
 							<id>{2F308089-16FC-1B41-84ED-3A28AAD291E9}</id>
 							<name>Goal-Entity</name>
 							<transform>
-								<translation>169.719925, 6.635849, -185.407593, 0</translation>
+								<translation>169.719925, 3.946919, -185.407593, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components/>
@@ -488,7 +488,7 @@
 							<id>{EDADC6BC-211B-234B-85B9-D7F5497F9403}</id>
 							<name>Goal-Entity</name>
 							<transform>
-								<translation>168.626114, 6.635849, -196.990128, 0</translation>
+								<translation>168.626114, 3.946919, -196.990128, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components/>
@@ -498,7 +498,7 @@
 							<id>{5FE26B2E-2F98-FC46-B3BC-48FD962C7756}</id>
 							<name>Goal-Entity</name>
 							<transform>
-								<translation>167.825073, 6.635849, -208.302475, 0</translation>
+								<translation>167.825073, 3.946919, -208.302475, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components/>
@@ -508,7 +508,7 @@
 							<id>{6FA8624C-943F-3746-90AD-299B024141FA}</id>
 							<name>Goal-Entity</name>
 							<transform>
-								<translation>166.749878, 6.635849, -219.597107, 0</translation>
+								<translation>166.749878, 3.946919, -219.597107, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components/>
@@ -518,7 +518,7 @@
 							<id>{E816D46A-2153-1A48-9EC2-E198383FF7AA}</id>
 							<name>Goal-Entity</name>
 							<transform>
-								<translation>165.545883, 6.635849, -230.851502, 0</translation>
+								<translation>165.545883, 3.946919, -230.851502, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components/>
@@ -528,7 +528,7 @@
 							<id>{9CFE3A3A-9C5D-F747-9D12-BFEC8859D9B7}</id>
 							<name>Goal-Entity</name>
 							<transform>
-								<translation>163.939529, 6.635849, -242.574722, 0</translation>
+								<translation>163.939529, 3.946919, -242.574722, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components/>
@@ -538,7 +538,7 @@
 							<id>{05E34FF1-4B29-1243-9915-CE87CA42F761}</id>
 							<name>Goal-Entity</name>
 							<transform>
-								<translation>163.097687, 6.635849, -254.569717, 0</translation>
+								<translation>163.097687, 3.946919, -254.569717, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components/>
@@ -1220,6 +1220,66 @@
 							</transform>
 							<components/>
 							<entityData>{40BB4C27-FEFD-4E0E-9D2E-6D0FA3A21A25}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{BF79AE4F-550C-3943-B5F9-C67E9DD29EE6}</id>
+							<name>Pickup</name>
+							<transform>
+								<translation>-2.804153, 10.086555, -104.351456, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{8393026F-F332-8B4C-A33C-121C611B7FFD}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{2E71C764-AA4F-E745-A24B-90CCD3259728}</id>
+							<name>Pickup</name>
+							<transform>
+								<translation>40.111732, 10.715069, -241.783127, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{8393026F-F332-8B4C-A33C-121C611B7FFD}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{E36F9C12-0DFD-E94A-B537-A89A2E8E9F97}</id>
+							<name>Pickup</name>
+							<transform>
+								<translation>153.454697, 7.337688, -270.747192, 0</translation>
+								<rotation>0, 0, 0.079915, 0.996802</rotation>
+							</transform>
+							<components/>
+							<entityData>{8393026F-F332-8B4C-A33C-121C611B7FFD}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{74FCE10D-A46A-2845-83F9-C2F9A36A9BCA}</id>
+							<name>Pickup</name>
+							<transform>
+								<translation>156.85527, 7.88647, -271.138092, 0</translation>
+								<rotation>0, 0, 0.079915, 0.996802</rotation>
+							</transform>
+							<components/>
+							<entityData>{8393026F-F332-8B4C-A33C-121C611B7FFD}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{28783F40-C1C1-374D-98B2-EA6146C5AE12}</id>
+							<name>Pickup</name>
+							<transform>
+								<translation>160.418564, 8.461514, -271.664795, 0</translation>
+								<rotation>0, 0, 0.079915, 0.996802</rotation>
+							</transform>
+							<components/>
+							<entityData>{8393026F-F332-8B4C-A33C-121C611B7FFD}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{48CDDFCE-4F19-5344-884A-58EB333A27DE}</id>
+							<name>Pickup</name>
+							<transform>
+								<translation>164.357925, 9.097245, -272.134552, 0</translation>
+								<rotation>0, 0, 0.079915, 0.996802</rotation>
+							</transform>
+							<components/>
+							<entityData>{8393026F-F332-8B4C-A33C-121C611B7FFD}</entityData>
 						</item>
 					</entityData>
 				</item>
