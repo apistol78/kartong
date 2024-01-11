@@ -39,7 +39,7 @@ function FrontEnd:new(params, environment)
 		:setHorizontalAlign(Widget.ALIGN_CENTER)
 		:setVerticalAlign(Widget.ALIGN_CENTER)
 		:setOnPlay(function() self._clicked = true end)
-		:setOnOptions(function() fb:showPage("OPTIONS") end)
+		:setOnOptions(function() self:_toggleFullscreen() end)
 		:setOnExit(function() self:terminate() end)
 
 	OptionsView(fb)
@@ -69,6 +69,14 @@ function FrontEnd:update(info)
 
 	Tween.update(info.simulationDeltaTime)
 end
+
+-- private
+
+function FrontEnd:_toggleFullscreen()
+	environment.settings:setProperty("Render.FullScreen", true)
+	environment:reconfigure()
+end
+
 
 	]]>
 	</text>

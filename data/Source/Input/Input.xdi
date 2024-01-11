@@ -125,6 +125,26 @@
 		<item type="traktor.input.InReadValue">
 			<valueId>ID_KEY_RESET_1</valueId>
 		</item>
+		<item type="traktor.input.InReadValue">
+			<valueId>ID_GP0_RESET</valueId>
+		</item>
+		<item type="traktor.input.InReadValue">
+			<valueId>ID_GP1_RESET</valueId>
+		</item>
+		<item type="traktor.input.InBoolean">
+			<source>
+				<item ref="/object/inputNodes/item[16]"/>
+				<item ref="/object/inputNodes/item[18]"/>
+			</source>
+			<op>OpOr</op>
+		</item>
+		<item type="traktor.input.InBoolean">
+			<source>
+				<item ref="/object/inputNodes/item[17]"/>
+				<item ref="/object/inputNodes/item[19]"/>
+			</source>
+			<op>OpOr</op>
+		</item>
 	</inputNodes>
 	<positions>
 		<item>
@@ -306,33 +326,79 @@
 		<item>
 			<object ref="/object/inputNodes/item[16]"/>
 			<position>
-				<x>538</x>
-				<y>633</y>
+				<x>533</x>
+				<y>641</y>
 			</position>
 		</item>
 		<item>
 			<object type="traktor.input.InputStateData">
-				<source ref="/object/inputNodes/item[16]"/>
+				<source ref="/object/inputNodes/item[20]"/>
 			</object>
 			<position>
-				<x>978</x>
-				<y>609</y>
+				<x>1083</x>
+				<y>678</y>
 			</position>
 		</item>
 		<item>
 			<object ref="/object/inputNodes/item[17]"/>
 			<position>
-				<x>556</x>
-				<y>716</y>
+				<x>606</x>
+				<y>853</y>
 			</position>
 		</item>
 		<item>
 			<object type="traktor.input.InputStateData">
-				<source ref="/object/inputNodes/item[17]"/>
+				<source ref="/object/inputNodes/item[21]"/>
 			</object>
 			<position>
-				<x>926</x>
-				<y>683</y>
+				<x>1095</x>
+				<y>841</y>
+			</position>
+		</item>
+		<item>
+			<object ref="/object/inputNodes/item[18]"/>
+			<position>
+				<x>580</x>
+				<y>721</y>
+			</position>
+		</item>
+		<item>
+			<object ref="/object/inputNodes/item[19]"/>
+			<position>
+				<x>616</x>
+				<y>900</y>
+			</position>
+		</item>
+		<item>
+			<object ref="/object/inputNodes/item[20]"/>
+			<position>
+				<x>883</x>
+				<y>624</y>
+			</position>
+		</item>
+		<item>
+			<object ref="/object/inputNodes/item[21]"/>
+			<position>
+				<x>895</x>
+				<y>822</y>
+			</position>
+		</item>
+		<item>
+			<object type="traktor.input.InRemapAxis">
+				<source/>
+				<limit>
+					<item>-0.5</item>
+					<item>0.5</item>
+				</limit>
+				<output>
+					<item>-1</item>
+					<item>0</item>
+					<item>1</item>
+				</output>
+			</object>
+			<position>
+				<x>2232</x>
+				<y>67</y>
 			</position>
 		</item>
 	</positions>
@@ -345,6 +411,16 @@
 					<controlType>ThumbLeftX</controlType>
 					<analogue>true</analogue>
 					<normalize>true</normalize>
+					<index>0</index>
+				</second>
+			</item>
+			<item>
+				<first>ID_GP0_RESET</first>
+				<second type="traktor.input.GenericInputSourceData" version="4">
+					<category>Joystick</category>
+					<controlType>Button4</controlType>
+					<analogue>false</analogue>
+					<normalize>false</normalize>
 					<index>0</index>
 				</second>
 			</item>
@@ -365,6 +441,16 @@
 					<controlType>ThumbLeftX</controlType>
 					<analogue>true</analogue>
 					<normalize>true</normalize>
+					<index>1</index>
+				</second>
+			</item>
+			<item>
+				<first>ID_GP1_RESET</first>
+				<second type="traktor.input.GenericInputSourceData" version="4">
+					<category>Joystick</category>
+					<controlType>Button4</controlType>
+					<analogue>false</analogue>
+					<normalize>false</normalize>
 					<index>1</index>
 				</second>
 			</item>
