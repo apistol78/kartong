@@ -4,15 +4,23 @@
 	<![CDATA[
 #using \{FC4400A2-BDB6-BA45-9A22-12B9676E71FA}
 #using \{6EB38A62-F0A4-3C44-BBEE-7B98717C3536}
+#using \{9A73FE32-33E8-F949-9079-C0157707A292}
 
 HudView = HudView or class("HudView", Container)
 
 HudView.__flipboardId = "HUD"
 
 function HudView:new(parent)
-	Container.new(self, parent, TableLayout({ 50, 50 }, { 100 }, 0, 0, 0, 0))
-	self._playerView0 = HudPlayerView(self)
-	self._playerView1 = HudPlayerView(self)
+	Container.new(self, parent, FloodLayout())
+
+	local ct = Container(self, TableLayout({ 50, 50 }, { 100 }, 0, 0, 0, 0))
+	self._playerView0 = HudPlayerView(ct)
+	self._playerView1 = HudPlayerView(ct)
+
+	local ct = Container(self, FloodLayout(16, 16))
+	self._racePosition = RacePosition(ct, "MC_RacePositionBg")
+		:setHorizontalAlign(Widget.ALIGN_CENTER)
+		:setVerticalAlign(Widget.ALIGN_BOTTOM)
 end
 
 function HudView:getPlayerView0()
@@ -22,6 +30,11 @@ end
 function HudView:getPlayerView1()
 	return self._playerView1
 end
+
+function HudView:setPositions(kart0, kart1)
+	self._racePosition:setPositions(kart0, kart1)
+end
+
 
 	]]>
 	</text>

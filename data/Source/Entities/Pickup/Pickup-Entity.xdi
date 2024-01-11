@@ -34,5 +34,21 @@
 			</entityData>
 			<show>Normal</show>
 		</item>
+		<item type="traktor.world.EventSetComponentData">
+			<eventData>
+				<item>
+					<first>PICK</first>
+					<second type="traktor.spray.SpawnEffectEventData" version="3">
+						<effect>{E996D296-E3D9-164C-B121-56D293B50132}</effect>
+						<transform>
+							<translation>0, 0, 0, 0</translation>
+							<rotation>0, 0, 0, 1</rotation>
+						</transform>
+						<follow>false</follow>
+						<useRotation>false</useRotation>
+					</second>
+				</item>
+			</eventData>
+		</item>
 	</components>
 </object>

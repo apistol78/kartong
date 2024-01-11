@@ -31,12 +31,17 @@ function Pickup:tryGrab(position)
 		-- Hide pickup.
 		local fc < const > = self.owner:getComponent(world.FacadeComponent)
 		fc:showOnly("Hidden")
+
+		-- Spawn effect.
+		local ec < const > = self.owner:getComponent(world.EventSetComponent)
+		ec:raise("PICK")
+
+		-- Set cool down.
 		self._pickedCountDown = 5
 		return true
 	end
 	return false
 end
-
 
 	]]>
 	</text>

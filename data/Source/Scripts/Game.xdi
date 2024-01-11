@@ -149,6 +149,11 @@ function Game:_updateUI()
 	local playerView = self._hudView:getPlayerView1()
 	playerView:setSpeed(self._logic1:getSpeed())
 	playerView:setLap(self._logic1:getLap())
+
+	-- Update kart positions.
+	local kp0 = self._logic0:getPosition() / 3
+	local kp1 = self._logic1:getPosition() / 3
+	self._hudView:setPositions(kp0, kp1)
 end
 
 function Game:_updateKartInput(info, throttleFactor)

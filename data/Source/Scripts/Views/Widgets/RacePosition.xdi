@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.script.Script" version="2">
+	<text>
+	<![CDATA[
+#using \{40191BBE-DDD0-0E47-92A9-66AF2CEC0F6F}
+
+RacePosition = RacePosition or class("RacePosition", Widget)
+
+function RacePosition:new(parent)
+	local mc = Widget._createEmptyResource(parent)
+	self:_initialize(parent, mc)
+end
+
+function RacePosition:new(parent)
+	local mc = Widget._createEmptyResource(parent)
+	self:_initialize(parent, mc)
+end
+
+function RacePosition:getPreferredSize()
+	return self._preferredSize
+end
+
+function RacePosition:setPositions(kart0, kart1)
+	self._kart0 = kart0
+	self._kart1 = kart1
+	self:_update()
+end
+
+function RacePosition:place(x, y, width, height)
+	Widget.place(self, x, y, width, height)
+	self:_update()
+end
+
+-- private
+
+function RacePosition:_initialize(parent, mc)
+	self._preferredSize = { width = 0, height = 0 }
+
+	Widget._initialize(self, parent, mc)
+
+	self._background_mc = Widget._createResource(self, "MC_RacePositionBg")
+	assert(self._background_mc ~= nil)
+
+	self._kart0_mc = Widget._createResource(self, "MC_Kart")
+	assert(self._kart0_mc ~= nil)
+	self._kart1_mc = Widget._createResource(self, "MC_Kart")
+	assert(self._kart1_mc ~= nil)
+
+	self._preferredSize.width = self._background_mc.width
+	self._preferredSize.height = self._background_mc.height
+
+	self._kart0 = 0
+	self._kart1 = 0
+end
+
+function RacePosition:_update()
+	local m < const > = 30
+	local w < const > = self._background_mc.width - self._kart0_mc.width - m * 2
+
+	self._kart0_mc.X = m + w * self._kart0
+	self._kart0_mc.Y = 0
+	self._kart1_mc.X = m + w * self._kart1
+	self._kart1_mc.Y = self._background_mc.height / 2
+end
+
+
+	]]>
+	</text>
+</object>
