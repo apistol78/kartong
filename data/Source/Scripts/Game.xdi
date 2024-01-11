@@ -67,8 +67,8 @@ function Game:new(params, environment)
 	self._followCamera1 = FollowCamera(camera, kart1)
 
 	-- Game logic.
-	self._logic0 = PlayerLogic(kart0, road, pickups)
-	self._logic1 = PlayerLogic(kart1, road, pickups)
+	self._logic0 = PlayerLogic(kart0, road, pickups, Vector4(-4, 1, 0))
+	self._logic1 = PlayerLogic(kart1, road, pickups, Vector4( 4, 1, 0))
 
 	-- Set game state.
 	self._updateFn = Game._updateStart
@@ -78,7 +78,13 @@ function Game:finalize()
 end
 
 function Game:update(info)
-	self:_updateFn(info)
+	if self._updateFn ~= nil then
+		self:_updateFn(info)
+	else
+		local params = { load = "FRONTEND" }
+		local nxt = self:loadState("LOADING", params)
+		self:gotoStage(nxt)
+	end
 	Tween.update(info.simulationDeltaTime)
 end
 
@@ -105,7 +111,6 @@ end
 
 function Game:_updateKickOff(info)
 	self:_updateKartInput(info, 1)
-	self:_updateKartLimits()
 	self:_updateKartBoost(0)
 	self:_updateUI()
 
@@ -120,7 +125,6 @@ end
 
 function Game:_updateRace(info)
 	self:_updateKartInput(info, 1)
-	self:_updateKartLimits()
 	self:_updateKartBoost(1)
 	self:_updateUI()
 
@@ -137,12 +141,16 @@ end
 
 function Game:_updateFinished(info)
 	self:_updateKartInput(info, 0)
-	self:_updateKartLimits()
 	self:_updateKartBoost(0)
 
 	-- Update kart logic.
 	self._logic0:update(info)
 	self._logic1:update(info)
+
+	local confirm < const > = self._inputMapping:isStatePressed("STATE_CONFIRM")
+	if confirm then
+		self._updateFn = nil
+	end
 end
 
 function Game:_updateUI()
@@ -182,40 +190,6 @@ function Game:_updateKartInput(info, throttleFactor)
 	vc.engineThrottle = throttle * throttleFactor
 end
 
-function Game:_updateKartLimits()
-	local road = self.world:getEntity("Road")
-	local pt = road:getComponent(world.PathComponent)
-
-	local reset0 = self._inputMapping:isStatePressed("STATE_RESET_0")
-	local reset1 = self._inputMapping:isStatePressed("STATE_RESET_1")
-
-	-- Left Kart
-	local kart = self.world:getEntity("Kart0")
-	local t = pt:findClosest(kart.transform.translation)
-	local Tmin = pt:evaluateDirectional(t)
-	local dx = math.abs(Vector4.dot(Tmin.axisX, Tmin.translation - kart.transform.translation))
-	local dy = Vector4.dot(Tmin.axisY, Tmin.translation - kart.transform.translation)
-	if reset0 or dx > 14 or dy > 2 then
-		kart.transform = Tmin * Transform(Vector4(-4, 1, 0), Quaternion.identity)
-		local rb = kart:getComponent(physics.RigidBodyComponent)
-		rb.body:reset()
-		self._followCamera0:reset()
-	end
-
-	-- Right Kart
-	local kart = self.world:getEntity("Kart1")
-	local t = pt:findClosest(kart.transform.translation)
-	local Tmin = pt:evaluateDirectional(t)
-	local dx = math.abs(Vector4.dot(Tmin.axisX, Tmin.translation - kart.transform.translation))
-	local dy = Vector4.dot(Tmin.axisY, Tmin.translation - kart.transform.translation)
-	if reset1 or dx > 14 or dy > 2 then
-		kart.transform = Tmin * Transform(Vector4(4, 1, 0), Quaternion.identity)
-		local rb = kart:getComponent(physics.RigidBodyComponent)
-		rb.body:reset()
-		self._followCamera1:reset()
-	end
-end
-
 function Game:_updateKartBoost(boostFactor)
 	local p0 < const > = self._logic0:getPosition()
 	local p1 < const > = self._logic1:getPosition()
@@ -223,12 +197,12 @@ function Game:_updateKartBoost(boostFactor)
 	-- Left Kart
 	local kart = self.world:getEntity("Kart0")
 	local vc = kart:getComponent(physics.VehicleComponent)
-	vc.engineBoost = iif(p0 > p1, 0, 0.3) * boostFactor
+	vc.engineBoost = iif(p0 > p1, 0, 0.4) * boostFactor
 
 	-- Right Kart
 	local kart = self.world:getEntity("Kart1")
 	local vc = kart:getComponent(physics.VehicleComponent)
-	vc.engineBoost = iif(p1 > p0, 0, 0.3) * boostFactor
+	vc.engineBoost = iif(p1 > p0, 0, 0.4) * boostFactor
 end
 
 	]]>

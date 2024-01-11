@@ -6,25 +6,28 @@ import(traktor)
 
 PlayerLogic = PlayerLogic or class("PlayerLogic")
 
-function PlayerLogic:new(kart, road, pickups)
+function PlayerLogic:new(kart, road, pickups, resetOffset)
 	self._kart = kart
 	self._road = road
 	self._pickups = pickups
 	self._t = 0
 	self._lap = 0
 	self._kph = 0
+	self._offlimit = 0
+	self._resetOffset = resetOffset
 end
 
 function PlayerLogic:update(info)
 	local rb = self._kart:getComponent(physics.RigidBodyComponent)
+	local pt = self._road:getComponent(world.PathComponent)
+	local position < const > = self._kart.transform.translation
+	local t = pt:findClosest(position)
 
 	-- Calculate speed.
 	local mps = rb.body.linearVelocity.length
 	self._kph = mps * (60 * 60) / 1000
 
 	-- Evaluate progress.
-	local pt = self._road:getComponent(world.PathComponent)
-	local t = pt:findClosest(self._kart.transform.translation)
 	if self._t > 0.9 and t < 0.1 then
 		self._lap = self._lap + 1
 	elseif self._t < 0.1 and t > 0.9 then
@@ -33,13 +36,26 @@ function PlayerLogic:update(info)
 	self._t = t
 
 	-- Check pickups.
-	local position < const > = self._kart.transform.translation
 	for i = 0, self._pickups.size - 1 do
 		local p < const > = self._pickups:get(i)
 		local psc < const > = p:getComponent(world.ScriptComponent)
 		if psc:tryGrab(position) then
 			print("GRABBED PICKUP")
 		end
+	end
+
+	-- Check limits.
+	local Tmin = pt:evaluateDirectional(t)
+	local dx = math.abs(Vector4.dot(Tmin.axisX, Tmin.translation - position))
+	local dy = Vector4.dot(Tmin.axisY, Tmin.translation - position)
+	if dx > 11 or dy > 2 then
+		self._offlimit = self._offlimit + info.simulationDeltaTime
+		if self._offlimit > 2 then
+			self._kart.transform = Tmin * Transform(self._resetOffset, Quaternion.identity)
+			rb.body:reset()
+		end
+	else
+		self._offlimit = 0
 	end
 end
 

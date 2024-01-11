@@ -21,7 +21,12 @@
 	<shaderFade>{1781A8FD-4099-7E43-9CCD-6F4F1F2DBC96}</shaderFade>
 	<fadeOutUpdate>false</fadeOutUpdate>
 	<fadeRate>1.5</fadeRate>
-	<transitions/>
+	<transitions>
+		<item>
+			<first>LOADING</first>
+			<second>{4736FC65-BA7D-45C6-86B3-A175ECE09FC2}</second>
+		</item>
+	</transitions>
 	<resourceBundle>{00000000-0000-0000-0000-000000000000}</resourceBundle>
 	<properties/>
 </object>

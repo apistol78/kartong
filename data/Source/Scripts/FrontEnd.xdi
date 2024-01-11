@@ -60,6 +60,7 @@ function FrontEnd:update(info)
 
 	if self._clicked then
 		local params = {
+			load = "GAME",
 			player1 = "KALLE",
 			player2 = "ANKA"
 		}
@@ -76,7 +77,6 @@ function FrontEnd:_toggleFullscreen()
 	environment.settings:setProperty("Render.FullScreen", true)
 	environment:reconfigure()
 end
-
 
 	]]>
 	</text>
