@@ -64,12 +64,12 @@
 		<irradianceGrid>{2D8C2976-00FC-7548-BBFC-3A4CBF1A15AB}</irradianceGrid>
 		<imageProcess>
 			<disabled>{00000000-0000-0000-0000-000000000000}</disabled>
-			<low>{00000000-0000-0000-0000-000000000000}</low>
+			<low>{664AD753-7DA8-3D49-8ED8-4CE4BD56ED6A}</low>
 			<medium>{00000000-0000-0000-0000-000000000000}</medium>
 			<high>{00000000-0000-0000-0000-000000000000}</high>
 			<ultra>{00000000-0000-0000-0000-000000000000}</ultra>
 		</imageProcess>
-		<colorGrading>{3DEEC673-EDF5-364A-B796-BAC7EF575258}</colorGrading>
+		<colorGrading>{E2035928-DEA4-8E44-A51D-2A0643707C77}</colorGrading>
 	</worldRenderSettings>
 	<layers>
 		<item type="traktor.world.EntityData" version="1">
@@ -692,7 +692,7 @@
 											<name>Tree 1-Entity</name>
 											<transform>
 												<translation>-151.529038, 3.010457, -21.36211, 0</translation>
-												<rotation>-0.046669, 0, -0.031118, 0.998426</rotation>
+												<rotation>-0.046669, -0, -0.031118, 0.998426</rotation>
 											</transform>
 											<components/>
 											<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
@@ -722,7 +722,7 @@
 											<name>Tree 1-Entity</name>
 											<transform>
 												<translation>-76.977997, 3.189742, 119.258614, 0</translation>
-												<rotation>0.038951, 0, 0.019476, 0.999051</rotation>
+												<rotation>0.038951, -0, 0.019476, 0.999051</rotation>
 											</transform>
 											<components/>
 											<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
@@ -742,7 +742,7 @@
 											<name>Tree 1-Entity</name>
 											<transform>
 												<translation>290.9711, -0.410385, 167.127426, 0</translation>
-												<rotation>0.019327, 0, -0.081172, 0.996513</rotation>
+												<rotation>0.019327, -0, -0.081172, 0.996513</rotation>
 											</transform>
 											<components/>
 											<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
@@ -772,7 +772,7 @@
 											<name>Tree 1-Entity</name>
 											<transform>
 												<translation>-94.245354, 19.091986, -55.710232, 0</translation>
-												<rotation>0.002039, -0.852934, -0.003332, -0.522004</rotation>
+												<rotation>-0.002039, 0.852934, 0.003332, 0.522004</rotation>
 											</transform>
 											<components/>
 											<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
@@ -792,7 +792,7 @@
 											<name>Tree 1-Entity</name>
 											<transform>
 												<translation>-125.618576, 3.010457, -98.597527, 0</translation>
-												<rotation>0.035587, -0.993517, -0.043357, -0.098885</rotation>
+												<rotation>-0.035587, 0.993517, 0.043357, 0.098885</rotation>
 											</transform>
 											<components/>
 											<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
@@ -802,7 +802,7 @@
 											<name>Tree 1-Entity</name>
 											<transform>
 												<translation>-89.764992, 3.010457, -108.209099, 0</translation>
-												<rotation>-0.006866, -0.756649, -0.05567, 0.65141</rotation>
+												<rotation>-0.006866, -0.75665, -0.05567, 0.65141</rotation>
 											</transform>
 											<components/>
 											<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
@@ -842,7 +842,7 @@
 											<name>Tree 1-Entity</name>
 											<transform>
 												<translation>-138.210938, 3.010457, -72.545845, 0</translation>
-												<rotation>-0.006866, -0.756649, -0.05567, 0.65141</rotation>
+												<rotation>-0.006866, -0.75665, -0.05567, 0.65141</rotation>
 											</transform>
 											<components/>
 											<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
@@ -862,7 +862,7 @@
 											<name>Tree 1-Entity</name>
 											<transform>
 												<translation>125.220367, -0.279541, -338.182312, 0</translation>
-												<rotation>-0.014948, 0.002737, 0.027345, 0.99951</rotation>
+												<rotation>-0.014948, 0.002737, 0.027345, 0.999511</rotation>
 											</transform>
 											<components/>
 											<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
@@ -902,7 +902,7 @@
 											<name>Tree 1-Entity</name>
 											<transform>
 												<translation>148.511292, -1.207548, -175.184326, 0</translation>
-												<rotation>0.003864, 0, -0.085001, 0.996373</rotation>
+												<rotation>0.003864, -0, -0.085001, 0.996373</rotation>
 											</transform>
 											<components/>
 											<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
@@ -922,7 +922,7 @@
 											<name>Tree 1-Entity</name>
 											<transform>
 												<translation>146.333511, 0.69749, -129.555588, 0</translation>
-												<rotation>-0.03893, 0, 0.027251, 0.99887</rotation>
+												<rotation>-0.03893, -0, 0.027251, 0.99887</rotation>
 											</transform>
 											<components/>
 											<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
@@ -932,7 +932,7 @@
 											<name>Tree 1-Entity</name>
 											<transform>
 												<translation>127.423004, 7.996506, -27.442471, 0</translation>
-												<rotation>-0.01559, 0, 0.035079, 0.999263</rotation>
+												<rotation>-0.01559, -0, 0.035079, 0.999263</rotation>
 											</transform>
 											<components/>
 											<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
@@ -942,7 +942,7 @@
 											<name>Tree 1-Entity</name>
 											<transform>
 												<translation>162.701691, 8.171334, 33.652538, 0</translation>
-												<rotation>0.102859, 0, 0.076192, 0.991774</rotation>
+												<rotation>0.102859, -0, 0.076192, 0.991774</rotation>
 											</transform>
 											<components/>
 											<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
@@ -972,7 +972,7 @@
 											<name>Tree 1-Entity</name>
 											<transform>
 												<translation>209.032028, 19.761763, 115.734085, 0</translation>
-												<rotation>-0.050219, 0, -0.069534, 0.996315</rotation>
+												<rotation>-0.050219, -0, -0.069534, 0.996315</rotation>
 											</transform>
 											<components/>
 											<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
@@ -1112,7 +1112,7 @@
 											<name>Tree 1-Entity</name>
 											<transform>
 												<translation>12.544205, -1.773672, 156.524689, 0</translation>
-												<rotation>0.038951, 0, 0.019476, 0.999051</rotation>
+												<rotation>0.038951, -0, 0.019476, 0.999051</rotation>
 											</transform>
 											<components/>
 											<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
@@ -1132,7 +1132,7 @@
 											<name>Tree 1-Entity</name>
 											<transform>
 												<translation>-157.671097, 3.010457, 54.288525, 0</translation>
-												<rotation>-0.046669, 0, -0.031118, 0.998426</rotation>
+												<rotation>-0.046669, -0, -0.031118, 0.998426</rotation>
 											</transform>
 											<components/>
 											<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>

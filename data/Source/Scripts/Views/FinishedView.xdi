@@ -11,10 +11,18 @@ FinishedView.__flipboardId = "FINISHED"
 
 function FinishedView:new(parent)
 	Container.new(self, parent, FloodLayout(0, 0))
-	self._finished = Static(self, "FINISHED")
+
+	local ct = Container(self, TableLayout({ 0 }, { 0, 0 }, 0, 0, 0, 0))
 		:setHorizontalAlign(Widget.ALIGN_CENTER)
 		:setVerticalAlign(Widget.ALIGN_CENTER)
-		:setTextSize(70)
+
+	Static(ct, "FINISHED")
+		:setHorizontalAlign(Widget.ALIGN_CENTER)
+		:setTextSize(90)
+
+	Static(ct, "Press any button to continue...")
+		:setHorizontalAlign(Widget.ALIGN_CENTER)
+		:setTextSize(20)
 end
 
 	]]>

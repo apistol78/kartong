@@ -82,7 +82,7 @@ function Game:update(info)
 		self:_updateFn(info)
 	else
 		local params = { load = "FRONTEND" }
-		local nxt = self:loadState("LOADING", params)
+		local nxt = self:loadStage("LOADING", params)
 		self:gotoStage(nxt)
 	end
 	Tween.update(info.simulationDeltaTime)
