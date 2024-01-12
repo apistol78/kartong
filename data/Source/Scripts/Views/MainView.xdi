@@ -3,6 +3,7 @@
 	<text>
 	<![CDATA[
 #using \{FC4400A2-BDB6-BA45-9A22-12B9676E71FA}
+#using \{FC45EF09-AC3E-7F41-94C7-5437459D9517}
 
 MainView = MainView or class("MainView", Container)
 
@@ -11,12 +12,16 @@ MainView.__flipboardId = "MAIN"
 function MainView:new(parent)
 	Container.new(self, parent, TableLayout({0}, {0}, 16, 16, 0, 16))
 
-	PushButton(self, "Play")
-		:setOnClick(function() self._fnPlay() end)
-	PushButton(self, "Options")
-		:setOnClick(function() self._fnOptions() end)
-	PushButton(self, "Exit")
-		:setOnClick(function() self:_onExit() end)
+	Selector(self)
+		:add("PLAY")
+		:add("OPTIONS")
+		:add("EXIT")
+		:setOnActivate(function(index)
+			print("activate " .. index)
+			if index == 0 then self._fnPlay() end
+			if index == 1 then self._fnOptions() end
+			if index == 2 then self._fnExit() end
+		end)
 
 	self._dlgExit = nil
 
