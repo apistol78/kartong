@@ -19,7 +19,7 @@ function Selector:remove()
 end
 
 function Selector:getPreferredSize()
-	return { width = 300, height = 200 }
+	return { width = 350, height = 200 }
 end
 
 function Selector:place(x, y, width, height)
@@ -29,6 +29,7 @@ end
 
 function Selector:add(item)
 	local s = Static(self, item)
+		:setTextSize(40)
 	table.insert(self._items, s)
 	self:_layout()
 	return self
@@ -66,10 +67,10 @@ function Selector:_layout()
 	local y = 0
 	for _, mc in ipairs(self._items) do
 		mc:place(10, y, p.width, 10)
-		y = y + 40
+		y = y + 60
 	end
 
-	self._background_mc.Y = 24 + self._index * 40
+	self._background_mc.Y = 48 + self._index * 60
 end
 
 function Selector:_eventKeyDown()
@@ -90,7 +91,6 @@ function Selector:_eventKeyDown()
 	end
 
 end
-
 
 	]]>
 	</text>

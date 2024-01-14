@@ -9,6 +9,7 @@
 #using \{B3773DDC-1FE6-D54B-9677-2CAB45912BA0}
 #using \{FC207928-47BE-4597-9313-A7CD676CE810}
 #using \{1DC37C6A-0C0C-A546-825E-B8F6E6088209}
+#using \{862D5F23-6E73-4FD2-933F-9C659B62BADB}
 
 import(traktor)
 
@@ -49,6 +50,7 @@ function Game:new(params, environment)
 	self._flipBook = Flipboard(self._frame)
 	self._countDownView = CountDownView(self._flipBook)
 	self._finishedView = FinishedView(self._flipBook)
+	self._pauseView = PauseView(self._flipBook)
 	self._hudView = HudView(self._flipBook)
 	self._flipBook:showPage("CountDown")
 
@@ -78,6 +80,12 @@ function Game:finalize()
 end
 
 function Game:update(info)
+
+	local escape < const > = self._inputMapping:isStatePressed("STATE_ESCAPE")
+	if escape then
+		self._flipBook:showPage("PAUSE")
+	end
+
 	if self._updateFn ~= nil then
 		self:_updateFn(info)
 	else

@@ -52,7 +52,7 @@
 					</suspensionLength>
 					<suspensionSpring>16</suspensionSpring>
 					<suspensionDamping>6</suspensionDamping>
-					<rollingFriction>0</rollingFriction>
+					<rollingFriction>0.2</rollingFriction>
 					<slipCornerForce>30</slipCornerForce>
 					<peakSlipAngle>0.523599</peakSlipAngle>
 				</item>
@@ -69,7 +69,7 @@
 					</suspensionLength>
 					<suspensionSpring>16</suspensionSpring>
 					<suspensionDamping>6</suspensionDamping>
-					<rollingFriction>0</rollingFriction>
+					<rollingFriction>0.2</rollingFriction>
 					<slipCornerForce>30</slipCornerForce>
 					<peakSlipAngle>0.523599</peakSlipAngle>
 				</item>
@@ -86,7 +86,7 @@
 					</suspensionLength>
 					<suspensionSpring>16</suspensionSpring>
 					<suspensionDamping>6</suspensionDamping>
-					<rollingFriction>0</rollingFriction>
+					<rollingFriction>0.2</rollingFriction>
 					<slipCornerForce>30</slipCornerForce>
 					<peakSlipAngle>0.523599</peakSlipAngle>
 				</item>
@@ -103,7 +103,7 @@
 					</suspensionLength>
 					<suspensionSpring>16</suspensionSpring>
 					<suspensionDamping>6</suspensionDamping>
-					<rollingFriction>0</rollingFriction>
+					<rollingFriction>0.2</rollingFriction>
 					<slipCornerForce>30</slipCornerForce>
 					<peakSlipAngle>0.523599</peakSlipAngle>
 				</item>

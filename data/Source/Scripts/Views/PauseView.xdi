@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.script.Script" version="2">
+	<text>
+	<![CDATA[
+#using \{FC4400A2-BDB6-BA45-9A22-12B9676E71FA}
+#using \{FC45EF09-AC3E-7F41-94C7-5437459D9517}
+
+PauseView = PauseView or class("PauseView", Container)
+
+PauseView.__flipboardId = "PAUSE"
+
+function PauseView:new(parent)
+	Container.new(self, parent, TableLayout({0}, {0}, 16, 16, 0, 16))
+
+	Selector(self)
+		:add("CONTINUE")
+		:add("EXIT")
+		:setOnActivate(function(index)
+			if index == 0 then self._fnContinue() end
+			if index == 1 then self._fnExit() end
+		end)
+
+	self._fnContinue = function() end
+	self._fnExit = function() end
+end
+
+function PauseView:setOnContinue(fn)
+	self._fnContinue = fn
+	return self
+end
+
+function PauseView:setOnExit(fn)
+	self._fnExit = fn
+	return self
+end
+
+	]]>
+	</text>
+</object>

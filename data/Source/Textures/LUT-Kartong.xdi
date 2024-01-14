@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.render.ColorGradingTextureAsset" version="3">
+	<redCurve>
+		<item>
+			<first>0</first>
+			<second>0.045198</second>
+		</item>
+		<item>
+			<first>0.449612</first>
+			<second>0.61017</second>
+		</item>
+		<item>
+			<first>1</first>
+			<second>1</second>
+		</item>
+	</redCurve>
+	<greenCurve>
+		<item>
+			<first>0</first>
+			<second>0.045198</second>
+		</item>
+		<item>
+			<first>0.51938</first>
+			<second>0.61017</second>
+		</item>
+		<item>
+			<first>1</first>
+			<second>1</second>
+		</item>
+	</greenCurve>
+	<blueCurve>
+		<item>
+			<first>0</first>
+			<second>0</second>
+		</item>
+		<item>
+			<first>1</first>
+			<second>1</second>
+		</item>
+	</blueCurve>
+	<brightness>0</brightness>
+	<contrast>1.03</contrast>
+	<saturation>1.47</saturation>
+</object>
