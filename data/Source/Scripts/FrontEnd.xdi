@@ -60,9 +60,7 @@ function FrontEnd:update(info)
 
 	if self._clicked then
 		local params = {
-			load = "GAME",
-			player1 = "KALLE",
-			player2 = "ANKA"
+			load = "GAME_03"
 		}
 		local nxt = self:loadStage("LOADING", params)
 		self:gotoStage(nxt)

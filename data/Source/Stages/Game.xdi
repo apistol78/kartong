@@ -3,11 +3,6 @@
 	<name>Main</name>
 	<inherit>{00000000-0000-0000-0000-000000000000}</inherit>
 	<layers>
-		<item type="traktor.runtime.SplitWorldLayerData">
-			<name>world</name>
-			<permitTransition>true</permitTransition>
-			<scene>{F68333B8-BD46-0244-90EC-0FFA875DF326}</scene>
-		</item>
 		<item type="traktor.spark.SparkLayerData" version="1">
 			<name>spark</name>
 			<permitTransition>false</permitTransition>

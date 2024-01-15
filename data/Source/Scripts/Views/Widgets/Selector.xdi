@@ -14,12 +14,15 @@ end
 function Selector:remove()
 	local cx = self._mc.context
 	cx.key.eventKeyDown:remove(self._keyDownListener)
-
 	Widget.remove(self)
 end
 
 function Selector:getPreferredSize()
-	return { width = 350, height = 200 }
+	return
+	{
+		width = self._background_mc.width,
+		height = #self._items * 60
+	}
 end
 
 function Selector:place(x, y, width, height)
@@ -51,7 +54,7 @@ function Selector:_initialize(parent, mc)
 	Widget._initialize(self, parent, mc)
 
 	self._background_mc = Widget._createResource(self, "MC_RacePositionBg")
-	self._background_mc.scale = Vector2(20, 10)
+	self._background_mc.scale = Vector2(40, 10)
 	assert(self._background_mc ~= nil)
 
 	local cx = self._mc.context
@@ -59,37 +62,42 @@ function Selector:_initialize(parent, mc)
 
 	self._items = {}
 	self._index = 0
+
+#if defined(_EDITOR)
+	self._mc.wireOutline = true
+#endif
 end
 
 function Selector:_layout()
 	local p = self:getPlacement()
-
+	local w = self._background_mc.width
 	local y = 0
 	for _, mc in ipairs(self._items) do
-		mc:place(10, y, p.width, 10)
+		local x < const > = (w - mc:getPreferredSize().width) / 2
+		mc:place(x, y, p.width, 10)
 		y = y + 60
 	end
-
 	self._background_mc.Y = 48 + self._index * 60
 end
 
 function Selector:_eventKeyDown()
-
-	local key = self._mc.context.key
-	if key.code == spark.Key.AkUp then
-		if self._index > 0 then
-			self:select(self._index - 1)
-		end
-	elseif key.code == spark.Key.AkDown then
-		if self._index < #self._items - 1 then
-			self:select(self._index + 1)
-		end
-	elseif key.code == spark.Key.AkEnter then
-		if self._activateFn ~= nil then
-			self._activateFn(self._index)
+	local visible < const > = self:isVisible(false)
+	if visible then
+		local key < const > = self._mc.context.key
+		if key.code == spark.Key.AkUp then
+			if self._index > 0 then
+				self:select(self._index - 1)
+			end
+		elseif key.code == spark.Key.AkDown then
+			if self._index < #self._items - 1 then
+				self:select(self._index + 1)
+			end
+		elseif key.code == spark.Key.AkEnter then
+			if self._activateFn ~= nil then
+				self._activateFn(self._index)
+			end
 		end
 	end
-
 end
 
 	]]>

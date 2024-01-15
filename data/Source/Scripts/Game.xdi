@@ -51,8 +51,10 @@ function Game:new(params, environment)
 	self._countDownView = CountDownView(self._flipBook)
 	self._finishedView = FinishedView(self._flipBook)
 	self._pauseView = PauseView(self._flipBook)
+		:setOnContinue(function() self:_resume() end)
+		:setOnExit(function() self:_exit() end)
 	self._hudView = HudView(self._flipBook)
-	self._flipBook:showPage("CountDown")
+	self._flipBook:showPage("COUNTDOWN")
 
 	-- Ensure frame is properly layed out.
 	self._frame:layout()
@@ -80,18 +82,9 @@ function Game:finalize()
 end
 
 function Game:update(info)
-
-	local escape < const > = self._inputMapping:isStatePressed("STATE_ESCAPE")
-	if escape then
-		self._flipBook:showPage("PAUSE")
-	end
-
-	if self._updateFn ~= nil then
+	local paused < const > = self:_updatePause(info)
+	if not paused and self._updateFn ~= nil then
 		self:_updateFn(info)
-	else
-		local params = { load = "FRONTEND" }
-		local nxt = self:loadStage("LOADING", params)
-		self:gotoStage(nxt)
 	end
 	Tween.update(info.simulationDeltaTime)
 end
@@ -103,6 +96,39 @@ function Game:postUpdate(info)
 end
 
 -- private
+
+function Game:_pause()
+	self._flipBook:showPage("PAUSE")
+	environment.control.pause = true
+end
+
+function Game:_resume()
+	self._flipBook:showPage("HUD")
+	environment.control.pause = false
+end
+
+function Game:_exit()
+	-- Ensure game isn't paused.
+	environment.control.pause = false
+
+	-- Load stage.
+	local params = { load = "FRONTEND" }
+	local nxt = self:loadStage("LOADING", params)
+	self:gotoStage(nxt)
+end
+
+function Game:_updatePause(info)
+	if not environment.control.pause then
+		local escape < const > = self._inputMapping:isStatePressed("STATE_ESCAPE")
+		if escape then
+			self:_pause()
+			return true
+		end
+		return false
+	else
+		return true
+	end
+end
 
 function Game:_updateStart(info)
 	self:_updateKartInput(info, 0)
@@ -157,7 +183,7 @@ function Game:_updateFinished(info)
 
 	local confirm < const > = self._inputMapping:isStatePressed("STATE_CONFIRM")
 	if confirm then
-		self._updateFn = nil
+		self:_exit()
 	end
 end
 

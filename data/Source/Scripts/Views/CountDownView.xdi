@@ -7,7 +7,7 @@
 
 CountDownView = CountDownView or class("CountDownView", Container)
 
-CountDownView.__flipboardId = "CountDown"
+CountDownView.__flipboardId = "COUNTDOWN"
 
 function CountDownView:new(parent)
 	Container.new(self, parent, FloodLayout(0, 0))

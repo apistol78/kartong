@@ -3,7 +3,7 @@
 	<redCurve>
 		<item>
 			<first>0</first>
-			<second>0.045198</second>
+			<second>0</second>
 		</item>
 		<item>
 			<first>0.449612</first>
@@ -17,7 +17,7 @@
 	<greenCurve>
 		<item>
 			<first>0</first>
-			<second>0.045198</second>
+			<second>0</second>
 		</item>
 		<item>
 			<first>0.51938</first>

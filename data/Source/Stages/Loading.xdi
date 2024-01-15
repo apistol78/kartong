@@ -22,8 +22,12 @@
 			<second>{3E149A0C-E483-4931-8454-F726FF92C989}</second>
 		</item>
 		<item>
-			<first>GAME</first>
-			<second>{4C21D382-3338-5E43-9EB6-7520F1E7CDA4}</second>
+			<first>GAME_02</first>
+			<second>{6C222103-4622-7541-999B-690E8FC2CF14}</second>
+		</item>
+		<item>
+			<first>GAME_03</first>
+			<second>{9EB7610F-18DD-A04E-8587-EA4EC8CF0795}</second>
 		</item>
 	</transitions>
 	<resourceBundle>{00000000-0000-0000-0000-000000000000}</resourceBundle>
