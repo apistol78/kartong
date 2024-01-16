@@ -8,6 +8,14 @@ Kart = Kart or class("Kart", world.ScriptComponent)
 
 function Kart:new()
 	self._slideFxInstance = nil
+
+	local r = math.random() * 0.4
+	local g = math.random() * 0.4
+	local b = math.random() * 0.4
+
+	local h = render.IRenderSystem.getParameterHandle("KartColor")
+	local mpc = self.owner:getComponent(mesh.MeshParameterComponent)
+	mpc:setVectorParameter(h, Vector4(r, g, b, 1))
 end
 
 function Kart:update(contextObject, totalTime, deltaTime)

@@ -17,8 +17,6 @@ FrontEnd = FrontEnd or class("FrontEnd", Stage)
 function FrontEnd:new(params, environment)
 	Stage.new(self, params, environment)
 
-	self._clicked = false
-
 	-- Initialize UiKit.
 	Widget.initialize(
 		environment.resource.resourceManager,
@@ -38,7 +36,7 @@ function FrontEnd:new(params, environment)
 	MainView(fb)
 		:setHorizontalAlign(Widget.ALIGN_CENTER)
 		:setVerticalAlign(Widget.ALIGN_CENTER)
-		:setOnPlay(function() self._clicked = true end)
+		:setOnPlay(function(index) self:_loadLevel(index) end)
 		:setOnOptions(function() self:_toggleFullscreen() end)
 		:setOnExit(function() self:terminate() end)
 
@@ -57,19 +55,20 @@ function FrontEnd:finalize()
 end
 
 function FrontEnd:update(info)
-
-	if self._clicked then
-		local params = {
-			load = "GAME_03"
-		}
-		local nxt = self:loadStage("LOADING", params)
-		self:gotoStage(nxt)
-	end
-
 	Tween.update(info.simulationDeltaTime)
 end
 
 -- private
+
+function FrontEnd:_loadLevel(index)
+	local params = {}
+
+	if index == 0 then params.load = "GAME_02" end
+	if index == 1 then params.load = "GAME_03" end
+
+	local nxt = self:loadStage("LOADING", params)
+	self:gotoStage(nxt)
+end
 
 function FrontEnd:_toggleFullscreen()
 	environment.settings:setProperty("Render.FullScreen", true)

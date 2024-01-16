@@ -132,7 +132,7 @@
 		<item type="traktor.world.ScriptComponentData" version="2">
 			<class>{F07B8D04-912E-F246-BC33-3698C7A063F5}</class>
 			<properties/>
-			<editorSupport>false</editorSupport>
+			<editorSupport>true</editorSupport>
 		</item>
 		<item type="traktor.world.EventSetComponentData">
 			<eventData>
@@ -149,6 +149,9 @@
 					</second>
 				</item>
 			</eventData>
+		</item>
+		<item type="traktor.mesh.MeshParameterComponentData" version="1">
+			<textures/>
 		</item>
 	</components>
 </object>

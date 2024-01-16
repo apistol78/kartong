@@ -3,7 +3,12 @@
 	<fileName>Models/Kart 1/Kart.blend</fileName>
 	<importFilter>!Collision</importFilter>
 	<meshType>MtSkinned</meshType>
-	<materialShaders/>
+	<materialShaders>
+		<item>
+			<first>mat_car</first>
+			<second>{58179BC7-B803-894D-A04D-0156D01E15C6}</second>
+		</item>
+	</materialShaders>
 	<materialTextures/>
 	<scaleFactor>1</scaleFactor>
 	<offset>0, 0, 0, 0</offset>

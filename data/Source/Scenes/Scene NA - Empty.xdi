@@ -4,7 +4,7 @@
 		<viewNearZ>0.1</viewNearZ>
 		<viewFarZ>1000</viewFarZ>
 		<exposureMode>Fixed</exposureMode>
-		<exposure>0.75</exposure>
+		<exposure>0</exposure>
 		<shadowSettings>
 			<disabled>
 				<farZ>100</farZ>

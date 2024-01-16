@@ -13,14 +13,16 @@ function MainView:new(parent)
 	Container.new(self, parent, TableLayout({0}, {0}, 16, 16, 0, 16))
 
 	Selector(self)
-		:add("PLAY")
+		:add("PLAY 1")
+		:add("PLAY 2")
 		:add("OPTIONS")
 		:add("EXIT")
 		:setOnActivate(function(index)
 			print("activate " .. index)
-			if index == 0 then self._fnPlay() end
-			if index == 1 then self._fnOptions() end
-			if index == 2 then self._fnExit() end
+			if index == 0 then self._fnPlay(0) end
+			if index == 1 then self._fnPlay(1) end
+			if index == 2 then self._fnOptions() end
+			if index == 3 then self._fnExit() end
 		end)
 
 	self._dlgExit = nil

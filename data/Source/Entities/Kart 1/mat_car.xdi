@@ -5,8 +5,8 @@
 			<id>{C30BA8A1-C8A5-4243-BCD4-1D82F66FBECC}</id>
 			<comment/>
 			<position>
-				<first>-82</first>
-				<second>89</second>
+				<first>-803</first>
+				<second>375</second>
 			</position>
 			<name>VertexAttributes</name>
 			<connectable>true</connectable>
@@ -43,8 +43,8 @@
 			<id>{A66F16CB-8574-7246-B6EF-8DF30F3B39C5}</id>
 			<comment/>
 			<position>
-				<first>458</first>
-				<second>394</second>
+				<first>509</first>
+				<second>353</second>
 			</position>
 			<value>0</value>
 		</item>
@@ -52,29 +52,30 @@
 			<id>{BB4E9854-6F1D-FF4F-B8F6-73BC566E81A4}</id>
 			<comment/>
 			<position>
-				<first>426</first>
-				<second>444</second>
+				<first>477</first>
+				<second>392</second>
 			</position>
-			<value>0.5625</value>
+			<value>0.252802</value>
 		</item>
 		<item type="traktor.render.Scalar" version="traktor.render.Node:1">
 			<id>{BB4E9854-6F1D-FF4F-B8F6-73BC566E81A4}</id>
 			<comment/>
 			<position>
-				<first>458</first>
-				<second>494</second>
+				<first>477</first>
+				<second>426</second>
 			</position>
-			<value>0.5</value>
+			<value>0.551282</value>
 		</item>
-		<item type="traktor.render.Texture" version="1,traktor.render.Node:1">
-			<id>{DB1A8CD4-CAB6-B64E-BE84-600E9C5486B7}</id>
+		<item type="traktor.render.Uniform" version="3,traktor.render.Node:1">
+			<id>{D65735CB-506D-E046-9793-1A03CE8E9C41}</id>
 			<comment/>
 			<position>
-				<first>563</first>
-				<second>206</second>
+				<first>515</first>
+				<second>316</second>
 			</position>
-			<external>{5C3B5281-2431-9E4A-8844-4885CC19FC7F}</external>
-			<type>Texture2D</type>
+			<parameterName>KartColor</parameterName>
+			<type>Vector</type>
+			<frequency>Draw</frequency>
 		</item>
 	</nodes>
 	<edges>
@@ -121,7 +122,7 @@
 		<item type="traktor.render.Edge" version="1">
 			<source>
 				<node ref="/object/nodes/item[6]"/>
-				<id>{FFE19E4E-24A8-47A4-AE80-307495E31066}</id>
+				<id>{1E6639B6-8B58-4694-99E7-C058E3583522}</id>
 			</source>
 			<destination>
 				<node ref="/object/nodes/item[2]"/>

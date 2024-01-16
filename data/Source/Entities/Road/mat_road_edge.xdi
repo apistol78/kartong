@@ -5,8 +5,8 @@
 			<id>{C30BA8A1-C8A5-4243-BCD4-1D82F66FBECC}</id>
 			<comment/>
 			<position>
-				<first>19</first>
-				<second>153</second>
+				<first>-288</first>
+				<second>228</second>
 			</position>
 			<name>VertexAttributes</name>
 			<connectable>true</connectable>
@@ -43,8 +43,8 @@
 			<id>{6D6E3E5B-EFA2-7F4E-8040-F35BAA88199E}</id>
 			<comment/>
 			<position>
-				<first>401</first>
-				<second>215</second>
+				<first>121</first>
+				<second>290</second>
 			</position>
 			<color>1, 0, 0, 1</color>
 			<linear>true</linear>
@@ -53,8 +53,8 @@
 			<id>{A66F16CB-8574-7246-B6EF-8DF30F3B39C5}</id>
 			<comment/>
 			<position>
-				<first>320</first>
-				<second>457</second>
+				<first>591</first>
+				<second>354</second>
 			</position>
 			<value>0</value>
 		</item>
@@ -62,7 +62,7 @@
 			<id>{BB4E9854-6F1D-FF4F-B8F6-73BC566E81A4}</id>
 			<comment/>
 			<position>
-				<first>468</first>
+				<first>559</first>
 				<second>392</second>
 			</position>
 			<value>0.5625</value>
@@ -71,7 +71,7 @@
 			<id>{BB4E9854-6F1D-FF4F-B8F6-73BC566E81A4}</id>
 			<comment/>
 			<position>
-				<first>468</first>
+				<first>591</first>
 				<second>392</second>
 			</position>
 			<value>0.5</value>
@@ -80,8 +80,8 @@
 			<id>{6A983711-A98E-3C4A-B230-710D73A62AA1}</id>
 			<comment/>
 			<position>
-				<first>682</first>
-				<second>98</second>
+				<first>375</first>
+				<second>173</second>
 			</position>
 			<swizzle>y</swizzle>
 		</item>
@@ -89,8 +89,8 @@
 			<id>{191345A6-0809-0446-AE2F-B3E051029562}</id>
 			<comment/>
 			<position>
-				<first>376</first>
-				<second>107</second>
+				<first>69</first>
+				<second>182</second>
 			</position>
 			<names>
 				<item>TexCoord0</item>
@@ -100,8 +100,8 @@
 			<id>{8B342DA3-BD95-1149-BB54-C2A1015275C5}</id>
 			<comment/>
 			<position>
-				<first>852</first>
-				<second>111</second>
+				<first>545</first>
+				<second>186</second>
 			</position>
 			<branch>BrAuto</branch>
 			<operator>CoLess</operator>
@@ -110,8 +110,8 @@
 			<id>{2EEEA6EE-80D1-BE47-BE36-4B92384D74DA}</id>
 			<comment/>
 			<position>
-				<first>644</first>
-				<second>148</second>
+				<first>345</first>
+				<second>223</second>
 			</position>
 			<value>0.5</value>
 		</item>
@@ -119,8 +119,8 @@
 			<id>{77003238-8DB7-724F-A309-441F7C3A04C5}</id>
 			<comment/>
 			<position>
-				<first>396</first>
-				<second>275</second>
+				<first>89</first>
+				<second>350</second>
 			</position>
 			<color>1, 1, 1, 1</color>
 			<linear>true</linear>
