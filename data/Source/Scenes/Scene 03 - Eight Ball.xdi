@@ -3,7 +3,7 @@
 	<worldRenderSettings type="traktor.world.WorldRenderSettings" version="39">
 		<viewNearZ>0.1</viewNearZ>
 		<viewFarZ>1000</viewFarZ>
-		<exposureMode>Fixed</exposureMode>
+		<exposureMode>Adaptive</exposureMode>
 		<exposure>0</exposure>
 		<shadowSettings>
 			<disabled>
@@ -58,7 +58,7 @@
 			</ultra>
 		</shadowSettings>
 		<fogDistance>20</fogDistance>
-		<fogDensity>0.0008</fogDensity>
+		<fogDensity>0</fogDensity>
 		<fogDensityMax>0.25</fogDensityMax>
 		<fogColor>0.839216, 0.984314, 1, 1</fogColor>
 		<irradianceGrid>{2D8C2976-00FC-7548-BBFC-3A4CBF1A15AB}</irradianceGrid>
