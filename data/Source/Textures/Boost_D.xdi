@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <object type="traktor.render.TextureAsset" version="20">
-	<fileName>Textures/Tarmac_D.png</fileName>
+	<fileName>Textures/Boost_D.png</fileName>
 	<textureFormat>TfInvalid</textureFormat>
 	<normalMap>false</normalMap>
 	<scaleDepth>0</scaleDepth>
 	<generateMips>true</generateMips>
 	<keepZeroAlpha>false</keepZeroAlpha>
 	<textureType>Tt2D</textureType>
-	<hasAlpha>false</hasAlpha>
+	<hasAlpha>true</hasAlpha>
 	<generateAlpha>false</generateAlpha>
 	<invertAlpha>false</invertAlpha>
-	<ignoreAlpha>true</ignoreAlpha>
+	<ignoreAlpha>false</ignoreAlpha>
 	<premultiplyAlpha>false</premultiplyAlpha>
 	<dilateImage>false</dilateImage>
 	<scaleImage>false</scaleImage>
@@ -18,7 +18,7 @@
 	<scaleHeight>0</scaleHeight>
 	<flipX>false</flipX>
 	<flipY>false</flipY>
-	<enableCompression>true</enableCompression>
+	<enableCompression>false</enableCompression>
 	<encodeAsRGBM>false</encodeAsRGBM>
 	<inverseNormalMapX>false</inverseNormalMapX>
 	<inverseNormalMapY>false</inverseNormalMapY>

@@ -37,6 +37,7 @@
 				<item>Specular</item>
 				<item>Normal</item>
 				<item>Alpha</item>
+				<item>Decal response</item>
 			</names>
 		</item>
 		<item type="traktor.render.Scalar" version="traktor.render.Node:1">
@@ -77,12 +78,21 @@
 			<type>Vector</type>
 			<frequency>Draw</frequency>
 		</item>
+		<item type="traktor.render.Scalar" version="traktor.render.Node:1">
+			<id>{4D1A58FE-83FC-48CF-9B9C-5A5ABB4AD570}</id>
+			<comment/>
+			<position>
+				<first>529</first>
+				<second>531</second>
+			</position>
+			<value>0</value>
+		</item>
 	</nodes>
 	<edges>
 		<item type="traktor.render.Edge" version="1">
 			<source>
 				<node ref="/object/nodes/item[2]"/>
-				<id>{EEB495BD-DE7F-4DE8-9A3A-7E9B220B927F}</id>
+				<id>{EEB495BD-DE7F-4DE8-9B3A-7E9B220B927F}</id>
 			</source>
 			<destination>
 				<node ref="/object/nodes/item[1]"/>
@@ -127,6 +137,16 @@
 			<destination>
 				<node ref="/object/nodes/item[2]"/>
 				<id>{EEB495BD-DE7F-4DE8-943A-7E9B220B927F}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[7]"/>
+				<id>{D33F8931-C90C-4EBA-8A04-A31D3E08FAB7}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[2]"/>
+				<id>{EEB495BD-DE7F-4DE8-9A3A-7E9B220B927F}</id>
 			</destination>
 		</item>
 	</edges>

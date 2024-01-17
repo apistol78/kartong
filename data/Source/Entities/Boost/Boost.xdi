@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.world.EntityData" version="1">
+	<id>{7CCE3AEE-4BFD-4666-8E09-D0C3C108EB0E}</id>
+	<name/>
+	<transform>
+		<translation>0, 0, 0, 0</translation>
+		<rotation>0, 0, 0, 1</rotation>
+	</transform>
+	<components>
+		<item type="traktor.world.DecalComponentData">
+			<size>4</size>
+			<thickness>1</thickness>
+			<alpha>1</alpha>
+			<cullDistance>100</cullDistance>
+			<shader>{BD23655D-B9EB-1A43-BBC8-6184A6ACC57E}</shader>
+		</item>
+		<item type="traktor.world.VolumeComponentData">
+			<size>8, 8, 8, 0</size>
+		</item>
+		<item type="traktor.world.ScriptComponentData" version="2">
+			<class>{969375DD-3D4D-4156-991F-BED0E35E47A6}</class>
+			<properties/>
+			<editorSupport>false</editorSupport>
+		</item>
+	</components>
+</object>
