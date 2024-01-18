@@ -18,9 +18,10 @@ local function iif(c, f, t)
 end
 
 local function mapSteer(v)
-	v = v / 0.3
-	v = iif(v >= 0, -1, 1) * v ^ 2
-	return v * 0.3
+	--v = v / 0.3
+	--v = iif(v >= 0, -1, 1) * v ^ 2
+	--return v * 0.3
+	return v
 end
 
 -- Game
@@ -231,12 +232,12 @@ function Game:_updateKartBoost(boostFactor)
 	-- Left Kart
 	local kart = self.world:getEntity("Kart0")
 	local vc = kart:getComponent(physics.VehicleComponent)
-	vc.engineBoost = iif(p0 > p1, 0, 0.4) * boostFactor
+	vc.engineBoost = iif(p0 < p1, 0, 0.4) * boostFactor
 
 	-- Right Kart
 	local kart = self.world:getEntity("Kart1")
 	local vc = kart:getComponent(physics.VehicleComponent)
-	vc.engineBoost = iif(p1 > p0, 0, 0.4) * boostFactor
+	vc.engineBoost = iif(p1 < p0, 0, 0.4) * boostFactor
 end
 
 	]]>

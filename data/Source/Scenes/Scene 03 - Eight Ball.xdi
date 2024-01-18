@@ -213,12 +213,12 @@
 											<id>{CA9E22FB-6DF1-B247-9C17-A98440B17022}</id>
 											<name>C</name>
 											<transform>
-												<translation>13.319704, 9.927937, -103.677185, 0</translation>
-												<rotation>0.08887, 0.148834, -0.013431, 0.984769</rotation>
+												<translation>46.806274, -2.47279, -129.128357, 0</translation>
+												<rotation>-0.019773, 0.149409, 0.002989, 0.988573</rotation>
 											</transform>
 											<components>
 												<item type="traktor.shape.ControlPointComponentData">
-													<scale>1</scale>
+													<scale>1.05</scale>
 												</item>
 											</components>
 										</item>
@@ -397,8 +397,8 @@
 							<id>{064B5CC0-947D-9F47-8225-3E7F21541EAC}</id>
 							<name>Kart0</name>
 							<transform>
-								<translation>45.806904, 9.98818, -124.330582, 0</translation>
-								<rotation>-0.080962, 0.897148, 0.03903, 0.43249</rotation>
+								<translation>45.714188, -0.334478, -124.229622, 0</translation>
+								<rotation>0.028496, 0.88075, -0.115526, 0.458391</rotation>
 							</transform>
 							<components/>
 							<entityData>{3527F644-09BE-4B55-91E7-ECC6191F32C2}</entityData>
@@ -407,8 +407,8 @@
 							<id>{3D3C3B94-2F6E-5B47-9270-8E408693F7B7}</id>
 							<name>Kart1</name>
 							<transform>
-								<translation>41.317535, 8.974342, -129.987183, 0</translation>
-								<rotation>-0.080962, 0.897148, 0.03903, 0.43249</rotation>
+								<translation>41.410252, -0.91183, -130.088135, 0</translation>
+								<rotation>0.028496, 0.88075, -0.115526, 0.458391</rotation>
 							</transform>
 							<components/>
 							<entityData>{3527F644-09BE-4B55-91E7-ECC6191F32C2}</entityData>

@@ -48,7 +48,7 @@ function PlayerLogic:update(info)
 	local Tmin = pt:evaluateDirectional(t)
 	local dx = math.abs(Vector4.dot(Tmin.axisX, Tmin.translation - position))
 	local dy = Vector4.dot(Tmin.axisY, Tmin.translation - position)
-	if dx > 11 or dy > 2 then
+	if dx > 14 or dy > 2 then
 		self._offlimit = self._offlimit + info.simulationDeltaTime
 		if self._offlimit > 2 then
 			self._kart.transform = Tmin * Transform(self._resetOffset, Quaternion.identity)
