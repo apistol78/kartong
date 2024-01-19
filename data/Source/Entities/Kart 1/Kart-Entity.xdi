@@ -34,8 +34,16 @@
 				<linearThreshold>0.8</linearThreshold>
 				<angularThreshold>1</angularThreshold>
 			</bodyDesc>
-			<eventCollide/>
-			<transformFilter>0</transformFilter>
+			<eventCollide type="traktor.spray.SpawnEffectEventData" version="3">
+				<effect>{FFE0EC4F-1A29-DF41-B4D5-4BC32D81F738}</effect>
+				<transform>
+					<translation>0, 0, 0, 0</translation>
+					<rotation>0, 0, 0, 1</rotation>
+				</transform>
+				<follow>true</follow>
+				<useRotation>false</useRotation>
+			</eventCollide>
+			<transformFilter>0.05</transformFilter>
 		</item>
 		<item type="traktor.physics.VehicleComponentData" version="2">
 			<wheels>
@@ -152,6 +160,11 @@
 		</item>
 		<item type="traktor.mesh.MeshParameterComponentData" version="1">
 			<textures/>
+		</item>
+		<item type="traktor.spray.SoundComponentData">
+			<sound>{E03F7233-0806-B14B-810C-9901610CAF80}</sound>
+		</item>
+		<item type="traktor.spray.ListenerComponentData">
 		</item>
 	</components>
 </object>

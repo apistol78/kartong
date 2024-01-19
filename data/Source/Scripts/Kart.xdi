@@ -16,6 +16,9 @@ function Kart:new()
 	local h = render.IRenderSystem.getParameterHandle("KartColor")
 	local mpc = self.owner:getComponent(mesh.MeshParameterComponent)
 	mpc:setVectorParameter(h, Vector4(r, g, b, 1))
+
+	local sc = self.owner:getComponent(spray.SoundComponent)
+	sc:play()
 end
 
 function Kart:update(contextObject, totalTime, deltaTime)
@@ -51,6 +54,14 @@ function Kart:update(contextObject, totalTime, deltaTime)
 		self._slideFxInstance:cancelEnd()
 		self._slideFxInstance = nil
 	end
+
+	-- Adjust pitch from velocity.
+	local rb = self.owner:getComponent(physics.RigidBodyComponent)
+	local sc = self.owner:getComponent(spray.SoundComponent)
+	local mps = rb.body.linearVelocity.length
+	local pitch = 1 + mps / 15
+	sc:setPitch(pitch)
+
 end
 
 	]]>

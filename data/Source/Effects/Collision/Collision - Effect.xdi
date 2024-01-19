@@ -5,7 +5,7 @@
 	<loopEnd>0.5</loopEnd>
 	<layers>
 		<item type="traktor.spray.EffectLayerData" version="4">
-			<name>Pickup</name>
+			<name>Collision</name>
 			<time>0</time>
 			<duration>0</duration>
 			<emitter type="traktor.spray.EmitterData" version="7">
@@ -41,8 +41,8 @@
 						<max>0.1</max>
 					</mass>
 					<size>
-						<min>0.15</min>
-						<max>0.3</max>
+						<min>0.1</min>
+						<max>0.2</max>
 					</size>
 				</source>
 				<modifiers>
@@ -56,7 +56,7 @@
 						<world>true</world>
 					</item>
 				</modifiers>
-				<shader>{61B929ED-DBA8-E642-BFF3-B9F7ED11026C}</shader>
+				<shader>{1045B82A-21AF-6E4E-BFA8-29B5E2386A7D}</shader>
 				<mesh>{00000000-0000-0000-0000-000000000000}</mesh>
 				<effect/>
 				<middleAge>0.15</middleAge>
@@ -82,7 +82,7 @@
 			<trail/>
 			<sequence/>
 			<triggerEnable type="traktor.spray.SoundEventData" version="1">
-				<sound>{1A0982E0-5B6A-7942-970B-348B017E106C}</sound>
+				<sound>{E5832FA6-39A1-D24F-B156-E414D8E13D74}</sound>
 				<positional>true</positional>
 				<follow>false</follow>
 				<autoStopFar>false</autoStopFar>

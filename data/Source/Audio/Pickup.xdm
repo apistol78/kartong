@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.db.LocalInstanceMeta" version="2">
+	<guid>{1A0982E0-5B6A-7942-970B-348B017E106C}</guid>
+	<primaryType>traktor.sound.SoundAsset</primaryType>
+	<blobs/>
+</object>
