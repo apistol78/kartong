@@ -105,7 +105,6 @@
 			</outputPins>
 			<script>
 			<![CDATA[
-
 const vec3 d = abs($Input.xyz);
 if (d.x > d.y && d.x > d.z)
 	$Output = 0;
@@ -113,8 +112,6 @@ else if (d.y > d.x && d.y > d.z)
 	$Output = 1;
 else
 	$Output = 2;
-
-
 			]]>
 			</script>
 		</item>
@@ -123,9 +120,9 @@ else
 			<comment/>
 			<position>
 				<first>248</first>
-				<second>-1298</second>
+				<second>-1296</second>
 			</position>
-			<color>0.254902, 0.176471, 0.086275, 1</color>
+			<color>0.243137, 0.211765, 0.027451, 1</color>
 			<linear>true</linear>
 		</item>
 		<item type="traktor.render.Abs" version="traktor.render.Node:1">
@@ -184,7 +181,6 @@ else
 			<script>
 			<![CDATA[
 $Output = smoothstep(0, 1, $Input);
-
 			]]>
 			</script>
 		</item>

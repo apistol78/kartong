@@ -14,8 +14,8 @@
 					<max>0</max>
 				</gain>
 				<pitch>
-					<min>1</min>
-					<max>1</max>
+					<min>0.9</min>
+					<max>1.1</max>
 				</pitch>
 				<repeat>false</repeat>
 			</grain>

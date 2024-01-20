@@ -1466,6 +1466,56 @@
 								</item>
 							</components>
 						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{EB33EC08-6FB0-498E-9021-F34710B25733}</id>
+							<name>Eight-Entity</name>
+							<transform>
+								<translation>-206.79924, -0.711658, -5.089955, 0</translation>
+								<rotation>0.312025, -0.645941, -0.303043, 0.627348</rotation>
+							</transform>
+							<components/>
+							<entityData>{5EBF1222-6D2D-47E5-8A67-DF348D4CA639}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{83C04F15-C069-4581-A21B-C5B96CFEB02E}</id>
+							<name>Eight-Entity</name>
+							<transform>
+								<translation>-178.839264, 0.920485, 120.128899, 0</translation>
+								<rotation>0.043016, -0.716065, -0.041777, 0.695453</rotation>
+							</transform>
+							<components/>
+							<entityData>{5EBF1222-6D2D-47E5-8A67-DF348D4CA639}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{CD677570-C93B-4CA9-9452-24CFFCF908A5}</id>
+							<name>Eight-Entity</name>
+							<transform>
+								<translation>-121.880707, 6.220429, -5.089955, 0</translation>
+								<rotation>0.428637, -0.887345, -0.07393, 0.153047</rotation>
+							</transform>
+							<components/>
+							<entityData>{5EBF1222-6D2D-47E5-8A67-DF348D4CA639}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{2D2F496C-7C9A-4257-999A-506DC30AA238}</id>
+							<name>Eight-Entity</name>
+							<transform>
+								<translation>-196.372223, 0.075782, -73.580856, 0</translation>
+								<rotation>0.548024, 0, 0, 0.836463</rotation>
+							</transform>
+							<components/>
+							<entityData>{5EBF1222-6D2D-47E5-8A67-DF348D4CA639}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{A5F3D721-40DB-4F63-8CA2-A132CB653039}</id>
+							<name>Eight-Entity</name>
+							<transform>
+								<translation>-106.257782, 0.075782, -98.566391, 0</translation>
+								<rotation>0.548024, 0, 0, 0.836463</rotation>
+							</transform>
+							<components/>
+							<entityData>{5EBF1222-6D2D-47E5-8A67-DF348D4CA639}</entityData>
+						</item>
 					</entityData>
 				</item>
 			</components>
@@ -1707,6 +1757,16 @@
 							<entityData>{8393026F-F332-8B4C-A33C-121C611B7FFD}</entityData>
 						</item>
 						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{2A826C64-ED75-49B7-BA95-D5C98B4A0D2B}</id>
+							<name>Pickup</name>
+							<transform>
+								<translation>-132.746674, 15.473405, 109.344872, 0</translation>
+								<rotation>0, 0, -0.049979, 0.99875</rotation>
+							</transform>
+							<components/>
+							<entityData>{8393026F-F332-8B4C-A33C-121C611B7FFD}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
 							<id>{801BB7E9-3356-4A2A-9CC8-1A40437F2572}</id>
 							<name>Pickup</name>
 							<transform>
@@ -1775,6 +1835,66 @@
 							</transform>
 							<components/>
 							<entityData>{E7EFD7F5-276D-4494-9767-E9D63712ABEF}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{2786A947-3C82-49BA-8AF8-9875DD659F03}</id>
+							<name>Cone</name>
+							<transform>
+								<translation>-174.807251, 4.699435, -16.795921, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{E4D4D79B-CA05-4D23-A09B-055ECDBB6E60}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{F07908E6-5AAE-4CA6-8B47-014F63FF27E1}</id>
+							<name>Cone</name>
+							<transform>
+								<translation>-178.252335, 4.944409, -17.33079, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{E4D4D79B-CA05-4D23-A09B-055ECDBB6E60}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{55A371FF-FC01-4C1F-B0C9-F2A22557AC0A}</id>
+							<name>Cone</name>
+							<transform>
+								<translation>-171.23526, 4.639144, -15.640072, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{E4D4D79B-CA05-4D23-A09B-055ECDBB6E60}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{67FDCB8A-2C62-4DDB-A66B-61A3AF25207B}</id>
+							<name>Cone</name>
+							<transform>
+								<translation>-167.988449, 4.422494, -15.320889, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{E4D4D79B-CA05-4D23-A09B-055ECDBB6E60}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{408DF6F0-D3EA-4C03-B7B4-2893354EA7D5}</id>
+							<name>Cone</name>
+							<transform>
+								<translation>-163.885849, 4.195858, -14.953157, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{E4D4D79B-CA05-4D23-A09B-055ECDBB6E60}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{5B552B13-CBA3-4BE1-9435-8334CE9BC430}</id>
+							<name>Cone</name>
+							<transform>
+								<translation>-160.575424, 3.983357, -14.23627, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{E4D4D79B-CA05-4D23-A09B-055ECDBB6E60}</entityData>
 						</item>
 					</entityData>
 				</item>

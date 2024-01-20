@@ -9,11 +9,11 @@
 			<filters/>
 			<gain>
 				<min>0</min>
-				<max>2</max>
+				<max>4</max>
 			</gain>
 			<pitch>
-				<min>0.85</min>
-				<max>1.2</max>
+				<min>0.7</min>
+				<max>1</max>
 			</pitch>
 			<repeat>false</repeat>
 		</item>

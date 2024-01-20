@@ -26,6 +26,7 @@ function Kart:update(contextObject, totalTime, deltaTime)
 	local vehicleComponent < const > = self.owner:getComponent(physics.VehicleComponent)
 	local sliding = false
 
+	-- Update wheel joints.
 	local wheelJoints = { "FL", "FR", "RL", "RR" }
 	for i = 1, #wheelJoints do
 		local wheel = vehicleComponent.wheels:get(i - 1)
@@ -45,6 +46,16 @@ function Kart:update(contextObject, totalTime, deltaTime)
 
 		sliding = sliding or wheel.sliding
 	end
+
+	-- Update steering wheel joint.
+	local Twheel = Transform(Vector4.zero, Quaternion.fromEulerAngles(0, 0, vehicleComponent.steerAngleFiltered * 2))
+	local Tjoint = skeletonComponent:getJointTransform("Steering")
+
+	skeletonComponent:setPoseTransform(
+		"Steering",
+		Tjoint * Twheel,
+		false		
+	)	
 
 	-- Issue tire smoke if kart is sliding.
 	if sliding and self._slideFxInstance == nil then
