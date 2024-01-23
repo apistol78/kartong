@@ -4,7 +4,7 @@
 		<viewNearZ>0.1</viewNearZ>
 		<viewFarZ>1000</viewFarZ>
 		<exposureMode>Fixed</exposureMode>
-		<exposure>0.3</exposure>
+		<exposure>0.6</exposure>
 		<shadowSettings>
 			<disabled>
 				<farZ>100</farZ>
@@ -93,7 +93,7 @@
 							<name>Sky</name>
 							<transform>
 								<translation>-14.170444, 0, 1.713573, 0</translation>
-								<rotation>0.405531, 0.325615, -0.15729, 0.839511</rotation>
+								<rotation>-0.117557, 0.187501, 0.022609, 0.974942</rotation>
 							</transform>
 							<components>
 								<item type="traktor.weather.SkyComponentData" version="4">
