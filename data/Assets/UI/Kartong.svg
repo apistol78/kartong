@@ -7,7 +7,7 @@
    viewBox="0 0 338.66668 190.50001"
    version="1.1"
    id="svg1"
-   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
    sodipodi:docname="Kartong.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -25,15 +25,15 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="pt"
      showborder="true"
-     inkscape:zoom="16"
-     inkscape:cx="12.125"
-     inkscape:cy="26.624999"
-     inkscape:window-width="1840"
-     inkscape:window-height="1236"
-     inkscape:window-x="609"
-     inkscape:window-y="38"
+     inkscape:zoom="0.5"
+     inkscape:cx="524"
+     inkscape:cy="203"
+     inkscape:window-width="1349"
+     inkscape:window-height="914"
+     inkscape:window-x="4171"
+     inkscape:window-y="2438"
      inkscape:window-maximized="0"
-     inkscape:current-layer="MC_Kart"
+     inkscape:current-layer="MC_LevelBox"
      showgrid="false" />
   <defs
      id="defs1" />
@@ -67,11 +67,26 @@
      inkscape:groupmode="layer"
      id="MC_Kart"
      inkscape:label="MC_Kart"
-     traktor:sprite="1">
+     traktor:sprite="1"
+     sodipodi:insensitive="true">
     <path
        style="opacity:1;fill:#ffffff;fill-opacity:1;stroke-width:0.78579;stroke-linecap:round"
        d="m 0.03307291,0.97565108 0.64142653,0.0241371 V 1.8662968 H 2.2049169 V 0.99663979 L 4.2023448,2.0859558 H 5.5345377 V 1.4825292 H 6.1019533 V 4.3548409 H 5.4851978 V 3.7607667 H 4.1784645 L 2.2287247,4.8496504 V 4.0410586 H 0.72383983 V 4.8617191 H 0.03307291 Z"
        id="path2"
        sodipodi:nodetypes="ccccccccccccccccccc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="MC_LevelBox"
+     inkscape:label="MC_LevelBox"
+     style="stroke:none;fill:#00ff00;fill-opacity:1"
+     traktor:sprite="1">
+    <rect
+       style="fill:#009fb2;fill-opacity:1;stroke:none;stroke-width:0.5;-inkscape-stroke:none;stop-color:#000000"
+       id="rect291"
+       width="45.155556"
+       height="45.155556"
+       x="0"
+       y="0" />
   </g>
 </svg>

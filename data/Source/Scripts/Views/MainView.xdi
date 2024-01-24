@@ -13,16 +13,14 @@ function MainView:new(parent)
 	Container.new(self, parent, TableLayout({0}, {0}, 16, 16, 0, 16))
 
 	Selector(self)
-		:add("PLAY 1")
-		:add("PLAY 2")
+		:add("PLAY")
 		:add("OPTIONS")
 		:add("EXIT")
 		:setOnActivate(function(index)
-			print("activate " .. index)
-			if index == 0 then self._fnPlay(0) end
-			if index == 1 then self._fnPlay(1) end
-			if index == 2 then self._fnOptions() end
-			if index == 3 then self._fnExit() end
+			print("main activate " .. index)
+			if index == 0 then self._fnPlay() end
+			if index == 1 then self._fnOptions() end
+			if index == 2 then self._fnExit() end
 		end)
 
 	self._dlgExit = nil
@@ -45,28 +43,6 @@ end
 function MainView:setOnExit(fn)
 	self._fnExit = fn
 	return self
-end
-
-function MainView:_onExit()
-	self._dlgExit = Dialog(self:getAncestor(), TableLayout({0}, {100, 0}, 16, 16, 16, 16))
-	Static(self._dlgExit, "Are you sure?")
-
-	local ct = Container(self._dlgExit, TableLayout({0, 0}, {0}, 0, 0, 16, 16))
-		:setHorizontalAlign(Widget.ALIGN_CENTER)
-
-	PushButton(ct, "Yes")
-		:setOnClick(function()
-			self._dlgExit:remove()
-			self._dlgExit = nil
-			 self._fnExit()
-		end)
-	PushButton(ct, "No")
-		:setOnClick(function()
-			self._dlgExit:remove()
-			self._dlgExit = nil
-		end)
-
-	self._dlgExit:show()
 end
 
 	]]>

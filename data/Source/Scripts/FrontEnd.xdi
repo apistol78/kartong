@@ -7,6 +7,7 @@
 
 #using \{21076EFA-565B-E044-8E13-BC01DB4BA31E}
 #using \{126D6B63-5192-104A-BAE3-F178A1229D8C}
+#using \{EA350781-DBB5-394D-B738-DDD232C4887F}
 
 import(traktor)
 
@@ -36,7 +37,7 @@ function FrontEnd:new(params, environment)
 	MainView(fb)
 		:setHorizontalAlign(Widget.ALIGN_CENTER)
 		:setVerticalAlign(Widget.ALIGN_CENTER)
-		:setOnPlay(function(index) self:_loadLevel(index) end)
+		:setOnPlay(function() fb:showPage("SELECT_LEVEL") end)
 		:setOnOptions(function() self:_toggleFullscreen() end)
 		:setOnExit(function() self:terminate() end)
 
@@ -44,6 +45,11 @@ function FrontEnd:new(params, environment)
 		:setHorizontalAlign(Widget.ALIGN_CENTER)
 		:setVerticalAlign(Widget.ALIGN_CENTER)
 		:setOnReturn(function() fb:showPage("MAIN") end)
+
+	SelectLevelView(fb)
+		:setHorizontalAlign(Widget.ALIGN_CENTER)
+		:setVerticalAlign(Widget.ALIGN_CENTER)
+		:setOnPlay(function(index) self:_loadLevel(index) end)
 
 	fb:showPage("MAIN")
 
@@ -63,8 +69,14 @@ end
 function FrontEnd:_loadLevel(index)
 	local params = {}
 
-	if index == 0 then params.load = "GAME_02" end
-	if index == 1 then params.load = "GAME_03" end
+	if index == 0 then
+		params.load = "GAME_02"
+	elseif index == 1 then
+		params.load = "GAME_03"
+	else
+		print("no such level")
+		return
+	end
 
 	local nxt = self:loadStage("LOADING", params)
 	self:gotoStage(nxt)

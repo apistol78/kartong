@@ -57,6 +57,9 @@ function PlayerLogic:update(info)
 	else
 		self._offlimit = 0
 	end
+
+	-- Calculate optimal tracking transform.
+	self._Toptimal = pt:evaluateDirectional(t + 0.004)
 end
 
 -- Get player's speed in km/h.

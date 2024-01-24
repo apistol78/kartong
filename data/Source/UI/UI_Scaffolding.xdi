@@ -11,6 +11,7 @@
 #using \{21076EFA-565B-E044-8E13-BC01DB4BA31E}
 #using \{126D6B63-5192-104A-BAE3-F178A1229D8C}
 #using \{862D5F23-6E73-4FD2-933F-9C659B62BADB}
+#using \{EA350781-DBB5-394D-B738-DDD232C4887F}
 
 import(traktor)
 
@@ -23,6 +24,10 @@ function UI_Scaffolding:setup(frame)
 	HudView(fb)
 
 	MainView(fb)
+		:setHorizontalAlign(Widget.ALIGN_CENTER)
+		:setVerticalAlign(Widget.ALIGN_CENTER)
+
+	SelectLevelView(fb)
 		:setHorizontalAlign(Widget.ALIGN_CENTER)
 		:setVerticalAlign(Widget.ALIGN_CENTER)
 
@@ -39,7 +44,7 @@ function UI_Scaffolding:setup(frame)
 		:setHorizontalAlign(Widget.ALIGN_CENTER)
 		:setVerticalAlign(Widget.ALIGN_CENTER)
 
-	fb:showPage("MAIN")
+	fb:showPage("SELECT_LEVEL")
 
 end
 
