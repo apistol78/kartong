@@ -17,13 +17,6 @@ local function iif(c, f, t)
 	if not c then return f end; return t
 end
 
-local function mapSteer(v)
-	--v = v / 0.3
-	--v = iif(v >= 0, -1, 1) * v ^ 2
-	--return v * 0.3
-	return v
-end
-
 -- Game
 
 Game = Game or class("Game", Stage)
@@ -212,7 +205,7 @@ function Game:_updateKartInput(info, throttleFactor)
 
 	local kart = self.world:getEntity("Kart0")
 	local vc = kart:getComponent(physics.VehicleComponent)
-	vc.steerAngle = mapSteer(steer)
+	vc.steerAngle = steer
 	vc.engineThrottle = throttle * throttleFactor
 
 	-- Right Kart
@@ -221,7 +214,7 @@ function Game:_updateKartInput(info, throttleFactor)
 
 	local kart = self.world:getEntity("Kart1")
 	local vc = kart:getComponent(physics.VehicleComponent)
-	vc.steerAngle = mapSteer(steer)
+	vc.steerAngle = steer
 	vc.engineThrottle = throttle * throttleFactor
 end
 

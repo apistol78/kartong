@@ -44,7 +44,7 @@ function UI_Scaffolding:setup(frame)
 		:setHorizontalAlign(Widget.ALIGN_CENTER)
 		:setVerticalAlign(Widget.ALIGN_CENTER)
 
-	fb:showPage("SELECT_LEVEL")
+	fb:showPage("MAIN")
 
 end
 
