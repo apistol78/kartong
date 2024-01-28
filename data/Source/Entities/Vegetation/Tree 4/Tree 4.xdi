@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.world.EntityData" version="1">
+	<id>{80420876-F730-44C8-B860-7A34D10B91C1}</id>
+	<name>Tree 4</name>
+	<transform>
+		<translation>0, 0, 0, 0</translation>
+		<rotation>0, 0, 0, 1</rotation>
+	</transform>
+	<components>
+		<item type="traktor.mesh.MeshComponentData" version="1">
+			<mesh>{448F4B30-824A-4D3A-B799-6B924BA147DB}</mesh>
+		</item>
+	</components>
+</object>

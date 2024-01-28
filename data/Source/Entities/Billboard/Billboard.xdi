@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.world.EntityData" version="1">
+	<id>{A607F988-DF70-425D-BCE3-48BF50147FC0}</id>
+	<name>Billboard</name>
+	<transform>
+		<translation>0, 0, 0, 0</translation>
+		<rotation>0, 0, 0, 1</rotation>
+	</transform>
+	<components>
+		<item type="traktor.mesh.MeshComponentData" version="1">
+			<mesh>{51B65265-B1BF-4CEA-AA44-8F0F7C822FC5}</mesh>
+		</item>
+	</components>
+</object>

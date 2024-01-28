@@ -5,7 +5,7 @@
 	<normalMap>false</normalMap>
 	<scaleDepth>0</scaleDepth>
 	<generateMips>true</generateMips>
-	<keepZeroAlpha>false</keepZeroAlpha>
+	<keepZeroAlpha>true</keepZeroAlpha>
 	<textureType>Tt2D</textureType>
 	<hasAlpha>true</hasAlpha>
 	<generateAlpha>false</generateAlpha>
