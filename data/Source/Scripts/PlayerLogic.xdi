@@ -6,7 +6,7 @@ import(traktor)
 
 PlayerLogic = PlayerLogic or class("PlayerLogic")
 
-function PlayerLogic:new(kart, road, pickups, resetOffset)
+function PlayerLogic:new(kart, road, pickups, resetOffset, inputStates)
 	self._kart = kart
 	self._road = road
 	self._pickups = pickups
@@ -15,13 +15,19 @@ function PlayerLogic:new(kart, road, pickups, resetOffset)
 	self._kph = 0
 	self._offlimit = 0
 	self._resetOffset = resetOffset
+	self._inputStates = inputStates
 end
 
-function PlayerLogic:update(info)
-	local rb = self._kart:getComponent(physics.RigidBodyComponent)
-	local pt = self._road:getComponent(world.PathComponent)
+function PlayerLogic:update(info, throttleFactor)
+	local vc < const > = self._kart:getComponent(physics.VehicleComponent)
+	local rb < const > = self._kart:getComponent(physics.RigidBodyComponent)
+	local pt < const > = self._road:getComponent(world.PathComponent)
 	local position < const > = self._kart.transform.translation
 	local t = pt:findClosest(position)
+
+	-- Update input.
+	vc.steerAngle = self._inputStates.steer:getValue()
+	vc.engineThrottle = self._inputStates.throttle:getValue() * throttleFactor
 
 	-- Calculate speed.
 	local mps = rb.body.linearVelocity.length

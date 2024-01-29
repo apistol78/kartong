@@ -65,8 +65,26 @@ function Game:new(params, environment)
 	self._followCamera1 = FollowCamera(camera, kart1)
 
 	-- Game logic.
-	self._logic0 = PlayerLogic(kart0, road, pickups, Vector4(-4, 1, 0))
-	self._logic1 = PlayerLogic(kart1, road, pickups, Vector4( 4, 1, 0))
+	self._logic0 = PlayerLogic(
+		kart0,
+		road,
+		pickups,
+		Vector4(-4, 1, 0),
+		{
+			steer = environment.input.inputMapping:getState("STATE_STEER_0"),
+			throttle = environment.input.inputMapping:getState("STATE_THROTTLE_0")
+		}
+	)
+	self._logic1 = PlayerLogic(
+		kart1,
+		road,
+		pickups,
+		Vector4( 4, 1, 0),
+		{
+			steer = environment.input.inputMapping:getState("STATE_STEER_1"),
+			throttle = environment.input.inputMapping:getState("STATE_THROTTLE_1")
+		}
+	)
 
 	-- Set game state.
 	self._updateFn = Game._updateStart
@@ -125,7 +143,10 @@ function Game:_updatePause(info)
 end
 
 function Game:_updateStart(info)
-	self:_updateKartInput(info, 0)
+	-- Update kart logic.
+	self._logic0:update(info, 0)
+	self._logic1:update(info, 0)
+
 	if info.stateTime < 2 then
 		self._countDownView:setText("READY...")
 	elseif info.stateTime < 4 then
@@ -138,13 +159,12 @@ function Game:_updateStart(info)
 end
 
 function Game:_updateKickOff(info)
-	self:_updateKartInput(info, 1)
 	self:_updateKartBoost(0)
 	self:_updateUI()
 
 	-- Update kart logic.
-	self._logic0:update(info)
-	self._logic1:update(info)
+	self._logic0:update(info, 1)
+	self._logic1:update(info, 1)
 
 	if info.stateTime >= 6 then
 		self._updateFn = Game._updateRace
@@ -152,13 +172,12 @@ function Game:_updateKickOff(info)
 end
 
 function Game:_updateRace(info)
-	self:_updateKartInput(info, 1)
 	self:_updateKartBoost(1)
 	self:_updateUI()
 
 	-- Update kart logic.
-	self._logic0:update(info)
-	self._logic1:update(info)
+	self._logic0:update(info, 1)
+	self._logic1:update(info, 1)
 
 	-- Check if any has finished.
 	if self._logic0:getLap() > 3 or self._logic1:getLap() > 3 then
@@ -168,12 +187,11 @@ function Game:_updateRace(info)
 end
 
 function Game:_updateFinished(info)
-	self:_updateKartInput(info, 0)
 	self:_updateKartBoost(0)
 
 	-- Update kart logic.
-	self._logic0:update(info)
-	self._logic1:update(info)
+	self._logic0:update(info, 1)
+	self._logic1:update(info, 1)
 
 	local confirm < const > = self._inputMapping:isStatePressed("STATE_CONFIRM")
 	if confirm then
@@ -196,26 +214,6 @@ function Game:_updateUI()
 	local kp0 = self._logic0:getPosition() / 3
 	local kp1 = self._logic1:getPosition() / 3
 	self._hudView:setPositions(kp0, kp1)
-end
-
-function Game:_updateKartInput(info, throttleFactor)
-	-- Left Kart
-	local steer = self._inputMapping:getStateValue("STATE_STEER_0")
-	local throttle = self._inputMapping:getStateValue("STATE_THROTTLE_0")
-
-	local kart = self.world:getEntity("Kart0")
-	local vc = kart:getComponent(physics.VehicleComponent)
-	vc.steerAngle = steer
-	vc.engineThrottle = throttle * throttleFactor
-
-	-- Right Kart
-	local steer = self._inputMapping:getStateValue("STATE_STEER_1")
-	local throttle = self._inputMapping:getStateValue("STATE_THROTTLE_1")
-
-	local kart = self.world:getEntity("Kart1")
-	local vc = kart:getComponent(physics.VehicleComponent)
-	vc.steerAngle = steer
-	vc.engineThrottle = throttle * throttleFactor
 end
 
 function Game:_updateKartBoost(boostFactor)
