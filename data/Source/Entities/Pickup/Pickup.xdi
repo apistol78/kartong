@@ -12,7 +12,7 @@
 			<properties/>
 			<editorSupport>false</editorSupport>
 		</item>
-		<item type="traktor.world.FacadeComponentData">
+		<item type="traktor.world.GroupComponentData">
 			<entityData>
 				<item type="traktor.world.EntityData" version="1">
 					<id>{3D91922F-0C3F-B64E-A7CC-41E4B460F13D}</id>
@@ -32,7 +32,6 @@
 					</components>
 				</item>
 			</entityData>
-			<show>Normal</show>
 		</item>
 		<item type="traktor.world.EventSetComponentData">
 			<eventData>
@@ -49,6 +48,9 @@
 					</second>
 				</item>
 			</eventData>
+		</item>
+		<item type="traktor.world.FacadeComponentData">
+			<show>Normal</show>
 		</item>
 	</components>
 </object>
