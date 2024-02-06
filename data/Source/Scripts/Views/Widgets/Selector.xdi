@@ -54,8 +54,7 @@ end
 function Selector:_initialize(parent, mc)
 	Widget._initialize(self, parent, mc)
 
-	self._background_mc = Widget._createResource(self, "MC_RacePositionBg")
-	self._background_mc.scale = Vector2(40, 10)
+	self._background_mc = Widget._createResource(self, "MC_SelectorBg")
 	assert(self._background_mc ~= nil)
 
 	local cx = self._mc.context
@@ -74,12 +73,17 @@ function Selector:_layout()
 	local p = self:getPlacement()
 	local w = self._background_mc.width
 	local y = 0
-	for _, mc in ipairs(self._items) do
+	for idx, mc in ipairs(self._items) do
 		local x < const > = (w - mc:getPreferredSize().width) / 2
 		mc:place(x, y, p.width, 10)
+		if idx == self._index + 1 then
+			mc:setTextColor(Color4f(1, 1, 1, 1))
+		else
+			mc:setTextColor(Color4f(0, 0, 0, 1))
+		end
 		y = y + 60
 	end
-	self._background_mc.Y = 48 + self._index * 60
+	self._background_mc.Y = 10 + self._index * 60
 end
 
 function Selector:_eventKeyDown()

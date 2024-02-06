@@ -27,7 +27,7 @@ function FrontEnd:new(params, environment)
 	-- Create frame.
 	self._frame = Frame(
 		self.spark.root,
-		1280/2, 720/2,
+		1280, 720,
 		FloodLayout()
 	)
 	self._frame:update()

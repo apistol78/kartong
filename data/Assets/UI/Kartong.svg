@@ -25,15 +25,15 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="pt"
      showborder="true"
-     inkscape:zoom="0.5"
-     inkscape:cx="524"
-     inkscape:cy="203"
-     inkscape:window-width="1349"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="378.30213"
+     inkscape:cy="180.31223"
+     inkscape:window-width="1346"
      inkscape:window-height="914"
-     inkscape:window-x="4171"
-     inkscape:window-y="2438"
+     inkscape:window-x="3908"
+     inkscape:window-y="2446"
      inkscape:window-maximized="0"
-     inkscape:current-layer="MC_LevelBox"
+     inkscape:current-layer="MC_SelectorBg"
      showgrid="false" />
   <defs
      id="defs1" />
@@ -42,7 +42,7 @@
      inkscape:groupmode="layer"
      id="MC_TextBackground"
      traktor:sprite="1"
-     style="display:inline"
+     style="display:none"
      sodipodi:insensitive="true">
     <path
        id="rect351"
@@ -55,7 +55,7 @@
      id="MC_RacePositionBg"
      inkscape:label="MC_RacePositionBg"
      traktor:sprite="1"
-     style="display:inline"
+     style="display:none"
      sodipodi:insensitive="true">
     <path
        id="rect351-7"
@@ -65,10 +65,23 @@
   </g>
   <g
      inkscape:groupmode="layer"
+     id="MC_SelectorBg"
+     inkscape:label="MC_SelectorBg"
+     traktor:sprite="1"
+     style="display:inline">
+    <path
+       id="path136"
+       style="display:inline;fill:#001956;fill-opacity:0.779377;stroke:none;stop-color:#000000"
+       d="m 7.40834,0 h 109.8788 L 109.8788,11.795122 H 0 Z"
+       sodipodi:nodetypes="ccccc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
      id="MC_Kart"
      inkscape:label="MC_Kart"
      traktor:sprite="1"
-     sodipodi:insensitive="true">
+     sodipodi:insensitive="true"
+     style="display:none">
     <path
        style="opacity:1;fill:#ffffff;fill-opacity:1;stroke-width:0.78579;stroke-linecap:round"
        d="m 0.03307291,0.97565108 0.64142653,0.0241371 V 1.8662968 H 2.2049169 V 0.99663979 L 4.2023448,2.0859558 H 5.5345377 V 1.4825292 H 6.1019533 V 4.3548409 H 5.4851978 V 3.7607667 H 4.1784645 L 2.2287247,4.8496504 V 4.0410586 H 0.72383983 V 4.8617191 H 0.03307291 Z"
@@ -79,8 +92,9 @@
      inkscape:groupmode="layer"
      id="MC_LevelBox"
      inkscape:label="MC_LevelBox"
-     style="stroke:none;fill:#00ff00;fill-opacity:1"
-     traktor:sprite="1">
+     style="display:none;fill:#00ff00;fill-opacity:1;stroke:none"
+     traktor:sprite="1"
+     sodipodi:insensitive="true">
     <rect
        style="fill:#009fb2;fill-opacity:1;stroke:none;stroke-width:0.5;-inkscape-stroke:none;stop-color:#000000"
        id="rect291"
