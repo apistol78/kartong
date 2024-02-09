@@ -10,10 +10,8 @@ function Boost:new()
 end
 
 function Boost:update(contextObject, totalTime, deltaTime)
-	local stage < const > = contextObject
-
 	-- Left kart
-	local kart = stage.world:getEntity("Kart0")
+	local kart = self.owner.world:getEntity("Kart0", 0)
 	local position = kart.transform.translation
 
 	if self.owner:getComponent(world.VolumeComponent):inside(position) then
@@ -26,7 +24,7 @@ function Boost:update(contextObject, totalTime, deltaTime)
 	end
 
 	-- Right kart
-	local kart = stage.world:getEntity("Kart1")
+	local kart = self.owner.world:getEntity("Kart1", 0)
 	local position = kart.transform.translation
 
 	if self.owner:getComponent(world.VolumeComponent):inside(position) then
@@ -37,7 +35,6 @@ function Boost:update(contextObject, totalTime, deltaTime)
 			false
 		)
 	end
-
 end
 
 	]]>

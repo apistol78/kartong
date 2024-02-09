@@ -53,15 +53,18 @@ function Game:new(params, environment)
 	-- Ensure frame is properly layed out.
 	self._frame:layout()
 
-	local kart0 = self.world:getEntity("Kart0")
-	local kart1 = self.world:getEntity("Kart1")
-	local road = self.world:getEntity("Road")
-	local pickups = self.world:getEntities("Pickup")
+	local world < const > = self.world.world
+
+	-- Get game entities.
+	local kart0 = world:getEntity("Kart0")
+	local kart1 = world:getEntity("Kart1")
+	local road = world:getEntity("Road")
+	local pickups = world:getEntities("Pickup")
 
 	-- Create camera handlers.
-	local camera = self.world:getEntity("Camera0")
+	local camera = world:getEntity("Camera0")
 	self._followCamera0 = FollowCamera(camera, kart0)
-	local camera = self.world:getEntity("Camera1")
+	local camera = world:getEntity("Camera1")
 	self._followCamera1 = FollowCamera(camera, kart1)
 
 	-- Game logic.
@@ -220,13 +223,15 @@ function Game:_updateKartBoost(boostFactor)
 	local p0 < const > = self._logic0:getPosition()
 	local p1 < const > = self._logic1:getPosition()
 
+	local world < const > = self.world.world
+
 	-- Left Kart
-	local kart = self.world:getEntity("Kart0")
+	local kart = world:getEntity("Kart0")
 	local vc = kart:getComponent(physics.VehicleComponent)
 	vc.engineBoost = iif(p0 < p1, 0, 0.4) * boostFactor
 
 	-- Right Kart
-	local kart = self.world:getEntity("Kart1")
+	local kart = world:getEntity("Kart1")
 	local vc = kart:getComponent(physics.VehicleComponent)
 	vc.engineBoost = iif(p1 < p0, 0, 0.4) * boostFactor
 end

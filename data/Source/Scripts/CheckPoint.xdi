@@ -10,15 +10,11 @@ function CheckPoint:new()
 end
 
 function CheckPoint:update(contextObject, totalTime, deltaTime)
-	local stage < const > = contextObject
-
-	local kart = stage.world:getEntity("Kart0")
-	local position = kart.transform.translation
-
+	local kart < const > = self.owner.world:getEntity("Kart0", 0)
+	local position < const > = kart.transform.translation
 	if self.owner:getComponent(world.VolumeComponent):inside(position) then
 		print("KART 0 INSIDE CHECKPOINT")
 	end
-
 end
 
 	]]>
