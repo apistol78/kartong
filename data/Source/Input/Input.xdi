@@ -165,6 +165,22 @@
 		<item type="traktor.input.InReadValue">
 			<valueId>ID_KEY_ESCAPE</valueId>
 		</item>
+		<item type="traktor.input.InReadValue">
+			<valueId>ID_GP0_ACTION</valueId>
+		</item>
+		<item type="traktor.input.InBoolean">
+			<source>
+				<item ref="/object/inputNodes/item[27]"/>
+				<item type="traktor.input.InReadValue">
+					<valueId>ID_KEY_ACTION</valueId>
+				</item>
+			</source>
+			<op>OpOr</op>
+		</item>
+		<item ref="/object/inputNodes/item[28]/source/item[1]"/>
+		<item type="traktor.input.InReadValue">
+			<valueId>ID_GP1_ACTION</valueId>
+		</item>
 	</inputNodes>
 	<positions>
 		<item>
@@ -474,6 +490,52 @@
 				<y>1255</y>
 			</position>
 		</item>
+		<item>
+			<object type="traktor.input.InputStateData">
+				<source ref="/object/inputNodes/item[28]"/>
+			</object>
+			<position>
+				<x>1202</x>
+				<y>1541</y>
+			</position>
+		</item>
+		<item>
+			<object ref="/object/inputNodes/item[27]"/>
+			<position>
+				<x>674</x>
+				<y>1515</y>
+			</position>
+		</item>
+		<item>
+			<object ref="/object/inputNodes/item[28]"/>
+			<position>
+				<x>993</x>
+				<y>1490</y>
+			</position>
+		</item>
+		<item>
+			<object ref="/object/inputNodes/item[28]/source/item[1]"/>
+			<position>
+				<x>692</x>
+				<y>1582</y>
+			</position>
+		</item>
+		<item>
+			<object type="traktor.input.InputStateData">
+				<source ref="/object/inputNodes/item[30]"/>
+			</object>
+			<position>
+				<x>1136</x>
+				<y>1713</y>
+			</position>
+		</item>
+		<item>
+			<object ref="/object/inputNodes/item[30]"/>
+			<position>
+				<x>729</x>
+				<y>1749</y>
+			</position>
+		</item>
 	</positions>
 	<sourceData type="traktor.input.InputMappingSourceData">
 		<sourceData>
@@ -625,6 +687,14 @@
 	</sourceData>
 	<stateData type="traktor.input.InputMappingStateData">
 		<stateData>
+			<item>
+				<first>STATE_ACTION_0</first>
+				<second ref="/object/positions/item[39]/object"/>
+			</item>
+			<item>
+				<first>STATE_ACTION_1</first>
+				<second ref="/object/positions/item[43]/object"/>
+			</item>
 			<item>
 				<first>STATE_CONFIRM</first>
 				<second ref="/object/positions/item[35]/object"/>

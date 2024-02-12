@@ -75,7 +75,8 @@ function Game:new(params, environment)
 		Vector4(-4, 1, 0),
 		{
 			steer = environment.input.inputMapping:getState("STATE_STEER_0"),
-			throttle = environment.input.inputMapping:getState("STATE_THROTTLE_0")
+			throttle = environment.input.inputMapping:getState("STATE_THROTTLE_0"),
+			action = environment.input.inputMapping:getState("STATE_ACTION_0")
 		}
 	)
 	self._logic1 = PlayerLogic(
@@ -85,7 +86,8 @@ function Game:new(params, environment)
 		Vector4( 4, 1, 0),
 		{
 			steer = environment.input.inputMapping:getState("STATE_STEER_1"),
-			throttle = environment.input.inputMapping:getState("STATE_THROTTLE_1")
+			throttle = environment.input.inputMapping:getState("STATE_THROTTLE_1"),
+			action = environment.input.inputMapping:getState("STATE_ACTION_1")
 		}
 	)
 

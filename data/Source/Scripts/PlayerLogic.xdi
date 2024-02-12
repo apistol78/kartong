@@ -10,6 +10,7 @@ function PlayerLogic:new(kart, road, pickups, resetOffset, inputStates)
 	self._kart = kart
 	self._road = road
 	self._pickups = pickups
+	self._pickup = nil
 	self._t = 0
 	self._lap = 0
 	self._kph = 0
@@ -29,6 +30,14 @@ function PlayerLogic:update(info, throttleFactor)
 	vc.steerAngle = self._inputStates.steer:getValue()
 	vc.engineThrottle = self._inputStates.throttle:getValue() * throttleFactor
 
+	if self._inputStates.action:isPressed() then
+		-- Trigger pickup.
+		if self._pickup ~= nil then
+			print("TRIGGER PICKUP")
+			self._pickup = nil
+		end
+	end
+
 	-- Calculate speed.
 	local mps = rb.body.linearVelocity.length
 	self._kph = mps * (60 * 60) / 1000
@@ -46,7 +55,8 @@ function PlayerLogic:update(info, throttleFactor)
 		local p < const > = self._pickups:get(i)
 		local psc < const > = p:getComponent(world.ScriptComponent)
 		if psc:tryGrab(position) then
-			print("GRABBED PICKUP")
+			self._pickup = p
+			break
 		end
 	end
 
