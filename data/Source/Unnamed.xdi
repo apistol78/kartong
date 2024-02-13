@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.render.ShaderGraph" version="traktor.render.Graph:1">
+	<nodes>
+		<item type="traktor.render.Texture" version="1,traktor.render.Node:1">
+			<id>{6421DC2C-DC3A-46D7-8459-A6B6FCC026DC}</id>
+			<comment/>
+			<position>
+				<first>117</first>
+				<second>528</second>
+			</position>
+			<external>{F6B57FDF-1C2C-4682-B599-C29063A7D885}</external>
+			<type>Texture2D</type>
+		</item>
+		<item type="traktor.render.Color" version="2,traktor.render.Node:1">
+			<id>{29EDBBB9-AE25-4F7B-A122-72BAAD9090F4}</id>
+			<comment/>
+			<position>
+				<first>280</first>
+				<second>472</second>
+			</position>
+			<color>1, 0, 0, 1</color>
+			<linear>true</linear>
+		</item>
+		<item type="traktor.render.External" version="2,traktor.render.Node:1">
+			<id>{8A7C30E4-A4EF-4060-9885-909E629B2725}</id>
+			<comment/>
+			<position>
+				<first>365</first>
+				<second>551</second>
+			</position>
+			<fragmentGuid>{C49D9623-FD46-1D40-A9CD-D1AF89FCE8F9}</fragmentGuid>
+			<inputPins>
+				<item>
+					<id>{CEAD241F-4CC9-1E44-AACA-15BFD5015FDB}</id>
+					<name>DiffuseMap</name>
+					<optional>false</optional>
+				</item>
+				<item>
+					<id>{6D3FBFB2-BFA0-B34F-8F38-D0A00C6EF359}</id>
+					<name>NormalMap</name>
+					<optional>true</optional>
+				</item>
+			</inputPins>
+			<outputPins/>
+			<values>
+				<item>
+					<first>Aspect</first>
+					<second>0.25</second>
+				</item>
+				<item>
+					<first>Ground color influence</first>
+					<second>0.7</second>
+				</item>
+				<item>
+					<first>Ground normal influence</first>
+					<second>0.6</second>
+				</item>
+				<item>
+					<first>Random rotation</first>
+					<second>0.5</second>
+				</item>
+				<item>
+					<first>Wave amount</first>
+					<second>0.6</second>
+				</item>
+			</values>
+		</item>
+	</nodes>
+	<edges>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item"/>
+				<id>{FFE19E4E-24A8-47A4-AE80-307495E31066}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[2]"/>
+				<id>{CEAD241F-4CC9-1E44-AACA-15BFD5015FDB}</id>
+			</destination>
+		</item>
+	</edges>
+	<groups/>
+</object>

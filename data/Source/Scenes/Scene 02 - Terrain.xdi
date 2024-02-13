@@ -4245,6 +4245,18 @@
 									<eventCollide/>
 									<transformFilter>0</transformFilter>
 								</item>
+								<item type="traktor.terrain.UndergrowthComponentData" version="1">
+									<shader>{67D573ED-39B0-4011-9D14-046EDAD9B4B9}</shader>
+									<spreadDistance>120</spreadDistance>
+									<plants>
+										<item>
+											<attribute>1</attribute>
+											<density>8</density>
+											<plant>0</plant>
+											<scale>2</scale>
+										</item>
+									</plants>
+								</item>
 							</components>
 						</item>
 					</entityData>
