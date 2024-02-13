@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<object type="traktor.world.EntityData" version="1">
+<object type="traktor.world.EntityData" version="2">
 	<id>{0C348FF0-C887-454B-BA32-D0320383E477}</id>
 	<name>Kart</name>
+	<state>
+		<visible>true</visible>
+		<dynamic>false</dynamic>
+		<locked>false</locked>
+	</state>
 	<transform>
 		<translation>0, 0, 0, 0</translation>
 		<rotation>0, 0, 0, 1</rotation>
@@ -26,7 +31,7 @@
 				</shape>
 				<mass>1</mass>
 				<autoDeactivate>false</autoDeactivate>
-				<active>true</active>
+				<active>false</active>
 				<linearDamping>0.05</linearDamping>
 				<angularDamping>0.2</angularDamping>
 				<friction>0</friction>

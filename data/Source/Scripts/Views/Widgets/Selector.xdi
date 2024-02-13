@@ -22,7 +22,7 @@ function Selector:getPreferredSize()
 	return
 	{
 		width = self._background_mc.width,
-		height = #self._items * 60
+		height = #self._items * 90
 	}
 end
 
@@ -33,7 +33,7 @@ end
 
 function Selector:add(item)
 	local s = Static(self, item)
-		:setTextSize(40)
+		:setTextSize(70)
 	table.insert(self._items, s)
 	self:_layout()
 	return self
@@ -79,11 +79,11 @@ function Selector:_layout()
 		if idx == self._index + 1 then
 			mc:setTextColor(Color4f(1, 1, 1, 1))
 		else
-			mc:setTextColor(Color4f(0, 0, 0, 1))
+			mc:setTextColor(Color4f(1, 1, 1, 0.5))
 		end
-		y = y + 60
+		y = y + 90
 	end
-	self._background_mc.Y = 10 + self._index * 60
+	self._background_mc.Y = 10 + self._index * 90
 end
 
 function Selector:_eventKeyDown()

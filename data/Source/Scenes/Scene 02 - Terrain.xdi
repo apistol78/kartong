@@ -3666,7 +3666,7 @@
 						</item>
 						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 							<id>{E9A04C91-E246-DA49-9C06-1C032F0CC001}</id>
-							<name>Cone-Entity</name>
+							<name>Cone</name>
 							<state>
 								<visible>true</visible>
 								<dynamic>false</dynamic>
@@ -3681,7 +3681,7 @@
 						</item>
 						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 							<id>{99D011C7-EFC4-5D49-9AB1-B23871763BEF}</id>
-							<name>Cone-Entity</name>
+							<name>Cone</name>
 							<state>
 								<visible>true</visible>
 								<dynamic>false</dynamic>
@@ -3696,7 +3696,7 @@
 						</item>
 						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 							<id>{069CD216-B099-2A4A-A7A1-31FC64AE0855}</id>
-							<name>Cone-Entity</name>
+							<name>Cone</name>
 							<state>
 								<visible>true</visible>
 								<dynamic>false</dynamic>
@@ -3711,7 +3711,7 @@
 						</item>
 						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 							<id>{E6CF519C-5DEF-D248-B274-5F05BF169F38}</id>
-							<name>Cone-Entity</name>
+							<name>Cone</name>
 							<state>
 								<visible>true</visible>
 								<dynamic>false</dynamic>
@@ -3726,7 +3726,7 @@
 						</item>
 						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 							<id>{0A7D9FE6-DE2C-6749-BC44-213153EE4BC5}</id>
-							<name>Cone-Entity</name>
+							<name>Cone</name>
 							<state>
 								<visible>true</visible>
 								<dynamic>false</dynamic>
@@ -3741,7 +3741,7 @@
 						</item>
 						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 							<id>{A7A5AA83-3D92-DC4D-88F6-C85A4528FE0D}</id>
-							<name>Cone-Entity</name>
+							<name>Cone</name>
 							<state>
 								<visible>true</visible>
 								<dynamic>false</dynamic>

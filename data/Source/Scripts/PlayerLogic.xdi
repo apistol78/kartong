@@ -26,6 +26,9 @@ function PlayerLogic:update(info, throttleFactor)
 	local position < const > = self._kart.transform.translation
 	local t = pt:findClosest(position)
 
+	rb.body.active = true
+	rb.body.enable = true
+
 	-- Update input.
 	vc.steerAngle = self._inputStates.steer:getValue()
 	vc.engineThrottle = self._inputStates.throttle:getValue() * throttleFactor
@@ -54,7 +57,7 @@ function PlayerLogic:update(info, throttleFactor)
 	for i = 0, self._pickups.size - 1 do
 		local p < const > = self._pickups:get(i)
 		local psc < const > = p:getComponent(world.ScriptComponent)
-		if psc:tryGrab(position) then
+		if psc ~= nil and psc:tryGrab(position) then
 			self._pickup = p
 			break
 		end

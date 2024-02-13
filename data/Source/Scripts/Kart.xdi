@@ -16,14 +16,13 @@ function Kart:new()
 	local h = render.IRenderSystem.getParameterHandle("KartColor")
 	local mpc = self.owner:getComponent(mesh.MeshParameterComponent)
 	mpc:setVectorParameter(h, Vector4(r, g, b, 1))
-
-	local sc = self.owner:getComponent(spray.SoundComponent)
-	sc:play()
 end
 
 function Kart:update(contextObject, totalTime, deltaTime)
 	local skeletonComponent < const > = self.owner:getComponent(animation.SkeletonComponent)
 	local vehicleComponent < const > = self.owner:getComponent(physics.VehicleComponent)
+	local rigidBodyComponent < const > = self.owner:getComponent(physics.RigidBodyComponent)
+	local soundComponent < const > = self.owner:getComponent(spray.SoundComponent)
 	local sliding = false
 
 	-- Update wheel joints.
@@ -67,11 +66,14 @@ function Kart:update(contextObject, totalTime, deltaTime)
 	end
 
 	-- Adjust pitch from velocity.
-	local rb = self.owner:getComponent(physics.RigidBodyComponent)
-	local sc = self.owner:getComponent(spray.SoundComponent)
-	local mps = rb.body.linearVelocity.length
-	local pitch = 1 + mps / 15
-	sc:setPitch(pitch)
+	if rigidBodyComponent.body.active then
+		local mps = rigidBodyComponent.body.linearVelocity.length
+		local pitch = 1 + mps / 15
+		soundComponent:play()
+		soundComponent:setPitch(pitch)
+	else
+		soundComponent:stop()
+	end
 
 end
 

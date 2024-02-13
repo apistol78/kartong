@@ -12,6 +12,11 @@ SelectLevelView.__flipboardId = "SELECT_LEVEL"
 function SelectLevelView:new(parent)
 	Container.new(self, parent, TableLayout({0}, {0, 0}, 0, 0, 16, 16))
 
+	Static(self, "Select Level")
+		:setHorizontalAlign(Widget.ALIGN_CENTER)
+		:setTextColor(Color4f(1, 1, 1, 1))
+		:setTextSize(40)
+
 	local c = AutoCarousel(self, 100)
 		:setOnActivate(function(index)
 			print("level activate " .. index)
@@ -20,9 +25,6 @@ function SelectLevelView:new(parent)
 
 	Image(c, "MC_LevelBox")
 	Image(c, "MC_LevelBox")
-
-	Static(self, "Select Level")
-		:setHorizontalAlign(Widget.ALIGN_CENTER)
 
 	self._fnPlay = function() end
 end
