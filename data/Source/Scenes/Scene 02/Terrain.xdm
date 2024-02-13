@@ -2,5 +2,8 @@
 <object type="traktor.db.LocalInstanceMeta" version="2">
 	<guid>{48950C38-B441-7549-BC5E-1A261A6DCCFE}</guid>
 	<primaryType>traktor.terrain.TerrainAsset</primaryType>
-	<blobs/>
+	<blobs>
+		<item>Color</item>
+		<item>Splat</item>
+	</blobs>
 </object>
