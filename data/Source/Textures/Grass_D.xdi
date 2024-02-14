@@ -18,7 +18,7 @@
 	<scaleHeight>0</scaleHeight>
 	<flipX>false</flipX>
 	<flipY>false</flipY>
-	<enableCompression>true</enableCompression>
+	<enableCompression>false</enableCompression>
 	<encodeAsRGBM>false</encodeAsRGBM>
 	<inverseNormalMapX>false</inverseNormalMapX>
 	<inverseNormalMapY>false</inverseNormalMapY>
