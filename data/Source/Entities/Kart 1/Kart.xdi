@@ -32,7 +32,7 @@
 				<mass>1</mass>
 				<autoDeactivate>false</autoDeactivate>
 				<active>false</active>
-				<linearDamping>0.05</linearDamping>
+				<linearDamping>0.02</linearDamping>
 				<angularDamping>0.2</angularDamping>
 				<friction>0</friction>
 				<restitution>0</restitution>

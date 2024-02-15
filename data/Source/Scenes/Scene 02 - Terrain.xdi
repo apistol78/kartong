@@ -58,9 +58,9 @@
 			</ultra>
 		</shadowSettings>
 		<fogDistance>20</fogDistance>
-		<fogDensity>0.0008</fogDensity>
-		<fogDensityMax>0.25</fogDensityMax>
-		<fogColor>0.839216, 0.984314, 1, 1</fogColor>
+		<fogDensity>0.001</fogDensity>
+		<fogDensityMax>0.5</fogDensityMax>
+		<fogColor>0.45098, 1, 0.831373, 1</fogColor>
 		<irradianceGrid>{2D8C2976-00FC-7548-BBFC-3A4CBF1A15AB}</irradianceGrid>
 		<imageProcess>
 			<disabled>{664AD753-7DA8-3D49-8ED8-4CE4BD56ED6A}</disabled>
@@ -995,7 +995,7 @@
 											</state>
 											<transform>
 												<translation>308.960144, 23.248302, 86.292625, 0</translation>
-												<rotation>0.050585, -0, -0.003891, 0.998712</rotation>
+												<rotation>0.050585, 0, -0.003891, 0.998712</rotation>
 											</transform>
 											<components/>
 											<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
@@ -1100,7 +1100,7 @@
 											</state>
 											<transform>
 												<translation>12.544205, -0.968295, 156.524689, 0</translation>
-												<rotation>0.038951, -0, 0.019476, 0.999051</rotation>
+												<rotation>0.038951, 0, 0.019476, 0.999051</rotation>
 											</transform>
 											<components/>
 											<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
@@ -2539,7 +2539,7 @@
 							</state>
 							<transform>
 								<translation>181.436661, 17.195286, 81.412979, 0</translation>
-								<rotation>-0.142608, 0.202234, 0.000027, 0.968898</rotation>
+								<rotation>-0.142608, 0.202234, 0.000027, 0.968899</rotation>
 							</transform>
 							<components/>
 							<entityData>{51841614-8E59-46D8-AA82-A111DA35060B}</entityData>
@@ -3259,7 +3259,7 @@
 							</state>
 							<transform>
 								<translation>314.854462, 24.02422, 223.172592, 0</translation>
-								<rotation>-0.05786, 0.790168, -0.006732, 0.610115</rotation>
+								<rotation>-0.05786, 0.790169, -0.006732, 0.610115</rotation>
 							</transform>
 							<components/>
 							<entityData>{E0CFEA9A-FFAE-46A5-995B-5454D5DD4578}</entityData>
@@ -3574,7 +3574,7 @@
 							</state>
 							<transform>
 								<translation>186.716095, 35.499588, 117.316109, 0</translation>
-								<rotation>-0.089861, 0.019918, 0.001797, 0.995753</rotation>
+								<rotation>-0.089861, 0.019918, 0.001797, 0.995754</rotation>
 							</transform>
 							<components/>
 							<entityData>{866684AB-577A-F845-8A2E-43BA2AD093C9}</entityData>
