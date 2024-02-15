@@ -63,11 +63,11 @@
 		<fogColor>0.839216, 0.984314, 1, 1</fogColor>
 		<irradianceGrid>{2D8C2976-00FC-7548-BBFC-3A4CBF1A15AB}</irradianceGrid>
 		<imageProcess>
-			<disabled>{00000000-0000-0000-0000-000000000000}</disabled>
+			<disabled>{664AD753-7DA8-3D49-8ED8-4CE4BD56ED6A}</disabled>
 			<low>{664AD753-7DA8-3D49-8ED8-4CE4BD56ED6A}</low>
-			<medium>{00000000-0000-0000-0000-000000000000}</medium>
-			<high>{00000000-0000-0000-0000-000000000000}</high>
-			<ultra>{00000000-0000-0000-0000-000000000000}</ultra>
+			<medium>{664AD753-7DA8-3D49-8ED8-4CE4BD56ED6A}</medium>
+			<high>{664AD753-7DA8-3D49-8ED8-4CE4BD56ED6A}</high>
+			<ultra>{664AD753-7DA8-3D49-8ED8-4CE4BD56ED6A}</ultra>
 		</imageProcess>
 		<colorGrading>{2FCE2D56-3358-4646-8E7E-F83F4A6281F2}</colorGrading>
 	</worldRenderSettings>
@@ -470,7 +470,7 @@
 							</state>
 							<transform>
 								<translation>1.878916, -3.291647, 7.984814, 0</translation>
-								<rotation>0, 0.954535, 0, -0.298098</rotation>
+								<rotation>0, -0.954535, 0, 0.298098</rotation>
 							</transform>
 							<components/>
 							<entityData>{3527F644-09BE-4B55-91E7-ECC6191F32C2}</entityData>

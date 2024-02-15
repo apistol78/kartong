@@ -70,8 +70,8 @@ function PlayerLogic:update(info, throttleFactor)
 	if dx > 14 or dy > 2 then
 		self._offlimit = self._offlimit + info.simulationDeltaTime
 		if self._offlimit > 2 then
-			self._kart.transform = Tmin * Transform(self._resetOffset, Quaternion.identity)
-			rb.body:reset()
+			local sc < const > = self._kart:getComponent(world.ScriptComponent)
+			sc:teleport(Tmin * Transform(self._resetOffset, Quaternion.identity))
 		end
 	else
 		self._offlimit = 0

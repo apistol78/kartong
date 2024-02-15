@@ -67,15 +67,28 @@ function Kart:update(contextObject, totalTime, deltaTime)
 
 	-- Adjust pitch from velocity.
 	if rigidBodyComponent.body.active then
-		local mps = rigidBodyComponent.body.linearVelocity.length
-		local pitch = 1 + mps / 15
+		local mps < const > = rigidBodyComponent.body.linearVelocity.length
+		local pitch < const > = 1 + mps / 15
 		soundComponent:play()
 		soundComponent:setPitch(pitch)
 	else
 		soundComponent:stop()
 	end
-
 end
+
+function Kart:teleport(T)
+	-- Set owners transform.
+	self.owner.transform = T
+
+	-- Ensure rigid body is reset.
+	local rigidBodyComponent < const > = self.owner:getComponent(physics.RigidBodyComponent)
+	rigidBodyComponent.body:reset()
+
+	-- Raise teleportation effect.
+	local eventSetComponent < const > = self.owner:getComponent(world.EventSetComponent)
+	eventSetComponent:raise("TELEPORT")
+end
+
 
 	]]>
 	</text>
