@@ -11,16 +11,6 @@
 			<external>{F6B57FDF-1C2C-4682-B599-C29063A7D885}</external>
 			<type>Texture2D</type>
 		</item>
-		<item type="traktor.render.Color" version="2,traktor.render.Node:1">
-			<id>{29EDBBB9-AE25-4F7B-A122-72BAAD9090F4}</id>
-			<comment/>
-			<position>
-				<first>280</first>
-				<second>472</second>
-			</position>
-			<color>1, 0, 0, 1</color>
-			<linear>true</linear>
-		</item>
 		<item type="traktor.render.External" version="2,traktor.render.Node:1">
 			<id>{8A7C30E4-A4EF-4060-9885-909E629B2725}</id>
 			<comment/>
@@ -73,7 +63,7 @@
 				<id>{FFE19E4E-24A8-47A4-AE80-307495E31066}</id>
 			</source>
 			<destination>
-				<node ref="/object/nodes/item[2]"/>
+				<node ref="/object/nodes/item[1]"/>
 				<id>{CEAD241F-4CC9-1E44-AACA-15BFD5015FDB}</id>
 			</destination>
 		</item>
