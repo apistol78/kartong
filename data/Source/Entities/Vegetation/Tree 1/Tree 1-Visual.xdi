@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<object type="traktor.mesh.MeshAsset" version="22">
+<object type="traktor.mesh.MeshAsset" version="23">
 	<fileName>Models/Vegetation/Tree 1.blend</fileName>
 	<importFilter/>
-	<meshType>MtStatic</meshType>
+	<meshType>MtInstance</meshType>
 	<materialShaders/>
 	<materialTextures/>
 	<scaleFactor>1</scaleFactor>
@@ -10,6 +10,7 @@
 	<renormalize>false</renormalize>
 	<center>false</center>
 	<grounded>false</grounded>
+	<decalResponse>true</decalResponse>
 	<lodSteps>8</lodSteps>
 	<lodMaxDistance>100</lodMaxDistance>
 	<lodCullDistance>200</lodCullDistance>
