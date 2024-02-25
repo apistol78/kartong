@@ -94,6 +94,38 @@
 				<item type="traktor.world.GroupComponentData">
 					<entityData>
 						<item type="traktor.world.EntityData" version="2">
+							<id>{69220907-020F-4ECE-A094-95B63CC1225C}</id>
+							<name>Sky</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>-14.170444, -1.97757, 1.713573, 0</translation>
+								<rotation>-0.119872, 0.865577, -0.418123, -0.248153</rotation>
+							</transform>
+							<components>
+								<item type="traktor.weather.SkyComponentData" version="4">
+									<shader>{4CF929EB-3A8B-C340-AA0A-0C5C80625BF1}</shader>
+									<texture>{00000000-0000-0000-0000-000000000000}</texture>
+									<intensity>1</intensity>
+								</item>
+								<item type="traktor.world.LightComponentData" version="12">
+									<lightType>Directional</lightType>
+									<color>1, 1, 1, 0</color>
+									<intensity>4</intensity>
+									<castShadow>true</castShadow>
+									<nearRange>0</nearRange>
+									<farRange>10</farRange>
+									<radius>1.570796</radius>
+									<flickerAmount>0</flickerAmount>
+									<flickerFilter>0</flickerFilter>
+									<bakeMode>LbmIndirect</bakeMode>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="2">
 							<id>{485FEF1B-7170-F04A-915A-312559ED69CF}</id>
 							<name>Camera</name>
 							<state>
@@ -122,12 +154,12 @@
 							<id>{5D1694A8-0ACF-9D46-9B39-D26C88210E73}</id>
 							<name>Reflections</name>
 							<state>
-								<visible>false</visible>
+								<visible>true</visible>
 								<dynamic>false</dynamic>
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>-0.453257, -1.660125, 4.246349, 0</translation>
+								<translation>-0.453257, -0.800311, 4.246349, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components>
@@ -139,245 +171,6 @@
 										<mn>0, 0, 0, 1</mn>
 										<mx>0, 0, 0, 1</mx>
 									</volume>
-								</item>
-							</components>
-						</item>
-						<item type="traktor.world.EntityData" version="2">
-							<id>{25D7C7D8-134C-A744-B1CD-F102588C6D05}</id>
-							<name>Light rig</name>
-							<state>
-								<visible>true</visible>
-								<dynamic>false</dynamic>
-								<locked>false</locked>
-							</state>
-							<transform>
-								<translation>0.077242, 0, 5.843192, 0</translation>
-								<rotation>0, 0, 0, 1</rotation>
-							</transform>
-							<components>
-								<item type="traktor.world.GroupComponentData">
-									<entityData>
-										<item type="traktor.world.EntityData" version="2">
-											<id>{A11330B3-0C30-7048-B135-6555749F8FE8}</id>
-											<name/>
-											<state>
-												<visible>true</visible>
-												<dynamic>false</dynamic>
-												<locked>false</locked>
-											</state>
-											<transform>
-												<translation>-5.752364, 0.432076, 9.178479, 0</translation>
-												<rotation>0, 0, 0.352274, 0.935897</rotation>
-											</transform>
-											<components>
-												<item type="traktor.world.LightComponentData" version="12">
-													<lightType>Point</lightType>
-													<color>1, 1, 1, 0</color>
-													<intensity>100</intensity>
-													<castShadow>false</castShadow>
-													<nearRange>0</nearRange>
-													<farRange>20</farRange>
-													<radius>1.570796</radius>
-													<flickerAmount>0</flickerAmount>
-													<flickerFilter>0</flickerFilter>
-													<bakeMode>LbmIndirect</bakeMode>
-												</item>
-											</components>
-										</item>
-										<item type="traktor.world.EntityData" version="2">
-											<id>{210D0CF5-9705-DF4E-A63D-E5BEFC854196}</id>
-											<name/>
-											<state>
-												<visible>true</visible>
-												<dynamic>false</dynamic>
-												<locked>false</locked>
-											</state>
-											<transform>
-												<translation>-5.770681, 0.432076, 3.101474, 0</translation>
-												<rotation>0, 0, 0.352274, 0.935897</rotation>
-											</transform>
-											<components>
-												<item type="traktor.world.LightComponentData" version="12">
-													<lightType>Point</lightType>
-													<color>1, 1, 1, 0</color>
-													<intensity>100</intensity>
-													<castShadow>false</castShadow>
-													<nearRange>0</nearRange>
-													<farRange>20</farRange>
-													<radius>1.570796</radius>
-													<flickerAmount>0</flickerAmount>
-													<flickerFilter>0</flickerFilter>
-													<bakeMode>LbmIndirect</bakeMode>
-												</item>
-											</components>
-										</item>
-										<item type="traktor.world.EntityData" version="2">
-											<id>{365C258E-CA23-2445-A09C-569EA104DAA4}</id>
-											<name/>
-											<state>
-												<visible>true</visible>
-												<dynamic>false</dynamic>
-												<locked>false</locked>
-											</state>
-											<transform>
-												<translation>-1.958069, 0.432076, -0.403527, 0</translation>
-												<rotation>0, 0, 0.352274, 0.935897</rotation>
-											</transform>
-											<components>
-												<item type="traktor.world.LightComponentData" version="12">
-													<lightType>Point</lightType>
-													<color>1, 1, 1, 0</color>
-													<intensity>100</intensity>
-													<castShadow>false</castShadow>
-													<nearRange>0</nearRange>
-													<farRange>20</farRange>
-													<radius>1.570796</radius>
-													<flickerAmount>0</flickerAmount>
-													<flickerFilter>0</flickerFilter>
-													<bakeMode>LbmIndirect</bakeMode>
-												</item>
-											</components>
-										</item>
-										<item type="traktor.world.EntityData" version="2">
-											<id>{8271E32B-0733-1143-80DC-5F734AD6B60E}</id>
-											<name/>
-											<state>
-												<visible>true</visible>
-												<dynamic>false</dynamic>
-												<locked>false</locked>
-											</state>
-											<transform>
-												<translation>2.673677, 0.432076, -0.356278, 0</translation>
-												<rotation>0, 0, 0.352274, 0.935897</rotation>
-											</transform>
-											<components>
-												<item type="traktor.world.LightComponentData" version="12">
-													<lightType>Point</lightType>
-													<color>1, 1, 1, 0</color>
-													<intensity>100</intensity>
-													<castShadow>false</castShadow>
-													<nearRange>0</nearRange>
-													<farRange>20</farRange>
-													<radius>1.570796</radius>
-													<flickerAmount>0</flickerAmount>
-													<flickerFilter>0</flickerFilter>
-													<bakeMode>LbmIndirect</bakeMode>
-												</item>
-											</components>
-										</item>
-										<item type="traktor.world.EntityData" version="2">
-											<id>{89FD61C7-C583-2644-B2D8-22C993F10C4F}</id>
-											<name/>
-											<state>
-												<visible>true</visible>
-												<dynamic>false</dynamic>
-												<locked>false</locked>
-											</state>
-											<transform>
-												<translation>6.565677, 0.432076, 3.025275, 0</translation>
-												<rotation>0, 0, 0.352274, 0.935897</rotation>
-											</transform>
-											<components>
-												<item type="traktor.world.LightComponentData" version="12">
-													<lightType>Point</lightType>
-													<color>1, 1, 1, 0</color>
-													<intensity>100</intensity>
-													<castShadow>false</castShadow>
-													<nearRange>0</nearRange>
-													<farRange>20</farRange>
-													<radius>1.570796</radius>
-													<flickerAmount>0</flickerAmount>
-													<flickerFilter>0</flickerFilter>
-													<bakeMode>LbmIndirect</bakeMode>
-												</item>
-											</components>
-										</item>
-										<item type="traktor.world.EntityData" version="2">
-											<id>{8FA87C99-91E0-6842-8E67-A24EFD4A31F9}</id>
-											<name/>
-											<state>
-												<visible>true</visible>
-												<dynamic>false</dynamic>
-												<locked>false</locked>
-											</state>
-											<transform>
-												<translation>6.464928, 0.844636, 9.128301, 0</translation>
-												<rotation>0, 0, -0.333487, 0.942755</rotation>
-											</transform>
-											<components>
-												<item type="traktor.world.LightComponentData" version="12">
-													<lightType>Point</lightType>
-													<color>1, 1, 1, 0</color>
-													<intensity>100</intensity>
-													<castShadow>false</castShadow>
-													<nearRange>0</nearRange>
-													<farRange>20</farRange>
-													<radius>1.570796</radius>
-													<flickerAmount>0</flickerAmount>
-													<flickerFilter>0</flickerFilter>
-													<bakeMode>LbmIndirect</bakeMode>
-												</item>
-											</components>
-										</item>
-										<item type="traktor.world.EntityData" version="2">
-											<id>{3DCA4677-3A45-594B-B3AE-6036D79860F4}</id>
-											<name/>
-											<state>
-												<visible>true</visible>
-												<dynamic>false</dynamic>
-												<locked>false</locked>
-											</state>
-											<transform>
-												<translation>2.398515, 0.844636, 13.163266, 0</translation>
-												<rotation>0, 0, -0.333487, 0.942755</rotation>
-											</transform>
-											<components>
-												<item type="traktor.world.LightComponentData" version="12">
-													<lightType>Point</lightType>
-													<color>1, 1, 1, 0</color>
-													<intensity>100</intensity>
-													<castShadow>false</castShadow>
-													<nearRange>0</nearRange>
-													<farRange>20</farRange>
-													<radius>1.570796</radius>
-													<flickerAmount>0</flickerAmount>
-													<flickerFilter>0</flickerFilter>
-													<bakeMode>LbmIndirect</bakeMode>
-												</item>
-											</components>
-										</item>
-										<item type="traktor.world.EntityData" version="2">
-											<id>{D89CBE31-EAB6-7D47-832B-A69E73932927}</id>
-											<name/>
-											<state>
-												<visible>true</visible>
-												<dynamic>false</dynamic>
-												<locked>false</locked>
-											</state>
-											<transform>
-												<translation>-1.881842, 0.774049, 13.053332, 0</translation>
-												<rotation>0, 0, -0.333487, 0.942755</rotation>
-											</transform>
-											<components>
-												<item type="traktor.world.LightComponentData" version="12">
-													<lightType>Point</lightType>
-													<color>1, 1, 1, 0</color>
-													<intensity>100</intensity>
-													<castShadow>false</castShadow>
-													<nearRange>0</nearRange>
-													<farRange>20</farRange>
-													<radius>1.570796</radius>
-													<flickerAmount>0</flickerAmount>
-													<flickerFilter>0</flickerFilter>
-													<bakeMode>LbmIndirect</bakeMode>
-												</item>
-											</components>
-										</item>
-									</entityData>
-								</item>
-								<item type="traktor.animation.RotatorComponentData">
-									<axis>Y</axis>
-									<rate>1</rate>
 								</item>
 							</components>
 						</item>
@@ -400,21 +193,6 @@
 			<components>
 				<item type="traktor.world.GroupComponentData">
 					<entityData>
-						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
-							<id>{59F665D7-5588-AB40-A4AE-F97FF23ECFC3}</id>
-							<name>Backdrop</name>
-							<state>
-								<visible>true</visible>
-								<dynamic>false</dynamic>
-								<locked>false</locked>
-							</state>
-							<transform>
-								<translation>0, 0, 0, 0</translation>
-								<rotation>0, 0, 0, 1</rotation>
-							</transform>
-							<components/>
-							<entityData>{83E97916-0823-4D44-82FD-E340E7D8C673}</entityData>
-						</item>
 						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 							<id>{D2164583-7DB6-5744-983F-244D51B7A82F}</id>
 							<name>Kart</name>
@@ -474,6 +252,171 @@
 							</transform>
 							<components/>
 							<entityData>{3527F644-09BE-4B55-91E7-ECC6191F32C2}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{20599C55-6B04-483B-A4F2-7A2B8593AE59}</id>
+							<name>Tree 1</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>-22.61738, -10.810733, 31.775532, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{92639C33-D4F2-43B9-8E56-E90261EB31B7}</id>
+							<name>Tree 1</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>-29.352924, -13.119577, 18.791992, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{195967B1-05AD-40C2-9611-93546A641693}</id>
+							<name>Tree 1</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>-3.686262, -13.933274, 26.141827, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{7CCEB34E-8A0F-4171-B458-EEF499C86016}</id>
+							<name>Tree 1</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>11.424754, -11.142008, 34.187347, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{27A5C400-704C-4EEC-B7BC-1CDCA4E0C62B}</id>
+							<name>Tree 1</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>26.432234, -11.142008, 26.538879, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{6DF77061-5329-40A0-A060-E363ED7E92F0}</id>
+							<name>Tree 1</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>55.43013, -11.142008, 27.831493, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{3FB63071-FD2C-4649-BA22-E5698AD7C29C}</id>
+							<name>Tree 5</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>-12.802383, -12.138687, 14.986344, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{E0CFEA9A-FFAE-46A5-995B-5454D5DD4578}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{C2E896BE-553D-44B1-9CB0-8C2D56116C08}</id>
+							<name>Tree 5</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>3.659557, -12.138687, 46.864277, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{E0CFEA9A-FFAE-46A5-995B-5454D5DD4578}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{39773F59-461A-4460-9F55-7EC0C72D8488}</id>
+							<name>Tree 5</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>30.746002, -12.138687, 42.507385, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{E0CFEA9A-FFAE-46A5-995B-5454D5DD4578}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{D9961CB7-1417-4007-8488-E8B5D21556A4}</id>
+							<name>Tree 5</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>53.719444, -12.138687, 41.724953, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{E0CFEA9A-FFAE-46A5-995B-5454D5DD4578}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{AED765E2-33E3-4ED2-9CC5-2734046650A9}</id>
+							<name>Tree 4</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>36.299221, -14.477397, 17.061069, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{35427C92-3197-4641-A1F5-31248037416B}</entityData>
 						</item>
 					</entityData>
 				</item>
