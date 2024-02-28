@@ -77,7 +77,8 @@ function Game:new(params, environment)
 			steer = environment.input.inputMapping:getState("STATE_STEER_0"),
 			throttle = environment.input.inputMapping:getState("STATE_THROTTLE_0"),
 			action = environment.input.inputMapping:getState("STATE_ACTION_0")
-		}
+		},
+		false
 	)
 	self._logic1 = PlayerLogic(
 		kart1,
@@ -88,7 +89,8 @@ function Game:new(params, environment)
 			steer = environment.input.inputMapping:getState("STATE_STEER_1"),
 			throttle = environment.input.inputMapping:getState("STATE_THROTTLE_1"),
 			action = environment.input.inputMapping:getState("STATE_ACTION_1")
-		}
+		},
+		true
 	)
 
 	-- Set game state.
@@ -186,6 +188,8 @@ function Game:_updateRace(info)
 
 	-- Check if any has finished.
 	if self._logic0:getLap() > 3 or self._logic1:getLap() > 3 then
+		self._logic0:setAutoDrive(true)
+		self._logic1:setAutoDrive(true)
 		self._updateFn = Game._updateFinished
 		self._flipBook:showPage("FINISHED")
 	end
