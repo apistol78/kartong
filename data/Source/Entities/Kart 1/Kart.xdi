@@ -171,5 +171,45 @@
 		</item>
 		<item type="traktor.spray.ListenerComponentData">
 		</item>
+		<item type="traktor.world.GroupComponentData">
+			<entityData>
+				<item type="traktor.world.EntityData" version="2">
+					<id>{33DDF0FE-72EB-48D8-8332-260B2ED90903}</id>
+					<name>Left exhaust</name>
+					<state>
+						<visible>true</visible>
+						<dynamic>false</dynamic>
+						<locked>false</locked>
+					</state>
+					<transform>
+						<translation>-0.583707, 0.525775, -1.574653, 0</translation>
+						<rotation>0.059964, 0, 0, 0.998201</rotation>
+					</transform>
+					<components>
+						<item type="traktor.spray.EffectComponentData">
+							<effect>{7A081834-58EA-42D8-AFB2-15AE3C0FBC10}</effect>
+						</item>
+					</components>
+				</item>
+				<item type="traktor.world.EntityData" version="2">
+					<id>{62575F7A-DCED-409D-89E7-CA8FC653679D}</id>
+					<name>Right exhaust</name>
+					<state>
+						<visible>true</visible>
+						<dynamic>false</dynamic>
+						<locked>false</locked>
+					</state>
+					<transform>
+						<translation>0.585095, 0.525775, -1.574653, 0</translation>
+						<rotation>0.059964, 0, 0, 0.998201</rotation>
+					</transform>
+					<components>
+						<item type="traktor.spray.EffectComponentData">
+							<effect>{7A081834-58EA-42D8-AFB2-15AE3C0FBC10}</effect>
+						</item>
+					</components>
+				</item>
+			</entityData>
+		</item>
 	</components>
 </object>

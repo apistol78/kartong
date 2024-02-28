@@ -22,11 +22,11 @@ end
 
 function FollowCamera:_calculateTransforms(filterCoeff)
 	local ToffsetY = Transform(
-		Vector4(0, 4, 0),
+		Vector4(0, 2.5, 0),
 		Quaternion.identity
 	)
 	local ToffsetZ = Transform(
-		Vector4(0, 0, -5),
+		Vector4(0, 0, -2),
 		Quaternion.identity
 	)
 
@@ -42,7 +42,6 @@ function FollowCamera:_calculateTransforms(filterCoeff)
 		Vector4(0, 1, 0)
 	)
 end
-
 
 	]]>
 	</text>

@@ -14,7 +14,7 @@ function SelectLevelView:new(parent)
 
 	Static(self, "Select Level")
 		:setHorizontalAlign(Widget.ALIGN_CENTER)
-		:setTextColor(Color4f(1, 1, 1, 1))
+		:setTextColor(Color4f(0, 0, 0, 0.8))
 		:setTextSize(40)
 
 	local c = AutoCarousel(self, 100)

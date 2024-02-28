@@ -58,9 +58,9 @@
 			</ultra>
 		</shadowSettings>
 		<fogDistance>20</fogDistance>
-		<fogDensity>0.0008</fogDensity>
+		<fogDensity>0.002</fogDensity>
 		<fogDensityMax>0.25</fogDensityMax>
-		<fogColor>0.839216, 0.984314, 1, 1</fogColor>
+		<fogColor>0.701961, 0.968628, 1, 1</fogColor>
 		<irradianceGrid>{2D8C2976-00FC-7548-BBFC-3A4CBF1A15AB}</irradianceGrid>
 		<imageProcess>
 			<disabled>{664AD753-7DA8-3D49-8ED8-4CE4BD56ED6A}</disabled>
@@ -103,7 +103,7 @@
 							</state>
 							<transform>
 								<translation>-9.443932, -1.97757, 3.657648, 0</translation>
-								<rotation>-0.119872, 0.865577, -0.418123, -0.248153</rotation>
+								<rotation>0.119872, -0.865577, 0.418123, 0.248153</rotation>
 							</transform>
 							<components>
 								<item type="traktor.weather.SkyComponentData" version="4">
