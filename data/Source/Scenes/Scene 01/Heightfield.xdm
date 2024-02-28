@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.db.LocalInstanceMeta" version="2">
+	<guid>{1FE21F9A-DE67-4B9D-8552-3D70399835C5}</guid>
+	<primaryType>traktor.hf.HeightfieldAsset</primaryType>
+	<blobs>
+		<item>Data</item>
+	</blobs>
+</object>

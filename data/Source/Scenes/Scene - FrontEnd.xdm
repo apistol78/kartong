@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<object type="traktor.db.LocalInstanceMeta" version="2">
-	<guid>{8AC25E34-279E-FA45-94D8-F9333BCF430F}</guid>
-	<primaryType>traktor.scene.SceneAsset</primaryType>
-	<blobs/>
-</object>
