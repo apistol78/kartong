@@ -2,7 +2,7 @@
 <object type="traktor.spray.EffectData">
 	<duration>1</duration>
 	<loopStart>0</loopStart>
-	<loopEnd>0.5</loopEnd>
+	<loopEnd>0</loopEnd>
 	<layers>
 		<item type="traktor.spray.EffectLayerData" version="4">
 			<name>Collision</name>

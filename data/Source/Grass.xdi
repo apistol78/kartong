@@ -5,8 +5,8 @@
 			<id>{6421DC2C-DC3A-46D7-8459-A6B6FCC026DC}</id>
 			<comment/>
 			<position>
-				<first>117</first>
-				<second>528</second>
+				<first>114</first>
+				<second>576</second>
 			</position>
 			<external>{F6B57FDF-1C2C-4682-B599-C29063A7D885}</external>
 			<type>Texture2D</type>
@@ -21,9 +21,19 @@
 			<fragmentGuid>{C49D9623-FD46-1D40-A9CD-D1AF89FCE8F9}</fragmentGuid>
 			<inputPins>
 				<item>
+					<id>{91664123-488B-4201-B963-CD3C0FDD3B48}</id>
+					<name>Albedo</name>
+					<optional>false</optional>
+				</item>
+				<item>
+					<id>{3F9A0E84-F0E0-41E2-947F-4EA18A59E5C9}</id>
+					<name>AlphaMap</name>
+					<optional>true</optional>
+				</item>
+				<item>
 					<id>{CEAD241F-4CC9-1E44-AACA-15BFD5015FDB}</id>
 					<name>DiffuseMap</name>
-					<optional>false</optional>
+					<optional>true</optional>
 				</item>
 				<item>
 					<id>{6D3FBFB2-BFA0-B34F-8F38-D0A00C6EF359}</id>
@@ -55,8 +65,28 @@
 				</item>
 			</values>
 		</item>
+		<item type="traktor.render.Color" version="2,traktor.render.Node:1">
+			<id>{EBD126A2-4A2A-4055-B160-9A9D3BF19F92}</id>
+			<comment/>
+			<position>
+				<first>33</first>
+				<second>511</second>
+			</position>
+			<color>0.611765, 1, 0, 1</color>
+			<linear>true</linear>
+		</item>
 	</nodes>
 	<edges>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[2]"/>
+				<id>{4B2822D0-4D9A-4BBB-9956-A996493EE672}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[1]"/>
+				<id>{91664123-488B-4201-B963-CD3C0FDD3B48}</id>
+			</destination>
+		</item>
 		<item type="traktor.render.Edge" version="1">
 			<source>
 				<node ref="/object/nodes/item"/>
@@ -64,7 +94,7 @@
 			</source>
 			<destination>
 				<node ref="/object/nodes/item[1]"/>
-				<id>{CEAD241F-4CC9-1E44-AACA-15BFD5015FDB}</id>
+				<id>{3F9A0E84-F0E0-41E2-947F-4EA18A59E5C9}</id>
 			</destination>
 		</item>
 	</edges>
