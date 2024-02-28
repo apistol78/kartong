@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.sound.SoundAsset" version="8">
+	<fileName>Audio/Music.mp3</fileName>
+	<category>{00000000-0000-0000-0000-000000000000}</category>
+	<stream>true</stream>
+	<preload>false</preload>
+	<compressed>false</compressed>
+	<gain>-4.7</gain>
+</object>
