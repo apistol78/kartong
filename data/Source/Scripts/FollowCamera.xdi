@@ -2,30 +2,31 @@
 <object type="traktor.script.Script" version="2">
 	<text>
 	<![CDATA[
+
 FollowCamera = FollowCamera or class("FollowCamera")
 
 function FollowCamera:new(cameraEntity, followEntity)
 	self._cameraEntity = cameraEntity
 	self._followEntity = followEntity
-	self:_calculateTransforms(1)
+	self:_calculateTransforms()
 end
 
 function FollowCamera:update(deltaTime)
-	self:_calculateTransforms(12 * deltaTime)
+	self:_calculateTransforms()
 end
 
 function FollowCamera:reset()
-	self:_calculateTransforms(1)
+	self:_calculateTransforms()
 end
 
 -- private
 
-function FollowCamera:_calculateTransforms(filterCoeff)
-	local ToffsetY = Transform(
+function FollowCamera:_calculateTransforms()
+	local ToffsetY < const > = Transform(
 		Vector4(0, 2.5, 0),
 		Quaternion.identity
 	)
-	local ToffsetZ = Transform(
+	local ToffsetZ < const > = Transform(
 		Vector4(0, 0, -2),
 		Quaternion.identity
 	)
@@ -34,7 +35,12 @@ function FollowCamera:_calculateTransforms(filterCoeff)
 
 	local targetPosition = T.translation
 	local cameraPosition = self._cameraEntity.transform.translation
-	local position = Vector4.lerp(cameraPosition, targetPosition, filterCoeff)
+
+	local d = targetPosition - cameraPosition
+	local ln = d.length
+	d = d / ln
+
+	local position = targetPosition - d * 2
 
 	self._cameraEntity.transform = Transform.lookAt(
 		position,

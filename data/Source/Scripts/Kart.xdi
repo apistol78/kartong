@@ -29,8 +29,8 @@ function Kart:update(contextObject, totalTime, deltaTime)
 	local wheelJoints = { "FL", "FR", "RL", "RR" }
 	for i = 1, #wheelJoints do
 		local wheel = vehicleComponent.wheels:get(i - 1)
-
 		local Twheel = wheel.transform
+
 		local Tjoint = skeletonComponent:getJointTransform(wheelJoints[i])
 		local TjointRot = Transform(
 			Vector4.zero,
@@ -88,7 +88,6 @@ function Kart:teleport(T)
 	local eventSetComponent < const > = self.owner:getComponent(world.EventSetComponent)
 	eventSetComponent:raise("TELEPORT")
 end
-
 
 	]]>
 	</text>
