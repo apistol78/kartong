@@ -68,9 +68,9 @@ function Kart:update(contextObject, totalTime, deltaTime)
 	-- Adjust pitch from velocity.
 	if rigidBodyComponent.body.active then
 		local mps < const > = rigidBodyComponent.body.linearVelocity.length
-		local pitch < const > = 1 + mps / 15
+		local pitch < const > = mps / 15
 		soundComponent:play()
-		soundComponent:setPitch(pitch)
+		soundComponent:setParameter("A", pitch)
 	else
 		soundComponent:stop()
 	end

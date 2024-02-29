@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.sound.GraphAsset">
+	<category>{00000000-0000-0000-0000-000000000000}</category>
+	<gain>0</gain>
+	<presence>0</presence>
+	<presenceRate>1</presenceRate>
+	<range>0</range>
+	<graph type="traktor.sound.Graph">
+		<nodes>
+			<item type="traktor.sound.Source">
+				<comment/>
+				<position>
+					<first>-1</first>
+					<second>215</second>
+				</position>
+				<sound>{E03F7233-0806-B14B-810C-9901610CAF80}</sound>
+			</item>
+			<item type="traktor.sound.Output">
+				<comment/>
+				<position>
+					<first>610</first>
+					<second>227</second>
+				</position>
+			</item>
+			<item type="traktor.sound.Filter">
+				<comment/>
+				<position>
+					<first>413</first>
+					<second>235</second>
+				</position>
+				<filter type="traktor.sound.ReverbFilter">
+					<delay>
+						<item>17</item>
+						<item>37</item>
+						<item>61</item>
+						<item>97</item>
+					</delay>
+					<decay>0.3</decay>
+					<feedback>0.2</feedback>
+				</filter>
+			</item>
+			<item type="traktor.sound.Pitch">
+				<comment/>
+				<position>
+					<first>168</first>
+					<second>250</second>
+				</position>
+			</item>
+			<item type="traktor.sound.Parameter" version="1">
+				<comment/>
+				<position>
+					<first>-400</first>
+					<second>352</second>
+				</position>
+				<name>A</name>
+				<defaultValue>0</defaultValue>
+			</item>
+			<item type="traktor.sound.Multiply">
+				<comment/>
+				<position>
+					<first>-218</first>
+					<second>372</second>
+				</position>
+			</item>
+			<item type="traktor.sound.Scalar">
+				<comment/>
+				<position>
+					<first>-395</first>
+					<second>436</second>
+				</position>
+				<value>3</value>
+			</item>
+			<item type="traktor.sound.Add">
+				<comment/>
+				<position>
+					<first>-25</first>
+					<second>401</second>
+				</position>
+			</item>
+			<item type="traktor.sound.Scalar">
+				<comment/>
+				<position>
+					<first>-189</first>
+					<second>469</second>
+				</position>
+				<value>1</value>
+			</item>
+		</nodes>
+		<edges>
+			<item type="traktor.sound.Edge">
+				<source>
+					<node ref="/object/graph/nodes/item[2]"/>
+					<name>Output</name>
+				</source>
+				<destination>
+					<node ref="/object/graph/nodes/item[1]"/>
+					<name>Input</name>
+				</destination>
+			</item>
+			<item type="traktor.sound.Edge">
+				<source>
+					<node ref="/object/graph/nodes/item"/>
+					<name>Output</name>
+				</source>
+				<destination>
+					<node ref="/object/graph/nodes/item[3]"/>
+					<name>Input</name>
+				</destination>
+			</item>
+			<item type="traktor.sound.Edge">
+				<source>
+					<node ref="/object/graph/nodes/item[3]"/>
+					<name>Output</name>
+				</source>
+				<destination>
+					<node ref="/object/graph/nodes/item[2]"/>
+					<name>Input</name>
+				</destination>
+			</item>
+			<item type="traktor.sound.Edge">
+				<source>
+					<node ref="/object/graph/nodes/item[4]"/>
+					<name>Output</name>
+				</source>
+				<destination>
+					<node ref="/object/graph/nodes/item[5]"/>
+					<name>Input1</name>
+				</destination>
+			</item>
+			<item type="traktor.sound.Edge">
+				<source>
+					<node ref="/object/graph/nodes/item[6]"/>
+					<name>Output</name>
+				</source>
+				<destination>
+					<node ref="/object/graph/nodes/item[5]"/>
+					<name>Input2</name>
+				</destination>
+			</item>
+			<item type="traktor.sound.Edge">
+				<source>
+					<node ref="/object/graph/nodes/item[5]"/>
+					<name>Output</name>
+				</source>
+				<destination>
+					<node ref="/object/graph/nodes/item[7]"/>
+					<name>Input1</name>
+				</destination>
+			</item>
+			<item type="traktor.sound.Edge">
+				<source>
+					<node ref="/object/graph/nodes/item[7]"/>
+					<name>Output</name>
+				</source>
+				<destination>
+					<node ref="/object/graph/nodes/item[3]"/>
+					<name>Adjust</name>
+				</destination>
+			</item>
+			<item type="traktor.sound.Edge">
+				<source>
+					<node ref="/object/graph/nodes/item[8]"/>
+					<name>Output</name>
+				</source>
+				<destination>
+					<node ref="/object/graph/nodes/item[7]"/>
+					<name>Input2</name>
+				</destination>
+			</item>
+		</edges>
+	</graph>
+</object>

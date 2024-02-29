@@ -7,15 +7,26 @@
 		<item type="traktor.sound.RepeatGrainData">
 			<count>0</count>
 			<grain type="traktor.sound.PlayGrainData" version="2">
-				<sound>{A53990D3-212D-4449-8BC1-D150717B8977}</sound>
-				<filters/>
+				<sound>{20750E23-08CB-46FD-9555-6100EE50BBA9}</sound>
+				<filters>
+					<item type="traktor.sound.ReverbFilter">
+						<delay>
+							<item>17</item>
+							<item>37</item>
+							<item>61</item>
+							<item>97</item>
+						</delay>
+						<decay>0.1</decay>
+						<feedback>0.1</feedback>
+					</item>
+				</filters>
 				<gain>
 					<min>0</min>
 					<max>0</max>
 				</gain>
 				<pitch>
-					<min>1</min>
-					<max>1</max>
+					<min>0.9</min>
+					<max>1.1</max>
 				</pitch>
 				<repeat>false</repeat>
 			</grain>
