@@ -37,7 +37,7 @@ function FrontEnd:new(params, environment)
 	MainView(fb)
 		:setHorizontalAlign(Widget.ALIGN_CENTER)
 		:setVerticalAlign(Widget.ALIGN_CENTER)
-		:setOnPlay(function() fb:showPage("SELECT_LEVEL") end)
+		:setOnPlay(function(mode) self._mode = mode; fb:showPage("SELECT_LEVEL") end)
 		:setOnOptions(function() self:_toggleFullscreen() end)
 		:setOnExit(function() self:terminate() end)
 
@@ -70,9 +70,9 @@ function FrontEnd:_loadLevel(index)
 	local params = {}
 
 	if index == 0 then
-		params.load = "GAME_02"
+		params.load = "GAME_" .. self._mode .. "_02"
 	elseif index == 1 then
-		params.load = "GAME_03"
+		params.load = "GAME_" .. self._mode .. "_03"
 	else
 		print("no such level")
 		return

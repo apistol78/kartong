@@ -5,8 +5,8 @@
 			<id>{2B720A46-47CE-4267-A0B0-294A3360AAD5}</id>
 			<comment/>
 			<position>
-				<first>229</first>
-				<second>-769</second>
+				<first>302</first>
+				<second>-785</second>
 			</position>
 			<name>SmoothStep</name>
 			<technique/>
@@ -39,16 +39,16 @@ $Output = smoothstep(0, 1, $Input);
 			<id>{FA92CB4D-B524-42F8-BEA4-2C2A16FEDB44}</id>
 			<comment/>
 			<position>
-				<first>405</first>
-				<second>-933</second>
+				<first>571</first>
+				<second>-832</second>
 			</position>
 		</item>
 		<item type="traktor.render.Swizzle" version="traktor.render.Node:1">
 			<id>{D9397B77-33B7-4118-8524-8500F933BB3E}</id>
 			<comment/>
 			<position>
-				<first>97</first>
-				<second>-923</second>
+				<first>81</first>
+				<second>-820</second>
 			</position>
 			<swizzle>y</swizzle>
 		</item>
@@ -56,8 +56,8 @@ $Output = smoothstep(0, 1, $Input);
 			<id>{02037EE6-2066-40E2-93E3-127E022D06F8}</id>
 			<comment/>
 			<position>
-				<first>-98</first>
-				<second>-989</second>
+				<first>-91</first>
+				<second>-886</second>
 			</position>
 		</item>
 		<item type="traktor.render.Script" version="6,traktor.render.Node:1">
@@ -104,8 +104,8 @@ else
 			<id>{0349E238-E70D-47EE-A414-D37987245DC8}</id>
 			<comment/>
 			<position>
-				<first>942</first>
-				<second>-691</second>
+				<first>1120</first>
+				<second>-750</second>
 			</position>
 			<name>T_SurfaceAttributes</name>
 		</item>
@@ -113,8 +113,8 @@ else
 			<id>{D2921582-430C-413D-B57D-913D284C5010}</id>
 			<comment/>
 			<position>
-				<first>399</first>
-				<second>-600</second>
+				<first>578</first>
+				<second>-660</second>
 			</position>
 			<value>0.9</value>
 		</item>
@@ -122,8 +122,8 @@ else
 			<id>{C66CF1B1-A0D1-453C-95B8-1B5A1126CB69}</id>
 			<comment/>
 			<position>
-				<first>651</first>
-				<second>-721</second>
+				<first>830</first>
+				<second>-780</second>
 			</position>
 			<names>
 				<item>Color</item>
@@ -135,10 +135,10 @@ else
 			<id>{EE616E43-EC31-473F-925A-AE421B23E8D9}</id>
 			<comment/>
 			<position>
-				<first>367</first>
-				<second>-646</second>
+				<first>546</first>
+				<second>-706</second>
 			</position>
-			<value>0, 1, 0, 0</value>
+			<value>0, 0, 1, 0</value>
 		</item>
 		<item type="traktor.render.InputPort" version="2,traktor.render.Node:1">
 			<id>{C8C1A5B1-30D0-4B80-B8EE-C789C6C07E4A}</id>
@@ -157,8 +157,8 @@ else
 			<id>{4D5F40CF-6E91-4F78-96C5-A7E61CD259F3}</id>
 			<comment/>
 			<position>
-				<first>-395</first>
-				<second>-882</second>
+				<first>-404</first>
+				<second>-860</second>
 			</position>
 			<names>
 				<item>Normal</item>
@@ -186,7 +186,7 @@ else
 			<id>{1F6F5C14-0C10-47D5-AA8E-CC15CC6C5D8F}</id>
 			<comment/>
 			<position>
-				<first>291</first>
+				<first>506</first>
 				<second>-1210</second>
 			</position>
 		</item>
@@ -212,8 +212,8 @@ else
 			<id>{41CBE630-5E43-4E18-9C6F-BA0C0F2CA7A0}</id>
 			<comment/>
 			<position>
-				<first>243</first>
-				<second>-1078</second>
+				<first>267</first>
+				<second>-934</second>
 			</position>
 		</item>
 		<item type="traktor.render.Texture" version="1,traktor.render.Node:1">
@@ -230,8 +230,8 @@ else
 			<id>{E57BA8DE-E9E8-490C-A8D7-1F965A534C09}</id>
 			<comment/>
 			<position>
-				<first>29</first>
-				<second>-1114</second>
+				<first>222</first>
+				<second>-1129</second>
 			</position>
 			<color>0, 0.470588, 0, 1</color>
 			<linear>true</linear>
@@ -240,8 +240,8 @@ else
 			<id>{01D9DE7D-D9D5-4366-804C-1034934E748A}</id>
 			<comment/>
 			<position>
-				<first>-67</first>
-				<second>-1052</second>
+				<first>-61</first>
+				<second>-928</second>
 			</position>
 			<color>0.278431, 0.247059, 0.129412, 1</color>
 			<linear>true</linear>

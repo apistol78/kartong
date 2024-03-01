@@ -2,7 +2,6 @@
 <object type="traktor.script.Script" version="2">
 	<text>
 	<![CDATA[
-
 FollowCamera = FollowCamera or class("FollowCamera")
 
 function FollowCamera:new(cameraEntity, followEntity)
@@ -31,16 +30,20 @@ function FollowCamera:_calculateTransforms()
 		Quaternion.identity
 	)
 
+	local D < const > = 2
+
 	local T = ToffsetY * self._followEntity.transform * ToffsetZ
 
 	local targetPosition = T.translation
+	local optimalPosition = targetPosition - self._followEntity.transform.axisZ * D
+
 	local cameraPosition = self._cameraEntity.transform.translation
 
 	local d = targetPosition - cameraPosition
 	local ln = d.length
 	d = d / ln
 
-	local position = targetPosition - d * 2
+	local position = Vector4.lerp(optimalPosition, targetPosition - d * D, 0.9)
 
 	self._cameraEntity.transform = Transform.lookAt(
 		position,

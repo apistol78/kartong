@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.script.Script" version="2">
+	<text>
+	<![CDATA[
+#using \{FC4400A2-BDB6-BA45-9A22-12B9676E71FA}
+#using \{6EB38A62-F0A4-3C44-BBEE-7B98717C3536}
+#using \{9A73FE32-33E8-F949-9079-C0157707A292}
+
+HudSingleView = HudSingleView or class("HudSingleView", Container)
+
+HudSingleView.__flipboardId = "HUD"
+
+function HudSingleView:new(parent)
+	Container.new(self, parent, FloodLayout())
+
+	local ct = Container(self, TableLayout({ 100 }, { 100 }, 0, 0, 0, 0))
+	self._playerView0 = HudPlayerView(ct)
+
+	local ct = Container(self, FloodLayout(16, 16))
+	self._racePosition = RacePosition(ct, "MC_RacePositionBg")
+		:setHorizontalAlign(Widget.ALIGN_CENTER)
+		:setVerticalAlign(Widget.ALIGN_BOTTOM)
+end
+
+function HudSingleView:getPlayerView0()
+	return self._playerView0
+end
+
+function HudSingleView:getPlayerView1()
+	return nil
+end
+
+function HudSingleView:setPositions(kart0, kart1)
+	self._racePosition:setPositions(kart0, kart1)
+end
+
+	]]>
+	</text>
+</object>

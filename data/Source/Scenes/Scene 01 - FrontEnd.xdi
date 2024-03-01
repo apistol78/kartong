@@ -27,7 +27,7 @@
 				<maskProject>{00000000-0000-0000-0000-000000000000}</maskProject>
 			</low>
 			<medium>
-				<farZ>150</farZ>
+				<farZ>100</farZ>
 				<resolution>1024</resolution>
 				<bias>0.0005</bias>
 				<cascadingSlices>4</cascadingSlices>
@@ -37,7 +37,7 @@
 				<maskProject>{00000000-0000-0000-0000-000000000000}</maskProject>
 			</medium>
 			<high>
-				<farZ>150</farZ>
+				<farZ>100</farZ>
 				<resolution>1024</resolution>
 				<bias>0.0005</bias>
 				<cascadingSlices>4</cascadingSlices>
@@ -47,7 +47,7 @@
 				<maskProject>{00000000-0000-0000-0000-000000000000}</maskProject>
 			</high>
 			<ultra>
-				<farZ>200</farZ>
+				<farZ>100</farZ>
 				<resolution>2048</resolution>
 				<bias>0.0005</bias>
 				<cascadingSlices>4</cascadingSlices>
@@ -127,7 +127,7 @@
 						</item>
 						<item type="traktor.world.EntityData" version="2">
 							<id>{485FEF1B-7170-F04A-915A-312559ED69CF}</id>
-							<name>Camera</name>
+							<name>Camera0</name>
 							<state>
 								<visible>true</visible>
 								<dynamic>false</dynamic>

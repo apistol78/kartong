@@ -13,19 +13,21 @@ function MainView:new(parent)
 	Container.new(self, parent, TableLayout({0}, {0}, 16, 16, 0, 16))
 
 	Selector(self)
-		:add("PLAY")
+		:add("PLAY SINGLE")
+		:add("PLAY MULTI")
 		:add("OPTIONS")
 		:add("EXIT")
 		:setOnActivate(function(index)
 			print("main activate " .. index)
-			if index == 0 then self._fnPlay() end
-			if index == 1 then self._fnOptions() end
-			if index == 2 then self._fnExit() end
+			if index == 0 then self._fnPlay("SINGLE") end
+			if index == 1 then self._fnPlay("MULTI") end
+			if index == 2 then self._fnOptions() end
+			if index == 3 then self._fnExit() end
 		end)
 
 	self._dlgExit = nil
 
-	self._fnPlay = function() end
+	self._fnPlay = function(mode) end
 	self._fnOptions = function() end
 	self._fnExit = function() end
 end

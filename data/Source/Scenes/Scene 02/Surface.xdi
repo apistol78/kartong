@@ -46,8 +46,8 @@
 			<id>{83601FF0-95B7-C64F-99F8-C76DEEE186B5}</id>
 			<comment/>
 			<position>
-				<first>-585</first>
-				<second>-1141</second>
+				<first>-879</first>
+				<second>-1196</second>
 			</position>
 			<name>T_TerrainAttributes</name>
 			<connectable>true</connectable>
@@ -68,8 +68,8 @@
 			<id>{87A0542D-BBA1-E347-99A0-65356E3565AC}</id>
 			<comment/>
 			<position>
-				<first>-252</first>
-				<second>-1132</second>
+				<first>-547</first>
+				<second>-1188</second>
 			</position>
 			<names>
 				<item>Normal</item>
@@ -80,8 +80,8 @@
 			<id>{A88A6762-39E1-AF45-8EA5-998DBBE8C1F2}</id>
 			<comment/>
 			<position>
-				<first>33</first>
-				<second>-1062</second>
+				<first>-170</first>
+				<second>-1023</second>
 			</position>
 			<name>Major</name>
 			<technique/>
@@ -217,16 +217,16 @@ $Output = smoothstep(0, 1, $Input);
 			<id>{4853487E-5F99-4D18-9B1C-A4AE93B2462C}</id>
 			<comment/>
 			<position>
-				<first>-169</first>
-				<second>-1315</second>
+				<first>-234</first>
+				<second>-1279</second>
 			</position>
 		</item>
 		<item type="traktor.render.Scalar" version="traktor.render.Node:1">
 			<id>{D1270B76-1BAB-421A-B55C-C22BAA55C282}</id>
 			<comment/>
 			<position>
-				<first>-350</first>
-				<second>-1325</second>
+				<first>-416</first>
+				<second>-1289</second>
 			</position>
 			<value>32</value>
 		</item>

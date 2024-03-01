@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.runtime.StageData" version="11">
+	<name>Main</name>
+	<inherit>{4C21D382-3338-5E43-9EB6-7520F1E7CDA4}</inherit>
+	<layers>
+		<item type="traktor.runtime.WorldLayerData">
+			<name>world</name>
+			<permitTransition>false</permitTransition>
+			<scene>{69C85291-885F-6045-96AE-C6EB0DF3C816}</scene>
+		</item>
+	</layers>
+	<class>{00000000-0000-0000-0000-000000000000}</class>
+	<shaderFade>{00000000-0000-0000-0000-000000000000}</shaderFade>
+	<fadeOutUpdate>false</fadeOutUpdate>
+	<fadeRate>1.5</fadeRate>
+	<transitions/>
+	<resourceBundle>{00000000-0000-0000-0000-000000000000}</resourceBundle>
+	<properties/>
+</object>

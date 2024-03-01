@@ -3969,7 +3969,7 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>207.717072, 24.768202, 280.160889, 0</translation>
+								<translation>207.092377, 24.768202, 277.950134, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components/>
@@ -4014,8 +4014,8 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>162.095764, 17.986774, 278.824921, 0</translation>
-								<rotation>0.069639, 0.80993, -0.011567, 0.582262</rotation>
+								<translation>161.381027, 18.020599, 277.58316, 0</translation>
+								<rotation>0.03336, 0.743712, -0.037216, 0.666629</rotation>
 							</transform>
 							<components/>
 							<entityData>{866684AB-577A-F845-8A2E-43BA2AD093C9}</entityData>
@@ -4029,8 +4029,8 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>150.585632, 21.988525, 163.623947, 0</translation>
-								<rotation>0.04908, 0.188623, -0.009439, 0.980777</rotation>
+								<translation>150.356934, 22.35286, 164.091431, 0</translation>
+								<rotation>0.126005, 0.176017, 0.076815, 0.973263</rotation>
 							</transform>
 							<components/>
 							<entityData>{866684AB-577A-F845-8A2E-43BA2AD093C9}</entityData>
@@ -4089,7 +4089,7 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>-148.991531, 19.746552, -157.600037, 0</translation>
+								<translation>-148.71965, 20.850302, -157.444916, 0</translation>
 								<rotation>0.145244, 0.240668, -0.076187, 0.95665</rotation>
 							</transform>
 							<components/>
@@ -4104,7 +4104,7 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>-54.384853, 15.584593, -175.990173, 0</translation>
+								<translation>-54.384853, 15.943784, -175.990173, 0</translation>
 								<rotation>0.106966, -0.28047, -0.009603, 0.953836</rotation>
 							</transform>
 							<components/>
@@ -4119,8 +4119,8 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>-214.368256, 19.470987, -101.37838, 0</translation>
-								<rotation>0.047747, 0.01477, -0.295151, 0.954143</rotation>
+								<translation>-213.724579, 19.774553, -101.434204, 0</translation>
+								<rotation>0.047282, 0.016196, -0.323638, 0.94486</rotation>
 							</transform>
 							<components/>
 							<entityData>{866684AB-577A-F845-8A2E-43BA2AD093C9}</entityData>
@@ -4149,7 +4149,7 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>195.414413, 35.499588, 134.498199, 0</translation>
+								<translation>195.290268, 36.065418, 134.486725, 0</translation>
 								<rotation>0.04908, 0.188623, -0.009439, 0.980777</rotation>
 							</transform>
 							<components/>
@@ -4164,7 +4164,7 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>186.716095, 35.499588, 117.316109, 0</translation>
+								<translation>186.661316, 35.885048, 117.311218, 0</translation>
 								<rotation>-0.089861, 0.019918, 0.001797, 0.995754</rotation>
 							</transform>
 							<components/>
@@ -4209,8 +4209,8 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>108.965645, 6.71855, -163.694885, 0</translation>
-								<rotation>0.019995, 0.019995, -0.0004, 0.9996</rotation>
+								<translation>107.412804, 6.71855, -165.04805, 0</translation>
+								<rotation>0.059952, 0.019963, -0.001199, 0.998001</rotation>
 							</transform>
 							<components/>
 							<entityData>{866684AB-577A-F845-8A2E-43BA2AD093C9}</entityData>
@@ -4224,8 +4224,8 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>153.356003, 25.183397, -357.870636, 0</translation>
-								<rotation>0.019995, 0.019995, -0.0004, 0.9996</rotation>
+								<translation>153.411682, 25.634836, -357.96344, 0</translation>
+								<rotation>0.021345, 0.018548, 0.069516, 0.99718</rotation>
 							</transform>
 							<components/>
 							<entityData>{866684AB-577A-F845-8A2E-43BA2AD093C9}</entityData>
@@ -4239,7 +4239,7 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>241.693939, 27.129436, -204.580841, 0</translation>
+								<translation>241.69165, 27.934515, -204.419296, 0</translation>
 								<rotation>0.04997, 0.019974, -0.001, 0.998551</rotation>
 							</transform>
 							<components/>

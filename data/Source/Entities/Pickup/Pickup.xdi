@@ -15,7 +15,7 @@
 		<item type="traktor.world.ScriptComponentData" version="2">
 			<class>{1F9A8153-351A-614E-8DE8-32038F3AD78F}</class>
 			<properties/>
-			<editorSupport>true</editorSupport>
+			<editorSupport>false</editorSupport>
 		</item>
 		<item type="traktor.world.GroupComponentData">
 			<entityData>
