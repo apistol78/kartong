@@ -16,6 +16,8 @@ function Kart:new()
 	local h = render.IRenderSystem.getParameterHandle("KartColor")
 	local mpc = self.owner:getComponent(mesh.MeshParameterComponent)
 	mpc:setVectorParameter(h, Vector4(r, g, b, 1))
+
+	self._gear = 0
 end
 
 function Kart:update(contextObject, totalTime, deltaTime)
@@ -68,9 +70,26 @@ function Kart:update(contextObject, totalTime, deltaTime)
 	-- Adjust pitch from velocity.
 	if rigidBodyComponent.body.active then
 		local mps < const > = rigidBodyComponent.body.linearVelocity.length
-		local pitch < const > = mps / 15
-		soundComponent:play()
+		local kph < const > = mps * (60 * 60) / 1000
+
+		local gd = self._gear * 30 - 5
+		local gu = self._gear * 30 + 30 + 5
+		if kph < gd then
+			if self._gear > 0 then
+				self._gear = self._gear - 1
+			end
+		elseif kph > gu then
+			if self._gear < 2 then
+				self._gear = self._gear + 1
+			end
+		end
+
+		local pitch = (kph - self._gear * 30) / 40
+		if pitch < 0.1 then pitch = 0.1 end
+		if pitch > 1 then pitch = 1 end
+
 		soundComponent:setParameter("A", pitch)
+		soundComponent:play()
 	else
 		soundComponent:stop()
 	end
