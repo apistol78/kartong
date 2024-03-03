@@ -4,7 +4,7 @@
 		<viewNearZ>0.1</viewNearZ>
 		<viewFarZ>1000</viewFarZ>
 		<exposureMode>Fixed</exposureMode>
-		<exposure>0.6</exposure>
+		<exposure>0.1</exposure>
 		<shadowSettings>
 			<disabled>
 				<farZ>100</farZ>
@@ -103,7 +103,7 @@
 							</state>
 							<transform>
 								<translation>-9.443932, -1.97757, 3.657648, 0</translation>
-								<rotation>0.119872, -0.865577, 0.418123, 0.248153</rotation>
+								<rotation>0.284416, 0.344378, -0.110314, 0.887887</rotation>
 							</transform>
 							<components>
 								<item type="traktor.weather.SkyComponentData" version="4">
@@ -140,7 +140,7 @@
 							<components>
 								<item type="traktor.world.CameraComponentData">
 									<projection>Perspective</projection>
-									<fov>1.919862</fov>
+									<fov>1.396263</fov>
 									<width>1</width>
 									<height>1</height>
 								</item>
@@ -203,7 +203,7 @@
 							</state>
 							<transform>
 								<translation>8.147558, 22.573502, -3.177928, 0</translation>
-								<rotation>0, -0.554778, 0, 0.831998</rotation>
+								<rotation>0, -0.66545, 0, 0.746443</rotation>
 							</transform>
 							<components/>
 							<entityData>{3527F644-09BE-4B55-91E7-ECC6191F32C2}</entityData>
@@ -217,7 +217,7 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>-0.977453, 22.957634, -7.222868, 0</translation>
+								<translation>-2.298129, 22.957634, -7.200705, 0</translation>
 								<rotation>0, 0.152893, 0, 0.988243</rotation>
 							</transform>
 							<components/>
@@ -247,7 +247,7 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>4.181493, 22.672976, -5.478652, 0</translation>
+								<translation>4.264809, 22.672976, -5.987488, 0</translation>
 								<rotation>0, -0.378427, 0, 0.925631</rotation>
 							</transform>
 							<components/>
@@ -417,6 +417,36 @@
 							</transform>
 							<components/>
 							<entityData>{35427C92-3197-4641-A1F5-31248037416B}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{5590E378-5A6D-464F-B78C-CA27720203A0}</id>
+							<name>Plant 1</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>24.356201, 7.799458, -31.44062, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{866684AB-577A-F845-8A2E-43BA2AD093C9}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{D1CF9DAF-3EB2-46E2-BD47-4E4A5F4B7D7A}</id>
+							<name>Plant 1</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>-29.980263, 7.799458, -36.263496, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{866684AB-577A-F845-8A2E-43BA2AD093C9}</entityData>
 						</item>
 					</entityData>
 				</item>

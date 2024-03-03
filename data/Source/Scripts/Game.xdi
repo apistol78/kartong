@@ -238,20 +238,32 @@ function Game:_updateUI()
 end
 
 function Game:_updateKartBoost(boostFactor)
+	local world < const > = self.world.world
+
+	local D < const > = 0.02
+	local B < const > = 0.5
+	
 	local p0 < const > = self._logic0:getPosition()
 	local p1 < const > = self._logic1:getPosition()
-
-	local world < const > = self.world.world
+	local diff = p0 - p1
 
 	-- Left Kart
 	local kart = world:getEntity("Kart0")
 	local vc = kart:getComponent(physics.VehicleComponent)
-	vc.engineBoost = iif(p0 < p1, 0, 0.4) * boostFactor
+	if diff < -D then
+		vc.engineBoost = B * boostFactor
+	else
+		vc.engineBoost = 0
+	end
 
 	-- Right Kart
 	local kart = world:getEntity("Kart1")
 	local vc = kart:getComponent(physics.VehicleComponent)
-	vc.engineBoost = iif(p1 < p0, 0, 0.4) * boostFactor
+	if diff > D then
+		vc.engineBoost = B * boostFactor
+	else
+		vc.engineBoost = 0
+	end
 end
 
 	]]>
