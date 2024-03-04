@@ -3901,6 +3901,21 @@
 							<entityData>{8AAE57D3-9A54-4E74-A7BF-6EA145B379B3}</entityData>
 						</item>
 						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{D6F519EA-F97F-E944-B254-59D82268061B}</id>
+							<name>Tower</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>465.499359, 58.63726, -114.906235, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{8AAE57D3-9A54-4E74-A7BF-6EA145B379B3}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 							<id>{517D6BE2-619C-4A94-8F0A-6D8757C0F21A}</id>
 							<name>Tower</name>
 							<state>
