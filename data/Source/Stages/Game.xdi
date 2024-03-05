@@ -14,7 +14,7 @@
 		<item type="traktor.runtime.AudioLayerData">
 			<name>audio</name>
 			<permitTransition>true</permitTransition>
-			<sound>{20750E23-08CB-46FD-9555-6100EE50BBA9}</sound>
+			<sound>{B9C4A4B3-B6AE-4440-94D4-9A6164D8EF00}</sound>
 			<autoPlay>true</autoPlay>
 			<repeat>true</repeat>
 		</item>
