@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.world.EntityData" version="2">
+	<id>{A95EE81E-2592-0B4D-B66E-D73DC144D553}</id>
+	<name>Pipe</name>
+	<state>
+		<visible>true</visible>
+		<dynamic>false</dynamic>
+		<locked>false</locked>
+	</state>
+	<transform>
+		<translation>0, 0, 0, 0</translation>
+		<rotation>0, 0, 0, 1</rotation>
+	</transform>
+	<components>
+		<item type="traktor.mesh.MeshComponentData" version="1">
+			<mesh>{C18EC21E-25D4-814F-BB49-0133423C28C7}</mesh>
+		</item>
+	</components>
+</object>

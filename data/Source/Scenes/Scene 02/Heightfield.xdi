@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<object type="traktor.hf.HeightfieldAsset" version="7">
+<object type="traktor.hf.HeightfieldAsset" version="8">
 	<worldExtent>1024, 128, 1024, 0</worldExtent>
-	<vistaDistance>0</vistaDistance>
 	<erosionEnable>false</erosionEnable>
 	<erodeIterations>100000</erodeIterations>
 </object>
