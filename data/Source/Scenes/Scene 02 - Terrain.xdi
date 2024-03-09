@@ -4572,7 +4572,7 @@
 					<entityData>
 						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 							<id>{B358B25C-793A-F14F-B372-3BD5360F6475}</id>
-							<name>Kart0</name>
+							<name>Kart</name>
 							<state>
 								<visible>true</visible>
 								<dynamic>false</dynamic>
@@ -4586,15 +4586,45 @@
 							<entityData>{3527F644-09BE-4B55-91E7-ECC6191F32C2}</entityData>
 						</item>
 						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
-							<id>{90ABFE17-47F9-4748-B4D7-227C19E3D752}</id>
-							<name>Kart1</name>
+							<id>{39CB148E-22E0-4911-BBB6-553244CBA7B5}</id>
+							<name>Kart</name>
 							<state>
 								<visible>true</visible>
 								<dynamic>false</dynamic>
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>-63.020702, 9.384397, -120.183243, 0</translation>
+								<translation>-62.422482, 9.578125, -119.319443, 0</translation>
+								<rotation>0, 0.620987, 0, 0.783821</rotation>
+							</transform>
+							<components/>
+							<entityData>{3527F644-09BE-4B55-91E7-ECC6191F32C2}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{1E54FDBB-9358-4D9C-A30B-B8A1F038F608}</id>
+							<name>Kart</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>-71.373436, 9.578125, -119.862793, 0</translation>
+								<rotation>0, 0.620987, 0, 0.783821</rotation>
+							</transform>
+							<components/>
+							<entityData>{3527F644-09BE-4B55-91E7-ECC6191F32C2}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{04465C4B-DAB9-474E-B808-1F8786C5EF84}</id>
+							<name>Kart</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>-74.308434, 9.578125, -113.495148, 0</translation>
 								<rotation>0, 0.620987, 0, 0.783821</rotation>
 							</transform>
 							<components/>

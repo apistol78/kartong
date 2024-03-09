@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.script.Script" version="2">
+	<text>
+	<![CDATA[
+GameContext = GameContext or class("GameContext")
+
+function GameContext:new(
+	road,
+	karts,
+	pickups
+)
+	self._road = road
+	self._karts = karts
+	self._pickups = pickups
+end
+
+function GameContext:getRoad()
+	return self._road
+end
+
+function GameContext:getKart(index)
+	return self._karts:get(index)
+end
+
+function GameContext:forEachKart(fn)
+	for i = 0, self._karts.size - 1 do
+		local kart < const > = self._karts:get(i)
+		fn(kart, i)
+	end
+end
+
+function GameContext:forEachPickup(fn)
+	for i = 0, self._pickups.size - 1 do
+		local pickup < const > = self._pickups:get(i)
+		fn(pickup, i)
+	end
+end
+
+	]]>
+	</text>
+</object>

@@ -10,30 +10,18 @@ function Boost:new()
 end
 
 function Boost:update(contextObject, totalTime, deltaTime)
-	-- Left kart
-	local kart = self.owner.world:getEntity("Kart0", 0)
-	local position = kart.transform.translation
-
-	if self.owner:getComponent(world.VolumeComponent):inside(position) then
-		local rb = kart:getComponent(physics.RigidBodyComponent)
-		rb.body:addForceAt(
-			position,
-			self.owner.transform.axisZ * 100,
-			false
-		)
-	end
-
-	-- Right kart
-	local kart = self.owner.world:getEntity("Kart1", 0)
-	local position = kart.transform.translation
-
-	if self.owner:getComponent(world.VolumeComponent):inside(position) then
-		local rb = kart:getComponent(physics.RigidBodyComponent)
-		rb.body:addForceAt(
-			position,
-			self.owner.transform.axisZ * 100,
-			false
-		)
+	local karts = self.owner.world:getEntities("Kart")
+	for i = 0, karts.size - 1 do
+		local kart = karts:get(i)
+		local position = kart.transform.translation
+		if self.owner:getComponent(world.VolumeComponent):inside(position) then
+			local rb = kart:getComponent(physics.RigidBodyComponent)
+			rb.body:addForceAt(
+				position,
+				self.owner.transform.axisZ * 100,
+				false
+			)
+		end
 	end
 end
 

@@ -5,6 +5,7 @@
 #using \{720C0A68-B608-2F40-8EBA-F7E42EB27F61}
 #using \{FC4400A2-BDB6-BA45-9A22-12B9676E71FA}
 #using \{97B60D98-6C09-7743-ADBC-16D2565DEDAD}
+#using \{7DB51529-FCBA-4AB2-86C7-876BDE110462}
 #using \{A348F9B0-E137-B24F-B5DC-6591E60A61DD}
 #using \{B3773DDC-1FE6-D54B-9677-2CAB45912BA0}
 #using \{FC207928-47BE-4597-9313-A7CD676CE810}
@@ -63,43 +64,41 @@ function Game:new(params, environment)
 
 	local world < const > = self.world.world
 
-	-- Get game entities.
-	local kart0 = world:getEntity("Kart0")
-	local kart1 = world:getEntity("Kart1")
-	local road = world:getEntity("Road")
-	local pickups = world:getEntities("Pickup")
+	-- Create game context
+	self._gameContext = GameContext(
+		world:getEntity("Road"),
+		world:getEntities("Kart"),
+		world:getEntities("Pickup")
+	)
 
 	-- Create camera handlers.
 	local camera = world:getEntity("Camera0")
-	self._followCamera0 = FollowCamera(camera, kart0)
+	self._followCamera0 = FollowCamera(camera, self._gameContext:getKart(0))
 	local camera = world:getEntity("Camera1")
-	self._followCamera1 = FollowCamera(camera, kart1)
+	self._followCamera1 = FollowCamera(camera, self._gameContext:getKart(1))
 
 	-- Game logic.
-	self._logic0 = PlayerLogic(
-		kart0,
-		road,
-		pickups,
-		Vector4(-4, 1, 0),
-		{
-			steer = environment.input.inputMapping:getState("STATE_STEER_0"),
-			throttle = environment.input.inputMapping:getState("STATE_THROTTLE_0"),
-			action = environment.input.inputMapping:getState("STATE_ACTION_0")
-		},
-		false
-	)
-	self._logic1 = PlayerLogic(
-		kart1,
-		road,
-		pickups,
-		Vector4( 4, 1, 0),
-		{
-			steer = environment.input.inputMapping:getState("STATE_STEER_1"),
-			throttle = environment.input.inputMapping:getState("STATE_THROTTLE_1"),
-			action = environment.input.inputMapping:getState("STATE_ACTION_1")
-		},
-		true
-	)
+	self._logic = {}
+	self._gameContext:forEachKart(function (kart, index)
+
+		local bot = false
+		if self._singlePlayer and (index > 0) then bot = true end
+		if not self._singlePlayer and (index > 1) then bot = true end
+
+		local logic < const > = PlayerLogic(
+			self._gameContext,
+			index,
+			Vector4(-4 + (index & 1) * 8, 1, 0),
+			{
+				steer = environment.input.inputMapping:getState("STATE_STEER_" .. index),
+				throttle = environment.input.inputMapping:getState("STATE_THROTTLE_" .. index),
+				action = environment.input.inputMapping:getState("STATE_ACTION_" .. index)
+			},
+			bot
+		)
+
+		table.insert(self._logic, logic)
+	end)
 
 	-- Set game state.
 	self._updateFn = Game._updateStart
@@ -159,8 +158,9 @@ end
 
 function Game:_updateStart(info)
 	-- Update kart logic.
-	self._logic0:update(info, 0)
-	self._logic1:update(info, 0)
+	for _, logic in ipairs(self._logic) do
+		logic:update(info, 0)
+	end
 
 	if info.stateTime < 2 then
 		self._countDownView:setText("READY...")
@@ -178,8 +178,9 @@ function Game:_updateKickOff(info)
 	self:_updateUI()
 
 	-- Update kart logic.
-	self._logic0:update(info, 1)
-	self._logic1:update(info, 1)
+	for _, logic in ipairs(self._logic) do
+		logic:update(info, 1)
+	end
 
 	if info.stateTime >= 6 then
 		self._updateFn = Game._updateRace
@@ -191,13 +192,22 @@ function Game:_updateRace(info)
 	self:_updateUI()
 
 	-- Update kart logic.
-	self._logic0:update(info, 1)
-	self._logic1:update(info, 1)
+	for _, logic in ipairs(self._logic) do
+		logic:update(info, 1)
+	end
 
 	-- Check if any has finished.
-	if self._logic0:getLap() > 3 or self._logic1:getLap() > 3 then
-		self._logic0:setAutoDrive(true)
-		self._logic1:setAutoDrive(true)
+	local anyFinished = false
+	for _, logic in ipairs(self._logic) do
+		if logic:getLap() > 3 then
+			anyFinished = true
+			break
+		end
+	end
+	if anyFinished then
+		for _, logic in ipairs(self._logic) do
+			logic:setAutoDrive(true)
+		end
 		self._updateFn = Game._updateFinished
 		self._flipBook:showPage("FINISHED")
 	end
@@ -207,8 +217,9 @@ function Game:_updateFinished(info)
 	self:_updateKartBoost(0)
 
 	-- Update kart logic.
-	self._logic0:update(info, 1)
-	self._logic1:update(info, 1)
+	for _, logic in ipairs(self._logic) do
+		logic:update(info, 1)
+	end
 
 	local confirm < const > = self._inputMapping:isStatePressed("STATE_CONFIRM")
 	if confirm then
@@ -220,24 +231,25 @@ function Game:_updateUI()
 	-- Left kart
 	local playerView = self._hudView:getPlayerView0()
 	if playerView ~= nil then
-		playerView:setSpeed(self._logic0:getSpeed())
-		playerView:setLap(self._logic0:getLap())
+		playerView:setSpeed(self._logic[1]:getSpeed())
+		playerView:setLap(self._logic[1]:getLap())
 	end
 
 	-- Right kart
 	local playerView = self._hudView:getPlayerView1()
 	if playerView ~= nil then
-		playerView:setSpeed(self._logic1:getSpeed())
-		playerView:setLap(self._logic1:getLap())
+		playerView:setSpeed(self._logic[2]:getSpeed())
+		playerView:setLap(self._logic[2]:getLap())
 	end
 
 	-- Update kart positions.
-	local kp0 = self._logic0:getPosition() / 3
-	local kp1 = self._logic1:getPosition() / 3
+	local kp0 = self._logic[1]:getPosition() / 3
+	local kp1 = self._logic[2]:getPosition() / 3
 	self._hudView:setPositions(kp0, kp1)
 end
 
 function Game:_updateKartBoost(boostFactor)
+--[[
 	local world < const > = self.world.world
 
 	local D < const > = 0.02
@@ -264,6 +276,7 @@ function Game:_updateKartBoost(boostFactor)
 	else
 		vc.engineBoost = 0
 	end
+]]
 end
 
 	]]>

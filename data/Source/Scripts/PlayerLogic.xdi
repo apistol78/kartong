@@ -4,15 +4,14 @@
 	<![CDATA[
 import(traktor)
 
+#using \{7DB51529-FCBA-4AB2-86C7-876BDE110462}
 #using \{3AA30C45-E8CF-4419-9FD6-1660CF56127C}
 
 PlayerLogic = PlayerLogic or class("PlayerLogic")
 
-function PlayerLogic:new(kart, road, pickups, resetOffset, inputStates, autoDrive)
-	self._kart = kart
-	self._road = road
-	self._pickups = pickups
-	self._pickup = nil
+function PlayerLogic:new(gameContext, index, resetOffset, inputStates, autoDrive)
+	self._gameContext = gameContext
+	self._index = index
 	self._t = 0
 	self._lap = 0
 	self._kph = 0
@@ -21,13 +20,20 @@ function PlayerLogic:new(kart, road, pickups, resetOffset, inputStates, autoDriv
 	self._inputStates = inputStates
 	self._autoDrive = autoDrive
 	self._pid = PID(0.8, 0.01, 0.1)
+	self._pickup = nil
 end
 
 function PlayerLogic:update(info, throttleFactor)
-	local vc < const > = self._kart:getComponent(physics.VehicleComponent)
-	local rb < const > = self._kart:getComponent(physics.RigidBodyComponent)
-	local pt < const > = self._road:getComponent(world.PathComponent)
-	local position < const > = self._kart.transform.translation
+
+	local road = self._gameContext:getRoad()
+	local kart = self._gameContext:getKart(self._index)
+
+	local vc < const > = kart:getComponent(physics.VehicleComponent)
+	local rb < const > = kart:getComponent(physics.RigidBodyComponent)
+	local sc < const > = kart:getComponent(world.ScriptComponent)
+	local pt < const > = road:getComponent(world.PathComponent)
+
+	local position < const > = kart.transform.translation
 	local t = pt:findClosest(position)
 
 	rb.body.active = true
@@ -37,13 +43,13 @@ function PlayerLogic:update(info, throttleFactor)
 	if not self._autoDrive then
 		vc.steerAngle = self._inputStates.steer:getValue()
 		vc.engineThrottle = self._inputStates.throttle:getValue() * throttleFactor
-	end
 
-	if self._inputStates.action:isPressed() then
 		-- Trigger pickup.
-		if self._pickup ~= nil then
-			print("TRIGGER PICKUP")
-			self._pickup = nil
+		if self._inputStates.action:isPressed() then
+			if self._pickup ~= nil then
+				print("TRIGGER PICKUP")
+				self._pickup = nil
+			end
 		end
 	end
 
@@ -60,14 +66,12 @@ function PlayerLogic:update(info, throttleFactor)
 	self._t = t
 
 	-- Check pickups.
-	for i = 0, self._pickups.size - 1 do
-		local p < const > = self._pickups:get(i)
-		local psc < const > = p:getComponent(world.ScriptComponent)
+	self._gameContext:forEachPickup(function(pickup)
+		local psc < const > = pickup:getComponent(world.ScriptComponent)
 		if psc ~= nil and psc:tryGrab(position) then
-			self._pickup = p
-			break
+			self._pickup = pickup
 		end
-	end
+	end)
 
 	-- Check limits.
 	local Tmin = pt:evaluateDirectional(t)
@@ -76,7 +80,6 @@ function PlayerLogic:update(info, throttleFactor)
 	if dx > 14 or dy > 2 then
 		self._offlimit = self._offlimit + info.simulationDeltaTime
 		if self._offlimit > 2 then
-			local sc < const > = self._kart:getComponent(world.ScriptComponent)
 			sc:teleport(Tmin * Transform(self._resetOffset, Quaternion.identity))
 			self._pid:reset()
 		end
@@ -90,7 +93,7 @@ function PlayerLogic:update(info, throttleFactor)
 	-- Update auto drive.
 	if self._autoDrive then
 		local Vdir = (self._Toptimal.translation - position).xyz0
-		local VdirLocal = self._kart.transform:inverse():transform(Vdir)
+		local VdirLocal = kart.transform:inverse():transform(Vdir)
 	
 		local angle = math.atan(VdirLocal.x, VdirLocal.z) * 0.8
 		local a = self._pid:evaluate(info.simulationDeltaTime, angle, 0)
@@ -100,7 +103,7 @@ function PlayerLogic:update(info, throttleFactor)
 		if angle > 0.3 then angle = 0.3 end
 	
 		vc.steerAngle = angle
-		vc.engineThrottle = (1 - math.abs(angle) * 0.2) * throttleFactor
+		vc.engineThrottle = (1 - math.abs(angle) * 0.4) * throttleFactor
 	end
 end
 
@@ -125,7 +128,6 @@ function PlayerLogic:setAutoDrive(autoDrive)
 	self._autoDrive = autoDrive
 	self._pid:reset()
 end
-
 
 	]]>
 	</text>

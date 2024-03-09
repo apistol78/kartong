@@ -46,7 +46,7 @@ function Splash:finalize()
 end
 
 function Splash:update(info)
-	if self._loader.ready then
+	if self._loader.ready and info.stateTime > 5 then
 		self:gotoStage(self._loader:get())
 		self._loader = nil
 	end
