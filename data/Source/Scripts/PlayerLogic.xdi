@@ -4,6 +4,7 @@
 	<![CDATA[
 import(traktor)
 
+#using \{BFFAA983-A517-482D-9829-F2A5ED75E8B7}
 #using \{7DB51529-FCBA-4AB2-86C7-876BDE110462}
 #using \{3AA30C45-E8CF-4419-9FD6-1660CF56127C}
 
@@ -21,6 +22,8 @@ function PlayerLogic:new(gameContext, index, resetOffset, inputStates, autoDrive
 	self._autoDrive = autoDrive
 	self._pid = PID(0.8, 0.01, 0.1)
 	self._pickup = nil
+
+	self._botLookAhead = math.random() * 0.025 + 0.025
 end
 
 function PlayerLogic:update(info, throttleFactor)
@@ -87,23 +90,34 @@ function PlayerLogic:update(info, throttleFactor)
 		self._offlimit = 0
 	end
 
-	-- Calculate optimal tracking transform.
-	self._Toptimal = pt:evaluateDirectional(t + 0.005) * Transform(self._resetOffset, Quaternion.identity)
-
 	-- Update auto drive.
 	if self._autoDrive then
-		local Vdir = (self._Toptimal.translation - position).xyz0
+
+		-- Determine road turning.
+		local T0 = pt:evaluateDirectional(t)
+		local T1 = T0:inverse() * pt:evaluateDirectional(t + self._botLookAhead)
+		local turning = T1.translation.x / T1.translation.z
+
+		local tf = math.clamp(math.abs(turning) * 2, 0, 1)
+
+		local offset = Vector4(
+			math.clamp(turning  * 2, -1, 1) * 5,
+			0,
+			0
+		)
+
+		local Toptimal = pt:evaluateDirectional(t + 0.005) * Transform(offset, Quaternion.identity)
+
+		local Vdir = (Toptimal.translation - position).xyz0
 		local VdirLocal = kart.transform:inverse():transform(Vdir)
 	
 		local angle = math.atan(VdirLocal.x, VdirLocal.z) * 0.8
 		local a = self._pid:evaluate(info.simulationDeltaTime, angle, 0)
-	
-		angle = a -- vc.steerAngle + a
-		if angle < -0.3 then angle = -0.3 end
-		if angle > 0.3 then angle = 0.3 end
+		angle = math.clamp(a, -0.3, 0.3)
+
 	
 		vc.steerAngle = angle
-		vc.engineThrottle = (1 - math.abs(angle) * 0.4) * throttleFactor
+		vc.engineThrottle = (1 - tf * 0.2) * throttleFactor
 	end
 end
 
