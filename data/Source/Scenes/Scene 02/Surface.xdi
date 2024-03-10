@@ -21,6 +21,7 @@
 				<item>Color</item>
 				<item>Normal</item>
 				<item>Roughness</item>
+				<item>Specular</item>
 			</names>
 		</item>
 		<item type="traktor.render.Scalar" version="traktor.render.Node:1">
@@ -377,12 +378,21 @@ $Output = vec4(mix(t, b, f), 0.0f);
 			</position>
 			<value>0.01</value>
 		</item>
+		<item type="traktor.render.Scalar" version="traktor.render.Node:1">
+			<id>{D28E1736-6812-4A7F-80BF-8D1586DE8877}</id>
+			<comment/>
+			<position>
+				<first>578</first>
+				<second>-706</second>
+			</position>
+			<value>0.1</value>
+		</item>
 	</nodes>
 	<edges>
 		<item type="traktor.render.Edge" version="1">
 			<source>
 				<node ref="/object/nodes/item[1]"/>
-				<id>{EEB495BD-DE7F-4DE8-973A-7E9B220B927F}</id>
+				<id>{EEB495BD-DE7F-4DE8-983A-7E9B220B927F}</id>
 			</source>
 			<destination>
 				<node ref="/object/nodes/item[4]"/>
@@ -677,6 +687,16 @@ $Output = vec4(mix(t, b, f), 0.0f);
 			<destination>
 				<node ref="/object/nodes/item[23]"/>
 				<id>{51E30CE0-3C94-4668-AC3A-2CE903530D64}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[28]"/>
+				<id>{D33F8931-C90C-4EBA-8A04-A31D3E08FAB7}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[1]"/>
+				<id>{EEB495BD-DE7F-4DE8-973A-7E9B220B927F}</id>
 			</destination>
 		</item>
 	</edges>

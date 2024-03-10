@@ -16,9 +16,8 @@ function FinishedView:new(parent)
 		:setHorizontalAlign(Widget.ALIGN_CENTER)
 		:setVerticalAlign(Widget.ALIGN_CENTER)
 
-	Static(ct, "FINISHED")
+	Image(ct, "MC_Finished")
 		:setHorizontalAlign(Widget.ALIGN_CENTER)
-		:setTextSize(90)
 end
 
 	]]>

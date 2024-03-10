@@ -9,26 +9,32 @@ CountDownView = CountDownView or class("CountDownView", Container)
 
 CountDownView.__flipboardId = "COUNTDOWN"
 
+CountDownView.READY = 0
+CountDownView.SET = 1
+CountDownView.GO = 2
+
 function CountDownView:new(parent)
 	Container.new(self, parent, FloodLayout(0, 0))
-	self._countDown = Static(self, "")
+
+	self._ready = Image(self, "MC_Ready")
 		:setHorizontalAlign(Widget.ALIGN_CENTER)
 		:setVerticalAlign(Widget.ALIGN_CENTER)
-		:setTextSize(20)
 
-	self._text = ""
+	self._set = Image(self, "MC_Set")
+		:setHorizontalAlign(Widget.ALIGN_CENTER)
+		:setVerticalAlign(Widget.ALIGN_CENTER)
+
+	self._go = Image(self, "MC_Go")
+		:setHorizontalAlign(Widget.ALIGN_CENTER)
+		:setVerticalAlign(Widget.ALIGN_CENTER)
+
+	self:setText(-1)
 end
 
 function CountDownView:setText(text)
-	if self._text ~= text then
-		self._countDown:setText(text)
-		self._text = text
-
-		Tween(20, 200, 0.5, function(value, last)
-			self._countDown:setTextSize(value)
-			self:layout()
-		end)
-	end
+	self._ready:setVisible(text == CountDownView.READY)
+	self._set:setVisible(text == CountDownView.SET)
+	self._go:setVisible(text == CountDownView.GO)
 end
 
 	]]>

@@ -163,11 +163,11 @@ function Game:_updateStart(info)
 	end
 
 	if info.stateTime < 2 then
-		self._countDownView:setText("READY...")
+		self._countDownView:setText(CountDownView.READY)
 	elseif info.stateTime < 4 then
-		self._countDownView:setText("SET...")
+		self._countDownView:setText(CountDownView.SET)
 	else
-		self._countDownView:setText("GO!")
+		self._countDownView:setText(CountDownView.GO)
 		self._updateFn = Game._updateKickOff
 		self._flipBook:showPage("HUD")
 	end

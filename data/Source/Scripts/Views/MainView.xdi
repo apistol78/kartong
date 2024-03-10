@@ -10,19 +10,24 @@ MainView = MainView or class("MainView", Container)
 MainView.__flipboardId = "MAIN"
 
 function MainView:new(parent)
-	Container.new(self, parent, TableLayout({0}, {0}, 16, 16, 0, 16))
+	Container.new(self, parent, TableLayout({0}, {0, 0}, 0, 0, 0, 0))
+
+	Image(self, "MC_Logo")
+		:setHorizontalAlign(Widget.ALIGN_CENTER)
 
 	Selector(self)
+		:setHorizontalAlign(Widget.ALIGN_CENTER)
 		:add("PLAY SINGLE")
 		:add("PLAY MULTI")
 		:add("OPTIONS")
+		:add("CREDITS")
 		:add("EXIT")
 		:setOnActivate(function(index)
 			print("main activate " .. index)
 			if index == 0 then self._fnPlay("SINGLE") end
 			if index == 1 then self._fnPlay("MULTI") end
 			if index == 2 then self._fnOptions() end
-			if index == 3 then self._fnExit() end
+			if index == 4 then self._fnExit() end
 		end)
 
 	self._dlgExit = nil

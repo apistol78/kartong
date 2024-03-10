@@ -510,6 +510,21 @@
 							<entityData>{3527F644-09BE-4B55-91E7-ECC6191F32C2}</entityData>
 						</item>
 						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{31C65CD6-23DD-4D57-A658-1C22BF6F1834}</id>
+							<name>Kart</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>38.571419, -0.334478, -119.056488, 0</translation>
+								<rotation>0.028496, 0.88075, -0.115526, 0.458391</rotation>
+							</transform>
+							<components/>
+							<entityData>{3527F644-09BE-4B55-91E7-ECC6191F32C2}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 							<id>{3D3C3B94-2F6E-5B47-9270-8E408693F7B7}</id>
 							<name>Kart</name>
 							<state>
@@ -519,6 +534,21 @@
 							</state>
 							<transform>
 								<translation>41.410252, -0.91183, -130.088135, 0</translation>
+								<rotation>0.028496, 0.88075, -0.115526, 0.458391</rotation>
+							</transform>
+							<components/>
+							<entityData>{3527F644-09BE-4B55-91E7-ECC6191F32C2}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{67705FDB-2264-4C99-8589-F2E5DC310E2B}</id>
+							<name>Kart</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>34.267483, -0.91183, -124.915001, 0</translation>
 								<rotation>0.028496, 0.88075, -0.115526, 0.458391</rotation>
 							</transform>
 							<components/>

@@ -23,7 +23,11 @@ function PlayerLogic:new(gameContext, index, resetOffset, inputStates, autoDrive
 	self._pid = PID(0.8, 0.01, 0.1)
 	self._pickup = nil
 
-	self._botLookAhead = math.random() * 0.025 + 0.025
+	local pt < const > = gameContext:getRoad():getComponent(world.PathComponent)
+	local ln = pt:estimateLength()
+	self._pathLength = ln	
+
+	self._botLookAhead = math.random() * 10 + 40
 end
 
 function PlayerLogic:update(info, throttleFactor)
@@ -95,18 +99,18 @@ function PlayerLogic:update(info, throttleFactor)
 
 		-- Determine road turning.
 		local T0 = pt:evaluateDirectional(t)
-		local T1 = T0:inverse() * pt:evaluateDirectional(t + self._botLookAhead)
+		local T1 = T0:inverse() * pt:evaluateDirectional(t + self._botLookAhead / self._pathLength)
 		local turning = T1.translation.x / T1.translation.z
 
 		local tf = math.clamp(math.abs(turning) * 2, 0, 1)
 
 		local offset = Vector4(
-			math.clamp(turning  * 2, -1, 1) * 5,
+			math.clamp(turning * 4, -1, 1) * 5,
 			0,
 			0
 		)
 
-		local Toptimal = pt:evaluateDirectional(t + 0.005) * Transform(offset, Quaternion.identity)
+		local Toptimal = pt:evaluateDirectional(t + 10 / self._pathLength) * Transform(offset, Quaternion.identity)
 
 		local Vdir = (Toptimal.translation - position).xyz0
 		local VdirLocal = kart.transform:inverse():transform(Vdir)
@@ -114,7 +118,6 @@ function PlayerLogic:update(info, throttleFactor)
 		local angle = math.atan(VdirLocal.x, VdirLocal.z) * 0.8
 		local a = self._pid:evaluate(info.simulationDeltaTime, angle, 0)
 		angle = math.clamp(a, -0.3, 0.3)
-
 	
 		vc.steerAngle = angle
 		vc.engineThrottle = (1 - tf * 0.2) * throttleFactor
