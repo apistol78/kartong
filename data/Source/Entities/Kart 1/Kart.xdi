@@ -61,12 +61,12 @@
 					<axis>0, 1, 0, 0</axis>
 					<suspensionLength>
 						<min>0</min>
-						<max>0.8</max>
+						<max>0.7</max>
 					</suspensionLength>
 					<suspensionSpring>16</suspensionSpring>
 					<suspensionDamping>6</suspensionDamping>
-					<rollingFriction>0.2</rollingFriction>
-					<slipCornerForce>30</slipCornerForce>
+					<rollingFriction>0.1</rollingFriction>
+					<slipCornerForce>25</slipCornerForce>
 					<peakSlipAngle>0.523599</peakSlipAngle>
 				</item>
 				<item type="traktor.physics.WheelData" version="2">
@@ -78,12 +78,12 @@
 					<axis>0, 1, 0, 0</axis>
 					<suspensionLength>
 						<min>0</min>
-						<max>0.8</max>
+						<max>0.7</max>
 					</suspensionLength>
 					<suspensionSpring>16</suspensionSpring>
 					<suspensionDamping>6</suspensionDamping>
-					<rollingFriction>0.2</rollingFriction>
-					<slipCornerForce>30</slipCornerForce>
+					<rollingFriction>0.1</rollingFriction>
+					<slipCornerForce>25</slipCornerForce>
 					<peakSlipAngle>0.523599</peakSlipAngle>
 				</item>
 				<item type="traktor.physics.WheelData" version="2">
@@ -95,12 +95,12 @@
 					<axis>0, 1, 0, 0</axis>
 					<suspensionLength>
 						<min>0</min>
-						<max>0.8</max>
+						<max>0.7</max>
 					</suspensionLength>
 					<suspensionSpring>16</suspensionSpring>
 					<suspensionDamping>6</suspensionDamping>
-					<rollingFriction>0.2</rollingFriction>
-					<slipCornerForce>30</slipCornerForce>
+					<rollingFriction>0.1</rollingFriction>
+					<slipCornerForce>25</slipCornerForce>
 					<peakSlipAngle>0.523599</peakSlipAngle>
 				</item>
 				<item type="traktor.physics.WheelData" version="2">
@@ -112,12 +112,12 @@
 					<axis>0, 1, 0, 0</axis>
 					<suspensionLength>
 						<min>0</min>
-						<max>0.8</max>
+						<max>0.7</max>
 					</suspensionLength>
 					<suspensionSpring>16</suspensionSpring>
 					<suspensionDamping>6</suspensionDamping>
-					<rollingFriction>0.2</rollingFriction>
-					<slipCornerForce>30</slipCornerForce>
+					<rollingFriction>0.1</rollingFriction>
+					<slipCornerForce>25</slipCornerForce>
 					<peakSlipAngle>0.523599</peakSlipAngle>
 				</item>
 			</wheels>
@@ -129,7 +129,7 @@
 			</traceIgnore>
 			<steerAngleVelocity>1.745329</steerAngleVelocity>
 			<fudgeDistance>0.1</fudgeDistance>
-			<swayBarForce>0.2</swayBarForce>
+			<swayBarForce>0.15</swayBarForce>
 			<maxVelocity>40</maxVelocity>
 			<engineForce>4</engineForce>
 			<breakingForce>2</breakingForce>

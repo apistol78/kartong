@@ -3,7 +3,7 @@
 	<fileName>Models/Kart 1/Kart.blend</fileName>
 	<importFilter>Collision</importFilter>
 	<calculateConvexHull>true</calculateConvexHull>
-	<margin>0.1</margin>
+	<margin>0.2</margin>
 	<scaleFactor>1</scaleFactor>
 	<center>false</center>
 	<grounded>false</grounded>

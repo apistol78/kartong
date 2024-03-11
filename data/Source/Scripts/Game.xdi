@@ -74,10 +74,10 @@ function Game:new(params, environment)
 	-- Setup difficulty.
 	self._gameContext:forEachKart(function (kart, index)
 		local vc = kart:getComponent(physics.VehicleComponent)
-		-- Easy 20
-		-- Normal 50
-		-- Difficult 70
-		vc.maxVelocity = 70
+		-- Easy 15
+		-- Normal 35
+		-- Difficult 50
+		vc.maxVelocity = 50
 	end)
 
 	-- Create camera handlers.
