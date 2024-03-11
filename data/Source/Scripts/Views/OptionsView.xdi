@@ -3,6 +3,7 @@
 	<text>
 	<![CDATA[
 #using \{FC4400A2-BDB6-BA45-9A22-12B9676E71FA}
+#using \{FC45EF09-AC3E-7F41-94C7-5437459D9517}
 
 OptionsView = OptionsView or class("OptionsView", Container)
 
@@ -11,25 +12,15 @@ OptionsView.__flipboardId = "OPTIONS"
 function OptionsView:new(parent)
 	Container.new(self, parent, TableLayout({0}, {0}, 0, 0, 16, 16))
 
-	local ct = Container(self, TableLayout({0, 100}, {0}, 0, 0, 16, 16))
-	
-	Static(ct, "Resolution")
-	DropDown(ct, { "320x200", "640x480", "1024x768" })
-
-	Static(ct, "AA quality")
-	DropDown(ct, { "Low", "Medium", "High", "Highest" })
-
-	Static(ct, "AO quality")
-	DropDown(ct, { "Low", "Medium", "High", "Highest" })
-
-	Static(ct, "Particle quality")
-	DropDown(ct, { "Low", "Medium", "High", "Highest" })
-
-	Static(ct, "Shadow quality")
-	DropDown(ct, { "Low", "Medium", "High", "Highest" })
-
-	PushButton(self, "Return")
-		:setOnClick(function() self._fnReturn() end)
+	Selector(self)
+		:setHorizontalAlign(Widget.ALIGN_CENTER)
+		:add("GAME")
+		:add("CONTROL")
+		:add("VISUAL")
+		:add("RETURN")
+		:setOnActivate(function(index)
+			if index == 3 then self._fnReturn() end
+		end)
 
 	self._fnReturn = function() end
 end

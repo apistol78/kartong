@@ -19,20 +19,29 @@ function SelectLevelView:new(parent)
 
 	local c = AutoCarousel(self, 100)
 		:setOnActivate(function(index)
-			print("level activate " .. index)
 			self._fnPlay(index)
+		end)
+		:setOnCancel(function()
+			self._fnReturn()
 		end)
 
 	Image(c, "MC_LevelBox")
 	Image(c, "MC_LevelBox")
 
-	self._fnPlay = function() end
+	self._fnPlay = function(index) end
+	self._fnReturn = function() end
 end
 
 function SelectLevelView:setOnPlay(fn)
 	self._fnPlay = fn
 	return self
 end
+
+function SelectLevelView:setOnReturn(fn)
+	self._fnReturn = fn
+	return self
+end
+
 
 	]]>
 	</text>

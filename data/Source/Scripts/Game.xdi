@@ -71,6 +71,15 @@ function Game:new(params, environment)
 		world:getEntities("Pickup")
 	)
 
+	-- Setup difficulty.
+	self._gameContext:forEachKart(function (kart, index)
+		local vc = kart:getComponent(physics.VehicleComponent)
+		-- Easy 20
+		-- Normal 50
+		-- Difficult 70
+		vc.maxVelocity = 70
+	end)
+
 	-- Create camera handlers.
 	local camera = world:getEntity("Camera0")
 	self._followCamera0 = FollowCamera(camera, self._gameContext:getKart(0))

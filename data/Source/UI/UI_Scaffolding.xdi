@@ -7,6 +7,7 @@
 
 #using \{B3773DDC-1FE6-D54B-9677-2CAB45912BA0}
 #using \{FC207928-47BE-4597-9313-A7CD676CE810}
+#using \{54BB95BC-B1C9-BA42-877C-8FC682BCE73C}
 #using \{1DC37C6A-0C0C-A546-825E-B8F6E6088209}
 #using \{21076EFA-565B-E044-8E13-BC01DB4BA31E}
 #using \{126D6B63-5192-104A-BAE3-F178A1229D8C}
@@ -36,11 +37,15 @@ function UI_Scaffolding:setup(frame)
 		:setVerticalAlign(Widget.ALIGN_CENTER)
 
 	CountDownView(fb)
-		:setText("FOO")
+		:setText("GO")
 
 	FinishedView(fb)
 
 	PauseView(fb)
+		:setHorizontalAlign(Widget.ALIGN_CENTER)
+		:setVerticalAlign(Widget.ALIGN_CENTER)
+
+	GamePlayOptionsView(fb)
 		:setHorizontalAlign(Widget.ALIGN_CENTER)
 		:setVerticalAlign(Widget.ALIGN_CENTER)
 

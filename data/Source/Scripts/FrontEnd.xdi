@@ -50,6 +50,7 @@ function FrontEnd:new(params, environment)
 		:setHorizontalAlign(Widget.ALIGN_CENTER)
 		:setVerticalAlign(Widget.ALIGN_CENTER)
 		:setOnPlay(function(index) self:_loadLevel(index) end)
+		:setOnReturn(function() fb:showPage("MAIN") end)
 
 	fb:showPage("MAIN")
 

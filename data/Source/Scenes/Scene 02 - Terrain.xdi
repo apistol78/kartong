@@ -4,7 +4,7 @@
 		<viewNearZ>0.1</viewNearZ>
 		<viewFarZ>1000</viewFarZ>
 		<exposureMode>Adaptive</exposureMode>
-		<exposure>0</exposure>
+		<exposure>0.1</exposure>
 		<shadowSettings>
 			<disabled>
 				<farZ>100</farZ>
@@ -725,7 +725,7 @@
 											</state>
 											<transform>
 												<translation>-74.215675, 7.76008, 188.01918, 0</translation>
-												<rotation>0.014983, 0.9947, -0.08968, -0.048005</rotation>
+												<rotation>-0.014983, -0.9947, 0.08968, 0.048005</rotation>
 											</transform>
 											<components/>
 											<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
@@ -1145,7 +1145,7 @@
 											</state>
 											<transform>
 												<translation>308.960144, 23.248302, 86.292625, 0</translation>
-												<rotation>0.050585, 0, -0.003891, 0.998712</rotation>
+												<rotation>0.050585, -0, -0.003891, 0.998712</rotation>
 											</transform>
 											<components/>
 											<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
@@ -1265,7 +1265,7 @@
 											</state>
 											<transform>
 												<translation>12.544205, -0.968295, 156.524689, 0</translation>
-												<rotation>0.038951, 0, 0.019476, 0.999051</rotation>
+												<rotation>0.038951, -0, 0.019476, 0.999051</rotation>
 											</transform>
 											<components/>
 											<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
@@ -2770,7 +2770,7 @@
 							</state>
 							<transform>
 								<translation>107.382797, 20.531296, 179.074738, 0</translation>
-								<rotation>0.029439, 0.87643, 0.050265, 0.477994</rotation>
+								<rotation>0.029439, 0.876429, 0.050265, 0.477994</rotation>
 							</transform>
 							<components/>
 							<entityData>{51841614-8E59-46D8-AA82-A111DA35060B}</entityData>
@@ -2800,7 +2800,7 @@
 							</state>
 							<transform>
 								<translation>181.436661, 17.195286, 81.412979, 0</translation>
-								<rotation>-0.142608, 0.202234, 0.000027, 0.968899</rotation>
+								<rotation>-0.142608, 0.202234, 0.000027, 0.968898</rotation>
 							</transform>
 							<components/>
 							<entityData>{51841614-8E59-46D8-AA82-A111DA35060B}</entityData>
@@ -3355,7 +3355,7 @@
 							</state>
 							<transform>
 								<translation>227.469086, 21.721514, -176.919022, 0</translation>
-								<rotation>-0.044484, -0.984015, -0.022742, 0.170937</rotation>
+								<rotation>-0.044484, -0.984014, -0.022742, 0.170937</rotation>
 							</transform>
 							<components/>
 							<entityData>{51841614-8E59-46D8-AA82-A111DA35060B}</entityData>
@@ -3550,7 +3550,7 @@
 							</state>
 							<transform>
 								<translation>-230.215256, 18.747433, 3.361527, 0</translation>
-								<rotation>-0.045563, -0.982455, 0.028633, 0.17857</rotation>
+								<rotation>-0.045563, -0.982454, 0.028633, 0.17857</rotation>
 							</transform>
 							<components/>
 							<entityData>{E0CFEA9A-FFAE-46A5-995B-5454D5DD4578}</entityData>
@@ -4210,7 +4210,7 @@
 							</state>
 							<transform>
 								<translation>186.661316, 35.885048, 117.311218, 0</translation>
-								<rotation>-0.089861, 0.019918, 0.001797, 0.995754</rotation>
+								<rotation>-0.089861, 0.019918, 0.001797, 0.995753</rotation>
 							</transform>
 							<components/>
 							<entityData>{866684AB-577A-F845-8A2E-43BA2AD093C9}</entityData>
@@ -4285,7 +4285,7 @@
 							</state>
 							<transform>
 								<translation>241.69165, 27.934515, -204.419296, 0</translation>
-								<rotation>0.04997, 0.019974, -0.001, 0.998551</rotation>
+								<rotation>0.04997, 0.019974, -0.001, 0.99855</rotation>
 							</transform>
 							<components/>
 							<entityData>{866684AB-577A-F845-8A2E-43BA2AD093C9}</entityData>
@@ -5030,7 +5030,7 @@
 							</state>
 							<transform>
 								<translation>124.909645, 5.623038, 226.436859, 0</translation>
-								<rotation>-0.003583, -0.764222, 0.042248, 0.643559</rotation>
+								<rotation>-0.003583, -0.764221, 0.042248, 0.643559</rotation>
 							</transform>
 							<components/>
 							<entityData>{E7EFD7F5-276D-4494-9767-E9D63712ABEF}</entityData>

@@ -11,6 +11,9 @@ function AutoCarousel:new(parent, pad)
 
 	local cx = self._mc.context
 	self._keyDownListener = cx.key.eventKeyDown:add(function() self:_eventKeyDown() end)
+
+	self._activateFn = function(index) end
+	self._cancelFn = function() end
 end
 
 function AutoCarousel:remove()
@@ -21,6 +24,11 @@ end
 
 function AutoCarousel:setOnActivate(fn)
 	self._activateFn = fn
+	return self
+end
+
+function AutoCarousel:setOnCancel(fn)
+	self._cancelFn = fn
 	return self
 end
 
@@ -35,9 +43,9 @@ function AutoCarousel:_eventKeyDown()
 		elseif key.code == spark.Key.AkRight then
 			self:showNext()
 		elseif key.code == spark.Key.AkEnter then
-			if self._activateFn ~= nil then
-				self._activateFn(self:getCurrent())
-			end
+			self._activateFn(self:getCurrent())
+		elseif key.code == spark.Key.AkEscape then
+			self._cancelFn()
 		end
 	end
 end

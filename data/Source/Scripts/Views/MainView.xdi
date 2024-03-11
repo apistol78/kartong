@@ -12,7 +12,7 @@ MainView.__flipboardId = "MAIN"
 function MainView:new(parent)
 	Container.new(self, parent, TableLayout({0}, {0, 0}, 0, 0, 0, 0))
 
-	Image(self, "MC_Logo")
+	self._logo = Image(self, "MC_Logo")
 		:setHorizontalAlign(Widget.ALIGN_CENTER)
 
 	Selector(self)
@@ -23,7 +23,6 @@ function MainView:new(parent)
 		:add("CREDITS")
 		:add("EXIT")
 		:setOnActivate(function(index)
-			print("main activate " .. index)
 			if index == 0 then self._fnPlay("SINGLE") end
 			if index == 1 then self._fnPlay("MULTI") end
 			if index == 2 then self._fnOptions() end
@@ -35,6 +34,15 @@ function MainView:new(parent)
 	self._fnPlay = function(mode) end
 	self._fnOptions = function() end
 	self._fnExit = function() end
+
+	-- Animate logotype.
+	local p = self._logo:getPlacement()
+	Tween(0, 1, 1, function(value, _)
+		local x = p.x
+		local y = p.y + (-200) * (1 - value)
+		self._logo._mc.position = Vector2(x, y)
+		self._logo:setAlpha(value)
+	end)
 end
 
 function MainView:setOnPlay(fn)
