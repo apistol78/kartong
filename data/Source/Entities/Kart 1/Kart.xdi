@@ -63,10 +63,10 @@
 						<min>0</min>
 						<max>0.7</max>
 					</suspensionLength>
-					<suspensionSpring>16</suspensionSpring>
+					<suspensionSpring>15</suspensionSpring>
 					<suspensionDamping>6</suspensionDamping>
 					<rollingFriction>0.1</rollingFriction>
-					<slipCornerForce>25</slipCornerForce>
+					<slipCornerForce>22</slipCornerForce>
 					<peakSlipAngle>0.523599</peakSlipAngle>
 				</item>
 				<item type="traktor.physics.WheelData" version="2">
@@ -80,10 +80,10 @@
 						<min>0</min>
 						<max>0.7</max>
 					</suspensionLength>
-					<suspensionSpring>16</suspensionSpring>
+					<suspensionSpring>15</suspensionSpring>
 					<suspensionDamping>6</suspensionDamping>
 					<rollingFriction>0.1</rollingFriction>
-					<slipCornerForce>25</slipCornerForce>
+					<slipCornerForce>22</slipCornerForce>
 					<peakSlipAngle>0.523599</peakSlipAngle>
 				</item>
 				<item type="traktor.physics.WheelData" version="2">
@@ -97,10 +97,10 @@
 						<min>0</min>
 						<max>0.7</max>
 					</suspensionLength>
-					<suspensionSpring>16</suspensionSpring>
+					<suspensionSpring>15</suspensionSpring>
 					<suspensionDamping>6</suspensionDamping>
 					<rollingFriction>0.1</rollingFriction>
-					<slipCornerForce>25</slipCornerForce>
+					<slipCornerForce>29</slipCornerForce>
 					<peakSlipAngle>0.523599</peakSlipAngle>
 				</item>
 				<item type="traktor.physics.WheelData" version="2">
@@ -114,10 +114,10 @@
 						<min>0</min>
 						<max>0.7</max>
 					</suspensionLength>
-					<suspensionSpring>16</suspensionSpring>
+					<suspensionSpring>15</suspensionSpring>
 					<suspensionDamping>6</suspensionDamping>
 					<rollingFriction>0.1</rollingFriction>
-					<slipCornerForce>25</slipCornerForce>
+					<slipCornerForce>29</slipCornerForce>
 					<peakSlipAngle>0.523599</peakSlipAngle>
 				</item>
 			</wheels>
