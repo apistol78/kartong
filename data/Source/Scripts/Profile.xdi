@@ -6,6 +6,14 @@
 
 import(traktor)
 
+function average(tbl)
+	local t = 0
+	for _, v in ipairs(tbl) do
+		t = t + v
+	end
+	return t / #tbl
+end
+
 -- Profile
 
 Profile = Profile or class("Profile", Stage)
@@ -21,7 +29,10 @@ function Profile:new(params, environment)
 	self._timeUntilMove = 0
 	self._position = 0
 	self._frameRate = 0
-	self._frameRateCount = 0
+	self._gpuDuration = 0
+	self._count = 0
+
+	self._gpuAvg = {}
 end
 
 function Profile:finalize()
@@ -30,9 +41,14 @@ end
 function Profile:update(info)
 	if self._timeUntilMove <= 0 then
 
-		if self._frameRateCount > 0 then
-			local averageFrameRate = self._frameRate / self._frameRateCount
+		if self._count > 0 then
+			local averageFrameRate = self._frameRate / self._count
+			local averageGPUDuration = self._gpuDuration / self._count
+
+			table.insert(self._gpuAvg, averageGPUDuration)
+
 			print("FPS " .. averageFrameRate)
+			print("GPU " .. (averageGPUDuration * 1000) .. " ms / " .. (average(self._gpuAvg) * 1000) .. " ms")
 		end
 
 		local t = self._position
@@ -46,18 +62,19 @@ function Profile:update(info)
 		self._timeUntilMove = 2
 		self._position = t + 0.025
 		self._frameRate = 0
-		self._frameRateCount = 0
+		self._gpuDuration = 0
+		self._count = 0
 	end
 
 	self._timeUntilMove = self._timeUntilMove - info.simulationDeltaTime
 	self._frameRate = self._frameRate + environment.render.frameRate
-	self._frameRateCount = self._frameRateCount + 1
+	self._gpuDuration = self._gpuDuration + environment.render.gpuDuration
+	self._count = self._count + 1
 
 end
 
 function Profile:postUpdate(info)
 end
-
 
 	]]>
 	</text>
