@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.runtime.StageData" version="11">
+	<name>Profile</name>
+	<inherit>{00000000-0000-0000-0000-000000000000}</inherit>
+	<layers>
+		<item type="traktor.runtime.WorldLayerData">
+			<name>world</name>
+			<permitTransition>false</permitTransition>
+			<scene>{F68333B8-BD46-0244-90EC-0FFA875DF326}</scene>
+		</item>
+	</layers>
+	<class>{ED81C9BF-BF53-44C7-BF8B-2DEB52BC30CE}</class>
+	<shaderFade>{00000000-0000-0000-0000-000000000000}</shaderFade>
+	<fadeOutUpdate>false</fadeOutUpdate>
+	<fadeRate>1.5</fadeRate>
+	<transitions/>
+	<resourceBundle>{00000000-0000-0000-0000-000000000000}</resourceBundle>
+	<properties/>
+</object>
