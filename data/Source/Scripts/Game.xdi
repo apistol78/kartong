@@ -74,10 +74,16 @@ function Game:new(params, environment)
 	-- Setup difficulty.
 	self._gameContext:forEachKart(function (kart, index)
 		local vc = kart:getComponent(physics.VehicleComponent)
-		-- Easy 15
-		-- Normal 35
-		-- Difficult 50
-		vc.maxVelocity = 50
+		if self._params._difficulty == 0 then
+			print("EASY")
+			vc.maxVelocity = 20
+		elseif self._params._difficulty == 1 then
+			print("NORMAL")
+			vc.maxVelocity = 30
+		else
+			print("DIFFICULT")
+			vc.maxVelocity = 50
+		end
 	end)
 
 	-- Create camera handlers.
@@ -168,7 +174,7 @@ end
 function Game:_updateStart(info)
 	-- Update kart logic.
 	for _, logic in ipairs(self._logic) do
-		logic:update(info, 0)
+		logic:update(self, info, 0)
 	end
 
 	if info.stateTime < 2 then
@@ -188,7 +194,7 @@ function Game:_updateKickOff(info)
 
 	-- Update kart logic.
 	for _, logic in ipairs(self._logic) do
-		logic:update(info, 1)
+		logic:update(self, info, 1)
 	end
 
 	if info.stateTime >= 6 then
@@ -202,7 +208,7 @@ function Game:_updateRace(info)
 
 	-- Update kart logic.
 	for _, logic in ipairs(self._logic) do
-		logic:update(info, 1)
+		logic:update(self, info, 1)
 	end
 
 	-- Check if any has finished.
@@ -227,7 +233,7 @@ function Game:_updateFinished(info)
 
 	-- Update kart logic.
 	for _, logic in ipairs(self._logic) do
-		logic:update(info, 1)
+		logic:update(self, info, 1)
 	end
 
 	local confirm < const > = self._inputMapping:isStatePressed("STATE_CONFIRM")

@@ -20,7 +20,7 @@ function PlayerLogic:new(gameContext, index, resetOffset, inputStates, autoDrive
 	self._resetOffset = resetOffset
 	self._inputStates = inputStates
 	self._autoDrive = autoDrive
-	self._pid = PID(0.8, 0.01, 0.1)
+	self._pid = PID(0.8, 0.01, 0.2)
 	self._pickup = nil
 
 	local pt < const > = gameContext:getRoad():getComponent(world.PathComponent)
@@ -30,7 +30,7 @@ function PlayerLogic:new(gameContext, index, resetOffset, inputStates, autoDrive
 	self._botLookAhead = math.random() * 10 + 40
 end
 
-function PlayerLogic:update(info, throttleFactor)
+function PlayerLogic:update(stage, info, throttleFactor)
 
 	local road = self._gameContext:getRoad()
 	local kart = self._gameContext:getKart(self._index)
@@ -111,7 +111,7 @@ function PlayerLogic:update(info, throttleFactor)
 			0
 		)
 
-		local Toptimal = pt:evaluateDirectional(t + 10 / self._pathLength) * Transform(offset, Quaternion.identity)
+		local Toptimal = pt:evaluateDirectional(t + 20 / self._pathLength) * Transform(offset, Quaternion.identity)
 
 		local Vdir = (Toptimal.translation - position).xyz0
 		local VdirLocal = kart.transform:inverse():transform(Vdir)
@@ -122,6 +122,12 @@ function PlayerLogic:update(info, throttleFactor)
 	
 		vc.steerAngle = angle
 		vc.engineThrottle = (1 - tf * 0.2) * throttleFactor
+
+		if stage.debug ~= nil then
+			stage.debug.color = Color4f(1, 1, 0, 1)
+			stage.debug.size = 8
+			stage.debug:addPoint(Toptimal.translation)
+		end
 	end
 end
 

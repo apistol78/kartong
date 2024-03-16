@@ -12,7 +12,7 @@ SelectLevelView.__flipboardId = "SELECT_LEVEL"
 function SelectLevelView:new(parent)
 	Container.new(self, parent, TableLayout({0}, {0, 0}, 0, 0, 16, 16))
 
-	Static(self, "Select Level")
+	Static(self, "SELECT LEVEL")
 		:setHorizontalAlign(Widget.ALIGN_CENTER)
 		:setTextColor(Color4f(0, 0, 0, 0.8))
 		:setTextSize(40)
@@ -41,7 +41,6 @@ function SelectLevelView:setOnReturn(fn)
 	self._fnReturn = fn
 	return self
 end
-
 
 	]]>
 	</text>

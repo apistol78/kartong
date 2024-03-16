@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.script.Script" version="2">
+	<text>
+	<![CDATA[
+#using \{FC4400A2-BDB6-BA45-9A22-12B9676E71FA}
+#using \{FC45EF09-AC3E-7F41-94C7-5437459D9517}
+
+SelectDifficultyView = SelectLevelView or class("SelectDifficultyView", Container)
+
+SelectDifficultyView.__flipboardId = "SELECT_DIFFICULTY"
+
+function SelectDifficultyView:new(parent)
+	Container.new(self, parent, TableLayout({0}, {0}, 0, 0, 16, 16))
+
+	Selector(self)
+		:setHorizontalAlign(Widget.ALIGN_CENTER)
+		:add("EASY")
+		:add("NORMAL")
+		:add("DIFFICULT")
+		:setOnActivate(function(index)
+			self._fnPlay(index)
+		end)
+
+	self._fnPlay = function(index) end
+	self._fnReturn = function() end
+end
+
+function SelectDifficultyView:setOnPlay(fn)
+	self._fnPlay = fn
+	return self
+end
+
+function SelectDifficultyView:setOnReturn(fn)
+	self._fnReturn = fn
+	return self
+end
+
+	]]>
+	</text>
+</object>

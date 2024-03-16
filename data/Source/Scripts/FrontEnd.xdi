@@ -7,6 +7,7 @@
 
 #using \{21076EFA-565B-E044-8E13-BC01DB4BA31E}
 #using \{126D6B63-5192-104A-BAE3-F178A1229D8C}
+#using \{52F1EAB3-560C-4A09-A705-D80A4D13B74F}
 #using \{EA350781-DBB5-394D-B738-DDD232C4887F}
 
 import(traktor)
@@ -37,13 +38,19 @@ function FrontEnd:new(params, environment)
 	MainView(fb)
 		:setHorizontalAlign(Widget.ALIGN_CENTER)
 		:setVerticalAlign(Widget.ALIGN_CENTER)
-		:setOnPlay(function(mode) self._mode = mode; fb:showPage("SELECT_LEVEL") end)
+		:setOnPlay(function(mode) self._mode = mode; fb:showPage("SELECT_DIFFICULTY") end)
 		:setOnOptions(function() self:_toggleFullscreen() end)
 		:setOnExit(function() self:terminate() end)
 
 	OptionsView(fb)
 		:setHorizontalAlign(Widget.ALIGN_CENTER)
 		:setVerticalAlign(Widget.ALIGN_CENTER)
+		:setOnReturn(function() fb:showPage("MAIN") end)
+
+	SelectDifficultyView(fb)
+		:setHorizontalAlign(Widget.ALIGN_CENTER)
+		:setVerticalAlign(Widget.ALIGN_CENTER)
+		:setOnPlay(function(index) self._difficulty = index; fb:showPage("SELECT_LEVEL") end)
 		:setOnReturn(function() fb:showPage("MAIN") end)
 
 	SelectLevelView(fb)
@@ -78,6 +85,8 @@ function FrontEnd:_loadLevel(index)
 		print("no such level")
 		return
 	end
+
+	params._difficulty = self._difficulty
 
 	local nxt = self:loadStage("LOADING", params)
 	self:gotoStage(nxt)

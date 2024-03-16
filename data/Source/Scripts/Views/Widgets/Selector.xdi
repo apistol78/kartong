@@ -11,13 +11,6 @@ function Selector:new(parent)
 	self:_initialize(parent, mc)
 end
 
-function Selector:remove()
-	local cx = self._mc.context
-	cx.key.eventKeyDown:remove(self._keyDownListener)
-	cx.key.eventKeyUp:remove(self._keyUpListener)
-	Widget.remove(self)
-end
-
 function Selector:getPreferredSize()
 	return
 	{
@@ -34,7 +27,6 @@ end
 function Selector:add(item)
 	local s = Static(self, item)
 		:setTextSize(70)
---		:setTextOutlineColor(Color4f(0, 0, 0, 1))
 	table.insert(self._items, s)
 	self:_layout()
 	return self
@@ -58,9 +50,8 @@ function Selector:_initialize(parent, mc)
 	self._background_mc = Widget._createResource(self, "MC_SelectorBg")
 	assert(self._background_mc ~= nil)
 
-	local cx = self._mc.context
-	self._keyDownListener = cx.key.eventKeyDown:add(function() self:_eventKeyDown() end)
-	self._keyUpListener = cx.key.eventKeyUp:add(function() self:_eventKeyUp() end)
+	self:addEventListener(KeyDownEvent, self, self._onKeyDown)
+	self:addEventListener(KeyUpEvent, self, self._onKeyUp)
 
 	self._items = {}
 	self._index = 0
@@ -87,30 +78,22 @@ function Selector:_layout()
 	self._background_mc.Y = 10 + self._index * 90
 end
 
-function Selector:_eventKeyDown()
-	local visible < const > = self:isVisible(true)
-	if visible then
-		local key < const > = self._mc.context.key
-		if key.code == spark.Key.AkUp then
-			if self._index > 0 then
-				self:select(self._index - 1)
-			end
-		elseif key.code == spark.Key.AkDown then
-			if self._index < #self._items - 1 then
-				self:select(self._index + 1)
-			end
+function Selector:_onKeyDown(event)
+	if event.code == spark.Key.AkUp then
+		if self._index > 0 then
+			self:select(self._index - 1)
+		end
+	elseif event.code == spark.Key.AkDown then
+		if self._index < #self._items - 1 then
+			self:select(self._index + 1)
 		end
 	end
 end
 
-function Selector:_eventKeyUp()
-	local visible < const > = self:isVisible(true)
-	if visible then
-		local key < const > = self._mc.context.key
-		if key.code == spark.Key.AkEnter then
-			if self._activateFn ~= nil then
-				self._activateFn(self._index)
-			end
+function Selector:_onKeyUp(event)
+	if event.code == spark.Key.AkEnter then
+		if self._activateFn ~= nil then
+			self._activateFn(self._index)
 		end
 	end
 end
