@@ -63,7 +63,7 @@
 						<min>0</min>
 						<max>0.7</max>
 					</suspensionLength>
-					<suspensionSpring>15</suspensionSpring>
+					<suspensionSpring>17</suspensionSpring>
 					<suspensionDamping>6</suspensionDamping>
 					<rollingFriction>0.1</rollingFriction>
 					<slipCornerForce>22</slipCornerForce>
@@ -80,7 +80,7 @@
 						<min>0</min>
 						<max>0.7</max>
 					</suspensionLength>
-					<suspensionSpring>15</suspensionSpring>
+					<suspensionSpring>17</suspensionSpring>
 					<suspensionDamping>6</suspensionDamping>
 					<rollingFriction>0.1</rollingFriction>
 					<slipCornerForce>22</slipCornerForce>
@@ -97,7 +97,7 @@
 						<min>0</min>
 						<max>0.7</max>
 					</suspensionLength>
-					<suspensionSpring>15</suspensionSpring>
+					<suspensionSpring>17</suspensionSpring>
 					<suspensionDamping>6</suspensionDamping>
 					<rollingFriction>0.1</rollingFriction>
 					<slipCornerForce>29</slipCornerForce>
@@ -114,7 +114,7 @@
 						<min>0</min>
 						<max>0.7</max>
 					</suspensionLength>
-					<suspensionSpring>15</suspensionSpring>
+					<suspensionSpring>17</suspensionSpring>
 					<suspensionDamping>6</suspensionDamping>
 					<rollingFriction>0.1</rollingFriction>
 					<slipCornerForce>29</slipCornerForce>
@@ -129,7 +129,7 @@
 			</traceIgnore>
 			<steerAngleVelocity>1.745329</steerAngleVelocity>
 			<fudgeDistance>0.1</fudgeDistance>
-			<swayBarForce>0.15</swayBarForce>
+			<swayBarForce>0.35</swayBarForce>
 			<maxVelocity>40</maxVelocity>
 			<engineForce>4</engineForce>
 			<breakingForce>2</breakingForce>
