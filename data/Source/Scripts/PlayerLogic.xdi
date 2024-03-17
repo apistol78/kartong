@@ -60,6 +60,27 @@ function PlayerLogic:update(stage, info, throttleFactor)
 		end
 	end
 
+	-- Draw velocity compared to wheel direction.
+	if stage.debug ~= nil then
+		local Tbody = rb.body.transform
+		for i = 0, 3 do
+			local w = vc.wheels:get(i)
+			local v = rb.body:getVelocityAt(Tbody * w.center, false):normalized()
+
+			stage.debug:line(
+				Tbody * w.center,
+				Tbody * (w.center + w.direction * 2),
+				1, Color4f(1, 1, 1, 1)
+			)
+
+			stage.debug:line(
+				Tbody * w.center,
+				Tbody * w.center + v * 2,
+				1, Color4f(1, 0, 0, 1)
+			)
+		end
+	end
+
 	-- Calculate speed.
 	local mps = rb.body.linearVelocity.length
 	self._kph = mps * (60 * 60) / 1000
@@ -106,7 +127,7 @@ function PlayerLogic:update(stage, info, throttleFactor)
 		local tf = math.clamp(math.abs(turning) * 2, 0, 1)
 
 		local offset = Vector4(
-			math.clamp(turning * 4, -1, 1) * 5,
+			math.clamp(turning * 4, -1, 1) * 10,
 			0,
 			0
 		)
@@ -124,9 +145,10 @@ function PlayerLogic:update(stage, info, throttleFactor)
 		vc.engineThrottle = (1 - tf * 0.2) * throttleFactor
 
 		if stage.debug ~= nil then
-			stage.debug.color = Color4f(1, 1, 0, 1)
-			stage.debug.size = 8
-			stage.debug:addPoint(Toptimal.translation)
+			local Toptimal2 = pt:evaluateDirectional(t + 10 / self._pathLength) * Transform(offset, Quaternion.identity)
+			stage.debug:point(Toptimal.translation, 8, Color4f(0, 1, 0, 1))
+			stage.debug:point(Toptimal2.translation, 8, Color4f(1, 1, 0, 1))
+			stage.debug:line(position, Toptimal.translation, 1, Color4f(0, 1, 1, 1))
 		end
 	end
 end
