@@ -29,6 +29,7 @@ function Kart:update(contextObject, totalTime, deltaTime)
 
 	-- Update wheel joints.
 	local wheelJoints = { "FL", "FR", "RL", "RR" }
+	local rotationMul = { -1, 1, -1, 1 }
 	for i = 1, #wheelJoints do
 		local wheel = vehicleComponent.wheels:get(i - 1)
 		local Twheel = wheel.transform
@@ -42,6 +43,12 @@ function Kart:update(contextObject, totalTime, deltaTime)
 		skeletonComponent:setPoseTransform(
 			wheelJoints[i],
 			Twheel * TjointRot,
+			true		
+		)
+
+		skeletonComponent:concatenatePoseTransform(
+			wheelJoints[i] .. "_Rot",
+			Transform(Vector4.zero, Quaternion.fromEulerAngles(0, 0, wheel.angle * rotationMul[i])),
 			false		
 		)
 
