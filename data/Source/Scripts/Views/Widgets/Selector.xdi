@@ -71,7 +71,7 @@ function Selector:_layout()
 		if idx == self._index + 1 then
 			mc:setTextColor(Color4f(1, 1, 1, 1))
 		else
-			mc:setTextColor(Color4f(1, 1, 1, 0.5))
+			mc:setTextColor(Color4f(1, 1, 1, 0.75))
 		end
 		y = y + 90
 	end
