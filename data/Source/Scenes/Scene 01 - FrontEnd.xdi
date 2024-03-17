@@ -464,6 +464,36 @@
 							<entityData>{866684AB-577A-F845-8A2E-43BA2AD093C9}</entityData>
 						</item>
 						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{05649214-A895-4464-A970-299C72F619F5}</id>
+							<name>Plant 1</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>-7.518946, 7.799458, -62.096188, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{866684AB-577A-F845-8A2E-43BA2AD093C9}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{C5DFB40F-E4BC-4A06-9AB0-0A96FD864098}</id>
+							<name>Plant 1</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>-60.094109, 7.128892, -71.310234, 0</translation>
+								<rotation>0, 0.443948, 0, 0.896053</rotation>
+							</transform>
+							<components/>
+							<entityData>{866684AB-577A-F845-8A2E-43BA2AD093C9}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 							<id>{73954F68-D9C6-4BC2-989A-89E950388742}</id>
 							<name>Tree 6</name>
 							<state>
@@ -477,6 +507,21 @@
 							</transform>
 							<components/>
 							<entityData>{42D1075D-A84A-4968-8544-BE52F9EB9D5A}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{E1931F38-A127-4F23-83A0-E99F1D5A5D1B}</id>
+							<name>Pipe</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>22.012329, -29.901259, -123.06369, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{E68809A6-3BD4-0945-891B-2D2F88B180EA}</entityData>
 						</item>
 					</entityData>
 				</item>
