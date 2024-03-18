@@ -65,14 +65,14 @@
 				<first>559</first>
 				<second>392</second>
 			</position>
-			<value>0.5625</value>
+			<value>0.7</value>
 		</item>
 		<item type="traktor.render.Scalar" version="traktor.render.Node:1">
 			<id>{BB4E9854-6F1D-FF4F-B8F6-73BC566E81A4}</id>
 			<comment/>
 			<position>
-				<first>591</first>
-				<second>392</second>
+				<first>578</first>
+				<second>431</second>
 			</position>
 			<value>0.5</value>
 		</item>

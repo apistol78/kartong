@@ -43,7 +43,7 @@
 			<id>{A66F16CB-8574-7246-B6EF-8DF30F3B39C5}</id>
 			<comment/>
 			<position>
-				<first>458</first>
+				<first>466</first>
 				<second>394</second>
 			</position>
 			<value>0</value>
@@ -52,19 +52,19 @@
 			<id>{BB4E9854-6F1D-FF4F-B8F6-73BC566E81A4}</id>
 			<comment/>
 			<position>
-				<first>426</first>
-				<second>444</second>
+				<first>450</first>
+				<second>442</second>
 			</position>
-			<value>0.6125</value>
+			<value>0.8</value>
 		</item>
 		<item type="traktor.render.Scalar" version="traktor.render.Node:1">
 			<id>{BB4E9854-6F1D-FF4F-B8F6-73BC566E81A4}</id>
 			<comment/>
 			<position>
-				<first>458</first>
-				<second>494</second>
+				<first>450</first>
+				<second>491</second>
 			</position>
-			<value>0.5</value>
+			<value>0.2</value>
 		</item>
 		<item type="traktor.render.Texture" version="1,traktor.render.Node:1">
 			<id>{DB1A8CD4-CAB6-B64E-BE84-600E9C5486B7}</id>
