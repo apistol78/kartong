@@ -10,15 +10,15 @@
 			<duration>1</duration>
 			<emitter type="traktor.spray.EmitterData" version="7">
 				<source type="traktor.spray.ConeSourceData" version="1">
-					<constantRate>4</constantRate>
-					<velocityRate>0.2</velocityRate>
+					<constantRate>0</constantRate>
+					<velocityRate>0.05</velocityRate>
 					<position>0, 0, 0, 1</position>
 					<normal>0, 0, -1, 0</normal>
 					<angle1>0.670796</angle1>
 					<angle2>0.570796</angle2>
 					<velocity>
 						<min>0.3</min>
-						<max>0.6</max>
+						<max>0.3</max>
 					</velocity>
 					<inheritVelocity>
 						<min>0.1</min>
@@ -33,16 +33,16 @@
 						<max>2.1</max>
 					</angularVelocity>
 					<age>
-						<min>0.15</min>
-						<max>0.2</max>
+						<min>0.1</min>
+						<max>0.1</max>
 					</age>
 					<mass>
-						<min>0.3</min>
-						<max>0.5</max>
+						<min>0.2</min>
+						<max>0.3</max>
 					</mass>
 					<size>
-						<min>0.15</min>
-						<max>0.4</max>
+						<min>0.1</min>
+						<max>0.1</max>
 					</size>
 				</source>
 				<modifiers>
@@ -52,17 +52,17 @@
 						<angular>true</angular>
 					</item>
 					<item type="traktor.spray.GravityModifierData">
-						<gravity>0, 0.8, 0, 0</gravity>
+						<gravity>0, 1, 0, 0</gravity>
 						<world>true</world>
 					</item>
 					<item type="traktor.spray.SizeModifierData">
-						<adjustRate>0.75</adjustRate>
+						<adjustRate>2</adjustRate>
 					</item>
 				</modifiers>
 				<shader>{4099D253-C212-40AF-A10E-74D515941B45}</shader>
 				<mesh>{00000000-0000-0000-0000-000000000000}</mesh>
 				<effect/>
-				<middleAge>0.1</middleAge>
+				<middleAge>0</middleAge>
 				<cullNearDistance>0.25</cullNearDistance>
 				<cullMeshDistance>100</cullMeshDistance>
 				<fadeNearRange>1</fadeNearRange>

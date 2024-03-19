@@ -70,7 +70,7 @@
 				<first>-94</first>
 				<second>199</second>
 			</position>
-			<color>0.254902, 0.262745, 0.27451, 1</color>
+			<color>0.239216, 0.247059, 0.27451, 0.352941</color>
 			<linear>true</linear>
 		</item>
 		<item type="traktor.render.Script" version="6,traktor.render.Node:1">
