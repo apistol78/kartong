@@ -5,7 +5,7 @@
 #using \{FC4400A2-BDB6-BA45-9A22-12B9676E71FA}
 #using \{FC45EF09-AC3E-7F41-94C7-5437459D9517}
 
-SelectDifficultyView = SelectLevelView or class("SelectDifficultyView", Container)
+SelectDifficultyView = SelectDifficultyView or class("SelectDifficultyView", Container)
 
 SelectDifficultyView.__flipboardId = "SELECT_DIFFICULTY"
 

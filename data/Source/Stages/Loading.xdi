@@ -15,7 +15,7 @@
 	<class>{53BA1492-3457-4E79-A277-9EFB932A692C}</class>
 	<shaderFade>{1781A8FD-4099-7E43-9CCD-6F4F1F2DBC96}</shaderFade>
 	<fadeOutUpdate>false</fadeOutUpdate>
-	<fadeRate>1.5</fadeRate>
+	<fadeRate>2</fadeRate>
 	<transitions>
 		<item>
 			<first>FRONTEND</first>

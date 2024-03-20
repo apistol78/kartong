@@ -22,7 +22,7 @@
 	<class>{8227E4BB-9B52-E647-BEF1-6E3F32ED4810}</class>
 	<shaderFade>{1781A8FD-4099-7E43-9CCD-6F4F1F2DBC96}</shaderFade>
 	<fadeOutUpdate>false</fadeOutUpdate>
-	<fadeRate>1.5</fadeRate>
+	<fadeRate>2</fadeRate>
 	<transitions>
 		<item>
 			<first>LOADING</first>
