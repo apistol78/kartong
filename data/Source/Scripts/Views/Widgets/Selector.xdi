@@ -15,7 +15,7 @@ function Selector:getPreferredSize()
 	return
 	{
 		width = self._background_mc.width,
-		height = #self._items * 90
+		height = #self._items * 80
 	}
 end
 
@@ -73,9 +73,9 @@ function Selector:_layout()
 		else
 			mc:setTextColor(Color4f(1, 1, 1, 0.75))
 		end
-		y = y + 90
+		y = y + 80
 	end
-	self._background_mc.Y = 10 + self._index * 90
+	self._background_mc.Y = 10 + self._index * 80
 end
 
 function Selector:_onKeyDown(event)
