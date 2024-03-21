@@ -14,7 +14,6 @@ function OptionsView:new(parent)
 
 	Selector(self)
 		:setHorizontalAlign(Widget.ALIGN_CENTER)
-		:add("GAME")
 		:add("CONTROL")
 		:add("VISUAL")
 		:add("RETURN")

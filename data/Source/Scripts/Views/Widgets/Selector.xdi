@@ -55,6 +55,7 @@ function Selector:_initialize(parent, mc)
 
 	self._items = {}
 	self._index = 0
+	self._tween = nil
 
 #if defined(_EDITOR)
 	self._mc.wireOutline = true
@@ -65,6 +66,7 @@ function Selector:_layout()
 	local p = self:getPlacement()
 	local w = self._background_mc.width
 	local y = 0
+
 	for idx, mc in ipairs(self._items) do
 		local x < const > = (w - mc:getPreferredSize().width) / 2
 		mc:place(x, y, p.width, 10)
@@ -75,7 +77,18 @@ function Selector:_layout()
 		end
 		y = y + 80
 	end
-	self._background_mc.Y = 10 + self._index * 80
+
+	local fromY = self._background_mc.Y
+	local toY = 10 + self._index * 80
+
+	if self._tween ~= nil then
+		self._tween:stop()
+	end
+
+	self._tween = Tween(0, 1, 1, function(v)
+		local f = Ease.outElastic(v)
+		self._background_mc.Y = fromY * (1 - f) + toY * f
+	end)
 end
 
 function Selector:_onKeyDown(event)
