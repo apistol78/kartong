@@ -69,7 +69,7 @@ function Selector:_layout()
 
 	for idx, mc in ipairs(self._items) do
 		local x < const > = (w - mc:getPreferredSize().width) / 2
-		mc:place(x, y, p.width, 10)
+		mc:place(x, y + 12, p.width, 80)
 		if idx == self._index + 1 then
 			mc:setTextColor(Color4f(1, 1, 1, 1))
 		else

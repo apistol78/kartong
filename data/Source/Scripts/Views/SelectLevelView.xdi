@@ -14,10 +14,11 @@ function SelectLevelView:new(parent)
 
 	Static(self, "SELECT LEVEL")
 		:setHorizontalAlign(Widget.ALIGN_CENTER)
-		:setTextColor(Color4f(0, 0, 0, 0.8))
-		:setTextSize(40)
+		:setTextColor(Color4f(1, 1, 1, 1))
+		:setTextSize(60)
 
 	local c = AutoCarousel(self, 100)
+		:setHorizontalAlign(Widget.ALIGN_CENTER)
 		:setOnActivate(function(index)
 			self._fnPlay(index)
 		end)

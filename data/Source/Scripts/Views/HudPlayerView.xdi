@@ -19,7 +19,7 @@ function HudPlayerView:new(parent)
 		:setHorizontalAlign(Widget.ALIGN_CENTER)
 		:setVerticalAlign(Widget.ALIGN_CENTER)
 		:setTextColor(Color4f(1, 1, 1, 1))
-		:setTextSize(30)
+		:setTextSize(40)
 
 	self._stLap = Static(self, "0")
 		:setHorizontalAlign(Widget.ALIGN_LEFT)

@@ -142,7 +142,7 @@ function PlayerLogic:update(stage, info, throttleFactor)
 		angle = math.clamp(a, -0.3, 0.3)
 	
 		vc.steerAngle = angle
-		vc.engineThrottle = (1 - tf * 0.2) * throttleFactor
+		vc.engineThrottle = (0.8 - tf * 0.2) * throttleFactor
 
 		if stage.debug ~= nil then
 			local Toptimal2 = pt:evaluateDirectional(t + 10 / self._pathLength) * Transform(offset, Quaternion.identity)
