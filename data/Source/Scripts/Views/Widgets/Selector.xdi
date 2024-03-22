@@ -35,6 +35,7 @@ end
 function Selector:select(index)
 	self._index = index
 	self:_layout()
+	return self
 end
 
 function Selector:setOnActivate(fn)
