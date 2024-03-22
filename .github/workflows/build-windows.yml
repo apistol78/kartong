@@ -1,0 +1,29 @@
+name: Build Windows
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/download-artifact@v4
+      with:
+        name: Archive
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        repository: apistol78/traktor
+        path: traktor
+    - name: Build
+      run: ./scripts/autobuild-win64.bat
+    - name: Archive
+      uses: actions/upload-artifact@v4
+      with:
+        name: Archive
+        path: |
+          output/Kartong/Windows/bin64/
+          output/Kartong/Windows/Application.config
+          output/Kartong/Windows/Content.compact
