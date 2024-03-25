@@ -2,21 +2,28 @@ name: Build Windows
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ "main" ]
 
 jobs:
   build:
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v3
-    - uses: actions/download-artifact@v4
+    - name: Install Blender
+      uses: moguri/setup-blender@v1
       with:
-        name: Archive
+        blender-version: '4.0'
+    - run: blender --version    
+    - name: Download artifact from Traktor
+      uses: actions/download-artifact@v4
+      with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         repository: apistol78/traktor
+        name: traktor
         path: traktor
+        run-id: 8417025183
     - name: Build
       run: ./scripts/autobuild-win64.bat
     - name: Archive
