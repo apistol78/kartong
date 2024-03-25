@@ -41,3 +41,4 @@ jobs:
           output/Kartong/Windows/bin64/
           output/Kartong/Windows/Application.config
           output/Kartong/Windows/Content.compact
+          scripts/launch.bat
