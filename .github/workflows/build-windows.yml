@@ -11,19 +11,26 @@ jobs:
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v3
+    - name: Download artifact from Traktor
+      uses: benday-inc/download-latest-artifact@main
+      with:
+         token: ${{ secrets.GITHUB_TOKEN }}
+         repository_owner: apistol78
+         repository_name: traktor
+         workflow_name: 'Build Windows'
+         branch_name: 'master'
+         artifact_name: 'traktor'
+         download_path: '${{ github.workspace }}/temp'
+         download_filename: 'traktor.zip'
+    #- run: dir ${{ github.workspace }}/temp
+    - name: Extract Traktor
+      run: powershell Expand-Archive ${{ github.workspace }}/temp/traktor.zip -DestinationPath ${{ github.workspace }}/traktor 
+    #- run: dir ${{ github.workspace }}/traktor
     - name: Install Blender
       uses: moguri/setup-blender@v1
       with:
         blender-version: '4.0'
-    - run: blender --version    
-    - name: Download artifact from Traktor
-      uses: actions/download-artifact@v4
-      with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
-        repository: apistol78/traktor
-        name: traktor
-        path: traktor
-        run-id: 8417025183
+    #- run: blender --version    
     - name: Build
       run: ./scripts/autobuild-win64.bat
     - name: Archive
