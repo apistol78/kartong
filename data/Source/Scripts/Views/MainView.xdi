@@ -50,7 +50,6 @@ function MainView:setOnExit(fn)
 	self._fnExit = fn
 	return self
 end
-
 	]]>
 	</text>
 </object>

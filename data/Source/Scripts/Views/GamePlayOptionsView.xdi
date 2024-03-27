@@ -29,7 +29,6 @@ function GamePlayOptionsView:setOnReturn(fn)
 	self._fnReturn = fn
 	return self
 end
-
 	]]>
 	</text>
 </object>

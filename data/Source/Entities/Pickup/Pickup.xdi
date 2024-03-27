@@ -4,7 +4,7 @@
 	<name>Pickup</name>
 	<state>
 		<visible>true</visible>
-		<dynamic>false</dynamic>
+		<dynamic>true</dynamic>
 		<locked>false</locked>
 	</state>
 	<transform>

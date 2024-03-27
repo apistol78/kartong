@@ -19,7 +19,6 @@ function FinishedView:new(parent)
 	Image(ct, "MC_Finished")
 		:setHorizontalAlign(Widget.ALIGN_CENTER)
 end
-
 	]]>
 	</text>
 </object>

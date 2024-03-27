@@ -62,8 +62,6 @@ function RacePosition:_update()
 	self._kart1_mc.X = m + w * self._kart1
 	self._kart1_mc.Y = self._background_mc.height / 2
 end
-
-
 	]]>
 	</text>
 </object>

@@ -51,7 +51,6 @@ function Splash:update(info)
 		self._loader = nil
 	end
 end
-
 	]]>
 	</text>
 </object>

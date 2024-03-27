@@ -16,7 +16,6 @@ function CheckPoint:update(contextObject, totalTime, deltaTime)
 		print("KART 0 INSIDE CHECKPOINT")
 	end
 end
-
 	]]>
 	</text>
 </object>

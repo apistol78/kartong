@@ -111,7 +111,6 @@ function Selector:_onKeyUp(event)
 		end
 	end
 end
-
 	]]>
 	</text>
 </object>

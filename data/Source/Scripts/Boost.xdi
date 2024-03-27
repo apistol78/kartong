@@ -24,7 +24,6 @@ function Boost:update(contextObject, totalTime, deltaTime)
 		end
 	end
 end
-
 	]]>
 	</text>
 </object>

@@ -293,7 +293,6 @@ function Game:_updateKartBoost(boostFactor)
 	end
 ]]
 end
-
 	]]>
 	</text>
 </object>

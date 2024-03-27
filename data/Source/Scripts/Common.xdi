@@ -2,15 +2,11 @@
 <object type="traktor.script.Script" version="2">
 	<text>
 	<![CDATA[
-
-
 function math.clamp(v, mn, mx)
 	if v < mn then return mn end
 	if v > mx then return mx end
 	return v
 end
-
-
 	]]>
 	</text>
 </object>

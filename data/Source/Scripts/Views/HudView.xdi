@@ -34,8 +34,6 @@ end
 function HudView:setPositions(kart0, kart1)
 	self._racePosition:setPositions(kart0, kart1)
 end
-
-
 	]]>
 	</text>
 </object>

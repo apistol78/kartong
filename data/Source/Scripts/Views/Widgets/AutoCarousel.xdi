@@ -49,7 +49,6 @@ function AutoCarousel:_eventKeyDown()
 		end
 	end
 end
-
 	]]>
 	</text>
 </object>

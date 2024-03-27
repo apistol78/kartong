@@ -174,7 +174,6 @@ function PlayerLogic:setAutoDrive(autoDrive)
 	self._autoDrive = autoDrive
 	self._pid:reset()
 end
-
 	]]>
 	</text>
 </object>

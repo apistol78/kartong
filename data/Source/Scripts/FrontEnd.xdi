@@ -96,7 +96,6 @@ function FrontEnd:_toggleFullscreen()
 	environment.settings:setProperty("Render.FullScreen", true)
 	environment:reconfigure()
 end
-
 	]]>
 	</text>
 </object>

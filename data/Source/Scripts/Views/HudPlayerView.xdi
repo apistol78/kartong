@@ -35,7 +35,6 @@ end
 function HudPlayerView:setLap(lap)
 	self._stLap:setText(lap)
 end
-
 	]]>
 	</text>
 </object>

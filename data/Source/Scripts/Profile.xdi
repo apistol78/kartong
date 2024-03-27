@@ -75,7 +75,6 @@ end
 
 function Profile:postUpdate(info)
 end
-
 	]]>
 	</text>
 </object>

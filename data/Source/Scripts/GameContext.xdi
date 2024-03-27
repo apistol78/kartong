@@ -35,7 +35,6 @@ function GameContext:forEachPickup(fn)
 		fn(pickup, i)
 	end
 end
-
 	]]>
 	</text>
 </object>

@@ -30,9 +30,6 @@ function PID:evaluate(dT, current, target)
 	self._lastErr = err
 	return out
 end
-
-
-
 	]]>
 	</text>
 </object>

@@ -42,7 +42,6 @@ function Pickup:tryGrab(position)
 	end
 	return false
 end
-
 	]]>
 	</text>
 </object>

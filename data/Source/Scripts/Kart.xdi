@@ -114,7 +114,6 @@ function Kart:teleport(T)
 	local eventSetComponent < const > = self.owner:getComponent(world.EventSetComponent)
 	eventSetComponent:raise("TELEPORT")
 end
-
 	]]>
 	</text>
 </object>
