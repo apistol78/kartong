@@ -244,8 +244,9 @@
 												<rotation>0.029996, 0, 0, 0.99955</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -262,8 +263,9 @@
 												<rotation>-0.098712, 0.148692, 0.014919, 0.983831</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -280,8 +282,9 @@
 												<rotation>-0.03872, 0.688362, 0.132603, 0.712092</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -298,8 +301,9 @@
 												<rotation>-0.028827, -0.276231, -0.008289, 0.960623</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -316,8 +320,9 @@
 												<rotation>0.007191, 0.982914, -0.039338, 0.17967</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -334,8 +339,9 @@
 												<rotation>0.094158, 0.511029, -0.056441, 0.852525</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -352,8 +358,9 @@
 												<rotation>0.079771, 0.059772, -0.004792, 0.995008</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -370,8 +377,9 @@
 												<rotation>0.019999, 0, 0, 0.9998</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -388,8 +396,9 @@
 												<rotation>-0.079914, 0, 0, 0.996802</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -406,8 +415,9 @@
 												<rotation>0.058885, -0.53831, 0.037743, 0.839839</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -424,8 +434,9 @@
 												<rotation>0.021534, -0.695822, 0.020881, 0.717588</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -442,8 +453,9 @@
 												<rotation>-0.063619, -0.603251, -0.048363, 0.793538</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -460,8 +472,9 @@
 												<rotation>0.028566, -0.304921, 0.00915, 0.951905</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -478,8 +491,9 @@
 												<rotation>0.034461, -0.723382, 0.036199, 0.688637</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -496,8 +510,9 @@
 												<rotation>0.009968, -0.978683, 0.048975, 0.199201</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -514,8 +529,9 @@
 												<rotation>0.003368, 0.985522, -0.019713, 0.168364</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -532,8 +548,9 @@
 												<rotation>0.027186, 0.919114, -0.064443, 0.387733</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -550,8 +567,9 @@
 												<rotation>0.022551, 0.659088, -0.019779, 0.751467</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -568,8 +586,9 @@
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -1357,8 +1376,9 @@
 												<rotation>0.089879, 0, 0, 0.995953</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -1375,8 +1395,9 @@
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -1393,8 +1414,9 @@
 												<rotation>0.039989, 0, 0, 0.9992</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -1411,8 +1433,9 @@
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -1429,8 +1452,9 @@
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -1447,8 +1471,9 @@
 												<rotation>0.361615, 0, 0, 0.932327</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -1465,8 +1490,9 @@
 												<rotation>0.099833, 0, 0, 0.995004</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -1526,8 +1552,9 @@
 												<rotation>0.007254, -0.992704, 0.089585, 0.080382</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -1544,8 +1571,9 @@
 												<rotation>0, -0.996738, 0, 0.080709</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -1562,8 +1590,9 @@
 												<rotation>0, -0.996738, 0, 0.080709</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -1580,8 +1609,9 @@
 												<rotation>0.003227, -0.99594, 0.039859, 0.080645</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -1598,8 +1628,9 @@
 												<rotation>0, -0.996738, 0, 0.080709</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -1616,8 +1647,9 @@
 												<rotation>0.00645, -0.99355, 0.079654, 0.080451</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -1634,8 +1666,9 @@
 												<rotation>0.00484, -0.994944, 0.059769, 0.080564</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -1652,8 +1685,9 @@
 												<rotation>0.008058, -0.991758, 0.099508, 0.080306</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -1713,8 +1747,9 @@
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -1731,8 +1766,9 @@
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -1749,8 +1785,9 @@
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -1767,8 +1804,9 @@
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -1785,8 +1823,9 @@
 												<rotation>0.361615, 0, 0, 0.932327</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -1846,8 +1885,9 @@
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -1864,8 +1904,9 @@
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -1882,8 +1923,9 @@
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -1900,8 +1942,9 @@
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -1961,8 +2004,9 @@
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -1979,8 +2023,9 @@
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -1997,8 +2042,9 @@
 												<rotation>0.079915, 0, 0, 0.996802</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -2015,8 +2061,9 @@
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -2033,8 +2080,9 @@
 												<rotation>0.079915, 0, 0, 0.996802</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -2094,8 +2142,9 @@
 												<rotation>0, -0.945784, 0, 0.324797</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -2112,8 +2161,9 @@
 												<rotation>0, -0.945784, 0, 0.324797</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -2130,8 +2180,9 @@
 												<rotation>0.025956, -0.942759, 0.075582, 0.323758</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -2148,8 +2199,9 @@
 												<rotation>0, -0.945784, 0, 0.324797</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -2166,8 +2218,9 @@
 												<rotation>0.025956, -0.942759, 0.075582, 0.323758</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -2233,8 +2286,9 @@
 												<rotation>0.019983, 0.039981, -0.0008, 0.999</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -2251,8 +2305,9 @@
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -2269,8 +2324,9 @@
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -2287,8 +2343,9 @@
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -2340,8 +2397,9 @@
 												<rotation>0.015551, 0.628667, -0.012575, 0.777417</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -2358,8 +2416,9 @@
 												<rotation>0, 0.597196, 0, 0.802096</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -2376,8 +2435,9 @@
 												<rotation>0, 0.597196, 0, 0.802096</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -2619,7 +2679,7 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>-102.149689, 8.578644, -158.435028, 0</translation>
+								<translation>-102.270195, 10.073166, -158.435028, 0</translation>
 								<rotation>0.10271, -0.929961, -0.038754, 0.350886</rotation>
 							</transform>
 							<components/>
@@ -2649,7 +2709,7 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>-133.53476, -0.476047, -69.46405, 0</translation>
+								<translation>-133.53476, 0.767842, -69.46405, 0</translation>
 								<rotation>0.064451, -0.671443, 0.018304, 0.738021</rotation>
 							</transform>
 							<components/>

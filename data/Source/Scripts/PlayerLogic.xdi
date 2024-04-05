@@ -22,6 +22,7 @@ function PlayerLogic:new(gameContext, index, resetOffset, inputStates, autoDrive
 	self._autoDrive = autoDrive
 	self._pid = PID(0.8, 0.01, 0.2)
 	self._pickup = nil
+	self._lanePosition = 0
 
 	local pt < const > = gameContext:getRoad():getComponent(world.PathComponent)
 	local ln = pt:estimateLength()
@@ -115,6 +116,7 @@ function PlayerLogic:update(stage, info, throttleFactor)
 	else
 		self._offlimit = 0
 	end
+	self._lanePosition = Vector4.dot(Tmin.axisX, Tmin.translation - position) / 14
 
 	-- Update auto drive.
 	if self._autoDrive then
@@ -167,6 +169,11 @@ end
 -- position to other players.
 function PlayerLogic:getPosition()
 	return self._lap + self._t
+end
+
+--
+function PlayerLogic:getLanePosition()
+	return self._lanePosition
 end
 
 -- Set automatic drive.

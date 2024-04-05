@@ -36,32 +36,6 @@ function Game:new(params, environment)
 		{ "\{43489F5B-5785-1249-A7BA-CB5259C3F064}", "\{27DDC0FD-39DE-0946-BB1B-7D84A001C522}", "\{5ABEAE05-EB26-934F-932F-7F3C7C582383}" }
 	)
 
-	-- Create frame.
-	self._frame = Frame(
-		self.spark.root,
-		1280, 720,
-		FloodLayout(0, 0)
-	)
-	self._frame:update()
-
-	self._flipBook = Flipboard(self._frame)
-	self._countDownView = CountDownView(self._flipBook)
-	self._finishedView = FinishedView(self._flipBook)
-	self._pauseView = PauseView(self._flipBook)
-		:setOnContinue(function() self:_resume() end)
-		:setOnExit(function() self:_exit() end)
-
-	if self._singlePlayer then
-		self._hudView = HudSingleView(self._flipBook)
-	else
-		self._hudView = HudView(self._flipBook)
-	end
-
-	self._flipBook:showPage("COUNTDOWN")
-
-	-- Ensure frame is properly layed out.
-	self._frame:layout()
-
 	local world < const > = self.world.world
 
 	-- Create game context
@@ -85,6 +59,34 @@ function Game:new(params, environment)
 			vc.maxVelocity = 50
 		end
 	end)
+
+	-- Create frame.
+	self._frame = Frame(
+		self.spark.root,
+		1280, 720,
+		FloodLayout(0, 0)
+	)
+	self._frame:update()
+
+	self._flipBook = Flipboard(self._frame)
+	self._countDownView = CountDownView(self._flipBook)
+	self._finishedView = FinishedView(self._flipBook)
+	self._pauseView = PauseView(self._flipBook)
+		:setOnContinue(function() self:_resume() end)
+		:setOnExit(function() self:_exit() end)
+
+	local nkarts < const > = self._gameContext._karts.size
+	if self._singlePlayer then
+		self._hudView = HudSingleView(self._flipBook, nkarts)
+	else
+		self._hudView = HudView(self._flipBook, nkarts)
+	end
+
+	self._flipBook:showPage("COUNTDOWN")
+
+	-- Ensure frame is properly layed out.
+	self._frame:layout()
+
 
 	-- Create camera handlers.
 	local camera = world:getEntity("Camera0")
@@ -258,9 +260,11 @@ function Game:_updateUI()
 	end
 
 	-- Update kart positions.
-	local kp0 = self._logic[1]:getPosition() / 3
-	local kp1 = self._logic[2]:getPosition() / 3
-	self._hudView:setPositions(kp0, kp1)
+	for i, logic in ipairs(self._logic) do
+		local kp < const > = logic:getPosition() / 3
+		local lp < const > = logic:getLanePosition()
+		self._hudView:setPosition(i, kp, lp)
+	end
 end
 
 function Game:_updateKartBoost(boostFactor)

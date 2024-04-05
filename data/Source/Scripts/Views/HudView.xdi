@@ -10,7 +10,7 @@ HudView = HudView or class("HudView", Container)
 
 HudView.__flipboardId = "HUD"
 
-function HudView:new(parent)
+function HudView:new(parent, nkarts)
 	Container.new(self, parent, FloodLayout())
 
 	local ct = Container(self, TableLayout({ 50, 50 }, { 100 }, 0, 0, 0, 0))
@@ -18,7 +18,7 @@ function HudView:new(parent)
 	self._playerView1 = HudPlayerView(ct)
 
 	local ct = Container(self, FloodLayout(16, 16))
-	self._racePosition = RacePosition(ct, "MC_RacePositionBg")
+	self._racePosition = RacePosition(ct, nkarts)
 		:setHorizontalAlign(Widget.ALIGN_CENTER)
 		:setVerticalAlign(Widget.ALIGN_BOTTOM)
 end
@@ -31,9 +31,11 @@ function HudView:getPlayerView1()
 	return self._playerView1
 end
 
-function HudView:setPositions(kart0, kart1)
-	self._racePosition:setPositions(kart0, kart1)
+function HudView:setPosition(index, position, lanePosition)
+	self._racePosition:setPosition(index, position, lanePosition)
+	self._racePosition:update()
 end
+
 	]]>
 	</text>
 </object>

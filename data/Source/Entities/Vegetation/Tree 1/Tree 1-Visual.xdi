@@ -3,7 +3,16 @@
 	<fileName>Models/Vegetation/Tree 1.blend</fileName>
 	<importFilter/>
 	<meshType>MtInstance</meshType>
-	<materialShaders/>
+	<materialShaders>
+		<item>
+			<first>mat_leaves</first>
+			<second>{96847B62-35FC-E546-B7B4-8649C272864E}</second>
+		</item>
+		<item>
+			<first>mat_trunk</first>
+			<second>{D21A8BDA-3B77-9C44-AFCB-D499A473EBCC}</second>
+		</item>
+	</materialShaders>
 	<materialTextures/>
 	<scaleFactor>1</scaleFactor>
 	<offset>0, 0, 0, 0</offset>
