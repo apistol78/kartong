@@ -4665,6 +4665,51 @@
 							<components/>
 							<entityData>{42D1075D-A84A-4968-8544-BE52F9EB9D5A}</entityData>
 						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{EEED5887-1E5A-A046-9130-2100A2A5DCAF}</id>
+							<name>Rock Face 01</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>-71.537491, 13.435235, -317.533356, 0</translation>
+								<rotation>0, -0.539632, 0, 0.841901</rotation>
+							</transform>
+							<components/>
+							<entityData>{AF89E4F5-6994-A24F-B2B0-D6EF43E17190}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{25134E49-5569-B34F-A073-3DEFB7882505}</id>
+							<name>Rock Face 01</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>-35.861298, -0.932116, -284.932922, 0</translation>
+								<rotation>0, -0.119712, 0, 0.992809</rotation>
+							</transform>
+							<components/>
+							<entityData>{AF89E4F5-6994-A24F-B2B0-D6EF43E17190}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{AC685FCD-E90A-D64B-95F9-5633F2844BEA}</id>
+							<name>Rock Face 01</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>-62.927345, 2.008007, -356.063873, 0</translation>
+								<rotation>0, -0.886627, 0, 0.462486</rotation>
+							</transform>
+							<components/>
+							<entityData>{AF89E4F5-6994-A24F-B2B0-D6EF43E17190}</entityData>
+						</item>
 					</entityData>
 				</item>
 			</components>
