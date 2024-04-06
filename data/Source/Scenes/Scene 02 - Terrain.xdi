@@ -4681,6 +4681,51 @@
 							<entityData>{AF89E4F5-6994-A24F-B2B0-D6EF43E17190}</entityData>
 						</item>
 						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{0FBEAB24-11AA-4F4F-B261-8A5A4928C2FB}</id>
+							<name>Rock Face 01</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>215.507629, 1.447835, -197.210968, 0</translation>
+								<rotation>0.035881, 0.695265, -0.034792, 0.717014</rotation>
+							</transform>
+							<components/>
+							<entityData>{AF89E4F5-6994-A24F-B2B0-D6EF43E17190}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{B397A5F9-8FFC-4ED1-BB89-43E3952C02D4}</id>
+							<name>Rock Face 01</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>205.271164, -2.109638, -148.546753, 0</translation>
+								<rotation>0.037243, 0.666036, -0.03333, 0.744243</rotation>
+							</transform>
+							<components/>
+							<entityData>{AF89E4F5-6994-A24F-B2B0-D6EF43E17190}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{62405630-CCD6-42BD-B70E-AE312491321E}</id>
+							<name>Rock Face 01</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>208.735199, 4.555848, -246.791992, 0</translation>
+								<rotation>0.032228, 0.763374, -0.038201, 0.644021</rotation>
+							</transform>
+							<components/>
+							<entityData>{AF89E4F5-6994-A24F-B2B0-D6EF43E17190}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 							<id>{25134E49-5569-B34F-A073-3DEFB7882505}</id>
 							<name>Rock Face 01</name>
 							<state>
@@ -5019,7 +5064,7 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>-128.398727, 6.194208, 8.575315, 0</translation>
+								<translation>-128.398727, 6.194208, 8.575316, 0</translation>
 								<rotation>0, -0.952576, 0, -0.3043</rotation>
 							</transform>
 							<components/>
