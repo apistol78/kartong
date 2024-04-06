@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.physics.MeshAsset" version="5">
+	<fileName>Models/Rock/Rock 02.blend</fileName>
+	<importFilter/>
+	<calculateConvexHull>false</calculateConvexHull>
+	<margin>0</margin>
+	<scaleFactor>1</scaleFactor>
+	<center>false</center>
+	<grounded>false</grounded>
+	<materials/>
+</object>
