@@ -25,9 +25,13 @@ function Selector:place(x, y, width, height)
 end
 
 function Selector:add(item)
-	local s = Static(self, item)
-		:setTextSize(70)
-	table.insert(self._items, s)
+	if type(item) == "string" then
+		local s = Static(self, item)
+			:setTextSize(70)
+		table.insert(self._items, s)
+	else
+		table.insert(self._items, item)
+	end
 	self:_layout()
 	return self
 end
@@ -70,12 +74,16 @@ function Selector:_layout()
 
 	for idx, mc in ipairs(self._items) do
 		local x < const > = (w - mc:getPreferredSize().width) / 2
-		mc:place(x, y + 12, p.width, 80)
-		if idx == self._index + 1 then
-			mc:setTextColor(Color4f(1, 1, 1, 1))
-		else
-			mc:setTextColor(Color4f(1, 1, 1, 0.75))
+		mc:place(x, y + 12, w - x * 2, 80)
+
+		if mc.setTextColor ~= nil then
+			if idx == self._index + 1 then
+				mc:setTextColor(Color4f(1, 1, 1, 1))
+			else
+				mc:setTextColor(Color4f(1, 1, 1, 0.75))
+			end
 		end
+
 		y = y + 80
 	end
 
@@ -111,6 +119,7 @@ function Selector:_onKeyUp(event)
 		end
 	end
 end
+
 	]]>
 	</text>
 </object>

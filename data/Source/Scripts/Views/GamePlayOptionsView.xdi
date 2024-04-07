@@ -11,16 +11,24 @@ GamePlayOptionsView.__flipboardId = "OPTIONS_GAMEPLAY"
 function GamePlayOptionsView:new(parent)
 	Container.new(self, parent, TableLayout({0}, {0}, 0, 0, 16, 16))
 
-	local ct = Container(self, TableLayout({0, 100}, {0}, 0, 0, 16, 16))
-	
+	local sl = Selector(self)
+		:setHorizontalAlign(Widget.ALIGN_CENTER)
+
+	local ct = Container(sl, TableLayout({100,0}, {0}, 0, 0, 16, 0))
 	Static(ct, "BOOSTERS")
+		:setTextSize(70)
+		:setTextColor(Color4f(1, 1, 1, 1))
 	CheckBox(ct)
+		:setVerticalAlign(Widget.ALIGN_CENTER)
+	sl:add(ct)
 
+	local ct = Container(sl, TableLayout({100,0}, {0}, 0, 0, 16, 0))
 	Static(ct, "PICKUPS")
+		:setTextSize(70)
+		:setTextColor(Color4f(1, 1, 1, 1))
 	CheckBox(ct)
-
-	PushButton(self, "RETURN")
-		:setOnClick(function() self._fnReturn() end)
+		:setVerticalAlign(Widget.ALIGN_CENTER)
+	sl:add(ct)
 
 	self._fnReturn = function() end
 end
@@ -29,6 +37,7 @@ function GamePlayOptionsView:setOnReturn(fn)
 	self._fnReturn = fn
 	return self
 end
+
 	]]>
 	</text>
 </object>
