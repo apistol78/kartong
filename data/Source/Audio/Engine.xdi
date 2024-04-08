@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <object type="traktor.sound.SoundAsset" version="8">
 	<fileName>Audio/Engine.wav</fileName>
-	<category>{00000000-0000-0000-0000-000000000000}</category>
+	<category>{469BC5AF-787F-6B45-84CE-C563BB1F935F}</category>
 	<stream>false</stream>
 	<preload>true</preload>
 	<compressed>false</compressed>

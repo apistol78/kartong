@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <object type="traktor.sound.BankAsset" version="3">
-	<category>{00000000-0000-0000-0000-000000000000}</category>
+	<category>{A0DB7F7F-D3B5-7A4E-8598-68F5806692E9}</category>
 	<presence>0</presence>
 	<presenceRate>0.25</presenceRate>
 	<grains>

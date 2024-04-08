@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.sound.SoundCategory" version="5">
+	<parent>{00000000-0000-0000-0000-000000000000}</parent>
+	<configurationId>FX</configurationId>
+	<gain>0</gain>
+	<presence>0</presence>
+	<presenceRate>0.25</presenceRate>
+	<range>0</range>
+</object>
