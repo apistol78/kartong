@@ -56,7 +56,6 @@ end
 function UI_Scaffolding:getResourceKits()
 	return { "\{43489F5B-5785-1249-A7BA-CB5259C3F064}", "\{27DDC0FD-39DE-0946-BB1B-7D84A001C522}", "\{5ABEAE05-EB26-934F-932F-7F3C7C582383}"  }
 end
-
 	]]>
 	</text>
 </object>

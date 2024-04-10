@@ -84,6 +84,8 @@ function Selector:_layout()
 			end
 		end
 
+		mc:setEnable(idx == self._index + 1)
+
 		y = y + 80
 	end
 

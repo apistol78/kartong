@@ -18,16 +18,24 @@ function OptionsView:new(parent)
 		:add("VISUAL")
 		:add("RETURN")
 		:setOnActivate(function(index)
-			if index == 3 then self._fnReturn() end
+			if index == 1 then self._fnOptionVisuals() end
+			if index == 2 then self._fnReturn() end
 		end)
 
+	self._fnOptionVisuals = function() end
 	self._fnReturn = function() end
+end
+
+function OptionsView:setOnOptionVisuals(fn)
+	self._fnOptionVisuals = fn
+	return self
 end
 
 function OptionsView:setOnReturn(fn)
 	self._fnReturn = fn
 	return self
 end
+
 	]]>
 	</text>
 </object>

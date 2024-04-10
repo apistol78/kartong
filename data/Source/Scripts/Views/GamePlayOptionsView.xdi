@@ -13,6 +13,9 @@ function GamePlayOptionsView:new(parent)
 
 	local sl = Selector(self)
 		:setHorizontalAlign(Widget.ALIGN_CENTER)
+		:setOnActivate(function(index)
+			if index == 2 then self._fnReturn() end
+		end)
 
 	local ct = Container(sl, TableLayout({100,0}, {0}, 0, 0, 16, 0))
 	Static(ct, "BOOSTERS")
@@ -26,9 +29,11 @@ function GamePlayOptionsView:new(parent)
 	Static(ct, "PICKUPS")
 		:setTextSize(70)
 		:setTextColor(Color4f(1, 1, 1, 1))
-	CheckBox(ct)
+	Slider(ct)
 		:setVerticalAlign(Widget.ALIGN_CENTER)
 	sl:add(ct)
+
+	sl:add("RETURN")
 
 	self._fnReturn = function() end
 end
