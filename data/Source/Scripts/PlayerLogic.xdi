@@ -23,6 +23,8 @@ function PlayerLogic:new(gameContext, index, resetOffset, inputStates, autoDrive
 	self._pid = PID(0.8, 0.01, 0.2)
 	self._pickup = nil
 	self._lanePosition = 0
+	self._engineBoost = 0
+	self._engineBoostTarget = 0
 
 	local pt < const > = gameContext:getRoad():getComponent(world.PathComponent)
 	local ln = pt:estimateLength()
@@ -46,6 +48,11 @@ function PlayerLogic:update(stage, info, throttleFactor)
 
 	rb.body.active = true
 	rb.body.enable = true
+
+	-- Filter and apply engine boost.
+	local k < const > = info.simulationDeltaTime
+	self._engineBoost = self._engineBoost * (1 - k) + self._engineBoostTarget * k
+	vc.engineBoost = self._engineBoost
 
 	-- Update input.
 	if not self._autoDrive then
@@ -181,6 +188,13 @@ function PlayerLogic:setAutoDrive(autoDrive)
 	self._autoDrive = autoDrive
 	self._pid:reset()
 end
+
+--
+function PlayerLogic:setEngineBoost(engineBoost)
+	self._engineBoostTarget = engineBoost
+end
+
+
 	]]>
 	</text>
 </object>

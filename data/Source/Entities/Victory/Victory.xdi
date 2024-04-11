@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.world.EntityData" version="2">
+	<id>{A9C1A3F6-0AB9-1C45-8E86-A9850F3F855A}</id>
+	<name>Victory</name>
+	<state>
+		<visible>true</visible>
+		<dynamic>false</dynamic>
+		<locked>false</locked>
+	</state>
+	<transform>
+		<translation>0, 0, 0, 0</translation>
+		<rotation>0, 0, 0, 1</rotation>
+	</transform>
+	<components>
+		<item type="traktor.world.EventSetComponentData">
+			<eventData>
+				<item>
+					<first>VICTORY</first>
+					<second type="traktor.spray.SpawnEffectEventData" version="3">
+						<effect>{01CA625F-C336-8C49-88F7-F9DF421D6959}</effect>
+						<transform>
+							<translation>0, 0, 0, 0</translation>
+							<rotation>0, 0, 0, 1</rotation>
+						</transform>
+						<follow>true</follow>
+						<useRotation>true</useRotation>
+					</second>
+				</item>
+			</eventData>
+		</item>
+	</components>
+</object>

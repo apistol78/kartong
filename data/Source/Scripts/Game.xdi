@@ -225,6 +225,7 @@ function Game:_updateRace(info)
 		for _, logic in ipairs(self._logic) do
 			logic:setAutoDrive(true)
 		end
+		self:_spawnVictoryEffects()
 		self._updateFn = Game._updateFinished
 		self._flipBook:showPage("FINISHED")
 	end
@@ -268,35 +269,43 @@ function Game:_updateUI()
 end
 
 function Game:_updateKartBoost(boostFactor)
---[[
-	local world < const > = self.world.world
+	local leader = nil
+	local leaderPosition = 0
 
-	local D < const > = 0.02
-	local B < const > = 0.5
-	
-	local p0 < const > = self._logic0:getPosition()
-	local p1 < const > = self._logic1:getPosition()
-	local diff = p0 - p1
-
-	-- Left Kart
-	local kart = world:getEntity("Kart0")
-	local vc = kart:getComponent(physics.VehicleComponent)
-	if diff < -D then
-		vc.engineBoost = B * boostFactor
-	else
-		vc.engineBoost = 0
+	-- Find leader.
+	for _, logic in ipairs(self._logic) do
+		local p < const > = logic:getPosition()
+		if p > leaderPosition then
+			leader = logic
+			leaderPosition = p
+		end
 	end
 
-	-- Right Kart
-	local kart = world:getEntity("Kart1")
-	local vc = kart:getComponent(physics.VehicleComponent)
-	if diff > D then
-		vc.engineBoost = B * boostFactor
-	else
-		vc.engineBoost = 0
+	assert(leader ~= nil)
+
+	-- Apply boost to all but leader.
+	for _, logic in ipairs(self._logic) do
+		if logic ~= leader then
+			logic:setEngineBoost(0.8)
+		else
+			logic:setEngineBoost(0)
+		end
 	end
-]]
 end
+
+function Game:_spawnVictoryEffects()
+	local world < const > = self.world.world
+	local entities = world:getEntities()
+	for i = 0, entities.size - 1 do
+		local entity = entities:get(i)
+		local es = entity:getComponent(world.EventSetComponent)
+		if es ~= nil then
+			es:raise("VICTORY")
+		end
+	end
+end
+
+
 	]]>
 	</text>
 </object>

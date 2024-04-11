@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.spray.EffectData">
+	<duration>2</duration>
+	<loopStart>0</loopStart>
+	<loopEnd>0</loopEnd>
+	<layers>
+		<item type="traktor.spray.EffectLayerData" version="4">
+			<name>Tire Smoke</name>
+			<time>0</time>
+			<duration>0</duration>
+			<emitter type="traktor.spray.EmitterData" version="7">
+				<source type="traktor.spray.ConeSourceData" version="1">
+					<constantRate>50</constantRate>
+					<velocityRate>0</velocityRate>
+					<position>0, 0, 0, 1</position>
+					<normal>0, 1, 0, 0</normal>
+					<angle1>0.320796</angle1>
+					<angle2>0.120796</angle2>
+					<velocity>
+						<min>8.650001</min>
+						<max>5.65</max>
+					</velocity>
+					<inheritVelocity>
+						<min>0</min>
+						<max>0</max>
+					</inheritVelocity>
+					<orientation>
+						<min>0</min>
+						<max>6.283185</max>
+					</orientation>
+					<angularVelocity>
+						<min>-3.4</min>
+						<max>3.65</max>
+					</angularVelocity>
+					<age>
+						<min>1.35</min>
+						<max>1.45</max>
+					</age>
+					<mass>
+						<min>0.35</min>
+						<max>0.25</max>
+					</mass>
+					<size>
+						<min>0.2</min>
+						<max>0.2</max>
+					</size>
+				</source>
+				<modifiers>
+					<item type="traktor.spray.IntegrateModifierData" version="1">
+						<timeScale>1</timeScale>
+						<linear>true</linear>
+						<angular>true</angular>
+					</item>
+					<item type="traktor.spray.GravityModifierData">
+						<gravity>0, -5, 0, 0</gravity>
+						<world>true</world>
+					</item>
+				</modifiers>
+				<shader>{61B929ED-DBA8-E642-BFF3-B9F7ED11026C}</shader>
+				<mesh>{00000000-0000-0000-0000-000000000000}</mesh>
+				<effect/>
+				<middleAge>0</middleAge>
+				<cullNearDistance>0.25</cullNearDistance>
+				<cullMeshDistance>100</cullMeshDistance>
+				<fadeNearRange>1</fadeNearRange>
+				<viewOffset>0</viewOffset>
+				<warmUp>0</warmUp>
+				<sort>false</sort>
+				<worldSpace>true</worldSpace>
+				<meshOrientationFromVelocity>true</meshOrientationFromVelocity>
+			</emitter>
+			<trail/>
+			<sequence/>
+			<triggerEnable/>
+			<triggerDisable/>
+		</item>
+		<item type="traktor.spray.EffectLayerData" version="4">
+			<name>Fall</name>
+			<time>0.384</time>
+			<duration>0</duration>
+			<emitter type="traktor.spray.EmitterData" version="7">
+				<source type="traktor.spray.BoxSourceData">
+					<constantRate>50</constantRate>
+					<velocityRate>0</velocityRate>
+					<position>0, 6, 0, 1</position>
+					<extent>6, 4, 6, 0</extent>
+					<velocity>
+						<min>0.95</min>
+						<max>0.8</max>
+					</velocity>
+					<orientation>
+						<min>0</min>
+						<max>6.283185</max>
+					</orientation>
+					<angularVelocity>
+						<min>-0.8</min>
+						<max>0.85</max>
+					</angularVelocity>
+					<age>
+						<min>0.8</min>
+						<max>1.05</max>
+					</age>
+					<mass>
+						<min>0.7</min>
+						<max>1.3</max>
+					</mass>
+					<size>
+						<min>0.3</min>
+						<max>0.4</max>
+					</size>
+				</source>
+				<modifiers>
+					<item type="traktor.spray.IntegrateModifierData" version="1">
+						<timeScale>1</timeScale>
+						<linear>true</linear>
+						<angular>true</angular>
+					</item>
+					<item type="traktor.spray.GravityModifierData">
+						<gravity>0, -9.12, 0, 0</gravity>
+						<world>true</world>
+					</item>
+					<item type="traktor.spray.BrownianModifierData">
+						<factor>3</factor>
+					</item>
+				</modifiers>
+				<shader>{61B929ED-DBA8-E642-BFF3-B9F7ED11026C}</shader>
+				<mesh>{00000000-0000-0000-0000-000000000000}</mesh>
+				<effect/>
+				<middleAge>0.4</middleAge>
+				<cullNearDistance>0.25</cullNearDistance>
+				<cullMeshDistance>100</cullMeshDistance>
+				<fadeNearRange>0</fadeNearRange>
+				<viewOffset>0</viewOffset>
+				<warmUp>0</warmUp>
+				<sort>true</sort>
+				<worldSpace>true</worldSpace>
+				<meshOrientationFromVelocity>false</meshOrientationFromVelocity>
+			</emitter>
+			<trail/>
+			<sequence/>
+			<triggerEnable/>
+			<triggerDisable/>
+		</item>
+	</layers>
+</object>
