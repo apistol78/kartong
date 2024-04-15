@@ -5,20 +5,20 @@
 	<loopEnd>0</loopEnd>
 	<layers>
 		<item type="traktor.spray.EffectLayerData" version="4">
-			<name>Tire Smoke</name>
+			<name>Up</name>
 			<time>0</time>
-			<duration>0</duration>
+			<duration>0.2</duration>
 			<emitter type="traktor.spray.EmitterData" version="7">
 				<source type="traktor.spray.ConeSourceData" version="1">
-					<constantRate>50</constantRate>
+					<constantRate>1000</constantRate>
 					<velocityRate>0</velocityRate>
 					<position>0, 0, 0, 1</position>
 					<normal>0, 1, 0, 0</normal>
 					<angle1>0.320796</angle1>
 					<angle2>0.120796</angle2>
 					<velocity>
-						<min>8.650001</min>
-						<max>5.65</max>
+						<min>12</min>
+						<max>14</max>
 					</velocity>
 					<inheritVelocity>
 						<min>0</min>
@@ -41,8 +41,8 @@
 						<max>0.25</max>
 					</mass>
 					<size>
-						<min>0.2</min>
-						<max>0.2</max>
+						<min>0.3</min>
+						<max>0.4</max>
 					</size>
 				</source>
 				<modifiers>
@@ -82,8 +82,8 @@
 				<source type="traktor.spray.BoxSourceData">
 					<constantRate>50</constantRate>
 					<velocityRate>0</velocityRate>
-					<position>0, 6, 0, 1</position>
-					<extent>6, 4, 6, 0</extent>
+					<position>0, 16, 0, 1</position>
+					<extent>16, 4, 16, 0</extent>
 					<velocity>
 						<min>0.95</min>
 						<max>0.8</max>
@@ -97,8 +97,8 @@
 						<max>0.85</max>
 					</angularVelocity>
 					<age>
-						<min>0.8</min>
-						<max>1.05</max>
+						<min>1</min>
+						<max>2</max>
 					</age>
 					<mass>
 						<min>0.7</min>

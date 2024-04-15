@@ -294,8 +294,7 @@ function Game:_updateKartBoost(boostFactor)
 end
 
 function Game:_spawnVictoryEffects()
-	local world < const > = self.world.world
-	local entities = world:getEntities()
+	local entities = self.world.world:getEntities()
 	for i = 0, entities.size - 1 do
 		local entity = entities:get(i)
 		local es = entity:getComponent(world.EventSetComponent)
@@ -304,7 +303,6 @@ function Game:_spawnVictoryEffects()
 		end
 	end
 end
-
 
 	]]>
 	</text>
