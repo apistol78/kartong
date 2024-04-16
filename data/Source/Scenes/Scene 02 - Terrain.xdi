@@ -5235,6 +5235,28 @@
 							<components/>
 							<entityData>{59E61CFC-CC27-49D7-8C03-04F88A120FEA}</entityData>
 						</item>
+						<item type="traktor.world.EntityData" version="2">
+							<id>{CFB0155C-18E8-8347-B3E6-66428008A259}</id>
+							<name>Goal Checker</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>-27.584969, 8.721235, -107.390343, 0</translation>
+								<rotation>-0.038531, 0.611925, -0.033357, 0.789272</rotation>
+							</transform>
+							<components>
+								<item type="traktor.world.DecalComponentData" version="1">
+									<size>13, 3.5</size>
+									<thickness>1</thickness>
+									<alpha>1</alpha>
+									<cullDistance>100</cullDistance>
+									<shader>{9876011D-AD6A-9B44-AEB5-62AACF0E6E1A}</shader>
+								</item>
+							</components>
+						</item>
 					</entityData>
 				</item>
 			</components>

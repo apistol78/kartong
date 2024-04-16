@@ -202,8 +202,8 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>8.172983, 22.355606, -3.204671, 0</translation>
-								<rotation>-0.100129, -0.658575, -0.022579, 0.745482</rotation>
+								<translation>6.242682, 24.305965, -4.387469, 0</translation>
+								<rotation>0, -0.66545, -0, 0.746443</rotation>
 							</transform>
 							<components/>
 							<entityData>{3527F644-09BE-4B55-91E7-ECC6191F32C2}</entityData>
@@ -217,8 +217,8 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>-2.298129, 22.392021, -7.200705, 0</translation>
-								<rotation>-0.09335, 0.149541, -0.015787, 0.984212</rotation>
+								<translation>-1.240816, 24.342381, -6.208402, 0</translation>
+								<rotation>0, 0.152893, 0, 0.988243</rotation>
 							</transform>
 							<components/>
 							<entityData>{3527F644-09BE-4B55-91E7-ECC6191F32C2}</entityData>
@@ -232,8 +232,8 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>-6.524127, 22.573692, -6.807359, 0</translation>
-								<rotation>-0.006081, 0.473902, -0.053468, 0.878932</rotation>
+								<translation>-4.969786, 24.524052, -7.503583, 0</translation>
+								<rotation>0, 0.456001, 0, 0.889979</rotation>
 							</transform>
 							<components/>
 							<entityData>{3527F644-09BE-4B55-91E7-ECC6191F32C2}</entityData>
@@ -247,7 +247,7 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>4.264809, 22.177681, -5.987488, 0</translation>
+								<translation>3.024656, 24.12804, -5.977217, 0</translation>
 								<rotation>-0.073972, -0.377217, -0.030242, 0.922671</rotation>
 							</transform>
 							<components/>
@@ -522,6 +522,21 @@
 							</transform>
 							<components/>
 							<entityData>{E68809A6-3BD4-0945-891B-2D2F88B180EA}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{1F6E00D0-D0D2-0741-8A04-FDEDCCBF5BAE}</id>
+							<name>Plateau</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>-2.046067, 23.758457, 2.311586, 0</translation>
+								<rotation>0, 0.992904, 0, 0.118922</rotation>
+							</transform>
+							<components/>
+							<entityData>{1168ABF7-04BC-894B-9E13-A80E9DB925CC}</entityData>
 						</item>
 					</entityData>
 				</item>
