@@ -49,13 +49,10 @@ function Game:new(params, environment)
 	self._gameContext:forEachKart(function (kart, index)
 		local vc = kart:getComponent(physics.VehicleComponent)
 		if self._params._difficulty == 0 then
-			print("EASY")
 			vc.maxVelocity = 20
 		elseif self._params._difficulty == 1 then
-			print("NORMAL")
 			vc.maxVelocity = 30
 		else
-			print("DIFFICULT")
 			vc.maxVelocity = 50
 		end
 	end)
@@ -113,8 +110,11 @@ function Game:new(params, environment)
 			},
 			bot
 		)
-
 		table.insert(self._logic, logic)
+
+		-- Disable audio listeners on bots.
+		local lc = kart:getComponent(spray.ListenerComponent)
+		lc.enable = not bot
 	end)
 
 	-- Set game state.
