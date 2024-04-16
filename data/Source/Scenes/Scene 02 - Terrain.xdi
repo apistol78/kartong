@@ -1499,9 +1499,9 @@
 									</entityData>
 								</item>
 								<item type="traktor.shape.ExtrudeShapeLayerData" version="1">
-									<meshStart>{00000000-0000-0000-0000-000000000000}</meshStart>
+									<meshStart>{5CE70B72-0C2E-B14E-BE12-52CD6174A168}</meshStart>
 									<meshRepeat>{CE5CE669-AF07-44B5-B5F2-08FFE9440497}</meshRepeat>
-									<meshEnd>{00000000-0000-0000-0000-000000000000}</meshEnd>
+									<meshEnd>{B8FD3488-9F5F-FB48-BC40-FA401BDEC6E3}</meshEnd>
 									<automaticOrientation>true</automaticOrientation>
 									<offset>2</offset>
 									<detail>10</detail>
@@ -1694,9 +1694,9 @@
 									</entityData>
 								</item>
 								<item type="traktor.shape.ExtrudeShapeLayerData" version="1">
-									<meshStart>{00000000-0000-0000-0000-000000000000}</meshStart>
+									<meshStart>{5CE70B72-0C2E-B14E-BE12-52CD6174A168}</meshStart>
 									<meshRepeat>{CE5CE669-AF07-44B5-B5F2-08FFE9440497}</meshRepeat>
-									<meshEnd>{00000000-0000-0000-0000-000000000000}</meshEnd>
+									<meshEnd>{B8FD3488-9F5F-FB48-BC40-FA401BDEC6E3}</meshEnd>
 									<automaticOrientation>true</automaticOrientation>
 									<offset>2</offset>
 									<detail>10</detail>
@@ -1819,7 +1819,7 @@
 												<locked>false</locked>
 											</state>
 											<transform>
-												<translation>-16.509056, 6.307256, -121.357468, 0</translation>
+												<translation>-16.785477, 5.634027, -122.225517, 0</translation>
 												<rotation>0.361615, 0, 0, 0.932327</rotation>
 											</transform>
 											<components>
@@ -1832,9 +1832,9 @@
 									</entityData>
 								</item>
 								<item type="traktor.shape.ExtrudeShapeLayerData" version="1">
-									<meshStart>{00000000-0000-0000-0000-000000000000}</meshStart>
+									<meshStart>{5CE70B72-0C2E-B14E-BE12-52CD6174A168}</meshStart>
 									<meshRepeat>{CE5CE669-AF07-44B5-B5F2-08FFE9440497}</meshRepeat>
-									<meshEnd>{00000000-0000-0000-0000-000000000000}</meshEnd>
+									<meshEnd>{B8FD3488-9F5F-FB48-BC40-FA401BDEC6E3}</meshEnd>
 									<automaticOrientation>true</automaticOrientation>
 									<offset>2</offset>
 									<detail>10</detail>
@@ -1951,9 +1951,9 @@
 									</entityData>
 								</item>
 								<item type="traktor.shape.ExtrudeShapeLayerData" version="1">
-									<meshStart>{00000000-0000-0000-0000-000000000000}</meshStart>
+									<meshStart>{5CE70B72-0C2E-B14E-BE12-52CD6174A168}</meshStart>
 									<meshRepeat>{CE5CE669-AF07-44B5-B5F2-08FFE9440497}</meshRepeat>
-									<meshEnd>{00000000-0000-0000-0000-000000000000}</meshEnd>
+									<meshEnd>{B8FD3488-9F5F-FB48-BC40-FA401BDEC6E3}</meshEnd>
 									<automaticOrientation>true</automaticOrientation>
 									<offset>2</offset>
 									<detail>10</detail>
@@ -2089,9 +2089,9 @@
 									</entityData>
 								</item>
 								<item type="traktor.shape.ExtrudeShapeLayerData" version="1">
-									<meshStart>{00000000-0000-0000-0000-000000000000}</meshStart>
+									<meshStart>{5CE70B72-0C2E-B14E-BE12-52CD6174A168}</meshStart>
 									<meshRepeat>{CE5CE669-AF07-44B5-B5F2-08FFE9440497}</meshRepeat>
-									<meshEnd>{00000000-0000-0000-0000-000000000000}</meshEnd>
+									<meshEnd>{B8FD3488-9F5F-FB48-BC40-FA401BDEC6E3}</meshEnd>
 									<automaticOrientation>true</automaticOrientation>
 									<offset>2</offset>
 									<detail>10</detail>
@@ -2227,9 +2227,9 @@
 									</entityData>
 								</item>
 								<item type="traktor.shape.ExtrudeShapeLayerData" version="1">
-									<meshStart>{00000000-0000-0000-0000-000000000000}</meshStart>
+									<meshStart>{5CE70B72-0C2E-B14E-BE12-52CD6174A168}</meshStart>
 									<meshRepeat>{CE5CE669-AF07-44B5-B5F2-08FFE9440497}</meshRepeat>
-									<meshEnd>{00000000-0000-0000-0000-000000000000}</meshEnd>
+									<meshEnd>{B8FD3488-9F5F-FB48-BC40-FA401BDEC6E3}</meshEnd>
 									<automaticOrientation>true</automaticOrientation>
 									<offset>2</offset>
 									<detail>10</detail>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <object type="traktor.mesh.MeshAsset" version="23">
-	<fileName>Models/Fence/Fence Profile.blend</fileName>
+	<fileName>Models/Fence/Fence Start.blend</fileName>
 	<importFilter/>
 	<meshType>MtStatic</meshType>
 	<materialShaders/>
@@ -14,5 +14,5 @@
 	<lodSteps>8</lodSteps>
 	<lodMaxDistance>100</lodMaxDistance>
 	<lodCullDistance>200</lodCullDistance>
-	<previewAngle>2.136283</previewAngle>
+	<previewAngle>2.38761</previewAngle>
 </object>
