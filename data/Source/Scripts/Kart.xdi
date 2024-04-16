@@ -46,9 +46,10 @@ function Kart:update(contextObject, totalTime, deltaTime)
 			true		
 		)
 
+		local wa < const > = wheel.angle
 		skeletonComponent:concatenatePoseTransform(
 			wheelJoints[i] .. "_Rot",
-			Transform(Vector4.zero, Quaternion.fromEulerAngles(0, 0, wheel.angle * rotationMul[i])),
+			Transform(Vector4.zero, Quaternion.fromEulerAngles(0, 0, wa * rotationMul[i])),
 			false		
 		)
 
@@ -78,24 +79,18 @@ function Kart:update(contextObject, totalTime, deltaTime)
 	if rigidBodyComponent.body.active then
 		local mps < const > = rigidBodyComponent.body.linearVelocity.length
 		local kph < const > = mps * (60 * 60) / 1000
+		local torque < const > = vehicleComponent.engineTorque
 
-		local gd = self._gear * 30 - 5
-		local gu = self._gear * 30 + 30 + 5
-		if kph < gd then
-			if self._gear > 0 then
-				self._gear = self._gear - 1
-			end
-		elseif kph > gu then
-			if self._gear < 2 then
-				self._gear = self._gear + 1
-			end
-		end
-
-		local pitch = (kph - self._gear * 30) / 40
+		local pitch = kph / 150
 		if pitch < 0.1 then pitch = 0.1 end
 		if pitch > 1 then pitch = 1 end
 
+		local lp = torque / 30 - 0.1
+		if lp < 0 then lp = 0 end
+		if lp > 1 then lp = 1 end
+
 		soundComponent:setParameter("A", pitch)
+		soundComponent:setParameter("B", lp)
 		soundComponent:play()
 	else
 		soundComponent:stop()
@@ -114,6 +109,7 @@ function Kart:teleport(T)
 	local eventSetComponent < const > = self.owner:getComponent(world.EventSetComponent)
 	eventSetComponent:raise("TELEPORT")
 end
+
 	]]>
 	</text>
 </object>

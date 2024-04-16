@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.sound.GraphAsset">
+	<category>{469BC5AF-787F-6B45-84CE-C563BB1F935F}</category>
+	<gain>0</gain>
+	<presence>0</presence>
+	<presenceRate>1</presenceRate>
+	<range>0</range>
+	<graph type="traktor.sound.Graph">
+		<nodes>
+			<item type="traktor.sound.Source">
+				<comment/>
+				<position>
+					<first>-1</first>
+					<second>560</second>
+				</position>
+				<sound>{E03F7233-0806-B14B-810C-9901610CAF80}</sound>
+			</item>
+			<item type="traktor.sound.Output">
+				<comment/>
+				<position>
+					<first>808</first>
+					<second>277</second>
+				</position>
+			</item>
+			<item type="traktor.sound.Filter">
+				<comment/>
+				<position>
+					<first>391</first>
+					<second>203</second>
+				</position>
+				<filter type="traktor.sound.LowPassFilter">
+					<cutOff>1000</cutOff>
+				</filter>
+			</item>
+			<item type="traktor.sound.Pitch">
+				<comment/>
+				<position>
+					<first>168</first>
+					<second>250</second>
+				</position>
+			</item>
+			<item type="traktor.sound.Parameter" version="1">
+				<comment/>
+				<position>
+					<first>-443</first>
+					<second>274</second>
+				</position>
+				<name>A</name>
+				<defaultValue>0</defaultValue>
+			</item>
+			<item type="traktor.sound.Multiply">
+				<comment/>
+				<position>
+					<first>-261</first>
+					<second>294</second>
+				</position>
+			</item>
+			<item type="traktor.sound.Scalar">
+				<comment/>
+				<position>
+					<first>-438</first>
+					<second>358</second>
+				</position>
+				<value>1.3</value>
+			</item>
+			<item type="traktor.sound.Add">
+				<comment/>
+				<position>
+					<first>-68</first>
+					<second>323</second>
+				</position>
+			</item>
+			<item type="traktor.sound.Scalar">
+				<comment/>
+				<position>
+					<first>-232</first>
+					<second>391</second>
+				</position>
+				<value>1</value>
+			</item>
+			<item type="traktor.sound.Source">
+				<comment>
+				<![CDATA[
+Mid
+				]]>
+				</comment>
+				<position>
+					<first>-12</first>
+					<second>220</second>
+				</position>
+				<sound>{69B5C02A-7DDD-8A44-B230-E10B63B3F012}</sound>
+			</item>
+			<item type="traktor.sound.Blend">
+				<comment/>
+				<position>
+					<first>596</first>
+					<second>282</second>
+				</position>
+			</item>
+			<item type="traktor.sound.Parameter" version="1">
+				<comment/>
+				<position>
+					<first>367</first>
+					<second>380</second>
+				</position>
+				<name>B</name>
+				<defaultValue>0</defaultValue>
+			</item>
+		</nodes>
+		<edges>
+			<item type="traktor.sound.Edge">
+				<source>
+					<node ref="/object/graph/nodes/item[4]"/>
+					<name>Output</name>
+				</source>
+				<destination>
+					<node ref="/object/graph/nodes/item[5]"/>
+					<name>Input1</name>
+				</destination>
+			</item>
+			<item type="traktor.sound.Edge">
+				<source>
+					<node ref="/object/graph/nodes/item[6]"/>
+					<name>Output</name>
+				</source>
+				<destination>
+					<node ref="/object/graph/nodes/item[5]"/>
+					<name>Input2</name>
+				</destination>
+			</item>
+			<item type="traktor.sound.Edge">
+				<source>
+					<node ref="/object/graph/nodes/item[5]"/>
+					<name>Output</name>
+				</source>
+				<destination>
+					<node ref="/object/graph/nodes/item[7]"/>
+					<name>Input1</name>
+				</destination>
+			</item>
+			<item type="traktor.sound.Edge">
+				<source>
+					<node ref="/object/graph/nodes/item[7]"/>
+					<name>Output</name>
+				</source>
+				<destination>
+					<node ref="/object/graph/nodes/item[3]"/>
+					<name>Adjust</name>
+				</destination>
+			</item>
+			<item type="traktor.sound.Edge">
+				<source>
+					<node ref="/object/graph/nodes/item[8]"/>
+					<name>Output</name>
+				</source>
+				<destination>
+					<node ref="/object/graph/nodes/item[7]"/>
+					<name>Input2</name>
+				</destination>
+			</item>
+			<item type="traktor.sound.Edge">
+				<source>
+					<node ref="/object/graph/nodes/item[9]"/>
+					<name>Output</name>
+				</source>
+				<destination>
+					<node ref="/object/graph/nodes/item[3]"/>
+					<name>Input</name>
+				</destination>
+			</item>
+			<item type="traktor.sound.Edge">
+				<source>
+					<node ref="/object/graph/nodes/item[11]"/>
+					<name>Output</name>
+				</source>
+				<destination>
+					<node ref="/object/graph/nodes/item[10]"/>
+					<name>Weight</name>
+				</destination>
+			</item>
+			<item type="traktor.sound.Edge">
+				<source>
+					<node ref="/object/graph/nodes/item[3]"/>
+					<name>Output</name>
+				</source>
+				<destination>
+					<node ref="/object/graph/nodes/item[2]"/>
+					<name>Input</name>
+				</destination>
+			</item>
+			<item type="traktor.sound.Edge">
+				<source>
+					<node ref="/object/graph/nodes/item[3]"/>
+					<name>Output</name>
+				</source>
+				<destination>
+					<node ref="/object/graph/nodes/item[10]"/>
+					<name>Input1</name>
+				</destination>
+			</item>
+			<item type="traktor.sound.Edge">
+				<source>
+					<node ref="/object/graph/nodes/item[2]"/>
+					<name>Output</name>
+				</source>
+				<destination>
+					<node ref="/object/graph/nodes/item[10]"/>
+					<name>Input2</name>
+				</destination>
+			</item>
+			<item type="traktor.sound.Edge">
+				<source>
+					<node ref="/object/graph/nodes/item[10]"/>
+					<name>Output</name>
+				</source>
+				<destination>
+					<node ref="/object/graph/nodes/item[1]"/>
+					<name>Input</name>
+				</destination>
+			</item>
+		</edges>
+	</graph>
+</object>
