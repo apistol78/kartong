@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<object type="traktor.scene.SceneAsset" version="9">
+<object type="traktor.scene.SceneAsset" version="10">
 	<worldRenderSettings type="traktor.world.WorldRenderSettings" version="39">
 		<viewNearZ>0.1</viewNearZ>
 		<viewFarZ>1000</viewFarZ>
@@ -71,6 +71,52 @@
 		</imageProcess>
 		<colorGrading>{2FCE2D56-3358-4646-8E7E-F83F4A6281F2}</colorGrading>
 	</worldRenderSettings>
+	<worldComponents>
+		<item type="traktor.theater.TheaterComponentData">
+			<acts>
+				<item type="traktor.theater.ActData">
+					<name/>
+					<duration>5</duration>
+					<tracks>
+						<item type="traktor.theater.TrackData">
+							<entityId>{485FEF1B-7170-F04A-915A-312559ED69CF}</entityId>
+							<lookAtEntityId>{00000000-0000-0000-0000-000000000000}</lookAtEntityId>
+							<path>
+								<keys>
+									<item>
+										<T>0</T>
+										<tcb>0, 0, 0, 0</tcb>
+										<position>-1.053211, 27.71316, 9.383077, 0</position>
+										<orientation>2.903186, -1.259998, 0.000001, 0</orientation>
+										<values>
+											<item>0</item>
+											<item>0</item>
+											<item>0</item>
+											<item>0</item>
+										</values>
+									</item>
+									<item>
+										<T>4.04</T>
+										<tcb>0, 0, 0, 0</tcb>
+										<position>-0.675671, 27.71316, -0.69458, 0</position>
+										<orientation>2.903186, 0.300001, 0.000001, 0</orientation>
+										<values>
+											<item>0</item>
+											<item>0</item>
+											<item>0</item>
+											<item>0</item>
+										</values>
+									</item>
+								</keys>
+							</path>
+						</item>
+					</tracks>
+				</item>
+			</acts>
+			<repeatActs>false</repeatActs>
+			<randomizeActs>false</randomizeActs>
+		</item>
+	</worldComponents>
 	<layers>
 		<item type="traktor.world.EntityData" version="2">
 			<id>{F4C32A73-D122-3344-BDE8-BEDB80D64025}</id>
@@ -103,7 +149,7 @@
 							</state>
 							<transform>
 								<translation>-9.443932, -1.97757, 3.657648, 0</translation>
-								<rotation>0.284416, 0.344378, -0.110314, 0.887887</rotation>
+								<rotation>0.284416, 0.344378, -0.110314, 0.887886</rotation>
 							</transform>
 							<components>
 								<item type="traktor.weather.SkyComponentData" version="4">
@@ -134,8 +180,8 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>-0.471189, 27.71316, -0.645093, 0</translation>
-								<rotation>0.017772, 0.981754, -0.148378, 0.117586</rotation>
+								<translation>-1.053211, 27.71316, 9.383077, 0</translation>
+								<rotation>-0.070061, 0.802294, 0.584963, 0.096091</rotation>
 							</transform>
 							<components>
 								<item type="traktor.world.CameraComponentData">
@@ -202,8 +248,8 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>6.242682, 24.305965, -4.387469, 0</translation>
-								<rotation>0, -0.66545, -0, 0.746443</rotation>
+								<translation>5.88091, 24.305965, -3.985084, 0</translation>
+								<rotation>0, -0.66545, 0, 0.746443</rotation>
 							</transform>
 							<components/>
 							<entityData>{3527F644-09BE-4B55-91E7-ECC6191F32C2}</entityData>
@@ -622,6 +668,5 @@
 			</components>
 		</item>
 	</layers>
-	<controllerData/>
 	<operationData/>
 </object>

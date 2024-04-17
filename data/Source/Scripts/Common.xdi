@@ -7,6 +7,12 @@ function math.clamp(v, mn, mx)
 	if v > mx then return mx end
 	return v
 end
+
+function iif(c, t, f)
+	if c then return t end; return f
+end
+
+
 	]]>
 	</text>
 </object>

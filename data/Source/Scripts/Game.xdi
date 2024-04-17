@@ -4,6 +4,7 @@
 	<![CDATA[
 #using \{720C0A68-B608-2F40-8EBA-F7E42EB27F61}
 #using \{FC4400A2-BDB6-BA45-9A22-12B9676E71FA}
+#using \{BFFAA983-A517-482D-9829-F2A5ED75E8B7}
 #using \{97B60D98-6C09-7743-ADBC-16D2565DEDAD}
 #using \{7DB51529-FCBA-4AB2-86C7-876BDE110462}
 #using \{A348F9B0-E137-B24F-B5DC-6591E60A61DD}
@@ -14,10 +15,6 @@
 #using \{862D5F23-6E73-4FD2-933F-9C659B62BADB}
 
 import(traktor)
-
-local function iif(c, f, t)
-	if not c then return f end; return t
-end
 
 -- Game
 

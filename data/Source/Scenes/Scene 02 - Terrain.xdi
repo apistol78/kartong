@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<object type="traktor.scene.SceneAsset" version="9">
+<object type="traktor.scene.SceneAsset" version="10">
 	<worldRenderSettings type="traktor.world.WorldRenderSettings" version="39">
 		<viewNearZ>0.1</viewNearZ>
 		<viewFarZ>1000</viewFarZ>
@@ -71,6 +71,7 @@
 		</imageProcess>
 		<colorGrading>{2FCE2D56-3358-4646-8E7E-F83F4A6281F2}</colorGrading>
 	</worldRenderSettings>
+	<worldComponents/>
 	<layers>
 		<item type="traktor.world.EntityData" version="2">
 			<id>{CFC30078-4CDB-EE49-8E63-3E8491310900}</id>
@@ -5987,6 +5988,5 @@
 			</components>
 		</item>
 	</layers>
-	<controllerData/>
 	<operationData/>
 </object>
