@@ -75,7 +75,7 @@
 		<item type="traktor.theater.TheaterComponentData">
 			<acts>
 				<item type="traktor.theater.ActData">
-					<name/>
+					<name>START</name>
 					<duration>5</duration>
 					<tracks>
 						<item type="traktor.theater.TrackData">
@@ -96,7 +96,7 @@
 										</values>
 									</item>
 									<item>
-										<T>4.04</T>
+										<T>2.85</T>
 										<tcb>0, 0, 0, 0</tcb>
 										<position>-0.675671, 27.71316, -0.69458, 0</position>
 										<orientation>2.903186, 0.300001, 0.000001, 0</orientation>

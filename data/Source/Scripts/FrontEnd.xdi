@@ -70,6 +70,10 @@ function FrontEnd:new(params, environment)
 
 	-- Ensure frame is properly layed out.
 	self._frame:layout()
+
+	-- Issue start animation.
+	local tc < const > = self.world.world:getComponent(theater.TheaterComponent)
+	tc:play("START")
 end
 
 function FrontEnd:finalize()
