@@ -26,6 +26,7 @@ function Game:new(params, environment)
 	self._params = params
 	self._inputMapping = environment.input.inputMapping
 	self._singlePlayer = isa(self.world, runtime.WorldLayer)
+	self._time = 0
 
 	-- Initialize UiKit.
 	Widget.initialize(
@@ -115,7 +116,13 @@ function Game:new(params, environment)
 	end)
 
 	-- Set game state.
-	self._updateFn = Game._updateStart
+	local tc < const > = self.world.world:getComponent(theater.TheaterComponent)
+	if tc ~= nil then
+		tc:play("START")
+		self._updateFn = Game._updateTheater
+	else
+		self._updateFn = Game._updateStart
+	end
 end
 
 function Game:finalize()
@@ -127,12 +134,16 @@ function Game:update(info)
 		self:_updateFn(info)
 	end
 	Tween.update(info.simulationDeltaTime)
+	self._time = self._time + info.simulationDeltaTime
 end
 
 function Game:postUpdate(info)
-	local dT < const > = info.simulationDeltaTime
-	self._followCamera0:update(dT)
-	self._followCamera1:update(dT)
+	local tc < const > = self.world.world:getComponent(theater.TheaterComponent)
+	if tc == nil or not tc.playing then
+		local dT < const > = info.simulationDeltaTime
+		self._followCamera0:update(dT)
+		self._followCamera1:update(dT)
+	end
 end
 
 -- private
@@ -157,6 +168,14 @@ function Game:_exit()
 	self:gotoStage(nxt)
 end
 
+function Game:_updateTheater(info)
+	local tc < const > = self.world.world:getComponent(theater.TheaterComponent)
+	if not tc.playing then
+		self._time = 0
+		self._updateFn = Game._updateStart
+	end
+end
+
 function Game:_updatePause(info)
 	if not environment.control.pause then
 		local escape < const > = self._inputMapping:isStatePressed("STATE_ESCAPE")
@@ -176,13 +195,14 @@ function Game:_updateStart(info)
 		logic:update(self, info, 0)
 	end
 
-	if info.stateTime < 2 then
+	if self._time < 2 then
 		self._countDownView:setText(CountDownView.READY)
-	elseif info.stateTime < 4 then
+	elseif self._time < 4 then
 		self._countDownView:setText(CountDownView.SET)
 	else
 		self._countDownView:setText(CountDownView.GO)
 		self._updateFn = Game._updateKickOff
+		self._time = 0
 		self._flipBook:showPage("HUD")
 	end
 end
@@ -196,7 +216,7 @@ function Game:_updateKickOff(info)
 		logic:update(self, info, 1)
 	end
 
-	if info.stateTime >= 6 then
+	if self._time >= 2 then
 		self._updateFn = Game._updateRace
 	end
 end

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.sound.SoundAsset" version="8">
+	<fileName>Audio/Ambience.mp3</fileName>
+	<category>{4B1184B1-4014-416B-85F4-1E977C47A124}</category>
+	<stream>true</stream>
+	<preload>false</preload>
+	<compressed>true</compressed>
+	<gain>-7</gain>
+</object>

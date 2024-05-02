@@ -71,7 +71,76 @@
 		</imageProcess>
 		<colorGrading>{2FCE2D56-3358-4646-8E7E-F83F4A6281F2}</colorGrading>
 	</worldRenderSettings>
-	<worldComponents/>
+	<worldComponents>
+		<item type="traktor.theater.TheaterComponentData">
+			<acts>
+				<item type="traktor.theater.ActData">
+					<name>START</name>
+					<duration>5</duration>
+					<tracks>
+						<item type="traktor.theater.TrackData">
+							<entityId>{ADD02FD9-977C-AD48-BC0E-F8131BAC160B}</entityId>
+							<lookAtEntityId>{00000000-0000-0000-0000-000000000000}</lookAtEntityId>
+							<path>
+								<keys>
+									<item>
+										<T>0</T>
+										<tcb>0, 0, 0, 0</tcb>
+										<position>-151.481537, 76.299912, -123.496201, 0</position>
+										<orientation>1.34, 0, 0, 0</orientation>
+										<values>
+											<item>0</item>
+											<item>0</item>
+											<item>0</item>
+											<item>0</item>
+										</values>
+									</item>
+									<item>
+										<T>1.546</T>
+										<tcb>0, 0, 0, 0</tcb>
+										<position>-109.812782, 44.002232, -122.533272, 0</position>
+										<orientation>1.339999, 0.44, 0, 0</orientation>
+										<values>
+											<item>0</item>
+											<item>0</item>
+											<item>0</item>
+											<item>0</item>
+										</values>
+									</item>
+									<item>
+										<T>2.851</T>
+										<tcb>0, 0, 0, 0</tcb>
+										<position>-93.855774, 13.272703, -119.610176, 0</position>
+										<orientation>1.34, 0, 0, 0</orientation>
+										<values>
+											<item>0</item>
+											<item>0</item>
+											<item>0</item>
+											<item>0</item>
+										</values>
+									</item>
+									<item>
+										<T>5</T>
+										<tcb>0, 0, 0, 0</tcb>
+										<position>-35.372459, 13.457031, -108.896904, 0</position>
+										<orientation>1.34, 0, 0, 0</orientation>
+										<values>
+											<item>0</item>
+											<item>0</item>
+											<item>0</item>
+											<item>0</item>
+										</values>
+									</item>
+								</keys>
+							</path>
+						</item>
+					</tracks>
+				</item>
+			</acts>
+			<repeatActs>false</repeatActs>
+			<randomizeActs>false</randomizeActs>
+		</item>
+	</worldComponents>
 	<layers>
 		<item type="traktor.world.EntityData" version="2">
 			<id>{CFC30078-4CDB-EE49-8E63-3E8491310900}</id>
@@ -135,7 +204,7 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>-56.396923, 19.568516, -124.204048, 0</translation>
+								<translation>-151.481537, 76.299912, -123.496201, 0</translation>
 								<rotation>0, 0.620986, 0, 0.783822</rotation>
 							</transform>
 							<components>

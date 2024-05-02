@@ -16,6 +16,13 @@
 			<clearBackground>false</clearBackground>
 			<enableSound>true</enableSound>
 		</item>
+		<item type="traktor.runtime.AudioLayerData">
+			<name>audio</name>
+			<permitTransition>true</permitTransition>
+			<sound>{4D83D440-8A64-4820-BDA3-2B39C763D64B}</sound>
+			<autoPlay>true</autoPlay>
+			<repeat>true</repeat>
+		</item>
 	</layers>
 	<class>{73F76EB8-F60F-4DD5-801B-D3CAA2C696EC}</class>
 	<shaderFade>{1781A8FD-4099-7E43-9CCD-6F4F1F2DBC96}</shaderFade>

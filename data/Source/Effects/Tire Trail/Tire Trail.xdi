@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.spray.EffectData">
+	<duration>0</duration>
+	<loopStart>0</loopStart>
+	<loopEnd>0</loopEnd>
+	<layers>
+		<item type="traktor.spray.EffectLayerData" version="4">
+			<name>Trail</name>
+			<time>0</time>
+			<duration>1</duration>
+			<emitter/>
+			<trail type="traktor.spray.TrailData" version="1">
+				<shader>{C6168883-FE0F-4F3C-BB73-B21C5DF83EC9}</shader>
+				<width>1</width>
+				<age>1</age>
+				<lengthThreshold>1</lengthThreshold>
+				<breakThreshold>0</breakThreshold>
+			</trail>
+			<sequence/>
+			<triggerEnable/>
+			<triggerDisable/>
+		</item>
+	</layers>
+</object>

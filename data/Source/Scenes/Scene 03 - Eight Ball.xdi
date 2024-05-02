@@ -103,7 +103,7 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>-14.170444, 0, 1.713573, 0</translation>
+								<translation>-17.145432, -7.667942, 1.713573, 0</translation>
 								<rotation>0.405531, 0.325615, -0.15729, 0.839511</rotation>
 							</transform>
 							<components>
@@ -245,8 +245,9 @@
 												<rotation>-0.099833, 0, 0, 0.995004</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -263,8 +264,9 @@
 												<rotation>-0.019773, 0.149409, 0.002989, 0.988573</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1.05</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -281,8 +283,9 @@
 												<rotation>-0.03872, 0.688362, 0.132603, 0.712092</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -299,8 +302,9 @@
 												<rotation>-0.123218, 0.744205, 0.143125, 0.640696</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -317,8 +321,9 @@
 												<rotation>-0.02331, 0.9754, 0.127521, 0.178297</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -335,8 +340,9 @@
 												<rotation>-0.07064, -0.853966, -0.120342, 0.501268</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -353,8 +359,9 @@
 												<rotation>-0.149277, -0.293253, -0.056511, 0.942616</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -371,8 +378,9 @@
 												<rotation>-0.115375, -0.264813, -0.031931, 0.95684</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -389,8 +397,9 @@
 												<rotation>0.159319, 0, 0, 0.987227</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -407,8 +416,9 @@
 												<rotation>0.147441, -0.791658, 0.210598, 0.554244</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -425,8 +435,9 @@
 												<rotation>0.001648, 0.983802, -0.179022, 0.009054</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -443,8 +454,9 @@
 												<rotation>0.150347, -0.594296, 0.114295, 0.781758</rotation>
 											</transform>
 											<components>
-												<item type="traktor.shape.ControlPointComponentData">
+												<item type="traktor.shape.ControlPointComponentData" version="1">
 													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
 												</item>
 											</components>
 										</item>
@@ -469,6 +481,635 @@
 									<detail>10</detail>
 								</item>
 							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="2">
+							<id>{1DB547B8-EF39-4A31-A341-B013FD318034}</id>
+							<name>Poles 2</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>0, 0, 0, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.shape.SplineComponentData" version="1">
+									<closed>false</closed>
+									<collisionGroup>
+										<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+									</collisionGroup>
+									<collisionMask>
+										<item>{09CB1141-1924-3349-934A-CEB9728D7A61}</item>
+										<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+									</collisionMask>
+								</item>
+								<item type="traktor.world.GroupComponentData">
+									<entityData>
+										<item type="traktor.world.EntityData" version="2">
+											<id>{4A7E575A-4EB2-40CD-8492-F011B91B3AF3}</id>
+											<name>C</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
+											<transform>
+												<translation>-20.09528, 18.653004, -63.172348, 0</translation>
+												<rotation>0.089879, 0, 0, 0.995953</rotation>
+											</transform>
+											<components>
+												<item type="traktor.shape.ControlPointComponentData" version="1">
+													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
+												</item>
+											</components>
+										</item>
+										<item type="traktor.world.EntityData" version="2">
+											<id>{B33F1C03-F24E-4A57-A241-F9C1D4F2555D}</id>
+											<name>C</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
+											<transform>
+												<translation>32.001343, 3.440295, -98.786575, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components>
+												<item type="traktor.shape.ControlPointComponentData" version="1">
+													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
+												</item>
+											</components>
+										</item>
+										<item type="traktor.world.EntityData" version="2">
+											<id>{BF5BFC7A-695B-403B-8C92-AB0D846FA4EA}</id>
+											<name>C</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
+											<transform>
+												<translation>69.138054, -1.437912, -126.7276, 0</translation>
+												<rotation>0.039989, 0, 0, 0.9992</rotation>
+											</transform>
+											<components>
+												<item type="traktor.shape.ControlPointComponentData" version="1">
+													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
+												</item>
+											</components>
+										</item>
+										<item type="traktor.world.EntityData" version="2">
+											<id>{1E24850B-D628-44B8-AAEC-7C3C2536B964}</id>
+											<name>C</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
+											<transform>
+												<translation>113.381592, 8.047441, -165.265381, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components>
+												<item type="traktor.shape.ControlPointComponentData" version="1">
+													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
+												</item>
+											</components>
+										</item>
+										<item type="traktor.world.EntityData" version="2">
+											<id>{3A2AE9C9-32DA-4BA9-9663-1B39EF800673}</id>
+											<name>C</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
+											<transform>
+												<translation>133.336731, 18.407059, -199.08725, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components>
+												<item type="traktor.shape.ControlPointComponentData" version="1">
+													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
+												</item>
+											</components>
+										</item>
+										<item type="traktor.world.EntityData" version="2">
+											<id>{A974ED81-ED42-47A6-8E50-64D1A8907EB6}</id>
+											<name>C</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
+											<transform>
+												<translation>138.872681, 37.972092, -258.956207, 0</translation>
+												<rotation>0.01, 0, 0, 0.99995</rotation>
+											</transform>
+											<components>
+												<item type="traktor.shape.ControlPointComponentData" version="1">
+													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
+												</item>
+											</components>
+										</item>
+										<item type="traktor.world.EntityData" version="2">
+											<id>{39DD433D-203B-4439-9641-78617E236299}</id>
+											<name>C</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
+											<transform>
+												<translation>102.413391, 49.188133, -302.584839, 0</translation>
+												<rotation>-0.03999, 0, 0, 0.9992</rotation>
+											</transform>
+											<components>
+												<item type="traktor.shape.ControlPointComponentData" version="1">
+													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
+												</item>
+											</components>
+										</item>
+									</entityData>
+								</item>
+								<item type="traktor.shape.ExtrudeShapeLayerData" version="1">
+									<meshStart>{5CE70B72-0C2E-B14E-BE12-52CD6174A168}</meshStart>
+									<meshRepeat>{CE5CE669-AF07-44B5-B5F2-08FFE9440497}</meshRepeat>
+									<meshEnd>{B8FD3488-9F5F-FB48-BC40-FA401BDEC6E3}</meshEnd>
+									<automaticOrientation>true</automaticOrientation>
+									<offset>2</offset>
+									<detail>10</detail>
+								</item>
+								<item type="traktor.shape.CloneShapeLayerData" version="1">
+									<mesh>{B8504A5C-FA10-4AAF-9A0F-C02D535422A2}</mesh>
+									<automaticOrientation>true</automaticOrientation>
+									<distance>14.55</distance>
+									<startEndOffset>4</startEndOffset>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="2">
+							<id>{322DACC0-2D33-4910-B898-965D2313E905}</id>
+							<name>Tube</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>0, 12.726226, 0, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.shape.SplineComponentData" version="1">
+									<closed>true</closed>
+									<collisionGroup>
+										<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+									</collisionGroup>
+									<collisionMask>
+										<item>{09CB1141-1924-3349-934A-CEB9728D7A61}</item>
+										<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+									</collisionMask>
+								</item>
+								<item type="traktor.world.GroupComponentData">
+									<entityData>
+										<item type="traktor.world.EntityData" version="2">
+											<id>{5DD0F161-C4E8-4EAF-926A-437768123297}</id>
+											<name>C</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
+											<transform>
+												<translation>-37.056324, -19.377861, 2.010825, 0</translation>
+												<rotation>0.089879, 0, 0, 0.995953</rotation>
+											</transform>
+											<components>
+												<item type="traktor.shape.ControlPointComponentData" version="1">
+													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
+												</item>
+											</components>
+										</item>
+										<item type="traktor.world.EntityData" version="2">
+											<id>{BC888BA8-DEA3-43A0-8780-321C392485B4}</id>
+											<name>C</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
+											<transform>
+												<translation>29.643745, 36.40519, 44.525871, 0</translation>
+												<rotation>0.089879, 0, 0, 0.995953</rotation>
+											</transform>
+											<components>
+												<item type="traktor.shape.ControlPointComponentData" version="1">
+													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
+												</item>
+											</components>
+										</item>
+										<item type="traktor.world.EntityData" version="2">
+											<id>{B457C7DC-7623-4AB1-9516-1C713F7ADE30}</id>
+											<name>C</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
+											<transform>
+												<translation>106.920364, 69.8442, 65.013817, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components>
+												<item type="traktor.shape.ControlPointComponentData" version="1">
+													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
+												</item>
+											</components>
+										</item>
+										<item type="traktor.world.EntityData" version="2">
+											<id>{7CB49B30-8F4B-4540-8A6E-94299A69C67E}</id>
+											<name>C</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
+											<transform>
+												<translation>145.720963, 50.310352, -42.852551, 0</translation>
+												<rotation>0.039989, 0, 0, 0.9992</rotation>
+											</transform>
+											<components>
+												<item type="traktor.shape.ControlPointComponentData" version="1">
+													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
+												</item>
+											</components>
+										</item>
+										<item type="traktor.world.EntityData" version="2">
+											<id>{B59E72ED-7BED-4A2A-8F0E-824476F0C5EE}</id>
+											<name>C</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
+											<transform>
+												<translation>96.730682, -11.465615, -109.514214, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components>
+												<item type="traktor.shape.ControlPointComponentData" version="1">
+													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
+												</item>
+											</components>
+										</item>
+										<item type="traktor.world.EntityData" version="2">
+											<id>{9B15B76E-91D9-4991-A524-02E2E5CBD03D}</id>
+											<name>C</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
+											<transform>
+												<translation>63.826992, -20.254429, -240.19664, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components>
+												<item type="traktor.shape.ControlPointComponentData" version="1">
+													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
+												</item>
+											</components>
+										</item>
+										<item type="traktor.world.EntityData" version="2">
+											<id>{16A80260-C299-4AC5-991A-122FD0374B64}</id>
+											<name>C</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
+											<transform>
+												<translation>-4.311646, 31.979355, -261.168152, 0</translation>
+												<rotation>0.01, 0, 0, 0.99995</rotation>
+											</transform>
+											<components>
+												<item type="traktor.shape.ControlPointComponentData" version="1">
+													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
+												</item>
+											</components>
+										</item>
+										<item type="traktor.world.EntityData" version="2">
+											<id>{4D7AC300-EB4F-4CE6-9D75-21610FA5B00F}</id>
+											<name>C</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
+											<transform>
+												<translation>-50.298752, 78.017784, -156.652527, 0</translation>
+												<rotation>-0.03999, 0, 0, 0.9992</rotation>
+											</transform>
+											<components>
+												<item type="traktor.shape.ControlPointComponentData" version="1">
+													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
+												</item>
+											</components>
+										</item>
+										<item type="traktor.world.EntityData" version="2">
+											<id>{A1B67E88-3C44-4048-8F88-CD4B4E6D23A9}</id>
+											<name>C</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
+											<transform>
+												<translation>-69.402466, 11.946451, -99.863068, 0</translation>
+												<rotation>-0.03999, 0, 0, 0.9992</rotation>
+											</transform>
+											<components>
+												<item type="traktor.shape.ControlPointComponentData" version="1">
+													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
+												</item>
+											</components>
+										</item>
+									</entityData>
+								</item>
+								<item type="traktor.shape.ExtrudeShapeLayerData" version="1">
+									<meshStart>{DE471FF9-0767-4557-89D1-64F4240290F0}</meshStart>
+									<meshRepeat>{DE471FF9-0767-4557-89D1-64F4240290F0}</meshRepeat>
+									<meshEnd>{DE471FF9-0767-4557-89D1-64F4240290F0}</meshEnd>
+									<automaticOrientation>true</automaticOrientation>
+									<offset>2</offset>
+									<detail>10</detail>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="2">
+							<id>{97B6E258-C0E7-455F-80A1-28DE74DF4A1C}</id>
+							<name>Tube</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>0, 9.135479, -40.393837, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.shape.SplineComponentData" version="1">
+									<closed>true</closed>
+									<collisionGroup>
+										<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+									</collisionGroup>
+									<collisionMask>
+										<item>{09CB1141-1924-3349-934A-CEB9728D7A61}</item>
+										<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+									</collisionMask>
+								</item>
+								<item type="traktor.world.GroupComponentData">
+									<entityData>
+										<item type="traktor.world.EntityData" version="2">
+											<id>{8090D526-0F70-4562-BBA4-923D4933F387}</id>
+											<name>C</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
+											<transform>
+												<translation>-30.035162, -22.968609, -41.788452, 0</translation>
+												<rotation>0.089879, 0, 0, 0.995953</rotation>
+											</transform>
+											<components>
+												<item type="traktor.shape.ControlPointComponentData" version="1">
+													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
+												</item>
+											</components>
+										</item>
+										<item type="traktor.world.EntityData" version="2">
+											<id>{8A356FA2-BD25-4AF0-95FF-E757D60AE161}</id>
+											<name>C</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
+											<transform>
+												<translation>-23.708258, 32.264351, 29.01889, 0</translation>
+												<rotation>0.089879, 0, 0, 0.995953</rotation>
+											</transform>
+											<components>
+												<item type="traktor.shape.ControlPointComponentData" version="1">
+													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
+												</item>
+											</components>
+										</item>
+										<item type="traktor.world.EntityData" version="2">
+											<id>{A600CC15-864A-45DE-AE3F-3FAC4C19A2EC}</id>
+											<name>C</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
+											<transform>
+												<translation>57.290085, 29.502508, 64.297356, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components>
+												<item type="traktor.shape.ControlPointComponentData" version="1">
+													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
+												</item>
+											</components>
+										</item>
+										<item type="traktor.world.EntityData" version="2">
+											<id>{26F9C13A-CBF5-4E43-8F6B-C55E0EB5696B}</id>
+											<name>C</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
+											<transform>
+												<translation>124.70359, 59.150146, -38.724804, 0</translation>
+												<rotation>0.039989, 0, 0, 0.9992</rotation>
+											</transform>
+											<components>
+												<item type="traktor.shape.ControlPointComponentData" version="1">
+													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
+												</item>
+											</components>
+										</item>
+										<item type="traktor.world.EntityData" version="2">
+											<id>{ECED8DE2-06CE-4789-A98C-63D502CE6631}</id>
+											<name>C</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
+											<transform>
+												<translation>104.803925, -17.714956, -148.686218, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components>
+												<item type="traktor.shape.ControlPointComponentData" version="1">
+													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
+												</item>
+											</components>
+										</item>
+										<item type="traktor.world.EntityData" version="2">
+											<id>{D753E46F-FB51-4256-B3D6-C248067D7D7E}</id>
+											<name>C</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
+											<transform>
+												<translation>72.978645, -28.141722, -266.983124, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components>
+												<item type="traktor.shape.ControlPointComponentData" version="1">
+													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
+												</item>
+											</components>
+										</item>
+										<item type="traktor.world.EntityData" version="2">
+											<id>{501DE199-F62F-4F39-9448-209F0FE37920}</id>
+											<name>C</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
+											<transform>
+												<translation>-4.814997, 42.36853, -284.459168, 0</translation>
+												<rotation>0.01, 0, 0, 0.99995</rotation>
+											</transform>
+											<components>
+												<item type="traktor.shape.ControlPointComponentData" version="1">
+													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
+												</item>
+											</components>
+										</item>
+										<item type="traktor.world.EntityData" version="2">
+											<id>{5498D76C-5F1A-41AC-9F9B-515000455921}</id>
+											<name>C</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
+											<transform>
+												<translation>-27.979013, 83.102356, -160.05806, 0</translation>
+												<rotation>-0.03999, 0, 0, 0.9992</rotation>
+											</transform>
+											<components>
+												<item type="traktor.shape.ControlPointComponentData" version="1">
+													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
+												</item>
+											</components>
+										</item>
+										<item type="traktor.world.EntityData" version="2">
+											<id>{7E5CFE3B-B3D8-49DA-92BC-6D4A24592E91}</id>
+											<name>C</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
+											<transform>
+												<translation>-47.887322, 8.355704, -111.740715, 0</translation>
+												<rotation>-0.03999, 0, 0, 0.9992</rotation>
+											</transform>
+											<components>
+												<item type="traktor.shape.ControlPointComponentData" version="1">
+													<scale>1</scale>
+													<automaticOrientationWeight>1</automaticOrientationWeight>
+												</item>
+											</components>
+										</item>
+									</entityData>
+								</item>
+								<item type="traktor.shape.ExtrudeShapeLayerData" version="1">
+									<meshStart>{DE471FF9-0767-4557-89D1-64F4240290F0}</meshStart>
+									<meshRepeat>{DE471FF9-0767-4557-89D1-64F4240290F0}</meshRepeat>
+									<meshEnd>{DE471FF9-0767-4557-89D1-64F4240290F0}</meshEnd>
+									<automaticOrientation>true</automaticOrientation>
+									<offset>2</offset>
+									<detail>10</detail>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="2">
+							<id>{FB1EE79F-0FF7-4C58-B2B8-CBE52C93D1F8}</id>
+							<name>Goal Checker</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>64.324532, -2.666957, -143.522568, 0</translation>
+								<rotation>-0.049335, 0.898713, -0.012784, 0.435566</rotation>
+							</transform>
+							<components>
+								<item type="traktor.world.DecalComponentData" version="1">
+									<size>13, 3.5</size>
+									<thickness>1</thickness>
+									<alpha>1</alpha>
+									<cullDistance>100</cullDistance>
+									<shader>{9876011D-AD6A-9B44-AEB5-62AACF0E6E1A}</shader>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{F7FE5E8D-B03E-4D6D-98C7-83B31B08177B}</id>
+							<name>Goal-Entity</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>64.599213, 4.553687, -143.364304, 0</translation>
+								<rotation>0, 0.904413, 0, 0.426659</rotation>
+							</transform>
+							<components/>
+							<entityData>{C92F0433-5C37-4C32-BE94-6ED46F13B352}</entityData>
 						</item>
 					</entityData>
 				</item>
