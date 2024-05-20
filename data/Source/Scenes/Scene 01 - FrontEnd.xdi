@@ -661,6 +661,15 @@
 										</item>
 									</plants>
 								</item>
+								<item type="traktor.terrain.OceanComponentData" version="3">
+									<shaderWave>{3ABA4673-C5A5-404E-8563-CE8A6E043AC4}</shaderWave>
+									<shader>{FB9B7138-B7B2-E341-82EB-453BE2B558A8}</shader>
+									<reflectionTexture>{00000000-0000-0000-0000-000000000000}</reflectionTexture>
+									<shallowTint>0.137255, 0.772549, 0.984314, 1</shallowTint>
+									<deepColor>0.039216, 0.117647, 0.207843, 1</deepColor>
+									<opacity>1</opacity>
+									<elevation>10</elevation>
+								</item>
 							</components>
 						</item>
 					</entityData>
