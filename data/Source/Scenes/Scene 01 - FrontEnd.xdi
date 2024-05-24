@@ -3,8 +3,8 @@
 	<worldRenderSettings type="traktor.world.WorldRenderSettings" version="39">
 		<viewNearZ>0.1</viewNearZ>
 		<viewFarZ>1000</viewFarZ>
-		<exposureMode>Fixed</exposureMode>
-		<exposure>0.1</exposure>
+		<exposureMode>Adaptive</exposureMode>
+		<exposure>0</exposure>
 		<shadowSettings>
 			<disabled>
 				<farZ>100</farZ>
@@ -86,7 +86,7 @@
 									<item>
 										<T>0</T>
 										<tcb>0, 0, 0, 0</tcb>
-										<position>-1.053211, 27.71316, 9.383077, 0</position>
+										<position>-1.053211, 27.71316, 9.383077, 1</position>
 										<orientation>2.903186, -1.259998, 0.000001, 0</orientation>
 										<values>
 											<item>0</item>
@@ -98,7 +98,7 @@
 									<item>
 										<T>2.85</T>
 										<tcb>0, 0, 0, 0</tcb>
-										<position>-0.675671, 27.71316, -0.69458, 0</position>
+										<position>-0.675671, 27.71316, -0.69458, 1</position>
 										<orientation>2.903186, 0.300001, 0.000001, 0</orientation>
 										<values>
 											<item>0</item>
@@ -149,7 +149,7 @@
 							</state>
 							<transform>
 								<translation>-9.443932, -1.97757, 3.657648, 0</translation>
-								<rotation>0.284416, 0.344378, -0.110314, 0.887886</rotation>
+								<rotation>0.144323, 0.773115, -0.587727, 0.189847</rotation>
 							</transform>
 							<components>
 								<item type="traktor.weather.SkyComponentData" version="4">
@@ -784,8 +784,8 @@
 								<item type="traktor.terrain.OceanComponentData" version="4">
 									<shaderWave>{3ABA4673-C5A5-404E-8563-CE8A6E043AC4}</shaderWave>
 									<shader>{FB9B7138-B7B2-E341-82EB-453BE2B558A8}</shader>
-									<shallowTint>0.082353, 0.584314, 0.172549, 1</shallowTint>
-									<deepColor>0.070588, 0.070588, 0.082353, 1</deepColor>
+									<shallowTint>0.576471, 0.501961, 0.235294, 1</shallowTint>
+									<deepColor>0.396078, 0.423529, 0.443137, 1</deepColor>
 									<opacity>1</opacity>
 									<elevation>10</elevation>
 								</item>
