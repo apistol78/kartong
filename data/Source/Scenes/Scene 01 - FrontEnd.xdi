@@ -4,7 +4,7 @@
 		<viewNearZ>0.1</viewNearZ>
 		<viewFarZ>1000</viewFarZ>
 		<exposureMode>Adaptive</exposureMode>
-		<exposure>0</exposure>
+		<exposure>-0.1</exposure>
 		<shadowSettings>
 			<disabled>
 				<farZ>100</farZ>
@@ -49,7 +49,7 @@
 			<ultra>
 				<farZ>100</farZ>
 				<resolution>2048</resolution>
-				<bias>0.0005</bias>
+				<bias>0.001</bias>
 				<cascadingSlices>4</cascadingSlices>
 				<cascadingLambda>1.65</cascadingLambda>
 				<quantizeProjection>true</quantizeProjection>
@@ -278,7 +278,7 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>-4.969786, 24.524052, -7.503583, 0</translation>
+								<translation>-4.969786, 24.327337, -7.503583, 0</translation>
 								<rotation>0, 0.456001, 0, 0.889979</rotation>
 							</transform>
 							<components/>
