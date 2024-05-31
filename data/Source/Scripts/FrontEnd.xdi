@@ -92,6 +92,8 @@ function FrontEnd:_loadLevel(index)
 		params.load = "GAME_" .. self._mode .. "_02"
 	elseif index == 1 then
 		params.load = "GAME_" .. self._mode .. "_03"
+	elseif index == 2 then
+		params.load = "GAME_" .. self._mode .. "_04"
 	else
 		print("no such level")
 		return

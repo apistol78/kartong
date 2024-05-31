@@ -28,6 +28,7 @@ function SelectLevelView:new(parent)
 
 	Image(c, "MC_LevelBox")
 	Image(c, "MC_LevelBox")
+	Image(c, "MC_LevelBox")
 
 	self._fnPlay = function(index) end
 	self._fnReturn = function() end
@@ -42,6 +43,7 @@ function SelectLevelView:setOnReturn(fn)
 	self._fnReturn = fn
 	return self
 end
+
 	]]>
 	</text>
 </object>

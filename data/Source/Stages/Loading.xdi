@@ -30,12 +30,20 @@
 			<second>{9EB7610F-18DD-A04E-8587-EA4EC8CF0795}</second>
 		</item>
 		<item>
+			<first>GAME_MULTI_04</first>
+			<second>{B1A6EFDE-2A27-A746-9A04-4723A2375FE9}</second>
+		</item>
+		<item>
 			<first>GAME_SINGLE_02</first>
 			<second>{0BED5FC3-43F3-F243-8F38-23DDE5547F48}</second>
 		</item>
 		<item>
 			<first>GAME_SINGLE_03</first>
 			<second>{3026D2E8-422A-6847-9879-636234DF9E58}</second>
+		</item>
+		<item>
+			<first>GAME_SINGLE_04</first>
+			<second>{61042C54-6D3D-1748-A5F3-DF5C4842A289}</second>
 		</item>
 	</transitions>
 	<resourceBundle>{00000000-0000-0000-0000-000000000000}</resourceBundle>
