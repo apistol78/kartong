@@ -4,7 +4,7 @@
 		<viewNearZ>0.1</viewNearZ>
 		<viewFarZ>1000</viewFarZ>
 		<exposureMode>Adaptive</exposureMode>
-		<exposure>0.2</exposure>
+		<exposure>0</exposure>
 		<shadowSettings>
 			<disabled>
 				<farZ>100</farZ>
@@ -86,7 +86,7 @@
 									<item>
 										<T>0</T>
 										<tcb>0, 0, 0, 0</tcb>
-										<position>-151.481537, 76.299912, -123.496201, 0</position>
+										<position>-151.481537, 76.299912, -123.496201, 1</position>
 										<orientation>1.34, 0, 0, 0</orientation>
 										<values>
 											<item>0</item>
@@ -98,7 +98,7 @@
 									<item>
 										<T>1.546</T>
 										<tcb>0, 0, 0, 0</tcb>
-										<position>-109.812782, 44.002232, -122.533272, 0</position>
+										<position>-109.812782, 44.002232, -122.533272, 1</position>
 										<orientation>1.339999, 0.44, 0, 0</orientation>
 										<values>
 											<item>0</item>
@@ -110,7 +110,7 @@
 									<item>
 										<T>2.851</T>
 										<tcb>0, 0, 0, 0</tcb>
-										<position>-93.855774, 13.272703, -119.610176, 0</position>
+										<position>-93.855774, 13.272703, -119.610176, 1</position>
 										<orientation>1.34, 0, 0, 0</orientation>
 										<values>
 											<item>0</item>
@@ -122,7 +122,7 @@
 									<item>
 										<T>5</T>
 										<tcb>0, 0, 0, 0</tcb>
-										<position>-35.372459, 13.457031, -108.896904, 0</position>
+										<position>-35.372459, 13.457031, -108.896904, 1</position>
 										<orientation>1.34, 0, 0, 0</orientation>
 										<values>
 											<item>0</item>
@@ -176,10 +176,13 @@
 								<rotation>0.405531, 0.325615, -0.15729, 0.839511</rotation>
 							</transform>
 							<components>
-								<item type="traktor.weather.SkyComponentData" version="4">
+								<item type="traktor.weather.SkyComponentData" version="6">
 									<shader>{4CF929EB-3A8B-C340-AA0A-0C5C80625BF1}</shader>
 									<texture>{00000000-0000-0000-0000-000000000000}</texture>
 									<intensity>1</intensity>
+									<clouds>true</clouds>
+									<overHorizon>0.2, 0.5, 0.85, 0</overHorizon>
+									<underHorizon>0.34902, 0.419608, 0.501961, 1</underHorizon>
 								</item>
 								<item type="traktor.world.LightComponentData" version="12">
 									<lightType>Directional</lightType>
@@ -829,7 +832,7 @@
 											</state>
 											<transform>
 												<translation>290.9711, -0.410385, 167.127426, 0</translation>
-												<rotation>0.019327, 0, -0.081172, 0.996513</rotation>
+												<rotation>0.019327, -0, -0.081172, 0.996513</rotation>
 											</transform>
 											<components/>
 											<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
@@ -1159,7 +1162,7 @@
 											</state>
 											<transform>
 												<translation>123.877335, 6.05791, -226.597153, 0</translation>
-												<rotation>0.003864, 0, -0.085001, 0.996373</rotation>
+												<rotation>0.003864, -0, -0.085001, 0.996373</rotation>
 											</transform>
 											<components/>
 											<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
@@ -1189,7 +1192,7 @@
 											</state>
 											<transform>
 												<translation>111.859566, 5.612412, -32.064953, 0</translation>
-												<rotation>-0.01559, 0, 0.035079, 0.999263</rotation>
+												<rotation>-0.01559, -0, 0.035079, 0.999263</rotation>
 											</transform>
 											<components/>
 											<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
@@ -1354,7 +1357,7 @@
 											</state>
 											<transform>
 												<translation>12.544205, -0.968295, 156.524689, 0</translation>
-												<rotation>0.038951, 0, 0.019476, 0.999051</rotation>
+												<rotation>0.038951, -0, 0.019476, 0.999051</rotation>
 											</transform>
 											<components/>
 											<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
@@ -1384,7 +1387,7 @@
 											</state>
 											<transform>
 												<translation>-152.243485, 3.010457, 52.256245, 0</translation>
-												<rotation>-0.046669, 0, -0.031118, 0.998426</rotation>
+												<rotation>-0.046669, -0, -0.031118, 0.998426</rotation>
 											</transform>
 											<components/>
 											<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
@@ -3275,7 +3278,7 @@
 							</state>
 							<transform>
 								<translation>98.210564, 11.545167, -182.421249, 0</translation>
-								<rotation>0.11601, -0.780328, -0.036098, -0.613454</rotation>
+								<rotation>-0.11601, 0.780328, 0.036098, 0.613454</rotation>
 							</transform>
 							<components/>
 							<entityData>{35427C92-3197-4641-A1F5-31248037416B}</entityData>
@@ -3965,7 +3968,7 @@
 							</state>
 							<transform>
 								<translation>36.098637, 24.717033, -30.472853, 0</translation>
-								<rotation>-0.000076, -0.999921, 0.009999, -0.007609</rotation>
+								<rotation>0.000076, 0.999921, -0.009999, 0.007609</rotation>
 							</transform>
 							<components/>
 							<entityData>{E0CFEA9A-FFAE-46A5-995B-5454D5DD4578}</entityData>
@@ -5375,7 +5378,7 @@
 							</state>
 							<transform>
 								<translation>11.542053, 3.712539, -224.866943, 0</translation>
-								<rotation>0, 0.674288, 0, -0.738469</rotation>
+								<rotation>0, -0.674288, 0, 0.738469</rotation>
 							</transform>
 							<components/>
 							<entityData>{59E61CFC-CC27-49D7-8C03-04F88A120FEA}</entityData>
@@ -5787,7 +5790,7 @@
 							</state>
 							<transform>
 								<translation>-176.648636, 28.138, -238.598068, 0</translation>
-								<rotation>0, 0.532535, 0, -0.846408</rotation>
+								<rotation>0, -0.532535, 0, 0.846408</rotation>
 							</transform>
 							<components/>
 							<entityData>{E142E474-F0DA-3047-A674-F3565AFEAE5B}</entityData>

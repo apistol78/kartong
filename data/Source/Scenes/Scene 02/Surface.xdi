@@ -385,7 +385,7 @@ $Output = vec4(mix(t, b, f), 0.0f);
 				<first>1503</first>
 				<second>-746</second>
 			</position>
-			<color>0.850981, 0.113726, 0.737255, 1</color>
+			<color>0.156863, 0.121569, 0.07451, 1</color>
 			<linear>true</linear>
 		</item>
 		<item type="traktor.render.Scalar" version="traktor.render.Node:1">

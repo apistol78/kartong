@@ -152,10 +152,13 @@
 								<rotation>0.144323, 0.773115, -0.587727, 0.189847</rotation>
 							</transform>
 							<components>
-								<item type="traktor.weather.SkyComponentData" version="4">
+								<item type="traktor.weather.SkyComponentData" version="6">
 									<shader>{4CF929EB-3A8B-C340-AA0A-0C5C80625BF1}</shader>
 									<texture>{00000000-0000-0000-0000-000000000000}</texture>
 									<intensity>1</intensity>
+									<clouds>true</clouds>
+									<overHorizon>0.2, 0.5, 0.85, 0</overHorizon>
+									<underHorizon>0.062745, 0.321569, 0.627451, 0</underHorizon>
 								</item>
 								<item type="traktor.world.LightComponentData" version="12">
 									<lightType>Directional</lightType>
@@ -781,13 +784,23 @@
 										</item>
 									</plants>
 								</item>
-								<item type="traktor.terrain.OceanComponentData" version="4">
+								<item type="traktor.terrain.OceanComponentData" version="5">
 									<shaderWave>{3ABA4673-C5A5-404E-8563-CE8A6E043AC4}</shaderWave>
 									<shader>{FB9B7138-B7B2-E341-82EB-453BE2B558A8}</shader>
-									<shallowTint>0.576471, 0.501961, 0.235294, 1</shallowTint>
-									<deepColor>0.396078, 0.423529, 0.443137, 1</deepColor>
+									<shallowTint>0.415686, 0.360784, 0.172549, 1</shallowTint>
+									<deepColor>0.180392, 0.188235, 0.2, 1</deepColor>
 									<opacity>1</opacity>
 									<elevation>10</elevation>
+									<spectrum>
+										<scale>0.075</scale>
+										<angle>-1.570796</angle>
+										<spreadBlend>0.8</spreadBlend>
+										<swell>0.35</swell>
+										<alpha>0.2</alpha>
+										<peakOmega>1</peakOmega>
+										<gamma>0.5</gamma>
+										<shortWavesFade>0.08</shortWavesFade>
+									</spectrum>
 								</item>
 							</components>
 						</item>
