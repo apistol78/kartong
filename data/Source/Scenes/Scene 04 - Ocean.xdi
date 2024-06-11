@@ -1731,7 +1731,7 @@
 												<locked>false</locked>
 											</state>
 											<transform>
-												<translation>-101.895386, 19.739626, -260.244415, 0</translation>
+												<translation>-100.959808, 19.739626, -260.365723, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components>
@@ -1750,7 +1750,7 @@
 												<locked>false</locked>
 											</state>
 											<transform>
-												<translation>-130.320496, 21.374372, -223.572495, 0</translation>
+												<translation>-133.469818, 20.648306, -224.455063, 0</translation>
 												<rotation>0.361615, 0, 0, 0.932327</rotation>
 											</transform>
 											<components>
@@ -4753,7 +4753,7 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>-158.420013, 20.850302, -189.831787, 0</translation>
+								<translation>-160.297958, 20.071606, -189.831787, 0</translation>
 								<rotation>0.145244, 0.240668, -0.076187, 0.95665</rotation>
 							</transform>
 							<components/>
