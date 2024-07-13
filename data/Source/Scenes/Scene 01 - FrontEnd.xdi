@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <object type="traktor.scene.SceneAsset" version="10">
-	<worldRenderSettings type="traktor.world.WorldRenderSettings" version="39">
+	<worldRenderSettings type="traktor.world.WorldRenderSettings" version="40">
 		<viewNearZ>0.1</viewNearZ>
 		<viewFarZ>1000</viewFarZ>
 		<exposureMode>Adaptive</exposureMode>
-		<exposure>0</exposure>
+		<exposure>0.15</exposure>
 		<shadowSettings>
 			<disabled>
 				<farZ>100</farZ>
@@ -60,8 +60,7 @@
 		<fogDistance>20</fogDistance>
 		<fogDensity>0.002</fogDensity>
 		<fogDensityMax>0.25</fogDensityMax>
-		<fogColor>0.701961, 0.968628, 1, 1</fogColor>
-		<irradianceGrid>{2D8C2976-00FC-7548-BBFC-3A4CBF1A15AB}</irradianceGrid>
+		<fogColor>1, 0.886275, 0.701961, 1</fogColor>
 		<imageProcess>
 			<disabled>{664AD753-7DA8-3D49-8ED8-4CE4BD56ED6A}</disabled>
 			<low>{664AD753-7DA8-3D49-8ED8-4CE4BD56ED6A}</low>
@@ -152,20 +151,21 @@
 								<rotation>0.144323, 0.773115, -0.587727, 0.189847</rotation>
 							</transform>
 							<components>
-								<item type="traktor.weather.SkyComponentData" version="7">
+								<item type="traktor.weather.SkyComponentData" version="8">
 									<shader>{4CF929EB-3A8B-C340-AA0A-0C5C80625BF1}</shader>
 									<texture>{00000000-0000-0000-0000-000000000000}</texture>
 									<intensity>1</intensity>
-									<skyOverHorizon>0.2, 0.5, 0.85, 0</skyOverHorizon>
-									<skyUnderHorizon>0.062745, 0.321569, 0.627451, 0</skyUnderHorizon>
+									<saturation>0.25</saturation>
+									<skyOverHorizon>1, 0.760784, 0.160784, 1</skyOverHorizon>
+									<skyUnderHorizon>0.341176, 0.231373, 0.086275, 1</skyUnderHorizon>
 									<clouds>true</clouds>
-									<cloudAmbientTop>2, 2.490196, 3, 1</cloudAmbientTop>
-									<cloudAmbientBottom>0.078431, 0.176471, 0.25098, 1</cloudAmbientBottom>
+									<cloudAmbientTop>3, 2.694118, 2, 1</cloudAmbientTop>
+									<cloudAmbientBottom>0.247059, 0.14902, 0.070588, 1</cloudAmbientBottom>
 								</item>
 								<item type="traktor.world.LightComponentData" version="12">
 									<lightType>Directional</lightType>
-									<color>1, 1, 1, 0</color>
-									<intensity>4</intensity>
+									<color>1, 0.913726, 0.67451, 0</color>
+									<intensity>6</intensity>
 									<castShadow>true</castShadow>
 									<nearRange>0</nearRange>
 									<farRange>10</farRange>
@@ -789,8 +789,8 @@
 								<item type="traktor.terrain.OceanComponentData" version="5">
 									<shaderWave>{3ABA4673-C5A5-404E-8563-CE8A6E043AC4}</shaderWave>
 									<shader>{FB9B7138-B7B2-E341-82EB-453BE2B558A8}</shader>
-									<shallowTint>0.415686, 0.360784, 0.172549, 1</shallowTint>
-									<deepColor>0.180392, 0.188235, 0.2, 1</deepColor>
+									<shallowTint>0.462745, 0.462745, 0.462745, 1</shallowTint>
+									<deepColor>0.215686, 0.215686, 0.215686, 1</deepColor>
 									<opacity>1</opacity>
 									<elevation>10</elevation>
 									<spectrum>
