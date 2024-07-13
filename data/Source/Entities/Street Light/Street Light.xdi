@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.world.EntityData" version="2">
+	<id>{4C7045AD-FF41-425A-952D-5B02545DCD2F}</id>
+	<name>Street Light</name>
+	<state>
+		<visible>true</visible>
+		<dynamic>false</dynamic>
+		<locked>false</locked>
+	</state>
+	<transform>
+		<translation>0, 0, 0, 0</translation>
+		<rotation>0, 0, 0, 1</rotation>
+	</transform>
+	<components>
+		<item type="traktor.world.GroupComponentData">
+			<entityData>
+				<item type="traktor.world.EntityData" version="2">
+					<id>{09A8D3C9-9D18-4233-9D1D-FF58F8ED86B2}</id>
+					<name>Light</name>
+					<state>
+						<visible>true</visible>
+						<dynamic>false</dynamic>
+						<locked>false</locked>
+					</state>
+					<transform>
+						<translation>1.845603, 14.816459, 8.386523, 0</translation>
+						<rotation>-0.039989, 0, 0, 0.9992</rotation>
+					</transform>
+					<components>
+						<item type="traktor.world.LightComponentData" version="12">
+							<lightType>Spot</lightType>
+							<color>1, 0.894118, 0.635294, 0</color>
+							<intensity>2000</intensity>
+							<castShadow>true</castShadow>
+							<nearRange>0</nearRange>
+							<farRange>30</farRange>
+							<radius>1.396263</radius>
+							<flickerAmount>0</flickerAmount>
+							<flickerFilter>0</flickerFilter>
+							<bakeMode>LbmIndirect</bakeMode>
+						</item>
+					</components>
+				</item>
+				<item type="traktor.world.EntityData" version="2">
+					<id>{28DB6668-B083-4247-B685-8B5B339F147D}</id>
+					<name>Mesh</name>
+					<state>
+						<visible>true</visible>
+						<dynamic>false</dynamic>
+						<locked>false</locked>
+					</state>
+					<transform>
+						<translation>0, 0, 0, 0</translation>
+						<rotation>0, 0, 0, 1</rotation>
+					</transform>
+					<components>
+						<item type="traktor.physics.RigidBodyComponentData" version="1">
+							<bodyDesc type="traktor.physics.StaticBodyDesc" version="5">
+								<shape type="traktor.physics.MeshShapeDesc" version="6,traktor.physics.ShapeDesc:6">
+									<localTransform>
+										<translation>0, 0, 0, 0</translation>
+										<rotation>0, 0, 0, 1</rotation>
+									</localTransform>
+									<collisionGroup>
+										<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+									</collisionGroup>
+									<collisionMask>
+										<item>{09CB1141-1924-3349-934A-CEB9728D7A61}</item>
+										<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+									</collisionMask>
+									<material>0</material>
+									<mesh>{72F8AF00-6F02-408E-8DA5-7BCE62DDB815}</mesh>
+								</shape>
+								<friction>0.75</friction>
+								<restitution>0</restitution>
+								<kinematic>false</kinematic>
+							</bodyDesc>
+							<eventCollide/>
+							<transformFilter>0</transformFilter>
+						</item>
+						<item type="traktor.mesh.MeshComponentData" version="1">
+							<mesh>{9B5D9BCE-5DAA-4469-A15D-EDC0F9DB382C}</mesh>
+						</item>
+					</components>
+				</item>
+			</entityData>
+		</item>
+	</components>
+</object>
