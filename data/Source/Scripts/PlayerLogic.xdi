@@ -10,7 +10,7 @@ import(traktor)
 
 PlayerLogic = PlayerLogic or class("PlayerLogic")
 
-function PlayerLogic:new(gameContext, index, resetOffset, inputStates, autoDrive)
+function PlayerLogic:new(gameContext, index, resetOffset, inputStates, autoDrive, maxVelocity)
 	self._gameContext = gameContext
 	self._index = index
 	self._t = 0
@@ -23,8 +23,9 @@ function PlayerLogic:new(gameContext, index, resetOffset, inputStates, autoDrive
 	self._pid = PID(0.8, 0.01, 0.2)
 	self._pickup = nil
 	self._lanePosition = 0
-	self._engineBoost = 0
-	self._engineBoostTarget = 0
+	self._engineBoost = 1
+	self._engineBoostTarget = 1
+	self._maxVelocity = maxVelocity
 
 	local pt < const > = gameContext:getRoad():getComponent(world.PathComponent)
 	local ln = pt:estimateLength()
@@ -50,9 +51,9 @@ function PlayerLogic:update(stage, info, throttleFactor)
 	rb.body.enable = true
 
 	-- Filter and apply engine boost.
-	local k < const > = info.simulationDeltaTime
+	local k < const > = info.simulationDeltaTime * 0.1
 	self._engineBoost = self._engineBoost * (1 - k) + self._engineBoostTarget * k
-	vc.engineBoost = self._engineBoost
+	vc.maxVelocity = self._maxVelocity * self._engineBoost
 
 	-- Update input.
 	if not self._autoDrive then
@@ -193,7 +194,6 @@ end
 function PlayerLogic:setEngineBoost(engineBoost)
 	self._engineBoostTarget = engineBoost
 end
-
 
 	]]>
 	</text>

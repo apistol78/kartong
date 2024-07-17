@@ -44,6 +44,7 @@ function Game:new(params, environment)
 	)
 
 	-- Setup difficulty.
+	
 	self._gameContext:forEachKart(function (kart, index)
 		local vc = kart:getComponent(physics.VehicleComponent)
 		if self._params._difficulty == 0 then
@@ -97,6 +98,13 @@ function Game:new(params, environment)
 		if self._singlePlayer and (index > 0) then bot = true end
 		if not self._singlePlayer and (index > 1) then bot = true end
 
+		local maxVelocity = 50
+		if self._params._difficulty == 0 then
+			maxVelocity = 20
+		elseif self._params._difficulty == 1 then
+			maxVelocity = 30
+		end
+
 		local logic < const > = PlayerLogic(
 			self._gameContext,
 			index,
@@ -106,7 +114,8 @@ function Game:new(params, environment)
 				throttle = environment.input.inputMapping:getState("STATE_THROTTLE_" .. index),
 				action = environment.input.inputMapping:getState("STATE_ACTION_" .. index)
 			},
-			bot
+			bot,
+			maxVelocity
 		)
 		table.insert(self._logic, logic)
 
@@ -289,25 +298,23 @@ function Game:_updateKartBoost(boostFactor)
 	local leader = nil
 	local leaderPosition = 0
 
-	-- Find leader.
+	-- Get list of players sorted.
+	local logics = {}
 	for _, logic in ipairs(self._logic) do
-		local p < const > = logic:getPosition()
-		if p > leaderPosition then
-			leader = logic
-			leaderPosition = p
-		end
+		table.insert(logics, logic)
+	end
+	table.sort(logics, function(a, b)
+		local pa = a:getPosition()
+		local pb = b:getPosition()
+		return pa > pb
+	end)		
+
+	for _, logic in ipairs(logics) do
+		logic:setEngineBoost(1)
 	end
 
-	assert(leader ~= nil)
-
-	-- Apply boost to all but leader.
-	for _, logic in ipairs(self._logic) do
-		if logic ~= leader then
-			logic:setEngineBoost(0.8)
-		else
-			logic:setEngineBoost(0)
-		end
-	end
+	logics[1]:setEngineBoost(0.7)
+	logics[#logics]:setEngineBoost(1.3)
 end
 
 function Game:_spawnVictoryEffects()
