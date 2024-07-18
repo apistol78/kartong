@@ -71,10 +71,10 @@ function PlayerLogic:update(stage, info, throttleFactor)
 
 	-- Draw velocity compared to wheel direction.
 	if stage.debug ~= nil then
-		local Tbody = rb.body.transform
+		local Tbody < const > = rb.body.transform
 		for i = 0, 3 do
-			local w = vc.wheels:get(i)
-			local v = rb.body:getVelocityAt(Tbody * w.center, false):normalized()
+			local w < const > = vc.wheels:get(i)
+			local v < const > = rb.body:getVelocityAt(Tbody * w.center, false):normalized()
 
 			stage.debug:line(
 				Tbody * w.center,
@@ -91,7 +91,7 @@ function PlayerLogic:update(stage, info, throttleFactor)
 	end
 
 	-- Calculate speed.
-	local mps = rb.body.linearVelocity.length
+	local mps < const > = rb.body.linearVelocity.length
 	self._kph = mps * (60 * 60) / 1000
 
 	-- Evaluate progress.
@@ -111,10 +111,10 @@ function PlayerLogic:update(stage, info, throttleFactor)
 	end)
 
 	-- Check limits.
-	local Tmin = pt:evaluateDirectional(t)
-	local dx = math.abs(Vector4.dot(Tmin.axisX, Tmin.translation - position))
-	local dy = Vector4.dot(Tmin.axisY, Tmin.translation - position)
-	local upd = rb.body.transform.axisY.y < 0
+	local Tmin < const > = pt:evaluateDirectional(t)
+	local dx < const > = math.abs(Vector4.dot(Tmin.axisX, Tmin.translation - position))
+	local dy < const > = Vector4.dot(Tmin.axisY, Tmin.translation - position)
+	local upd < const > = rb.body.transform.axisY.y < 0
 	if dx > 14 or dy > 2 or upd then
 		self._offlimit = self._offlimit + info.simulationDeltaTime
 		if self._offlimit > 2 then
@@ -130,32 +130,33 @@ function PlayerLogic:update(stage, info, throttleFactor)
 	if self._autoDrive then
 
 		-- Determine road turning.
-		local T0 = pt:evaluateDirectional(t)
-		local T1 = T0:inverse() * pt:evaluateDirectional(t + self._botLookAhead / self._pathLength)
-		local turning = T1.translation.x / T1.translation.z
+		local T0 < const > = pt:evaluateDirectional(t)
+		local T1 < const > = T0:inverse() * pt:evaluateDirectional(t + self._botLookAhead / self._pathLength)
+		local turning < const > = T1.translation.x / T1.translation.z
 
-		local tf = math.clamp(math.abs(turning) * 2, 0, 1)
+		local tf < const > = math.clamp(math.abs(turning) * 2, 0, 1)
 
-		local offset = Vector4(
+		-- Road offset in object space.
+		local offset < const > = Vector4(
 			math.clamp(turning * 4, -1, 1) * 10,
 			0,
 			0
 		)
 
-		local Toptimal = pt:evaluateDirectional(t + 20 / self._pathLength) * Transform(offset, Quaternion.identity)
+		local Toptimal < const > = pt:evaluateDirectional(t + 20 / self._pathLength) * Transform(offset, Quaternion.identity)
 
-		local Vdir = (Toptimal.translation - position).xyz0
-		local VdirLocal = kart.transform:inverse():transform(Vdir)
+		local Vdir < const > = (Toptimal.translation - position).xyz0
+		local VdirLocal < const > = kart.transform:inverse():transform(Vdir)
 	
 		local angle = math.atan(VdirLocal.x, VdirLocal.z) * 0.8
-		local a = self._pid:evaluate(info.simulationDeltaTime, angle, 0)
+		local a < const > = self._pid:evaluate(info.simulationDeltaTime, angle, 0)
 		angle = math.clamp(a, -0.3, 0.3)
 	
 		vc.steerAngle = angle
 		vc.engineThrottle = (0.8 - tf * 0.2) * throttleFactor
 
 		if stage.debug ~= nil then
-			local Toptimal2 = pt:evaluateDirectional(t + 10 / self._pathLength) * Transform(offset, Quaternion.identity)
+			local Toptimal2 < const > = pt:evaluateDirectional(t + 10 / self._pathLength) * Transform(offset, Quaternion.identity)
 			stage.debug:point(Toptimal.translation, 8, Color4f(0, 1, 0, 1))
 			stage.debug:point(Toptimal2.translation, 8, Color4f(1, 1, 0, 1))
 			stage.debug:line(position, Toptimal.translation, 1, Color4f(0, 1, 1, 1))
