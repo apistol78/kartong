@@ -10,6 +10,7 @@ import(traktor)
 
 PlayerLogic = PlayerLogic or class("PlayerLogic")
 
+-- Construct logic for participant.
 function PlayerLogic:new(gameContext, index, resetOffset, inputStates, autoDrive, maxVelocity)
 	self._gameContext = gameContext
 	self._index = index
@@ -28,23 +29,27 @@ function PlayerLogic:new(gameContext, index, resetOffset, inputStates, autoDrive
 	self._maxVelocity = maxVelocity
 
 	local pt < const > = gameContext:getRoad():getComponent(world.PathComponent)
-	local ln = pt:estimateLength()
+	local ln < const > = pt:estimateLength()
 	self._pathLength = ln	
 
 	self._botLookAhead = math.random() * 10 + 40
 end
 
+-- Update logic for participant.
 function PlayerLogic:update(stage, info, throttleFactor)
 
-	local road = self._gameContext:getRoad()
-	local kart = self._gameContext:getKart(self._index)
+	local road < const > = self._gameContext:getRoad()
+	local kart < const > = self._gameContext:getKart(self._index)
 
+	-- Get components which we need information from.
 	local vc < const > = kart:getComponent(physics.VehicleComponent)
 	local rb < const > = kart:getComponent(physics.RigidBodyComponent)
 	local sc < const > = kart:getComponent(world.ScriptComponent)
 	local pt < const > = road:getComponent(world.PathComponent)
 
 	local position < const > = kart.transform.translation
+	local direction < const > = kart.transform.axisZ
+
 	local t = pt:findClosest(position)
 
 	rb.body.active = true
@@ -102,7 +107,7 @@ function PlayerLogic:update(stage, info, throttleFactor)
 	end
 	self._t = t
 
-	-- Check pickups.
+	-- Try and grab pickups.
 	self._gameContext:forEachPickup(function(pickup)
 		local psc < const > = pickup:getComponent(world.ScriptComponent)
 		if psc ~= nil and psc:tryGrab(position) then
@@ -137,10 +142,24 @@ function PlayerLogic:update(stage, info, throttleFactor)
 		local tf < const > = math.clamp(math.abs(turning) * 2, 0, 1)
 
 		-- Road offset in object space.
-		local offset < const > = Vector4(
+		local offset = Vector4(
 			math.clamp(turning * 4, -1, 1) * 10,
 			0,
 			0
+		)
+
+		-- Try and avoid other karts.
+		self._gameContext:queryKarts(
+			position,
+			direction,
+			0,
+			10,
+			function (other, _)
+--				offset = offset + Vector4(5, 0, 0, 0)
+				if stage.debug ~= nil then
+					stage.debug:line(position, other.transform.translation, 3, Color4f(1, 0, 0, 1))
+				end
+			end
 		)
 
 		local Toptimal < const > = pt:evaluateDirectional(t + 20 / self._pathLength) * Transform(offset, Quaternion.identity)

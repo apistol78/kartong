@@ -35,6 +35,25 @@ function GameContext:forEachPickup(fn)
 		fn(pickup, i)
 	end
 end
+
+-- Get all karts which are inside a cone.
+function GameContext:queryKarts(origin, direction, radius, distance, fn)
+	for i = 0, self._karts.size - 1 do
+		local kart < const > = self._karts:get(i)
+		local d = (kart.transform.translation - origin).xyz0
+		if d.length < distance then
+
+			d = d:normalized()
+
+			local phi < const > = direction:dot(d)
+			if math.acos(phi) < math.deg(60) then
+				fn(kart, i)
+			end
+		end
+	end
+end
+
+
 	]]>
 	</text>
 </object>

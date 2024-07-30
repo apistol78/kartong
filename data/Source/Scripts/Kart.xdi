@@ -49,7 +49,7 @@ function Kart:update(contextObject, totalTime, deltaTime)
 		local wa < const > = wheel.angle
 		skeletonComponent:concatenatePoseTransform(
 			wheelJoints[i] .. "_Rot",
-			Transform(Vector4.zero, Quaternion.fromEulerAngles(0, 0, wa * rotationMul[i])),
+			Transform.fromEulerAngles(0, 0, wa * rotationMul[i]),
 			false		
 		)
 
@@ -57,7 +57,7 @@ function Kart:update(contextObject, totalTime, deltaTime)
 	end
 
 	-- Update steering wheel joint.
-	local Twheel = Transform(Vector4.zero, Quaternion.fromEulerAngles(0, 0, vehicleComponent.steerAngleFiltered * 2))
+	local Twheel = Transform.fromEulerAngles(0, 0, vehicleComponent.steerAngleFiltered * 2)
 	local Tjoint = skeletonComponent:getJointTransform("Steering")
 
 	skeletonComponent:setPoseTransform(
