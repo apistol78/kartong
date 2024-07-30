@@ -153,9 +153,13 @@ function PlayerLogic:update(stage, info, throttleFactor)
 			position,
 			direction,
 			0,
-			10,
+			30,
 			function (other, _)
---				offset = offset + Vector4(5, 0, 0, 0)
+				if self._lanePosition > 0 then
+					offset = offset - Vector4(3, 0, 0, 0)
+				else
+					offset = offset + Vector4(3, 0, 0, 0)
+				end
 				if stage.debug ~= nil then
 					stage.debug:line(position, other.transform.translation, 3, Color4f(1, 0, 0, 1))
 				end
