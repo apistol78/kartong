@@ -10,11 +10,17 @@ function Boost:new()
 end
 
 function Boost:update(contextObject, totalTime, deltaTime)
+
+	-- Get boost volume.
+	local vc < const > = self.owner:getComponent(world.VolumeComponent)
+	if vc == nil then return end
+
+	-- Get all karts and check if anyone is within boost volume.
 	local karts < const > = self.owner.world:getEntities("Kart")
 	for i = 0, karts.size - 1 do
 		local kart < const > = karts:get(i)
 		local position < const > = kart.transform.translation
-		if self.owner:getComponent(world.VolumeComponent):inside(position) then
+		if vc:inside(position) then
 			local rb < const > = kart:getComponent(physics.RigidBodyComponent)
 			rb.body:addForceAt(
 				position,
