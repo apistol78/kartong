@@ -7,20 +7,20 @@ FollowCamera = FollowCamera or class("FollowCamera")
 function FollowCamera:new(cameraEntity, followEntity)
 	self._cameraEntity = cameraEntity
 	self._followEntity = followEntity
-	self:_calculateTransforms()
+	self:_calculateTransforms(0)
 end
 
 function FollowCamera:update(deltaTime)
-	self:_calculateTransforms()
+	self:_calculateTransforms(0.9)
 end
 
 function FollowCamera:reset()
-	self:_calculateTransforms()
+	self:_calculateTransforms(0)
 end
 
 -- private
 
-function FollowCamera:_calculateTransforms()
+function FollowCamera:_calculateTransforms(filterCoeff)
 	local ToffsetY < const > = Transform(
 		Vector4(0, 2.5, 0),
 		Quaternion.identity
@@ -43,7 +43,7 @@ function FollowCamera:_calculateTransforms()
 	local ln = d.length
 	d = d / ln
 
-	local position = Vector4.lerp(optimalPosition, targetPosition - d * D, 0.9)
+	local position = Vector4.lerp(optimalPosition, targetPosition - d * D, filterCoeff)
 
 	self._cameraEntity.transform = Transform.lookAt(
 		position,
@@ -51,6 +51,7 @@ function FollowCamera:_calculateTransforms()
 		Vector4(0, 1, 0)
 	)
 end
+
 	]]>
 	</text>
 </object>

@@ -40,6 +40,7 @@ function Splash:new(params, environment)
 	self._frame:layout()
 
 	self._loader = self:loadStageAsync("FRONTEND", nil)
+	environment.control.pause = true
 end
 
 function Splash:finalize()
@@ -49,8 +50,10 @@ function Splash:update(info)
 	if self._loader.ready and info.stateTime > 5 then
 		self:gotoStage(self._loader:get())
 		self._loader = nil
+		environment.control.pause = false
 	end
 end
+
 	]]>
 	</text>
 </object>

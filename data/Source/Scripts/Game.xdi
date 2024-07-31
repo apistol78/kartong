@@ -180,6 +180,10 @@ end
 function Game:_updateTheater(info)
 	local tc < const > = self.world.world:getComponent(theater.TheaterComponent)
 	if not tc.playing then
+
+		self._followCamera0:reset()
+		self._followCamera1:reset()
+
 		self._time = 0
 		self._updateFn = Game._updateStart
 	end

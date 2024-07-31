@@ -139,8 +139,6 @@ function PlayerLogic:update(stage, info, throttleFactor)
 		local T1 < const > = T0:inverse() * pt:evaluateDirectional(t + self._botLookAhead / self._pathLength)
 		local turning < const > = T1.translation.x / T1.translation.z
 
-		local tf < const > = math.clamp(math.abs(turning) * 2, 0, 1)
-
 		-- Road offset in object space.
 		local offset = Vector4(
 			math.clamp(turning * 4, -1, 1) * 10,
@@ -175,6 +173,7 @@ function PlayerLogic:update(stage, info, throttleFactor)
 		local a < const > = self._pid:evaluate(info.simulationDeltaTime, angle, 0)
 		angle = math.clamp(a, -0.3, 0.3)
 	
+		local tf < const > = math.clamp(math.abs(turning) * 2, 0, 1)
 		vc.steerAngle = angle
 		vc.engineThrottle = (0.8 - tf * 0.2) * throttleFactor
 

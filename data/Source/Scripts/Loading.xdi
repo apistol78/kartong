@@ -40,6 +40,7 @@ function Loading:new(params, environment)
 	self._frame:layout()
 
 	self._loader = self:loadStageAsync(params.load, params)
+	environment.control.pause = true
 end
 
 function Loading:finalize()
@@ -49,8 +50,10 @@ function Loading:update(info)
 	if self._loader.ready then
 		self:gotoStage(self._loader:get())
 		self._loader = nil
+		environment.control.pause = false
 	end
 end
+
 	]]>
 	</text>
 </object>
