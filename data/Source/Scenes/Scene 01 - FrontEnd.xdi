@@ -156,15 +156,15 @@
 									<texture>{00000000-0000-0000-0000-000000000000}</texture>
 									<intensity>1</intensity>
 									<saturation>0.25</saturation>
-									<skyOverHorizon>1, 0.760784, 0.160784, 1</skyOverHorizon>
-									<skyUnderHorizon>0.341176, 0.231373, 0.086275, 1</skyUnderHorizon>
+									<skyOverHorizon>0.427451, 0.721569, 1, 1</skyOverHorizon>
+									<skyUnderHorizon>0.180392, 0.290196, 0.34902, 1</skyUnderHorizon>
 									<clouds>true</clouds>
-									<cloudAmbientTop>3, 2.694118, 2, 1</cloudAmbientTop>
+									<cloudAmbientTop>2, 2.682353, 3, 1</cloudAmbientTop>
 									<cloudAmbientBottom>0.247059, 0.14902, 0.070588, 1</cloudAmbientBottom>
 								</item>
 								<item type="traktor.world.LightComponentData" version="12">
 									<lightType>Directional</lightType>
-									<color>1, 0.913726, 0.67451, 0</color>
+									<color>0.909804, 1, 0.67451, 0</color>
 									<intensity>6</intensity>
 									<castShadow>true</castShadow>
 									<nearRange>0</nearRange>
@@ -388,7 +388,7 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>34.580139, 11.171947, -36.528656, 0</translation>
+								<translation>42.541763, 9.371979, -35.989719, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components/>
@@ -403,7 +403,7 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>57.982819, 10.559152, -33.752293, 0</translation>
+								<translation>53.600388, 7.514562, -35.093563, 0</translation>
 								<rotation>-0.035027, 0, -0.035027, 0.998772</rotation>
 							</transform>
 							<components/>
@@ -500,6 +500,36 @@
 							<entityData>{E0CFEA9A-FFAE-46A5-995B-5454D5DD4578}</entityData>
 						</item>
 						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{31A5DEB3-7B5A-4C9F-BE26-08F5577005EA}</id>
+							<name>Tree 5</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>147.707428, 48.542019, -175.545761, 0</translation>
+								<rotation>0, -0.01, 0, 0.99995</rotation>
+							</transform>
+							<components/>
+							<entityData>{E0CFEA9A-FFAE-46A5-995B-5454D5DD4578}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{A6E16466-541B-42BB-92D0-312A97BF5C7F}</id>
+							<name>Tree 5</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>187.843811, 48.542019, -181.382614, 0</translation>
+								<rotation>0, 0.904412, 0, 0.42666</rotation>
+							</transform>
+							<components/>
+							<entityData>{E0CFEA9A-FFAE-46A5-995B-5454D5DD4578}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 							<id>{C2E896BE-553D-44B1-9CB0-8C2D56116C08}</id>
 							<name>Tree 5</name>
 							<state>
@@ -523,8 +553,8 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>38.062012, 10.175268, -20.981173, 0</translation>
-								<rotation>0, 0, 0, 1</rotation>
+								<translation>43.938118, 10.175268, -18.316601, 0</translation>
+								<rotation>0, -0.109778, 0, 0.993956</rotation>
 							</transform>
 							<components/>
 							<entityData>{E0CFEA9A-FFAE-46A5-995B-5454D5DD4578}</entityData>
@@ -539,7 +569,7 @@
 							</state>
 							<transform>
 								<translation>58.506969, 10.175268, -10.293368, 0</translation>
-								<rotation>0, 0, 0, 1</rotation>
+								<rotation>0, -0.572867, 0, 0.819648</rotation>
 							</transform>
 							<components/>
 							<entityData>{E0CFEA9A-FFAE-46A5-995B-5454D5DD4578}</entityData>
@@ -568,8 +598,8 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>33.216442, 32.854527, -189.17453, 0</translation>
-								<rotation>0, 0, 0, 1</rotation>
+								<translation>33.216442, 28.445349, -189.17453, 0</translation>
+								<rotation>0, -0.314567, 0, 0.949235</rotation>
 							</transform>
 							<components/>
 							<entityData>{35427C92-3197-4641-A1F5-31248037416B}</entityData>
