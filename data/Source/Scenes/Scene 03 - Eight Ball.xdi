@@ -85,12 +85,6 @@
 				<rotation>0, 0, 0, 1</rotation>
 			</transform>
 			<components>
-				<item type="traktor.world.EditorAttributesComponentData">
-					<visible>true</visible>
-					<locked>false</locked>
-					<include>true</include>
-					<dynamic>false</dynamic>
-				</item>
 				<item type="traktor.world.GroupComponentData">
 					<entityData>
 						<item type="traktor.world.EntityData" version="2">
@@ -214,12 +208,6 @@
 				<rotation>0, 0, 0, 1</rotation>
 			</transform>
 			<components>
-				<item type="traktor.world.EditorAttributesComponentData">
-					<visible>true</visible>
-					<locked>false</locked>
-					<include>true</include>
-					<dynamic>false</dynamic>
-				</item>
 				<item type="traktor.world.GroupComponentData">
 					<entityData>
 						<item type="traktor.world.EntityData" version="2">
@@ -1144,7 +1132,7 @@
 			<name>Dynamic</name>
 			<state>
 				<visible>true</visible>
-				<dynamic>false</dynamic>
+				<dynamic>true</dynamic>
 				<locked>false</locked>
 			</state>
 			<transform>
@@ -1152,12 +1140,6 @@
 				<rotation>0, 0, 0, 1</rotation>
 			</transform>
 			<components>
-				<item type="traktor.world.EditorAttributesComponentData">
-					<visible>true</visible>
-					<locked>false</locked>
-					<include>true</include>
-					<dynamic>true</dynamic>
-				</item>
 				<item type="traktor.world.GroupComponentData">
 					<entityData>
 						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">

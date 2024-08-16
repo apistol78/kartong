@@ -107,7 +107,7 @@
 										</values>
 									</item>
 									<item>
-										<T>2.851</T>
+										<T>2.859</T>
 										<tcb>0, 0, 0, 0</tcb>
 										<position>-93.855774, 13.272703, -119.610176, 1</position>
 										<orientation>1.34, 0, 0, 0</orientation>
@@ -154,12 +154,6 @@
 				<rotation>0, 0, 0, 1</rotation>
 			</transform>
 			<components>
-				<item type="traktor.world.EditorAttributesComponentData">
-					<visible>true</visible>
-					<locked>false</locked>
-					<include>true</include>
-					<dynamic>false</dynamic>
-				</item>
 				<item type="traktor.world.GroupComponentData">
 					<entityData>
 						<item type="traktor.world.EntityData" version="2">
@@ -276,19 +270,13 @@
 			<state>
 				<visible>true</visible>
 				<dynamic>false</dynamic>
-				<locked>false</locked>
+				<locked>true</locked>
 			</state>
 			<transform>
 				<translation>0, 0, 0, 0</translation>
 				<rotation>0, 0, 0, 1</rotation>
 			</transform>
 			<components>
-				<item type="traktor.world.EditorAttributesComponentData">
-					<visible>true</visible>
-					<locked>false</locked>
-					<include>true</include>
-					<dynamic>false</dynamic>
-				</item>
 				<item type="traktor.world.GroupComponentData">
 					<entityData>
 						<item type="traktor.world.EntityData" version="2">
@@ -5859,12 +5847,6 @@
 				<rotation>0, 0, 0, 1</rotation>
 			</transform>
 			<components>
-				<item type="traktor.world.EditorAttributesComponentData">
-					<visible>true</visible>
-					<locked>false</locked>
-					<include>true</include>
-					<dynamic>true</dynamic>
-				</item>
 				<item type="traktor.world.GroupComponentData">
 					<entityData>
 						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
@@ -5932,7 +5914,7 @@
 							<name>Cone</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>true</dynamic>
+								<dynamic>false</dynamic>
 								<locked>false</locked>
 							</state>
 							<transform>
@@ -5947,7 +5929,7 @@
 							<name>Cone</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>true</dynamic>
+								<dynamic>false</dynamic>
 								<locked>false</locked>
 							</state>
 							<transform>
@@ -5962,7 +5944,7 @@
 							<name>Cone</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>true</dynamic>
+								<dynamic>false</dynamic>
 								<locked>false</locked>
 							</state>
 							<transform>
@@ -5977,7 +5959,7 @@
 							<name>Cone</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>true</dynamic>
+								<dynamic>false</dynamic>
 								<locked>false</locked>
 							</state>
 							<transform>
@@ -5992,7 +5974,7 @@
 							<name>Cone</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>true</dynamic>
+								<dynamic>false</dynamic>
 								<locked>false</locked>
 							</state>
 							<transform>
@@ -6007,7 +5989,7 @@
 							<name>Cone</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>true</dynamic>
+								<dynamic>false</dynamic>
 								<locked>false</locked>
 							</state>
 							<transform>
@@ -6367,7 +6349,7 @@
 							<name>Cone</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>true</dynamic>
+								<dynamic>false</dynamic>
 								<locked>false</locked>
 							</state>
 							<transform>
@@ -6382,7 +6364,7 @@
 							<name>Cone</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>true</dynamic>
+								<dynamic>false</dynamic>
 								<locked>false</locked>
 							</state>
 							<transform>
@@ -6397,7 +6379,7 @@
 							<name>Cone</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>true</dynamic>
+								<dynamic>false</dynamic>
 								<locked>false</locked>
 							</state>
 							<transform>
@@ -6412,7 +6394,7 @@
 							<name>Cone</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>true</dynamic>
+								<dynamic>false</dynamic>
 								<locked>false</locked>
 							</state>
 							<transform>
@@ -6427,7 +6409,7 @@
 							<name>Cone</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>true</dynamic>
+								<dynamic>false</dynamic>
 								<locked>false</locked>
 							</state>
 							<transform>
@@ -6442,7 +6424,7 @@
 							<name>Cone</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>true</dynamic>
+								<dynamic>false</dynamic>
 								<locked>false</locked>
 							</state>
 							<transform>
@@ -6514,12 +6496,6 @@
 				<rotation>0, 0, 0, 1</rotation>
 			</transform>
 			<components>
-				<item type="traktor.world.EditorAttributesComponentData">
-					<visible>true</visible>
-					<locked>false</locked>
-					<include>true</include>
-					<dynamic>false</dynamic>
-				</item>
 				<item type="traktor.world.GroupComponentData">
 					<entityData>
 						<item type="traktor.world.EntityData" version="2">

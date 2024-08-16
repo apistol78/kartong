@@ -130,12 +130,6 @@
 				<rotation>0, 0, 0, 1</rotation>
 			</transform>
 			<components>
-				<item type="traktor.world.EditorAttributesComponentData">
-					<visible>true</visible>
-					<locked>false</locked>
-					<include>true</include>
-					<dynamic>false</dynamic>
-				</item>
 				<item type="traktor.world.GroupComponentData">
 					<entityData>
 						<item type="traktor.world.EntityData" version="2">
@@ -380,6 +374,36 @@
 							<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
 						</item>
 						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{D93013BA-F738-4991-AF9C-594D72EBD331}</id>
+							<name>Tree 1</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>142.468643, 41.015182, -198.898102, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{8C9C3C0B-9762-49DB-A45C-95FAD8F9A3DD}</id>
+							<name>Tree 1</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>184.085129, 38.693043, -198.869522, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 							<id>{27A5C400-704C-4EEC-B7BC-1CDCA4E0C62B}</id>
 							<name>Tree 1</name>
 							<state>
@@ -464,6 +488,21 @@
 							</state>
 							<transform>
 								<translation>-17.448856, 20.198034, -176.071045, 0</translation>
+								<rotation>0, 0.505533, 0, 0.862807</rotation>
+							</transform>
+							<components/>
+							<entityData>{E0CFEA9A-FFAE-46A5-995B-5454D5DD4578}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{2C184AA2-011D-4DB0-B483-F7C6E498F54A}</id>
+							<name>Tree 5</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>49.452259, 28.291365, -217.323532, 0</translation>
 								<rotation>0, 0.505533, 0, 0.862807</rotation>
 							</transform>
 							<components/>
