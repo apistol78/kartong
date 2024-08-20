@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <object type="traktor.spray.EffectData">
-	<duration>1</duration>
+	<duration>0.6</duration>
 	<loopStart>0</loopStart>
 	<loopEnd>0</loopEnd>
 	<layers>
@@ -33,8 +33,8 @@
 						<max>2.1</max>
 					</angularVelocity>
 					<age>
-						<min>1</min>
-						<max>2</max>
+						<min>0.4</min>
+						<max>0.5</max>
 					</age>
 					<mass>
 						<min>0.1</min>
