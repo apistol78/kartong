@@ -186,6 +186,11 @@ function PlayerLogic:update(stage, info, throttleFactor)
 	end
 end
 
+-- Check if player controlled.
+function PlayerLogic:isPlayerControlled()
+	return not self._autoDrive
+end
+
 -- Get player's speed in km/h.
 function PlayerLogic:getSpeed()
 	return math.floor(self._kph)

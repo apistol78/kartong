@@ -96,7 +96,13 @@
 				<second>-94</second>
 			</position>
 			<fragmentGuid>{7B432B8A-382E-644A-B42E-0D56146C4D2E}</fragmentGuid>
-			<inputPins/>
+			<inputPins>
+				<item>
+					<id>{82AA6834-B78A-E14D-B604-6432939A35C6}</id>
+					<name>Stretch</name>
+					<optional>true</optional>
+				</item>
+			</inputPins>
 			<outputPins>
 				<item>
 					<id>{20377300-7F5F-164E-9BE2-0C05732EA5DC}</id>
@@ -111,6 +117,10 @@
 					<name>Depth</name>
 				</item>
 				<item>
+					<id>{C9669A39-6D9B-CC4A-83A1-FEB9BB707A4F}</id>
+					<name>FAge</name>
+				</item>
+				<item>
 					<id>{0B61A161-6ACF-D24B-B7A6-72EE088E9A91}</id>
 					<name>Random</name>
 				</item>
@@ -123,7 +133,12 @@
 					<name>ViewPosition</name>
 				</item>
 			</outputPins>
-			<values/>
+			<values>
+				<item>
+					<first>Stretch</first>
+					<second>2</second>
+				</item>
+			</values>
 		</item>
 		<item type="traktor.render.Swizzle" version="traktor.render.Node:1">
 			<id>{7F1B7F36-7F99-374D-B0AF-27AE50FA8ED0}</id>

@@ -8,22 +8,15 @@
 			<name>Collision</name>
 			<time>0</time>
 			<duration>0</duration>
-			<emitter type="traktor.spray.EmitterData" version="7">
-				<source type="traktor.spray.ConeSourceData" version="1">
-					<constantRate>20</constantRate>
+			<emitter type="traktor.spray.EmitterData" version="9">
+				<source type="traktor.spray.PointSourceData">
+					<constantRate>30</constantRate>
 					<velocityRate>0</velocityRate>
 					<position>0, 0, 0, 1</position>
-					<normal>0, 1, 0, 0</normal>
-					<angle1>1.570796</angle1>
-					<angle2>1.570796</angle2>
 					<velocity>
 						<min>2.05</min>
 						<max>2.95</max>
 					</velocity>
-					<inheritVelocity>
-						<min>0</min>
-						<max>0</max>
-					</inheritVelocity>
 					<orientation>
 						<min>0</min>
 						<max>6.283185</max>
@@ -41,8 +34,8 @@
 						<max>0.1</max>
 					</mass>
 					<size>
-						<min>0.1</min>
-						<max>0.2</max>
+						<min>0.05</min>
+						<max>0.1</max>
 					</size>
 				</source>
 				<modifiers>
@@ -68,6 +61,8 @@
 				<sort>false</sort>
 				<worldSpace>true</worldSpace>
 				<meshOrientationFromVelocity>true</meshOrientationFromVelocity>
+				<gpu>true</gpu>
+				<capacity>1000</capacity>
 			</emitter>
 			<trail/>
 			<sequence/>
