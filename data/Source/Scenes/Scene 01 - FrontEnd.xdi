@@ -880,5 +880,21 @@
 			</components>
 		</item>
 	</layers>
-	<operationData/>
+	<operationData>
+		<item type="traktor.shape.BakeConfiguration" version="33">
+			<enableLightmaps>false</enableLightmaps>
+			<primarySampleCount>110</primarySampleCount>
+			<secondarySampleCount>100</secondarySampleCount>
+			<shadowSampleCount>50</shadowSampleCount>
+			<maxPathDistance>10</maxPathDistance>
+			<pointLightShadowRadius>0.1</pointLightShadowRadius>
+			<lumelDensity>16</lumelDensity>
+			<irradianceGridDensity>1, 1, 1, 0</irradianceGridDensity>
+			<minimumLightMapSize>16</minimumLightMapSize>
+			<maximumLightMapSize>1024</maximumLightMapSize>
+			<enableDenoise>true</enableDenoise>
+			<analyticalLightAttenuation>1</analyticalLightAttenuation>
+			<ambientOcclusionFactor>0</ambientOcclusionFactor>
+		</item>
+	</operationData>
 </object>
