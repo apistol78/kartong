@@ -30,7 +30,7 @@
 					<mesh>{0060B932-7438-40C7-B077-269AABAEA2AF}</mesh>
 				</shape>
 				<mass>1</mass>
-				<autoDeactivate>false</autoDeactivate>
+				<autoDeactivate>true</autoDeactivate>
 				<active>false</active>
 				<linearDamping>0.02</linearDamping>
 				<angularDamping>0.2</angularDamping>
