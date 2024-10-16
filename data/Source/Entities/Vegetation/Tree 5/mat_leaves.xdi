@@ -41,14 +41,15 @@
 				<item>World position offset</item>
 			</names>
 		</item>
-		<item type="traktor.render.Uniform" version="3,traktor.render.Node:1">
+		<item type="traktor.render.Uniform" version="4,traktor.render.Node:1">
 			<id>{A5875DBF-8F5A-4692-B0B3-401F60B11E4B}</id>
 			<comment/>
 			<position>
 				<first>756</first>
 				<second>284</second>
 			</position>
-			<parameterName>Mesh_DiffuseColor</parameterName>
+			<declaration>{6F8A260C-C294-5E4F-B202-A526878F4C85}</declaration>
+			<parameterName/>
 			<type>Vector</type>
 			<frequency>Draw</frequency>
 		</item>
@@ -62,14 +63,15 @@
 			<color>0.160247, 0.273845, 0.030587, 1</color>
 			<linear>true</linear>
 		</item>
-		<item type="traktor.render.Uniform" version="3,traktor.render.Node:1">
+		<item type="traktor.render.Uniform" version="4,traktor.render.Node:1">
 			<id>{2C6270B1-F543-4DB3-8586-6F2AAE44C19F}</id>
 			<comment/>
 			<position>
 				<first>349</first>
 				<second>459</second>
 			</position>
-			<parameterName>Mesh_Metalness</parameterName>
+			<declaration>{4121C3A1-9DB6-B646-A455-05762C9A3D67}</declaration>
+			<parameterName/>
 			<type>Scalar</type>
 			<frequency>Draw</frequency>
 		</item>
@@ -82,14 +84,15 @@
 			</position>
 			<value>0</value>
 		</item>
-		<item type="traktor.render.Uniform" version="3,traktor.render.Node:1">
+		<item type="traktor.render.Uniform" version="4,traktor.render.Node:1">
 			<id>{31E08E7B-A0EF-4EBE-8B8D-D27D06D2CF4D}</id>
 			<comment/>
 			<position>
 				<first>633</first>
 				<second>467</second>
 			</position>
-			<parameterName>Mesh_Roughness</parameterName>
+			<declaration>{344ABE62-4354-1348-BF20-467FBD550D12}</declaration>
+			<parameterName/>
 			<type>Scalar</type>
 			<frequency>Draw</frequency>
 		</item>
@@ -102,14 +105,15 @@
 			</position>
 			<value>0.5</value>
 		</item>
-		<item type="traktor.render.Uniform" version="3,traktor.render.Node:1">
+		<item type="traktor.render.Uniform" version="4,traktor.render.Node:1">
 			<id>{3C8FE5EA-229D-49D3-B7A1-82C983870169}</id>
 			<comment/>
 			<position>
 				<first>556</first>
 				<second>405</second>
 			</position>
-			<parameterName>Mesh_Specular</parameterName>
+			<declaration>{ACE670BB-96D6-DE4D-9F94-2ED30A91A76B}</declaration>
+			<parameterName/>
 			<type>Scalar</type>
 			<frequency>Draw</frequency>
 		</item>

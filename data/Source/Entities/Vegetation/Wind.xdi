@@ -98,14 +98,15 @@
 				<second>973</second>
 			</position>
 		</item>
-		<item type="traktor.render.Uniform" version="3,traktor.render.Node:1">
+		<item type="traktor.render.Uniform" version="4,traktor.render.Node:1">
 			<id>{A172635B-760B-714F-92AC-CAD2FD405B49}</id>
 			<comment/>
 			<position>
 				<first>-250</first>
 				<second>984</second>
 			</position>
-			<parameterName>World_Time</parameterName>
+			<declaration>{FBA61D55-529C-5D41-A0F6-EA3D6DF25948}</declaration>
+			<parameterName/>
 			<type>Scalar</type>
 			<frequency>Frame</frequency>
 		</item>

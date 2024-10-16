@@ -64,14 +64,15 @@
 			<external>{2DA069C7-9E29-4CC9-871E-544B601A4CF7}</external>
 			<type>Texture2D</type>
 		</item>
-		<item type="traktor.render.Uniform" version="3,traktor.render.Node:1">
+		<item type="traktor.render.Uniform" version="4,traktor.render.Node:1">
 			<id>{AA595F28-45B9-4E96-AD76-732A0F70B0C2}</id>
 			<comment/>
 			<position>
 				<first>-524</first>
 				<second>261</second>
 			</position>
-			<parameterName>World_Time</parameterName>
+			<declaration>{FBA61D55-529C-5D41-A0F6-EA3D6DF25948}</declaration>
+			<parameterName/>
 			<type>Scalar</type>
 			<frequency>Frame</frequency>
 		</item>
