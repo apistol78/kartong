@@ -173,7 +173,7 @@
 									<shader>{4CF929EB-3A8B-C340-AA0A-0C5C80625BF1}</shader>
 									<texture>{00000000-0000-0000-0000-000000000000}</texture>
 									<intensity>1</intensity>
-									<saturation>0.5</saturation>
+									<saturation>0.1</saturation>
 									<skyOverHorizon>0.411765, 0.607843, 0.85098, 1</skyOverHorizon>
 									<skyUnderHorizon>0.164706, 0.333333, 0.533333, 1</skyUnderHorizon>
 									<clouds>true</clouds>
@@ -1152,7 +1152,7 @@
 											</state>
 											<transform>
 												<translation>123.877335, 6.05791, -226.597153, 0</translation>
-												<rotation>0.003864, -0, -0.085001, 0.996373</rotation>
+												<rotation>0.003864, 0, -0.085001, 0.996373</rotation>
 											</transform>
 											<components/>
 											<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
@@ -4018,7 +4018,7 @@
 							</state>
 							<transform>
 								<translation>69.961197, 8.239773, -93.833061, 0</translation>
-								<rotation>-0.009443, 0.997477, -0.070013, 0.006891</rotation>
+								<rotation>-0.009443, 0.997478, -0.070013, 0.006891</rotation>
 							</transform>
 							<components/>
 							<entityData>{E0CFEA9A-FFAE-46A5-995B-5454D5DD4578}</entityData>
@@ -4633,7 +4633,7 @@
 							</state>
 							<transform>
 								<translation>186.661316, 35.885048, 117.311218, 0</translation>
-								<rotation>-0.089861, 0.019918, 0.001797, 0.995753</rotation>
+								<rotation>-0.089861, 0.019918, 0.001797, 0.995754</rotation>
 							</transform>
 							<components/>
 							<entityData>{866684AB-577A-F845-8A2E-43BA2AD093C9}</entityData>
@@ -6572,7 +6572,7 @@
 			<maxPathDistance>10</maxPathDistance>
 			<pointLightShadowRadius>0.1</pointLightShadowRadius>
 			<lumelDensity>16</lumelDensity>
-			<irradianceGridDensity>1, 1, 1, 0</irradianceGridDensity>
+			<irradianceGridDensity>0.2, 0.1, 0.2, 0</irradianceGridDensity>
 			<minimumLightMapSize>16</minimumLightMapSize>
 			<maximumLightMapSize>1024</maximumLightMapSize>
 			<enableDenoise>true</enableDenoise>

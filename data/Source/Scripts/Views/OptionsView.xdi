@@ -16,18 +16,26 @@ function OptionsView:new(parent)
 		:setHorizontalAlign(Widget.ALIGN_CENTER)
 		:add("CONTROL")
 		:add("VISUAL")
+		:add("AUDIO")
 		:add("RETURN")
 		:setOnActivate(function(index)
 			if index == 1 then self._fnOptionVisuals() end
-			if index == 2 then self._fnReturn() end
+			if index == 2 then self._fnOptionAudio() end
+			if index == 3 then self._fnReturn() end
 		end)
 
 	self._fnOptionVisuals = function() end
+	self._fnOptionAudio = function() end
 	self._fnReturn = function() end
 end
 
 function OptionsView:setOnOptionVisuals(fn)
 	self._fnOptionVisuals = fn
+	return self
+end
+
+function OptionsView:setOnOptionAudio(fn)
+	self._fnOptionAudio = fn
 	return self
 end
 
