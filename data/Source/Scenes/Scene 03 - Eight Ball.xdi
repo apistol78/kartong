@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <object type="traktor.scene.SceneAsset" version="10">
-	<worldRenderSettings type="traktor.world.WorldRenderSettings" version="40">
+	<worldRenderSettings type="traktor.world.WorldRenderSettings" version="41">
 		<viewNearZ>0.1</viewNearZ>
 		<viewFarZ>1000</viewFarZ>
 		<exposureMode>Adaptive</exposureMode>
@@ -57,10 +57,6 @@
 				<maskProject>{00000000-0000-0000-0000-000000000000}</maskProject>
 			</ultra>
 		</shadowSettings>
-		<fogDistance>20</fogDistance>
-		<fogDensity>0</fogDensity>
-		<fogDensityMax>0.25</fogDensityMax>
-		<fogColor>0.839216, 0.984314, 1, 1</fogColor>
 		<imageProcess>
 			<disabled>{00000000-0000-0000-0000-000000000000}</disabled>
 			<low>{664AD753-7DA8-3D49-8ED8-4CE4BD56ED6A}</low>
@@ -1216,7 +1212,7 @@
 			<maxPathDistance>10</maxPathDistance>
 			<pointLightShadowRadius>0.1</pointLightShadowRadius>
 			<lumelDensity>16</lumelDensity>
-			<irradianceGridDensity>0.2, 0.1, 0.2, 0</irradianceGridDensity>
+			<irradianceGridDensity>0.05, 0.05, 0.05, 0</irradianceGridDensity>
 			<minimumLightMapSize>16</minimumLightMapSize>
 			<maximumLightMapSize>1024</maximumLightMapSize>
 			<enableDenoise>true</enableDenoise>
