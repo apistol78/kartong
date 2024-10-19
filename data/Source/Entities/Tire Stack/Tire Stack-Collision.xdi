@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<object type="traktor.physics.MeshAsset" version="5">
+<object type="traktor.physics.MeshAsset" version="6">
 	<fileName>Models/Tire Stack/Tire Stack.blend</fileName>
 	<importFilter/>
 	<calculateConvexHull>false</calculateConvexHull>
 	<margin>0</margin>
 	<scaleFactor>1</scaleFactor>
+	<reduce>0.5</reduce>
 	<center>false</center>
 	<grounded>false</grounded>
 	<materials/>
