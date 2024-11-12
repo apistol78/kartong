@@ -55,7 +55,7 @@
 				<first>450</first>
 				<second>442</second>
 			</position>
-			<value>0.8</value>
+			<value>0.2</value>
 		</item>
 		<item type="traktor.render.Scalar" version="traktor.render.Node:1">
 			<id>{BB4E9854-6F1D-FF4F-B8F6-73BC566E81A4}</id>
@@ -64,7 +64,7 @@
 				<first>450</first>
 				<second>491</second>
 			</position>
-			<value>0.2</value>
+			<value>0.5</value>
 		</item>
 		<item type="traktor.render.Texture" version="1,traktor.render.Node:1">
 			<id>{DB1A8CD4-CAB6-B64E-BE84-600E9C5486B7}</id>
