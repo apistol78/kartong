@@ -11,6 +11,7 @@ jobs:
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v3
+
     - name: Download artifact from Traktor
       uses: benday-inc/download-latest-artifact@main
       with:
@@ -22,24 +23,34 @@ jobs:
          artifact_name: 'traktor'
          download_path: '${{ github.workspace }}/temp'
          download_filename: 'traktor.zip'
-    #- run: dir ${{ github.workspace }}/temp
+
     - name: Extract Traktor
       run: powershell Expand-Archive ${{ github.workspace }}/temp/traktor.zip -DestinationPath ${{ github.workspace }}/traktor 
-    #- run: dir ${{ github.workspace }}/traktor
+
     - name: Install Blender
       uses: moguri/setup-blender@v1
       with:
         blender-version: '4.0'
+
     - name: Build
       run: ./scripts/autobuild-win64.bat
+
+    - name: Install NSIS
+      run:
+        Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
+        scoop bucket add extras
+        scoop install nsis
+
+    - name: Print NSIS version
+      run: makensis -VERSION
+
     - name: Installer
       uses: joncloud/makensis-action@v4.1
       with:
-        arguments: "/V3"
         script-file: ./scripts/installer.nsi
+
     - name: Archive
       uses: actions/upload-artifact@v4
       with:
         name: Installer
-        path: |
-          'Kartong Setup.exe'
+        path: 'Kartong Setup.exe'
