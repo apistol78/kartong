@@ -35,9 +35,13 @@ jobs:
     - name: Build
       run: ./scripts/autobuild-win64.bat
 
-    - name: Install NSIS
+    - name: Install Scoop
       run: powershell Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
+
+    - name: Scoop - Add Extras
       run: scoop bucket add extras
+
+    - name: Scoop - Install NSIS
       run: scoop install nsis
 
     - name: Print NSIS version
