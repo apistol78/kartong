@@ -30,28 +30,16 @@ jobs:
       uses: moguri/setup-blender@v1
       with:
         blender-version: '4.0'
-    #- run: blender --version    
     - name: Build
       run: ./scripts/autobuild-win64.bat
-    #- name: Launch scripts
-    #  run: copy scripts/launch.bat output/Kartong/Windows/launch.bat
-    #- name: Archive
-    #  uses: actions/upload-artifact@v4
-    #  with:
-    #    name: Archive
-    #    path: |
-    #      output/Kartong/Windows/bin64/
-    #      output/Kartong/Windows/Application.config
-    #      output/Kartong/Windows/Content.compact
-    #      output/Kartong/Windows/launch.bat
-  - name: Installer
-    uses: joncloud/makensis-action@v4.1
-    with:
-      arguments: "/V3"
-      script-file: ./scripts/installer.nsi
-  - name: Archive
-    uses: actions/upload-artifact@v4
-    with:
-      name: Installer
-      path: |
-        'Kartong Setup.exe'
+    - name: Installer
+      uses: joncloud/makensis-action@v4.1
+      with:
+        arguments: "/V3"
+        script-file: ./scripts/installer.nsi
+    - name: Archive
+      uses: actions/upload-artifact@v4
+      with:
+        name: Installer
+        path: |
+          'Kartong Setup.exe'
