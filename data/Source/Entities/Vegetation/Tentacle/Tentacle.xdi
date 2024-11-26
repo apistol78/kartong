@@ -12,9 +12,6 @@
 		<rotation>0, 0, 0, 1</rotation>
 	</transform>
 	<components>
-		<item type="traktor.mesh.MeshComponentData" version="1">
-			<mesh>{F042DEDA-2397-264C-8A1F-02E1797B1FC2}</mesh>
-		</item>
 		<item type="traktor.physics.RigidBodyComponentData" version="1">
 			<bodyDesc type="traktor.physics.StaticBodyDesc" version="5">
 				<shape type="traktor.physics.MeshShapeDesc" version="6,traktor.physics.ShapeDesc:6">
@@ -38,6 +35,16 @@
 			</bodyDesc>
 			<eventCollide/>
 			<transformFilter>0</transformFilter>
+		</item>
+		<item type="traktor.animation.AnimatedMeshComponentData" version="3">
+			<mesh>{F042DEDA-2397-264C-8A1F-02E1797B1FC2}</mesh>
+		</item>
+		<item type="traktor.animation.SkeletonComponentData">
+			<skeleton>{9197EB8E-06E4-4579-B79E-67A9F100973D}</skeleton>
+			<poseController type="traktor.animation.SimpleAnimationControllerData" version="2">
+				<animation>{D3AFA390-B3F6-4B17-9597-60C97F09CCF7}</animation>
+				<transformTime/>
+			</poseController>
 		</item>
 	</components>
 </object>

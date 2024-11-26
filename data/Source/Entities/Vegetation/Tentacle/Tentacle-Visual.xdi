@@ -2,7 +2,7 @@
 <object type="traktor.mesh.MeshAsset" version="24">
 	<fileName>Models/Vegetation/Tentacle.blend</fileName>
 	<importFilter/>
-	<meshType>MtStatic</meshType>
+	<meshType>MtSkinned</meshType>
 	<materialShaders/>
 	<materialTextures/>
 	<scaleFactor>1</scaleFactor>
