@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.animation.AnimationAsset" version="7">
+	<fileName>Models/TestAnim/Samba/Stick/Stick.fbx</fileName>
+	<targetSkeleton>{00000000-0000-0000-0000-000000000000}</targetSkeleton>
+	<take/>
+	<scale>0.1</scale>
+	<translate>0, 0, 0, 0</translate>
+	<removeLocomotion>false</removeLocomotion>
+</object>

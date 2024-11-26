@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.animation.SkeletonAsset" version="3">
+	<fileName>Models/TestAnim/Samba/Stick/Stick.fbx</fileName>
+	<offset>0, 0, 0, 1</offset>
+	<scale>0.1</scale>
+	<radius>0.25</radius>
+	<invertX>false</invertX>
+	<invertZ>false</invertZ>
+</object>

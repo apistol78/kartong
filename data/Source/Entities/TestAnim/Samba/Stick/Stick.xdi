@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.world.EntityData" version="2">
+	<id>{FA4A37CC-AFDF-094A-BFC6-72414B62E844}</id>
+	<name>Stick</name>
+	<state>
+		<visible>true</visible>
+		<dynamic>false</dynamic>
+		<locked>false</locked>
+	</state>
+	<transform>
+		<translation>0, 0, 0, 0</translation>
+		<rotation>0, 0, 0, 1</rotation>
+	</transform>
+	<components>
+		<item type="traktor.animation.SkeletonComponentData">
+			<skeleton>{4744793E-B03B-2A41-BEC7-2604F93442CB}</skeleton>
+			<poseController type="traktor.animation.SimpleAnimationControllerData" version="2">
+				<animation>{B696D312-871A-B447-940A-B4BEFD03ABD8}</animation>
+				<transformTime/>
+			</poseController>
+		</item>
+		<item type="traktor.animation.AnimatedMeshComponentData" version="3">
+			<mesh>{A158E4ED-92EB-CA45-9CD1-23F19D50A18A}</mesh>
+		</item>
+	</components>
+</object>
