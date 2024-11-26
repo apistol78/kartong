@@ -6549,7 +6549,7 @@
 							</state>
 							<transform>
 								<translation>136.911545, 20.594437, -235.344727, 0</translation>
-								<rotation>-0.089874, -0.00996, -0.000898, 0.995903</rotation>
+								<rotation>0.019774, -0.149409, 0.002989, 0.988573</rotation>
 							</transform>
 							<components/>
 							<entityData>{76095AB8-238E-144B-BAFD-F8C3B2CCC052}</entityData>
