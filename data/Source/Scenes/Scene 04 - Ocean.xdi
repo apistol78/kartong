@@ -1031,7 +1031,7 @@
 												<locked>false</locked>
 											</state>
 											<transform>
-												<translation>30.882919, 4.878176, -179.75798, 0</translation>
+												<translation>30.882919, 17.338299, -179.75798, 0</translation>
 												<rotation>-0.068472, -0.898323, 0.07763, 0.426966</rotation>
 											</transform>
 											<components/>
@@ -1632,7 +1632,7 @@
 											</state>
 											<transform>
 												<translation>-145.406464, 24.924233, 41.938854, 0</translation>
-												<rotation>-0.030682, 0.006863, -0.163042, 0.986118</rotation>
+												<rotation>-0.02774, 0.014798, 0.105894, 0.99388</rotation>
 											</transform>
 											<components/>
 											<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
@@ -2408,7 +2408,7 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>-70.703362, 16.494646, -187.057343, 0</translation>
+								<translation>-74.525749, 16.494646, -183.152374, 0</translation>
 								<rotation>0.072048, -0.798375, -0.053733, 0.595415</rotation>
 							</transform>
 							<components/>
@@ -3563,8 +3563,38 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>194.666809, 15.303626, -144.166031, 0</translation>
-								<rotation>-0.044484, -0.984014, -0.022742, 0.170937</rotation>
+								<translation>199.861038, 15.303626, -150.658508, 0</translation>
+								<rotation>-0.044484, -0.984015, -0.022742, 0.170937</rotation>
+							</transform>
+							<components/>
+							<entityData>{51841614-8E59-46D8-AA82-A111DA35060B}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{FF61C59D-E970-134C-81F3-AA5A47FBD5EB}</id>
+							<name>Tree 3</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>154.547607, 15.303626, -190.175247, 0</translation>
+								<rotation>-0.044484, -0.984015, -0.022742, 0.170937</rotation>
+							</transform>
+							<components/>
+							<entityData>{51841614-8E59-46D8-AA82-A111DA35060B}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{2365AD02-4261-EB44-8C30-AB452A26091C}</id>
+							<name>Tree 3</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>103.626892, 16.747637, -153.237396, 0</translation>
+								<rotation>-0.044484, -0.984015, -0.022742, 0.170937</rotation>
 							</transform>
 							<components/>
 							<entityData>{51841614-8E59-46D8-AA82-A111DA35060B}</entityData>
@@ -5348,8 +5378,23 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>130.965897, 29.658937, -55.692116, 0</translation>
-								<rotation>-0.010636, 0.846662, 0.016936, 0.531755</rotation>
+								<translation>115.851097, 27.658537, -73.412933, 0</translation>
+								<rotation>-0.00995, 0.867249, 0.017348, 0.497472</rotation>
+							</transform>
+							<components/>
+							<entityData>{AF89E4F5-6994-A24F-B2B0-D6EF43E17190}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{A213EEF5-CFD4-C04F-A794-1E05991889E5}</id>
+							<name>Rock Face 01</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>139.577301, 27.658537, -43.373901, 0</translation>
+								<rotation>-0.010805, 0.841302, 0.016829, 0.540195</rotation>
 							</transform>
 							<components/>
 							<entityData>{AF89E4F5-6994-A24F-B2B0-D6EF43E17190}</entityData>
@@ -5498,8 +5543,8 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>171.540619, 47.616585, -14.890706, 0</translation>
-								<rotation>-0.138783, 0, -0.231122, 0.962975</rotation>
+								<translation>161.041794, 36.383236, 2.234368, 0</translation>
+								<rotation>0.141452, -0.032712, 0.008587, 0.989367</rotation>
 							</transform>
 							<components/>
 							<entityData>{59E61CFC-CC27-49D7-8C03-04F88A120FEA}</entityData>
@@ -6151,6 +6196,21 @@
 							</state>
 							<transform>
 								<translation>-176.484619, 16.7379, -286.374054, 0</translation>
+								<rotation>0, 0.928369, 0, 0.37166</rotation>
+							</transform>
+							<components/>
+							<entityData>{E142E474-F0DA-3047-A674-F3565AFEAE5B}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{82090E7C-1BF1-C74A-BDF6-0306E60EA5DF}</id>
+							<name>Tree 7</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>-32.337727, 16.616922, -242.024506, 0</translation>
 								<rotation>0, 0.928369, 0, 0.37166</rotation>
 							</transform>
 							<components/>
