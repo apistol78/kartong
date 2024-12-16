@@ -86,6 +86,14 @@
 			<external>{2DA069C7-9E29-4CC9-871E-544B601A4CF7}</external>
 			<type>Texture2D</type>
 		</item>
+		<item type="traktor.render.PreviewOutput" version="traktor.render.Node:1">
+			<id>{98260EB8-63B3-864E-8615-5B83D7FE5FFC}</id>
+			<comment/>
+			<position>
+				<first>870</first>
+				<second>129</second>
+			</position>
+		</item>
 	</nodes>
 	<edges>
 		<item type="traktor.render.Edge" version="1">
@@ -146,6 +154,16 @@
 			<destination>
 				<node ref="/object/nodes/item[2]"/>
 				<id>{EEB495BD-DE7F-4DE8-983A-7E9B220B927F}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[6]"/>
+				<id>{FFE19E4E-24A8-47A4-AE80-307495E31066}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[8]"/>
+				<id>{BDB32F7B-599C-42C8-A2CE-2B1BD0738E8B}</id>
 			</destination>
 		</item>
 	</edges>

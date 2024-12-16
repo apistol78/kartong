@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<object type="traktor.mesh.MeshAsset" version="23">
+<object type="traktor.mesh.MeshAsset" version="24">
 	<fileName>Models/Kart 1/Kart.blend</fileName>
 	<importFilter>!Collision</importFilter>
 	<meshType>MtSkinned</meshType>
-	<materialShaders>
-		<item>
-			<first>mat_car</first>
-			<second>{58179BC7-B803-894D-A04D-0156D01E15C6}</second>
-		</item>
-	</materialShaders>
+	<materialShaders/>
 	<materialTextures/>
 	<scaleFactor>1</scaleFactor>
 	<offset>0, 0, 0, 0</offset>
@@ -16,8 +11,6 @@
 	<center>false</center>
 	<grounded>false</grounded>
 	<decalResponse>false</decalResponse>
-	<lodSteps>8</lodSteps>
-	<lodMaxDistance>100</lodMaxDistance>
-	<lodCullDistance>200</lodCullDistance>
-	<previewAngle>2.38761</previewAngle>
+	<reduce>1</reduce>
+	<previewAngle>2.324779</previewAngle>
 </object>

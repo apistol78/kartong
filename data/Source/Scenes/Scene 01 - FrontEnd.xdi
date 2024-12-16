@@ -128,7 +128,7 @@
 							</state>
 							<transform>
 								<translation>-9.443932, -1.97757, 3.657648, 0</translation>
-								<rotation>0.144323, 0.773115, -0.587727, 0.189847</rotation>
+								<rotation>0.120704, 0.780088, -0.593028, 0.158778</rotation>
 							</transform>
 							<components>
 								<item type="traktor.weather.SkyComponentData" version="8">
@@ -260,7 +260,7 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>5.88091, 24.305965, -3.985084, 0</translation>
+								<translation>5.88091, 24.405029, -3.985084, 0</translation>
 								<rotation>0, -0.66545, 0, 0.746443</rotation>
 							</transform>
 							<components/>
@@ -275,7 +275,7 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>-1.240816, 24.342381, -6.208402, 0</translation>
+								<translation>-1.240816, 24.410341, -6.208402, 0</translation>
 								<rotation>0, 0.152893, 0, 0.988243</rotation>
 							</transform>
 							<components/>
@@ -290,7 +290,7 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>-4.969786, 24.327337, -7.503583, 0</translation>
+								<translation>-4.969786, 24.390541, -7.503583, 0</translation>
 								<rotation>0, 0.456001, 0, 0.889979</rotation>
 							</transform>
 							<components/>
@@ -305,8 +305,8 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>3.024656, 24.12804, -5.977217, 0</translation>
-								<rotation>-0.073972, -0.377217, -0.030242, 0.922671</rotation>
+								<translation>3.024656, 24.413595, -5.977217, 0</translation>
+								<rotation>0.018511, -0.378352, 0.007568, 0.925446</rotation>
 							</transform>
 							<components/>
 							<entityData>{3527F644-09BE-4B55-91E7-ECC6191F32C2}</entityData>
@@ -650,7 +650,7 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>38.888718, 7.836557, -48.371563, 0</translation>
+								<translation>43.576553, 1.586754, -41.529621, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components/>
