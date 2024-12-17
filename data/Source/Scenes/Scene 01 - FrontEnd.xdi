@@ -255,7 +255,7 @@
 							<id>{D2164583-7DB6-5744-983F-244D51B7A82F}</id>
 							<name>Kart</name>
 							<state>
-								<visible>true</visible>
+								<visible>false</visible>
 								<dynamic>false</dynamic>
 								<locked>false</locked>
 							</state>
