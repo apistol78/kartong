@@ -917,6 +917,21 @@
 							<components/>
 							<entityData>{59E61CFC-CC27-49D7-8C03-04F88A120FEA}</entityData>
 						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{D3ED9014-8E7F-48B6-807D-462CC080E62B}</id>
+							<name>Pipe Bend</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>0.15898, 13.966358, -39.40691, 0</translation>
+								<rotation>0, -0.948985, 0, 0.315322</rotation>
+							</transform>
+							<components/>
+							<entityData>{AC822C0C-2F6D-4C5D-8318-8ACE65906102}</entityData>
+						</item>
 					</entityData>
 				</item>
 			</components>
