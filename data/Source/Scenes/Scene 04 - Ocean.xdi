@@ -355,7 +355,7 @@
 											</state>
 											<transform>
 												<translation>146.716751, 37.619167, -278.397491, 0</translation>
-												<rotation>-0.03872, 0.688362, 0.132603, 0.712092</rotation>
+												<rotation>0.091457, 0.682958, 0.009397, 0.724648</rotation>
 											</transform>
 											<components>
 												<item type="traktor.shape.ControlPointComponentData" version="1">
@@ -6113,8 +6113,8 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>61.847584, 32.592388, -298.737762, 0</translation>
-								<rotation>-0.118366, 0.670623, -0.055376, 0.730197</rotation>
+								<translation>61.847584, 32.368122, -298.737762, 0</translation>
+								<rotation>-0.034238, 0.679725, 0.029505, 0.732073</rotation>
 							</transform>
 							<components>
 								<item type="traktor.world.DecalComponentData" version="1">
@@ -6881,8 +6881,8 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>130.667221, 39.680786, -275.964539, 0</translation>
-								<rotation>-0.116954, 0, -0.035255, 0.992511</rotation>
+								<translation>130.667221, 36.461781, -275.964539, 0</translation>
+								<rotation>0.048483, 0.001692, 0.028974, 0.998402</rotation>
 							</transform>
 							<components/>
 							<entityData>{40BB4C27-FEFD-4E0E-9D2E-6D0FA3A21A25}</entityData>
@@ -6896,8 +6896,8 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>133.677109, 39.723042, -274.817932, 0</translation>
-								<rotation>-0.114328, 0, -0.04122, 0.992587</rotation>
+								<translation>133.677109, 36.530151, -274.817932, 0</translation>
+								<rotation>0.050322, 0.001144, 0.028076, 0.998338</rotation>
 							</transform>
 							<components/>
 							<entityData>{40BB4C27-FEFD-4E0E-9D2E-6D0FA3A21A25}</entityData>
@@ -6911,7 +6911,7 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>123.637772, 35.727264, -294.010651, 0</translation>
+								<translation>123.637772, 37.549183, -294.010651, 0</translation>
 								<rotation>-0.03757, 0.5736, 0.007397, 0.81824</rotation>
 							</transform>
 							<components/>

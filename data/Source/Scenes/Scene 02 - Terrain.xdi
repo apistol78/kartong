@@ -159,17 +159,17 @@
 									<shader>{4CF929EB-3A8B-C340-AA0A-0C5C80625BF1}</shader>
 									<texture>{00000000-0000-0000-0000-000000000000}</texture>
 									<intensity>1</intensity>
-									<saturation>1</saturation>
-									<skyOverHorizon>0.411765, 0.607843, 0.85098, 1</skyOverHorizon>
-									<skyUnderHorizon>0.164706, 0.333333, 0.533333, 1</skyUnderHorizon>
+									<saturation>0.3</saturation>
+									<skyOverHorizon>0.172549, 0.392157, 0.486275, 1</skyOverHorizon>
+									<skyUnderHorizon>0.454902, 0.231373, 0.109804, 1</skyUnderHorizon>
 									<clouds>true</clouds>
-									<cloudAmbientTop>0.99, 0.98, 1.18, 1</cloudAmbientTop>
-									<cloudAmbientBottom>0.23, 0.39, 0.51, 1</cloudAmbientBottom>
+									<cloudAmbientTop>0.941177, 0.850981, 0.32549, 0</cloudAmbientTop>
+									<cloudAmbientBottom>0.266667, 0.188235, 0.12549, 1</cloudAmbientBottom>
 								</item>
 								<item type="traktor.world.LightComponentData" version="12">
 									<lightType>Directional</lightType>
-									<color>1, 1, 1, 0</color>
-									<intensity>4</intensity>
+									<color>1, 0.945098, 0.741177, 0</color>
+									<intensity>5</intensity>
 									<castShadow>true</castShadow>
 									<nearRange>0</nearRange>
 									<farRange>10</farRange>
@@ -179,10 +179,10 @@
 									<bakeMode>LbmIndirect</bakeMode>
 								</item>
 								<item type="traktor.world.FogComponentData">
-									<fogDistance>150</fogDistance>
+									<fogDistance>10</fogDistance>
 									<fogDensity>0.0005</fogDensity>
-									<fogDensityMax>0.5</fogDensityMax>
-									<fogColor>0.713726, 0.878431, 0.984314, 1</fogColor>
+									<fogDensityMax>1</fogDensityMax>
+									<fogColor>0.643137, 0.580392, 0.45098, 1</fogColor>
 									<volumetricFogEnable>false</volumetricFogEnable>
 									<maxDistance>100</maxDistance>
 									<maxScattering>10</maxScattering>
@@ -4270,7 +4270,7 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>150.791183, 17.891359, 273.56604, 0</translation>
+								<translation>149.812759, 24.409187, 286.324982, 0</translation>
 								<rotation>-0.022817, 0.895157, -0.089061, 0.436167</rotation>
 							</transform>
 							<components/>
@@ -5192,21 +5192,6 @@
 							<entityData>{59E61CFC-CC27-49D7-8C03-04F88A120FEA}</entityData>
 						</item>
 						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
-							<id>{24B89FBA-058E-4861-8B22-C36D00367257}</id>
-							<name>Rock 02</name>
-							<state>
-								<visible>true</visible>
-								<dynamic>false</dynamic>
-								<locked>false</locked>
-							</state>
-							<transform>
-								<translation>247.216827, 4.208362, 51.670078, 0</translation>
-								<rotation>0, 0, 0, 1</rotation>
-							</transform>
-							<components/>
-							<entityData>{59E61CFC-CC27-49D7-8C03-04F88A120FEA}</entityData>
-						</item>
-						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 							<id>{802472CD-EB6D-4848-936D-20DABE6D9E3A}</id>
 							<name>Rock 02</name>
 							<state>
@@ -5857,6 +5842,66 @@
 							</transform>
 							<components/>
 							<entityData>{AC822C0C-2F6D-4C5D-8318-8ACE65906102}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{934FFD4A-8AE9-1144-9BA2-CB191A89701B}</id>
+							<name>Rock Face 01</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>244.683228, 1.39264, 38.491779, 0</translation>
+								<rotation>0, 0.955101, 0, 0.296282</rotation>
+							</transform>
+							<components/>
+							<entityData>{AF89E4F5-6994-A24F-B2B0-D6EF43E17190}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{DDCAC655-A5AC-8244-BD3A-9F1394CCDCCF}</id>
+							<name>Rock Face 01</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>275.517487, 2.009444, 74.034081, 0</translation>
+								<rotation>0, 0.891207, 0, 0.453597</rotation>
+							</transform>
+							<components/>
+							<entityData>{AF89E4F5-6994-A24F-B2B0-D6EF43E17190}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{9DA48959-992F-1C41-AA2D-9AC56D71D4D7}</id>
+							<name>Rock Face 01</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>314.677948, 2.009444, 171.243271, 0</translation>
+								<rotation>0.086772, 0.683967, -0.082472, 0.719624</rotation>
+							</transform>
+							<components/>
+							<entityData>{AF89E4F5-6994-A24F-B2B0-D6EF43E17190}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{DD07B50F-CA9D-6242-82C7-8328F4E4E706}</id>
+							<name>Statue</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>145.349609, 13.141657, 259.049805, 0</translation>
+								<rotation>0, -0.418318, 0, 0.908301</rotation>
+							</transform>
+							<components/>
+							<entityData>{C4B1A389-C1C7-754C-BC1A-9ACC619A5AFA}</entityData>
 						</item>
 					</entityData>
 				</item>
