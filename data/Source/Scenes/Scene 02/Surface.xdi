@@ -24,7 +24,7 @@
 			</position>
 			<value>0.9</value>
 		</item>
-		<item type="traktor.render.InputPort" version="2,traktor.render.Node:1">
+		<item type="traktor.render.InputPort" version="3,traktor.render.Node:1">
 			<id>{EA498984-69B6-2C46-87C1-E6567E1E4F7F}</id>
 			<comment/>
 			<position>
@@ -32,10 +32,7 @@
 				<second>-1172</second>
 			</position>
 			<name>T_TerrainAttributes</name>
-			<connectable>true</connectable>
 			<optional>false</optional>
-			<haveDefaultValue>false</haveDefaultValue>
-			<defaultValue>0</defaultValue>
 		</item>
 		<item type="traktor.render.OutputPort" version="traktor.render.Node:1">
 			<id>{34E1C6CC-54AC-D44D-A8F3-447603ADF309}</id>
@@ -94,7 +91,7 @@
 				<second>-1159</second>
 			</position>
 		</item>
-		<item type="traktor.render.Script" version="6,traktor.render.Node:1">
+		<item type="traktor.render.Script" version="8,traktor.render.Node:1">
 			<id>{D510248F-D931-AA4C-BAEE-7A8EAC4695BE}</id>
 			<comment/>
 			<position>
@@ -103,11 +100,13 @@
 			</position>
 			<name>SmoothStep</name>
 			<technique/>
+			<domain>Undefined</domain>
 			<localSize>
 				<X>1</X>
 				<Y>1</Y>
 				<Z>1</Z>
 			</localSize>
+			<useRayTracing>false</useRayTracing>
 			<include/>
 			<inputPins>
 				<item>
@@ -199,7 +198,7 @@ $Output = smoothstep(0, 1, $Input);
 			<external>{188EF7B7-F893-4E05-9D59-E2754928CAD9}</external>
 			<type>Texture2D</type>
 		</item>
-		<item type="traktor.render.External" version="2,traktor.render.Node:1">
+		<item type="traktor.render.External" version="3,traktor.render.Node:1">
 			<id>{E894B760-C918-CD4E-B36D-FB7A7B23D290}</id>
 			<comment/>
 			<position>
@@ -244,7 +243,6 @@ $Output = smoothstep(0, 1, $Input);
 					<name>Output</name>
 				</item>
 			</outputPins>
-			<values/>
 		</item>
 		<item type="traktor.render.Color" version="2,traktor.render.Node:1">
 			<id>{A4871523-8ACD-4342-81BE-B14D70C9A7F4}</id>
@@ -293,7 +291,7 @@ $Output = smoothstep(0, 1, $Input);
 			</position>
 			<swizzle>0x</swizzle>
 		</item>
-		<item type="traktor.render.Script" version="6,traktor.render.Node:1">
+		<item type="traktor.render.Script" version="8,traktor.render.Node:1">
 			<id>{1512DC41-CAAC-2D42-BF5E-E7AF1C752A9C}</id>
 			<comment/>
 			<position>
@@ -302,11 +300,13 @@ $Output = smoothstep(0, 1, $Input);
 			</position>
 			<name>Overlay</name>
 			<technique/>
+			<domain>Undefined</domain>
 			<localSize>
 				<X>1</X>
 				<Y>1</Y>
 				<Z>1</Z>
 			</localSize>
+			<useRayTracing>false</useRayTracing>
 			<include/>
 			<inputPins>
 				<item>
@@ -420,7 +420,7 @@ $Output = vec4(mix(t, b, f), 0.0f);
 				<item>Specular</item>
 			</names>
 		</item>
-		<item type="traktor.render.External" version="2,traktor.render.Node:1">
+		<item type="traktor.render.External" version="3,traktor.render.Node:1">
 			<id>{60738AB8-FFD3-C64A-BE04-FD17D0C3D97C}</id>
 			<comment/>
 			<position>
@@ -471,7 +471,6 @@ $Output = vec4(mix(t, b, f), 0.0f);
 					<name>SurfaceAttributes</name>
 				</item>
 			</outputPins>
-			<values/>
 		</item>
 	</nodes>
 	<edges>

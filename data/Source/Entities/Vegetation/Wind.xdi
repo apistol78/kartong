@@ -18,7 +18,7 @@
 				<item>Origin</item>
 			</names>
 		</item>
-		<item type="traktor.render.InputPort" version="2,traktor.render.Node:1">
+		<item type="traktor.render.InputPort" version="3,traktor.render.Node:1">
 			<id>{34680120-F108-BF44-9E7A-F3B3CD6A2FF1}</id>
 			<comment/>
 			<position>
@@ -26,10 +26,7 @@
 				<second>655</second>
 			</position>
 			<name>VertexAttributes</name>
-			<connectable>true</connectable>
 			<optional>false</optional>
-			<haveDefaultValue>false</haveDefaultValue>
-			<defaultValue>0</defaultValue>
 		</item>
 		<item type="traktor.render.OutputPort" version="traktor.render.Node:1">
 			<id>{BCC5FE31-71DD-8447-B2D8-679D42171FB3}</id>

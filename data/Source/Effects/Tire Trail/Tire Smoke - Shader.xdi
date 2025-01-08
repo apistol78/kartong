@@ -57,7 +57,7 @@
 			<stencilMask>2147483648</stencilMask>
 			<precisionHint>Undefined</precisionHint>
 		</item>
-		<item type="traktor.render.External" version="2,traktor.render.Node:1">
+		<item type="traktor.render.External" version="3,traktor.render.Node:1">
 			<id>{2326183D-8F16-47D7-A1B3-5832A82CF6B7}</id>
 			<comment/>
 			<position>
@@ -78,9 +78,8 @@
 				</item>
 			</inputPins>
 			<outputPins/>
-			<values/>
 		</item>
-		<item type="traktor.render.External" version="2,traktor.render.Node:1">
+		<item type="traktor.render.External" version="3,traktor.render.Node:1">
 			<id>{10CF1BA1-030C-496F-9990-6DC65390DB60}</id>
 			<comment/>
 			<position>
@@ -131,20 +130,6 @@
 					<name>WorldPosition</name>
 				</item>
 			</outputPins>
-			<values>
-				<item>
-					<first>ScaleDisplacement</first>
-					<second>1</second>
-				</item>
-				<item>
-					<first>ViewDisplacement</first>
-					<second>0</second>
-				</item>
-				<item>
-					<first>WorldDisplacement</first>
-					<second>0</second>
-				</item>
-			</values>
 		</item>
 	</nodes>
 	<edges>

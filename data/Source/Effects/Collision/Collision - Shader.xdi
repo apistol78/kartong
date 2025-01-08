@@ -57,7 +57,7 @@
 			<stencilMask>2147483648</stencilMask>
 			<precisionHint>Undefined</precisionHint>
 		</item>
-		<item type="traktor.render.External" version="2,traktor.render.Node:1">
+		<item type="traktor.render.External" version="3,traktor.render.Node:1">
 			<id>{4C57191B-6782-FF40-A47E-B8619FD40FCE}</id>
 			<comment/>
 			<position>
@@ -78,7 +78,6 @@
 				</item>
 			</inputPins>
 			<outputPins/>
-			<values/>
 		</item>
 		<item type="traktor.render.Mul" version="traktor.render.Node:1">
 			<id>{064B5D78-96A2-9B4D-8462-F136DD489588}</id>
@@ -88,7 +87,7 @@
 				<second>-3</second>
 			</position>
 		</item>
-		<item type="traktor.render.External" version="2,traktor.render.Node:1">
+		<item type="traktor.render.External" version="3,traktor.render.Node:1">
 			<id>{023E9777-7440-A440-9601-37DA1145973A}</id>
 			<comment/>
 			<position>
@@ -133,12 +132,6 @@
 					<name>ViewPosition</name>
 				</item>
 			</outputPins>
-			<values>
-				<item>
-					<first>Stretch</first>
-					<second>2</second>
-				</item>
-			</values>
 		</item>
 		<item type="traktor.render.Swizzle" version="traktor.render.Node:1">
 			<id>{7F1B7F36-7F99-374D-B0AF-27AE50FA8ED0}</id>
@@ -183,7 +176,7 @@
 				<second>243</second>
 			</position>
 		</item>
-		<item type="traktor.render.External" version="2,traktor.render.Node:1">
+		<item type="traktor.render.External" version="3,traktor.render.Node:1">
 			<id>{9D2A1949-9C1C-6940-8A4E-46FCE2960FE6}</id>
 			<comment/>
 			<position>
@@ -204,7 +197,6 @@
 					<name>Output</name>
 				</item>
 			</outputPins>
-			<values/>
 		</item>
 		<item type="traktor.render.Clamp" version="traktor.render.Node:1">
 			<id>{38F05C9C-F523-0649-BD8A-36D0E8C0043A}</id>

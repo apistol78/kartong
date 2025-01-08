@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <object type="traktor.render.ShaderGraph" version="traktor.render.Graph:1">
 	<nodes>
-		<item type="traktor.render.External" version="2,traktor.render.Node:1">
+		<item type="traktor.render.External" version="3,traktor.render.Node:1">
 			<id>{EE79E440-16B9-104E-8540-FCDF48765D1E}</id>
 			<comment/>
 			<position>
@@ -56,12 +56,6 @@
 					<name>World</name>
 				</item>
 			</outputPins>
-			<values>
-				<item>
-					<first>DepthFade</first>
-					<second>1</second>
-				</item>
-			</values>
 		</item>
 		<item type="traktor.render.Color" version="2,traktor.render.Node:1">
 			<id>{5AC98149-B7B7-CD40-86B9-B69F6DBD2A51}</id>
@@ -119,7 +113,7 @@
 			<stencilMask>2147483648</stencilMask>
 			<precisionHint>Undefined</precisionHint>
 		</item>
-		<item type="traktor.render.External" version="2,traktor.render.Node:1">
+		<item type="traktor.render.External" version="3,traktor.render.Node:1">
 			<id>{9FAFFDB4-3444-AA43-8632-92DD2692C695}</id>
 			<comment/>
 			<position>
@@ -140,7 +134,6 @@
 				</item>
 			</inputPins>
 			<outputPins/>
-			<values/>
 		</item>
 		<item type="traktor.render.Mul" version="traktor.render.Node:1">
 			<id>{BF4E060D-773B-964C-94F4-309E8249A5D4}</id>
