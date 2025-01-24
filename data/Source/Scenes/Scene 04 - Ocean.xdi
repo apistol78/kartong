@@ -6868,6 +6868,95 @@
 							<components/>
 							<entityData>{5644A5E3-02A4-4CA1-B79B-7A2235F1CBF1}</entityData>
 						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{8DA772BC-45AF-FD46-AA28-E627BFFCDC1C}</id>
+							<name>Emissive</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>273.693481, 30.259043, 123.396072, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{6212D7F5-B597-DD49-83E2-C9A50B090BC1}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{79539563-2455-FA42-BC9C-C7E0CFEB1BB5}</id>
+							<name>Emissive</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>265.191101, 31.926745, 112.320503, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{6212D7F5-B597-DD49-83E2-C9A50B090BC1}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{1DA8331D-D93F-D04F-97B8-F81D156FF169}</id>
+							<name>Emissive</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>278.49118, 31.926745, 135.588928, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{6212D7F5-B597-DD49-83E2-C9A50B090BC1}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{89FB0BD4-C05D-E04A-AFB6-A2F6ED4C47E1}</id>
+							<name>Emissive</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>261.601471, 31.926745, 104.622978, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{6212D7F5-B597-DD49-83E2-C9A50B090BC1}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{8DDB2841-6F49-784E-A3A9-ECFD2EED95D9}</id>
+							<name>Emissive</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>254.630432, 31.926745, 91.034233, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{6212D7F5-B597-DD49-83E2-C9A50B090BC1}</entityData>
+						</item>
+						<item type="traktor.world.EntityData" version="2">
+							<id>{48C2CAF9-8BAD-5546-AFBB-5E044BF6F349}</id>
+							<name/>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>0, 0, 0, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+						</item>
 					</entityData>
 				</item>
 			</components>
