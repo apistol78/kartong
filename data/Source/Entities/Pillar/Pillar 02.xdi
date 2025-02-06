@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.world.EntityData" version="2">
+	<id>{82327EE9-ACF8-5046-A988-73A67C47B2E1}</id>
+	<name>Pillar 02</name>
+	<state>
+		<visible>true</visible>
+		<dynamic>false</dynamic>
+		<locked>false</locked>
+	</state>
+	<transform>
+		<translation>0, 0, 0, 0</translation>
+		<rotation>0, 0, 0, 1</rotation>
+	</transform>
+	<components>
+		<item type="traktor.mesh.MeshComponentData" version="1">
+			<mesh>{67985062-BABE-8C48-A2D5-BB8E3C6793B4}</mesh>
+		</item>
+		<item type="traktor.physics.RigidBodyComponentData" version="1">
+			<bodyDesc type="traktor.physics.StaticBodyDesc" version="5">
+				<shape type="traktor.physics.MeshShapeDesc" version="6,traktor.physics.ShapeDesc:6">
+					<localTransform>
+						<translation>0, 0, 0, 0</translation>
+						<rotation>0, 0, 0, 1</rotation>
+					</localTransform>
+					<collisionGroup>
+						<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+					</collisionGroup>
+					<collisionMask>
+						<item>{09CB1141-1924-3349-934A-CEB9728D7A61}</item>
+						<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+					</collisionMask>
+					<material>0</material>
+					<mesh>{E3CB14E8-1832-3643-8D42-68E195D4204A}</mesh>
+				</shape>
+				<friction>0.75</friction>
+				<restitution>0</restitution>
+				<kinematic>false</kinematic>
+			</bodyDesc>
+			<eventCollide/>
+			<transformFilter>0</transformFilter>
+		</item>
+	</components>
+</object>

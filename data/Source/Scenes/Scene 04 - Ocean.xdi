@@ -6636,208 +6636,6 @@
 							<components/>
 							<entityData>{C92F0433-5C37-4C32-BE94-6ED46F13B352}</entityData>
 						</item>
-						<item type="traktor.world.EntityData" version="2">
-							<id>{5EE960AB-FAF2-4943-BDE3-E76F347357D8}</id>
-							<name/>
-							<state>
-								<visible>true</visible>
-								<dynamic>false</dynamic>
-								<locked>false</locked>
-							</state>
-							<transform>
-								<translation>0, 0, 0, 0</translation>
-								<rotation>0, 0, 0, 1</rotation>
-							</transform>
-							<components/>
-						</item>
-						<item type="traktor.world.EntityData" version="2">
-							<id>{CFFEA79D-7723-C548-9F5B-74F375FE6A91}</id>
-							<name/>
-							<state>
-								<visible>true</visible>
-								<dynamic>false</dynamic>
-								<locked>false</locked>
-							</state>
-							<transform>
-								<translation>0, 0, 0, 0</translation>
-								<rotation>0, 0, 0, 1</rotation>
-							</transform>
-							<components/>
-						</item>
-						<item type="traktor.world.EntityData" version="2">
-							<id>{2E97F54C-D682-1346-AEE3-22D6BF6BAEF7}</id>
-							<name/>
-							<state>
-								<visible>true</visible>
-								<dynamic>false</dynamic>
-								<locked>false</locked>
-							</state>
-							<transform>
-								<translation>0, 0, 0, 0</translation>
-								<rotation>0, 0, 0, 1</rotation>
-							</transform>
-							<components/>
-						</item>
-						<item type="traktor.world.EntityData" version="2">
-							<id>{76602AEA-7E5F-C848-B198-806E58052226}</id>
-							<name/>
-							<state>
-								<visible>true</visible>
-								<dynamic>false</dynamic>
-								<locked>false</locked>
-							</state>
-							<transform>
-								<translation>0, 0, 0, 0</translation>
-								<rotation>0, 0, 0, 1</rotation>
-							</transform>
-							<components/>
-						</item>
-						<item type="traktor.world.EntityData" version="2">
-							<id>{85934A38-08A8-3C44-9CA2-4F750229C607}</id>
-							<name/>
-							<state>
-								<visible>true</visible>
-								<dynamic>false</dynamic>
-								<locked>false</locked>
-							</state>
-							<transform>
-								<translation>0, 0, 0, 0</translation>
-								<rotation>0, 0, 0, 1</rotation>
-							</transform>
-							<components/>
-						</item>
-						<item type="traktor.world.EntityData" version="2">
-							<id>{EAAE1257-B3E1-2443-8850-B47039F4CB75}</id>
-							<name/>
-							<state>
-								<visible>true</visible>
-								<dynamic>false</dynamic>
-								<locked>false</locked>
-							</state>
-							<transform>
-								<translation>0, 0, 0, 0</translation>
-								<rotation>0, 0, 0, 1</rotation>
-							</transform>
-							<components/>
-						</item>
-						<item type="traktor.world.EntityData" version="2">
-							<id>{2CC03FE0-4426-DF48-B084-D6D9FC5C7D18}</id>
-							<name/>
-							<state>
-								<visible>true</visible>
-								<dynamic>false</dynamic>
-								<locked>false</locked>
-							</state>
-							<transform>
-								<translation>0, 0, 0, 0</translation>
-								<rotation>0, 0, 0, 1</rotation>
-							</transform>
-							<components/>
-						</item>
-						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
-							<id>{70D9348B-C81B-9F4F-B2E6-488F71D2D326}</id>
-							<name>Tentacle</name>
-							<state>
-								<visible>true</visible>
-								<dynamic>false</dynamic>
-								<locked>false</locked>
-							</state>
-							<transform>
-								<translation>307.812103, 20.594437, -44.027096, 0</translation>
-								<rotation>-0.06816, 0.649195, 0.058586, 0.755293</rotation>
-							</transform>
-							<components/>
-							<entityData>{76095AB8-238E-144B-BAFD-F8C3B2CCC052}</entityData>
-						</item>
-						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
-							<id>{ECAE4223-C55A-8A49-A078-E6A1DD28A48A}</id>
-							<name>Tentacle</name>
-							<state>
-								<visible>true</visible>
-								<dynamic>false</dynamic>
-								<locked>false</locked>
-							</state>
-							<transform>
-								<translation>136.911545, 20.594437, -235.344727, 0</translation>
-								<rotation>0.019774, -0.149409, 0.002989, 0.988573</rotation>
-							</transform>
-							<components/>
-							<entityData>{76095AB8-238E-144B-BAFD-F8C3B2CCC052}</entityData>
-						</item>
-						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
-							<id>{C177D5A3-343B-F441-A08D-224AE289A5B3}</id>
-							<name>Tentacle</name>
-							<state>
-								<visible>true</visible>
-								<dynamic>false</dynamic>
-								<locked>false</locked>
-							</state>
-							<transform>
-								<translation>-157.945541, 12.830123, -221.625763, 0</translation>
-								<rotation>-0.058524, -0.866082, -0.104431, 0.485356</rotation>
-							</transform>
-							<components/>
-							<entityData>{76095AB8-238E-144B-BAFD-F8C3B2CCC052}</entityData>
-						</item>
-						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
-							<id>{6B86984B-16F6-8E48-880A-51DD8BBED589}</id>
-							<name>Tentacle</name>
-							<state>
-								<visible>true</visible>
-								<dynamic>false</dynamic>
-								<locked>false</locked>
-							</state>
-							<transform>
-								<translation>214.874908, 20.594437, -17.40534, 0</translation>
-								<rotation>-0.04603, -0.88293, -0.088588, 0.458769</rotation>
-							</transform>
-							<components/>
-							<entityData>{76095AB8-238E-144B-BAFD-F8C3B2CCC052}</entityData>
-						</item>
-						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
-							<id>{4FD4C67F-B417-C34B-8E20-60F662098604}</id>
-							<name>Tentacle</name>
-							<state>
-								<visible>true</visible>
-								<dynamic>false</dynamic>
-								<locked>false</locked>
-							</state>
-							<transform>
-								<translation>344.751434, 20.594437, 189.000534, 0</translation>
-								<rotation>-0.047932, 0.872818, 0.087574, 0.477726</rotation>
-							</transform>
-							<components/>
-							<entityData>{76095AB8-238E-144B-BAFD-F8C3B2CCC052}</entityData>
-						</item>
-						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
-							<id>{4A1B9A61-E0E7-014D-B501-BC1494EF603B}</id>
-							<name>Tentacle</name>
-							<state>
-								<visible>true</visible>
-								<dynamic>false</dynamic>
-								<locked>false</locked>
-							</state>
-							<transform>
-								<translation>121.473999, 20.594437, 275.970673, 0</translation>
-								<rotation>-0.01401, 0.985158, 0.098846, 0.139631</rotation>
-							</transform>
-							<components/>
-							<entityData>{76095AB8-238E-144B-BAFD-F8C3B2CCC052}</entityData>
-						</item>
-						<item type="traktor.world.EntityData" version="2">
-							<id>{06C96B9E-66F5-DD45-B250-F22A6222D7CA}</id>
-							<name/>
-							<state>
-								<visible>true</visible>
-								<dynamic>false</dynamic>
-								<locked>false</locked>
-							</state>
-							<transform>
-								<translation>0, 0, 0, 0</translation>
-								<rotation>0, 0, 0, 1</rotation>
-							</transform>
-							<components/>
-						</item>
 						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 							<id>{3FFC9502-87C6-8A40-88FD-B299C9E51B4E}</id>
 							<name>Street Light</name>
@@ -6868,95 +6666,6 @@
 							<components/>
 							<entityData>{5644A5E3-02A4-4CA1-B79B-7A2235F1CBF1}</entityData>
 						</item>
-						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
-							<id>{8DA772BC-45AF-FD46-AA28-E627BFFCDC1C}</id>
-							<name>Emissive</name>
-							<state>
-								<visible>true</visible>
-								<dynamic>false</dynamic>
-								<locked>false</locked>
-							</state>
-							<transform>
-								<translation>273.693481, 30.259043, 123.396072, 0</translation>
-								<rotation>0, 0, 0, 1</rotation>
-							</transform>
-							<components/>
-							<entityData>{6212D7F5-B597-DD49-83E2-C9A50B090BC1}</entityData>
-						</item>
-						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
-							<id>{79539563-2455-FA42-BC9C-C7E0CFEB1BB5}</id>
-							<name>Emissive</name>
-							<state>
-								<visible>true</visible>
-								<dynamic>false</dynamic>
-								<locked>false</locked>
-							</state>
-							<transform>
-								<translation>265.191101, 31.926745, 112.320503, 0</translation>
-								<rotation>0, 0, 0, 1</rotation>
-							</transform>
-							<components/>
-							<entityData>{6212D7F5-B597-DD49-83E2-C9A50B090BC1}</entityData>
-						</item>
-						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
-							<id>{1DA8331D-D93F-D04F-97B8-F81D156FF169}</id>
-							<name>Emissive</name>
-							<state>
-								<visible>true</visible>
-								<dynamic>false</dynamic>
-								<locked>false</locked>
-							</state>
-							<transform>
-								<translation>278.49118, 31.926745, 135.588928, 0</translation>
-								<rotation>0, 0, 0, 1</rotation>
-							</transform>
-							<components/>
-							<entityData>{6212D7F5-B597-DD49-83E2-C9A50B090BC1}</entityData>
-						</item>
-						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
-							<id>{89FB0BD4-C05D-E04A-AFB6-A2F6ED4C47E1}</id>
-							<name>Emissive</name>
-							<state>
-								<visible>true</visible>
-								<dynamic>false</dynamic>
-								<locked>false</locked>
-							</state>
-							<transform>
-								<translation>261.601471, 31.926745, 104.622978, 0</translation>
-								<rotation>0, 0, 0, 1</rotation>
-							</transform>
-							<components/>
-							<entityData>{6212D7F5-B597-DD49-83E2-C9A50B090BC1}</entityData>
-						</item>
-						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
-							<id>{8DDB2841-6F49-784E-A3A9-ECFD2EED95D9}</id>
-							<name>Emissive</name>
-							<state>
-								<visible>true</visible>
-								<dynamic>false</dynamic>
-								<locked>false</locked>
-							</state>
-							<transform>
-								<translation>254.630432, 31.926745, 91.034233, 0</translation>
-								<rotation>0, 0, 0, 1</rotation>
-							</transform>
-							<components/>
-							<entityData>{6212D7F5-B597-DD49-83E2-C9A50B090BC1}</entityData>
-						</item>
-						<item type="traktor.world.EntityData" version="2">
-							<id>{48C2CAF9-8BAD-5546-AFBB-5E044BF6F349}</id>
-							<name/>
-							<state>
-								<visible>true</visible>
-								<dynamic>false</dynamic>
-								<locked>false</locked>
-							</state>
-							<transform>
-								<translation>0, 0, 0, 0</translation>
-								<rotation>0, 0, 0, 1</rotation>
-							</transform>
-							<components/>
-						</item>
 					</entityData>
 				</item>
 			</components>
@@ -6967,7 +6676,7 @@
 			<state>
 				<visible>true</visible>
 				<dynamic>true</dynamic>
-				<locked>false</locked>
+				<locked>true</locked>
 			</state>
 			<transform>
 				<translation>0, 0, 0, 0</translation>
@@ -6981,8 +6690,8 @@
 							<name>Kart</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>false</dynamic>
-								<locked>false</locked>
+								<dynamic>true</dynamic>
+								<locked>true</locked>
 							</state>
 							<transform>
 								<translation>-126.044479, 20.605486, -193.21846, 0</translation>
@@ -6996,8 +6705,8 @@
 							<name>Kart</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>false</dynamic>
-								<locked>false</locked>
+								<dynamic>true</dynamic>
+								<locked>true</locked>
 							</state>
 							<transform>
 								<translation>-131.839813, 19.424318, -198.101898, 0</translation>
@@ -7011,8 +6720,8 @@
 							<name>Kart</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>false</dynamic>
-								<locked>false</locked>
+								<dynamic>true</dynamic>
+								<locked>true</locked>
 							</state>
 							<transform>
 								<translation>-137.849411, 19.227797, -191.174576, 0</translation>
@@ -7026,8 +6735,8 @@
 							<name>Kart</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>false</dynamic>
-								<locked>false</locked>
+								<dynamic>true</dynamic>
+								<locked>true</locked>
 							</state>
 							<transform>
 								<translation>-131.316788, 20.59342, -185.169647, 0</translation>
@@ -7041,8 +6750,8 @@
 							<name>Cone</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>false</dynamic>
-								<locked>false</locked>
+								<dynamic>true</dynamic>
+								<locked>true</locked>
 							</state>
 							<transform>
 								<translation>281.943909, 22.887667, -112.978325, 0</translation>
@@ -7056,8 +6765,8 @@
 							<name>Cone</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>false</dynamic>
-								<locked>false</locked>
+								<dynamic>true</dynamic>
+								<locked>true</locked>
 							</state>
 							<transform>
 								<translation>278.580811, 23.071285, -110.645058, 0</translation>
@@ -7071,8 +6780,8 @@
 							<name>Cone</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>false</dynamic>
-								<locked>false</locked>
+								<dynamic>true</dynamic>
+								<locked>true</locked>
 							</state>
 							<transform>
 								<translation>277.42807, 23.123547, -107.631081, 0</translation>
@@ -7086,8 +6795,8 @@
 							<name>Cone</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>false</dynamic>
-								<locked>false</locked>
+								<dynamic>true</dynamic>
+								<locked>true</locked>
 							</state>
 							<transform>
 								<translation>277.407288, 23.117254, -105.206093, 0</translation>
@@ -7101,8 +6810,8 @@
 							<name>Cone</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>false</dynamic>
-								<locked>false</locked>
+								<dynamic>true</dynamic>
+								<locked>true</locked>
 							</state>
 							<transform>
 								<translation>277.385071, 23.132658, -97.692032, 0</translation>
@@ -7116,8 +6825,8 @@
 							<name>Cone</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>false</dynamic>
-								<locked>false</locked>
+								<dynamic>true</dynamic>
+								<locked>true</locked>
 							</state>
 							<transform>
 								<translation>278.359802, 23.103514, -96.018921, 0</translation>
@@ -7131,8 +6840,8 @@
 							<name>Tire Stack-Entity</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>false</dynamic>
-								<locked>false</locked>
+								<dynamic>true</dynamic>
+								<locked>true</locked>
 							</state>
 							<transform>
 								<translation>130.667221, 36.461781, -275.964539, 0</translation>
@@ -7146,8 +6855,8 @@
 							<name>Tire Stack-Entity</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>false</dynamic>
-								<locked>false</locked>
+								<dynamic>true</dynamic>
+								<locked>true</locked>
 							</state>
 							<transform>
 								<translation>133.677109, 36.530151, -274.817932, 0</translation>
@@ -7161,8 +6870,8 @@
 							<name>Tire Stack-Entity</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>false</dynamic>
-								<locked>false</locked>
+								<dynamic>true</dynamic>
+								<locked>true</locked>
 							</state>
 							<transform>
 								<translation>163.908829, 38.595512, -279.622009, 0</translation>
@@ -7176,8 +6885,8 @@
 							<name>Tire Stack-Entity</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>false</dynamic>
-								<locked>false</locked>
+								<dynamic>true</dynamic>
+								<locked>true</locked>
 							</state>
 							<transform>
 								<translation>167.976059, 38.538502, -277.905273, 0</translation>
@@ -7191,8 +6900,8 @@
 							<name>Tire Stack-Entity</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>false</dynamic>
-								<locked>false</locked>
+								<dynamic>true</dynamic>
+								<locked>true</locked>
 							</state>
 							<transform>
 								<translation>171.570892, 38.351265, -275.424561, 0</translation>
@@ -7206,8 +6915,8 @@
 							<name>Boost</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>false</dynamic>
-								<locked>false</locked>
+								<dynamic>true</dynamic>
+								<locked>true</locked>
 							</state>
 							<transform>
 								<translation>123.637772, 37.549183, -294.010651, 0</translation>
@@ -7221,8 +6930,8 @@
 							<name>Victory</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>false</dynamic>
-								<locked>false</locked>
+								<dynamic>true</dynamic>
+								<locked>true</locked>
 							</state>
 							<transform>
 								<translation>-50.703621, 6.774432, -131.869064, 0</translation>
@@ -7236,8 +6945,8 @@
 							<name>Victory</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>false</dynamic>
-								<locked>false</locked>
+								<dynamic>true</dynamic>
+								<locked>true</locked>
 							</state>
 							<transform>
 								<translation>-38.765667, 6.774432, -91.599533, 0</translation>
@@ -7251,8 +6960,8 @@
 							<name>Stick</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>false</dynamic>
-								<locked>false</locked>
+								<dynamic>true</dynamic>
+								<locked>true</locked>
 							</state>
 							<transform>
 								<translation>22.111828, 25.208538, -291.991821, 0</translation>
@@ -7260,6 +6969,96 @@
 							</transform>
 							<components/>
 							<entityData>{17F6AADF-A383-5747-A023-B2D51FF38214}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{CDDC6308-76F4-6447-AFD0-F8EACE64F816}</id>
+							<name>Tentacle</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>true</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>307.812103, 20.594437, -44.027096, 0</translation>
+								<rotation>-0.06816, 0.649195, 0.058586, 0.755293</rotation>
+							</transform>
+							<components/>
+							<entityData>{76095AB8-238E-144B-BAFD-F8C3B2CCC052}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{4E13AE5A-A1F6-2D4A-A358-AB7139CA1C86}</id>
+							<name>Tentacle</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>true</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>136.911545, 20.594437, -235.344727, 0</translation>
+								<rotation>0.019774, -0.149409, 0.002989, 0.988573</rotation>
+							</transform>
+							<components/>
+							<entityData>{76095AB8-238E-144B-BAFD-F8C3B2CCC052}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{E80D0978-14D9-2F43-A1B2-BA8ED38A8781}</id>
+							<name>Tentacle</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>true</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>-157.945541, 12.830123, -221.625763, 0</translation>
+								<rotation>-0.058524, -0.866082, -0.104431, 0.485356</rotation>
+							</transform>
+							<components/>
+							<entityData>{76095AB8-238E-144B-BAFD-F8C3B2CCC052}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{D594AD05-A13E-BB49-BF86-A83F09488AD7}</id>
+							<name>Tentacle</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>true</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>214.874908, 20.594437, -17.40534, 0</translation>
+								<rotation>-0.04603, -0.88293, -0.088588, 0.458769</rotation>
+							</transform>
+							<components/>
+							<entityData>{76095AB8-238E-144B-BAFD-F8C3B2CCC052}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{B2F91C96-E815-5944-8D33-2B6C35F3191A}</id>
+							<name>Tentacle</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>true</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>344.751434, 20.594437, 189.000534, 0</translation>
+								<rotation>-0.047932, 0.872818, 0.087574, 0.477726</rotation>
+							</transform>
+							<components/>
+							<entityData>{76095AB8-238E-144B-BAFD-F8C3B2CCC052}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{44BCFFCA-A64C-7B46-956A-635271A770B4}</id>
+							<name>Tentacle</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>true</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>121.473999, 20.594437, 275.970673, 0</translation>
+								<rotation>-0.01401, 0.985158, 0.098846, 0.139631</rotation>
+							</transform>
+							<components/>
+							<entityData>{76095AB8-238E-144B-BAFD-F8C3B2CCC052}</entityData>
 						</item>
 					</entityData>
 				</item>

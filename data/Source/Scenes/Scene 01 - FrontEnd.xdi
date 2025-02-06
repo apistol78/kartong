@@ -83,7 +83,7 @@
 									<item>
 										<T>2.85</T>
 										<tcb>0, 0, 0, 0</tcb>
-										<position>-0.675671, 29.221497, 0.795104, 0</position>
+										<position>-0.675671, 29.221497, 0.795104, 1</position>
 										<orientation>2.903186, 0.300001, 0.000001, 0</orientation>
 										<values>
 											<item>0</item>
@@ -135,7 +135,7 @@
 									<shader>{4CF929EB-3A8B-C340-AA0A-0C5C80625BF1}</shader>
 									<texture>{00000000-0000-0000-0000-000000000000}</texture>
 									<intensity>1</intensity>
-									<saturation>0.3</saturation>
+									<saturation>0.5</saturation>
 									<skyOverHorizon>0.172549, 0.392157, 0.486275, 1</skyOverHorizon>
 									<skyUnderHorizon>0.454902, 0.231373, 0.109804, 1</skyUnderHorizon>
 									<clouds>true</clouds>
@@ -232,6 +232,20 @@
 								</item>
 							</components>
 						</item>
+						<item type="traktor.world.EntityData" version="2">
+							<id>{1DF7E3F9-CEEF-1448-B054-99B7753ACF73}</id>
+							<name/>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>0, 0, 0, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+						</item>
 					</entityData>
 				</item>
 			</components>
@@ -255,7 +269,7 @@
 							<id>{D2164583-7DB6-5744-983F-244D51B7A82F}</id>
 							<name>Kart</name>
 							<state>
-								<visible>false</visible>
+								<visible>true</visible>
 								<dynamic>false</dynamic>
 								<locked>false</locked>
 							</state>
@@ -911,7 +925,7 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>39.133099, 10.930944, -28.895607, 0</translation>
+								<translation>34.914787, 10.930944, -27.575451, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components/>
@@ -931,6 +945,51 @@
 							</transform>
 							<components/>
 							<entityData>{AC822C0C-2F6D-4C5D-8318-8ACE65906102}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{73A6B284-F616-8E4D-BA3C-01E91D362833}</id>
+							<name>Pillar 02</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>215.828156, 64.418175, -152.581253, 0</translation>
+								<rotation>-0.016705, -0.13854, 0.118541, 0.983095</rotation>
+							</transform>
+							<components/>
+							<entityData>{16F8F110-7098-4745-8D08-F4EE935030A6}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{9C541C96-1731-A34D-84CD-37B7F2AB66E3}</id>
+							<name>Pillar 02</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>-77.567863, 32.825665, -201.170303, 0</translation>
+								<rotation>-0.013142, 0.118989, -0.108989, 0.986808</rotation>
+							</transform>
+							<components/>
+							<entityData>{16F8F110-7098-4745-8D08-F4EE935030A6}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{D49145D8-2980-BC4B-BCEC-0DBC6CE04EFA}</id>
+							<name>Pillar 02</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>-130.371094, 32.825665, -199.243942, 0</translation>
+								<rotation>0.001499, -0.029958, -0.049957, 0.998301</rotation>
+							</transform>
+							<components/>
+							<entityData>{16F8F110-7098-4745-8D08-F4EE935030A6}</entityData>
 						</item>
 					</entityData>
 				</item>
@@ -1048,7 +1107,7 @@
 			<maximumLightMapSize>1024</maximumLightMapSize>
 			<enableDenoise>true</enableDenoise>
 			<analyticalLightAttenuation>1</analyticalLightAttenuation>
-			<ambientOcclusionFactor>0</ambientOcclusionFactor>
+			<ambientOcclusionFactor>0.1</ambientOcclusionFactor>
 		</item>
 	</operationData>
 </object>

@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <object type="traktor.script.Script" version="2">
-	<text>
-	<![CDATA[
-import(traktor)
+	<text><![CDATA[import(traktor)
 
 Boost = Boost or class("Boost", world.ScriptComponent)
 
@@ -30,7 +28,5 @@ function Boost:update(contextObject, totalTime, deltaTime)
 		end
 	end
 end
-
-	]]>
-	</text>
+	]]></text>
 </object>

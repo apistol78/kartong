@@ -82,8 +82,8 @@
 			<id>{7151034B-0271-634B-AB91-43842798799E}</id>
 			<comment/>
 			<position>
-				<first>130</first>
-				<second>760</second>
+				<first>116</first>
+				<second>838</second>
 			</position>
 			<value>1</value>
 		</item>
@@ -91,10 +91,28 @@
 			<id>{0AA11C5C-01DB-474A-B478-B703688CDA30}</id>
 			<comment/>
 			<position>
-				<first>114</first>
-				<second>717</second>
+				<first>90</first>
+				<second>704</second>
 			</position>
-			<value>0.65</value>
+			<value>0.4</value>
+		</item>
+		<item type="traktor.render.Scalar" version="traktor.render.Node:1">
+			<id>{2E30DE50-88FD-934E-9DBD-4143F5F167FD}</id>
+			<comment/>
+			<position>
+				<first>95</first>
+				<second>754</second>
+			</position>
+			<value>0.8</value>
+		</item>
+		<item type="traktor.render.Scalar" version="traktor.render.Node:1">
+			<id>{38111EBB-0C39-D643-9135-FED86198DD8B}</id>
+			<comment/>
+			<position>
+				<first>99</first>
+				<second>794</second>
+			</position>
+			<value>0.4</value>
 		</item>
 	</nodes>
 	<edges>
@@ -136,6 +154,26 @@
 			<destination>
 				<node ref="/object/nodes/item[1]"/>
 				<id>{3925ADBC-B51C-6C4F-A2BD-F68A28CDECD1}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[5]"/>
+				<id>{D33F8931-C90C-4EBA-8A04-A31D3E08FAB7}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[1]"/>
+				<id>{67E00646-AEFF-3F40-B0F2-D7F56ECBC0C1}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[6]"/>
+				<id>{D33F8931-C90C-4EBA-8A04-A31D3E08FAB7}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[1]"/>
+				<id>{F6A68CB1-2842-3F40-B554-4A039A3F1617}</id>
 			</destination>
 		</item>
 	</edges>
