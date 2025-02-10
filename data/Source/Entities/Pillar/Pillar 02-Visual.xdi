@@ -2,7 +2,7 @@
 <object type="traktor.mesh.MeshAsset" version="24">
 	<fileName>Models/Pillar/Pillar 02.blend</fileName>
 	<importFilter/>
-	<meshType>MtStatic</meshType>
+	<meshType>MtInstance</meshType>
 	<materialShaders/>
 	<materialTextures/>
 	<scaleFactor>1</scaleFactor>
@@ -12,5 +12,5 @@
 	<grounded>false</grounded>
 	<decalResponse>true</decalResponse>
 	<reduce>1</reduce>
-	<previewAngle>2.010619</previewAngle>
+	<previewAngle>1.947788</previewAngle>
 </object>

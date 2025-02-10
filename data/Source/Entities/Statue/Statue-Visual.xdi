@@ -2,7 +2,7 @@
 <object type="traktor.mesh.MeshAsset" version="24">
 	<fileName>Models/Statue/Statue.blend</fileName>
 	<importFilter/>
-	<meshType>MtStatic</meshType>
+	<meshType>MtInstance</meshType>
 	<materialShaders/>
 	<materialTextures/>
 	<scaleFactor>1</scaleFactor>
