@@ -101,6 +101,19 @@
 			<repeatActs>false</repeatActs>
 			<randomizeActs>false</randomizeActs>
 		</item>
+		<item type="traktor.world.FogComponentData">
+			<fogDistance>90</fogDistance>
+			<fogElevation>32.75</fogElevation>
+			<fogDensity>0.005</fogDensity>
+			<fogDensityMax>1</fogDensityMax>
+			<fogColor>0.392157, 0.286275, 0, 1</fogColor>
+			<volumetricFogEnable>false</volumetricFogEnable>
+			<maxDistance>100</maxDistance>
+			<maxScattering>10</maxScattering>
+			<sliceCount>128</sliceCount>
+			<mediumColor>1, 1, 1, 1</mediumColor>
+			<mediumDensity>0.2</mediumDensity>
+		</item>
 	</worldComponents>
 	<layers>
 		<item type="traktor.world.EntityData" version="2">
@@ -204,47 +217,6 @@
 									</volume>
 								</item>
 							</components>
-						</item>
-						<item type="traktor.world.EntityData" version="2">
-							<id>{C3B13E15-90B4-4099-8DF8-F5342728F4DB}</id>
-							<name>Fog</name>
-							<state>
-								<visible>true</visible>
-								<dynamic>false</dynamic>
-								<locked>false</locked>
-							</state>
-							<transform>
-								<translation>0, 0, 0, 0</translation>
-								<rotation>0, 0, 0, 1</rotation>
-							</transform>
-							<components>
-								<item type="traktor.world.FogComponentData">
-									<fogDistance>10</fogDistance>
-									<fogDensity>0.0005</fogDensity>
-									<fogDensityMax>1</fogDensityMax>
-									<fogColor>0.643137, 0.580392, 0.45098, 1</fogColor>
-									<volumetricFogEnable>false</volumetricFogEnable>
-									<maxDistance>100</maxDistance>
-									<maxScattering>10</maxScattering>
-									<sliceCount>128</sliceCount>
-									<mediumColor>1, 1, 1, 1</mediumColor>
-									<mediumDensity>0.2</mediumDensity>
-								</item>
-							</components>
-						</item>
-						<item type="traktor.world.EntityData" version="2">
-							<id>{1DF7E3F9-CEEF-1448-B054-99B7753ACF73}</id>
-							<name/>
-							<state>
-								<visible>true</visible>
-								<dynamic>false</dynamic>
-								<locked>false</locked>
-							</state>
-							<transform>
-								<translation>0, 0, 0, 0</translation>
-								<rotation>0, 0, 0, 1</rotation>
-							</transform>
-							<components/>
 						</item>
 					</entityData>
 				</item>

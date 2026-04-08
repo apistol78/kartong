@@ -159,7 +159,7 @@
 									<shader>{4CF929EB-3A8B-C340-AA0A-0C5C80625BF1}</shader>
 									<texture>{00000000-0000-0000-0000-000000000000}</texture>
 									<intensity>1</intensity>
-									<saturation>0.3</saturation>
+									<saturation>0.2</saturation>
 									<skyOverHorizon>0.172549, 0.392157, 0.486275, 1</skyOverHorizon>
 									<skyUnderHorizon>0.454902, 0.231373, 0.109804, 1</skyUnderHorizon>
 									<clouds>true</clouds>
@@ -177,18 +177,6 @@
 									<flickerAmount>0</flickerAmount>
 									<flickerFilter>0</flickerFilter>
 									<bakeMode>LbmIndirect</bakeMode>
-								</item>
-								<item type="traktor.world.FogComponentData">
-									<fogDistance>10</fogDistance>
-									<fogDensity>0.0005</fogDensity>
-									<fogDensityMax>1</fogDensityMax>
-									<fogColor>0.643137, 0.580392, 0.45098, 1</fogColor>
-									<volumetricFogEnable>false</volumetricFogEnable>
-									<maxDistance>100</maxDistance>
-									<maxScattering>10</maxScattering>
-									<sliceCount>128</sliceCount>
-									<mediumColor>1, 1, 1, 1</mediumColor>
-									<mediumDensity>0.2</mediumDensity>
 								</item>
 							</components>
 						</item>

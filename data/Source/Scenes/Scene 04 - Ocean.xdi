@@ -258,20 +258,7 @@
 								<translation>0, 0, 0, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
-							<components>
-								<item type="traktor.world.FogComponentData">
-									<fogDistance>10</fogDistance>
-									<fogDensity>0.0005</fogDensity>
-									<fogDensityMax>1</fogDensityMax>
-									<fogColor>0.643137, 0.580392, 0.45098, 1</fogColor>
-									<volumetricFogEnable>false</volumetricFogEnable>
-									<maxDistance>100</maxDistance>
-									<maxScattering>10</maxScattering>
-									<sliceCount>128</sliceCount>
-									<mediumColor>1, 1, 1, 1</mediumColor>
-									<mediumDensity>0.2</mediumDensity>
-								</item>
-							</components>
+							<components/>
 						</item>
 					</entityData>
 				</item>
