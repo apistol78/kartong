@@ -5,8 +5,8 @@
 			<id>{EE79E440-16B9-104E-8540-FCDF48765D1E}</id>
 			<comment/>
 			<position>
-				<first>-557</first>
-				<second>-41</second>
+				<first>-405</first>
+				<second>-42</second>
 			</position>
 			<fragmentGuid>{B973ACD6-9F20-024A-97E4-89242B52CA91}</fragmentGuid>
 			<inputPins>
@@ -61,8 +61,8 @@
 			<id>{5AC98149-B7B7-CD40-86B9-B69F6DBD2A51}</id>
 			<comment/>
 			<position>
-				<first>-289</first>
-				<second>88</second>
+				<first>-419</first>
+				<second>140</second>
 			</position>
 			<color>1, 0.819608, 0.090196, 1</color>
 			<linear>true</linear>
@@ -71,8 +71,8 @@
 			<id>{DDC5ECB2-D718-9648-9CAE-CC8DC75C8BE4}</id>
 			<comment/>
 			<position>
-				<first>16</first>
-				<second>140</second>
+				<first>-103</first>
+				<second>100</second>
 			</position>
 			<priority>
 				<setup>false</setup>
@@ -117,8 +117,8 @@
 			<id>{9FAFFDB4-3444-AA43-8632-92DD2692C695}</id>
 			<comment/>
 			<position>
-				<first>246</first>
-				<second>76</second>
+				<first>109</first>
+				<second>32</second>
 			</position>
 			<fragmentGuid>{B5FCD4C3-8052-8140-A2B8-6EC35D4A1C00}</fragmentGuid>
 			<inputPins>
@@ -139,8 +139,8 @@
 			<id>{BF4E060D-773B-964C-94F4-309E8249A5D4}</id>
 			<comment/>
 			<position>
-				<first>-3</first>
-				<second>10</second>
+				<first>-125</first>
+				<second>-2</second>
 			</position>
 		</item>
 	</nodes>
