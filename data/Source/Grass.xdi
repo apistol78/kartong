@@ -5,8 +5,8 @@
 			<id>{6421DC2C-DC3A-46D7-8459-A6B6FCC026DC}</id>
 			<comment/>
 			<position>
-				<first>123</first>
-				<second>561</second>
+				<first>120</first>
+				<second>536</second>
 			</position>
 			<external>{F6B57FDF-1C2C-4682-B599-C29063A7D885}</external>
 			<type>Texture2D</type>
@@ -15,8 +15,8 @@
 			<id>{8A7C30E4-A4EF-4060-9885-909E629B2725}</id>
 			<comment/>
 			<position>
-				<first>402</first>
-				<second>558</second>
+				<first>360</first>
+				<second>629</second>
 			</position>
 			<fragmentGuid>{C49D9623-FD46-1D40-A9CD-D1AF89FCE8F9}</fragmentGuid>
 			<inputPins>
@@ -72,8 +72,8 @@
 			<id>{EBD126A2-4A2A-4055-B160-9A9D3BF19F92}</id>
 			<comment/>
 			<position>
-				<first>33</first>
-				<second>511</second>
+				<first>82</first>
+				<second>472</second>
 			</position>
 			<color>0.611765, 1, 0, 1</color>
 			<linear>true</linear>
@@ -82,8 +82,8 @@
 			<id>{7151034B-0271-634B-AB91-43842798799E}</id>
 			<comment/>
 			<position>
-				<first>116</first>
-				<second>838</second>
+				<first>122</first>
+				<second>876</second>
 			</position>
 			<value>1</value>
 		</item>
@@ -91,8 +91,8 @@
 			<id>{0AA11C5C-01DB-474A-B478-B703688CDA30}</id>
 			<comment/>
 			<position>
-				<first>90</first>
-				<second>704</second>
+				<first>122</first>
+				<second>684</second>
 			</position>
 			<value>0.4</value>
 		</item>
@@ -100,8 +100,8 @@
 			<id>{2E30DE50-88FD-934E-9DBD-4143F5F167FD}</id>
 			<comment/>
 			<position>
-				<first>95</first>
-				<second>754</second>
+				<first>122</first>
+				<second>748</second>
 			</position>
 			<value>0.8</value>
 		</item>
@@ -109,8 +109,8 @@
 			<id>{38111EBB-0C39-D643-9135-FED86198DD8B}</id>
 			<comment/>
 			<position>
-				<first>99</first>
-				<second>794</second>
+				<first>122</first>
+				<second>812</second>
 			</position>
 			<value>0.4</value>
 		</item>

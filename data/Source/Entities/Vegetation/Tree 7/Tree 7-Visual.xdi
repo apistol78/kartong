@@ -1,27 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<object type="traktor.mesh.MeshAsset" version="23">
+<object type="traktor.mesh.MeshAsset" version="26">
 	<fileName>Models/Vegetation/Tree 7.blend</fileName>
 	<importFilter/>
 	<meshType>MtInstance</meshType>
-	<materialShaders>
-		<item>
-			<first>mat_leaves</first>
-			<second>{7FD9B26E-7CE6-974A-BF69-BBE82F024FEF}</second>
-		</item>
-		<item>
-			<first>mat_trunk</first>
-			<second>{0B26BD99-2076-9D44-A619-F368222E33DD}</second>
-		</item>
-	</materialShaders>
+	<materialShaders/>
 	<materialTextures/>
-	<scaleFactor>1</scaleFactor>
+	<scaleFactor>1, 1, 1, 1</scaleFactor>
 	<offset>0, 0, 0, 0</offset>
 	<renormalize>false</renormalize>
-	<center>false</center>
+	<center>None</center>
 	<grounded>false</grounded>
 	<decalResponse>true</decalResponse>
-	<lodSteps>8</lodSteps>
-	<lodMaxDistance>100</lodMaxDistance>
-	<lodCullDistance>200</lodCullDistance>
+	<reduce>1</reduce>
 	<previewAngle>0</previewAngle>
 </object>

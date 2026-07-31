@@ -166,14 +166,9 @@
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components>
-								<item type="traktor.world.ProbeComponentData">
+								<item type="traktor.world.ProbeComponentData" version="1">
 									<texture>{00000000-0000-0000-0000-000000000000}</texture>
 									<intensity>1</intensity>
-									<local>false</local>
-									<volume>
-										<mn>0, 0, 0, 1</mn>
-										<mx>0, 0, 0, 1</mx>
-									</volume>
 								</item>
 							</components>
 						</item>
@@ -1194,20 +1189,20 @@
 		</item>
 	</layers>
 	<operationData>
-		<item type="traktor.shape.BakeConfiguration" version="33">
+		<item type="traktor.shape.BakeOperationData">
 			<enableLightmaps>false</enableLightmaps>
-			<primarySampleCount>110</primarySampleCount>
-			<secondarySampleCount>100</secondarySampleCount>
-			<shadowSampleCount>50</shadowSampleCount>
+			<primarySampleCount>50</primarySampleCount>
+			<secondarySampleCount>10</secondarySampleCount>
+			<shadowSampleCount>10</shadowSampleCount>
 			<maxPathDistance>10</maxPathDistance>
 			<pointLightShadowRadius>0.1</pointLightShadowRadius>
 			<lumelDensity>16</lumelDensity>
-			<irradianceGridDensity>0.05, 0.05, 0.05, 0</irradianceGridDensity>
+			<irradianceGridDensity>0.1, 0.1, 0.1, 0</irradianceGridDensity>
 			<minimumLightMapSize>16</minimumLightMapSize>
 			<maximumLightMapSize>1024</maximumLightMapSize>
 			<enableDenoise>true</enableDenoise>
 			<analyticalLightAttenuation>1</analyticalLightAttenuation>
-			<ambientOcclusionFactor>0</ambientOcclusionFactor>
+			<ambientOcclusionFactor>0.5</ambientOcclusionFactor>
 		</item>
 	</operationData>
 </object>

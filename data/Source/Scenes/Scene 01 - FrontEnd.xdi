@@ -101,18 +101,15 @@
 			<repeatActs>false</repeatActs>
 			<randomizeActs>false</randomizeActs>
 		</item>
-		<item type="traktor.world.FogComponentData">
+		<item type="traktor.world.FogComponentData" version="2">
+			<mediumColor>1, 1, 1, 1</mediumColor>
+			<mediumDensity>0.2</mediumDensity>
+			<distanceFogEnable>false</distanceFogEnable>
 			<fogDistance>90</fogDistance>
 			<fogElevation>32.75</fogElevation>
-			<fogDensity>0.005</fogDensity>
-			<fogDensityMax>1</fogDensityMax>
-			<fogColor>0.392157, 0.313726, 0.2, 1</fogColor>
 			<volumetricFogEnable>false</volumetricFogEnable>
 			<maxDistance>100</maxDistance>
 			<maxScattering>10</maxScattering>
-			<sliceCount>128</sliceCount>
-			<mediumColor>1, 1, 1, 1</mediumColor>
-			<mediumDensity>0.2</mediumDensity>
 		</item>
 	</worldComponents>
 	<layers>
@@ -207,14 +204,9 @@
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components>
-								<item type="traktor.world.ProbeComponentData">
+								<item type="traktor.world.ProbeComponentData" version="1">
 									<texture>{00000000-0000-0000-0000-000000000000}</texture>
 									<intensity>1</intensity>
-									<local>false</local>
-									<volume>
-										<mn>0, 0, 0, 1</mn>
-										<mx>0, 0, 0, 1</mx>
-									</volume>
 								</item>
 							</components>
 						</item>
@@ -427,7 +419,7 @@
 							</state>
 							<transform>
 								<translation>53.600388, 7.514562, -35.093563, 0</translation>
-								<rotation>-0.035027, 0, -0.035027, 0.998772</rotation>
+								<rotation>-0.035027, -0, -0.035027, 0.998772</rotation>
 							</transform>
 							<components/>
 							<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
@@ -1066,20 +1058,20 @@
 		</item>
 	</layers>
 	<operationData>
-		<item type="traktor.shape.BakeConfiguration" version="33">
+		<item type="traktor.shape.BakeOperationData">
 			<enableLightmaps>false</enableLightmaps>
 			<primarySampleCount>50</primarySampleCount>
-			<secondarySampleCount>50</secondarySampleCount>
-			<shadowSampleCount>50</shadowSampleCount>
+			<secondarySampleCount>10</secondarySampleCount>
+			<shadowSampleCount>10</shadowSampleCount>
 			<maxPathDistance>10</maxPathDistance>
 			<pointLightShadowRadius>0.1</pointLightShadowRadius>
 			<lumelDensity>16</lumelDensity>
-			<irradianceGridDensity>0.05, 0.05, 0.05, 0</irradianceGridDensity>
+			<irradianceGridDensity>0.1, 0.1, 0.1, 0</irradianceGridDensity>
 			<minimumLightMapSize>16</minimumLightMapSize>
 			<maximumLightMapSize>1024</maximumLightMapSize>
 			<enableDenoise>true</enableDenoise>
 			<analyticalLightAttenuation>1</analyticalLightAttenuation>
-			<ambientOcclusionFactor>0.1</ambientOcclusionFactor>
+			<ambientOcclusionFactor>0.5</ambientOcclusionFactor>
 		</item>
 	</operationData>
 </object>
