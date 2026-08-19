@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <object type="traktor.script.Script" version="2">
-	<text>
-	<![CDATA[
+	<text><![CDATA[
+	
 #using \{720C0A68-B608-2F40-8EBA-F7E42EB27F61}
 #using \{FC4400A2-BDB6-BA45-9A22-12B9676E71FA}
 
@@ -72,7 +72,7 @@ function FrontEnd:new(params, environment)
 	self._frame:layout()
 
 	-- Issue start animation.
-	local tc < const > = self.world.world:getComponent(theater.TheaterComponent)
+	local tc < const > = self.world.world:getComponent(theater.TheaterWorldComponent)
 	tc:play("START")
 end
 
@@ -110,6 +110,6 @@ function FrontEnd:_toggleFullscreen()
 	environment:reconfigure()
 end
 
-	]]>
-	</text>
+	
+	]]></text>
 </object>

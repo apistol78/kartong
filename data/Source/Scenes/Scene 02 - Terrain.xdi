@@ -4,7 +4,7 @@
 		<viewNearZ>0.1</viewNearZ>
 		<viewFarZ>1000</viewFarZ>
 		<exposureMode>Adaptive</exposureMode>
-		<exposure>0.1</exposure>
+		<exposure>0</exposure>
 		<shadowSettings>
 			<disabled>
 				<farZ>100</farZ>
@@ -57,13 +57,13 @@
 		<colorGrading>{2FCE2D56-3358-4646-8E7E-F83F4A6281F2}</colorGrading>
 	</worldRenderSettings>
 	<worldComponents>
-		<item type="traktor.theater.TheaterComponentData">
+		<item type="traktor.theater.TheaterWorldComponentData" version="1">
 			<acts>
 				<item type="traktor.theater.ActData">
 					<name>START</name>
 					<duration>5</duration>
 					<tracks>
-						<item type="traktor.theater.TrackData">
+						<item type="traktor.theater.TrackData" version="1">
 							<entityId>{ADD02FD9-977C-AD48-BC0E-F8131BAC160B}</entityId>
 							<lookAtEntityId>{00000000-0000-0000-0000-000000000000}</lookAtEntityId>
 							<path>
@@ -118,11 +118,11 @@
 									</item>
 								</keys>
 							</path>
+							<events/>
 						</item>
 					</tracks>
 				</item>
 			</acts>
-			<repeatActs>false</repeatActs>
 			<randomizeActs>false</randomizeActs>
 		</item>
 	</worldComponents>
@@ -166,7 +166,7 @@
 									<cloudAmbientTop>0.941177, 0.850981, 0.32549, 0</cloudAmbientTop>
 									<cloudAmbientBottom>0.266667, 0.188235, 0.12549, 1</cloudAmbientBottom>
 								</item>
-								<item type="traktor.world.LightComponentData" version="12">
+								<item type="traktor.world.LightComponentData" version="13">
 									<lightType>Directional</lightType>
 									<color>1, 0.945098, 0.741177, 0</color>
 									<intensity>5</intensity>
@@ -803,7 +803,7 @@
 											</state>
 											<transform>
 												<translation>290.9711, -0.410385, 167.127426, 0</translation>
-												<rotation>0.019327, -0, -0.081172, 0.996513</rotation>
+												<rotation>0.019327, 0, -0.081172, 0.996513</rotation>
 											</transform>
 											<components/>
 											<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
@@ -1148,7 +1148,7 @@
 											</state>
 											<transform>
 												<translation>123.877335, 6.05791, -226.597153, 0</translation>
-												<rotation>0.003864, -0, -0.085001, 0.996373</rotation>
+												<rotation>0.003864, 0, -0.085001, 0.996373</rotation>
 											</transform>
 											<components/>
 											<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
@@ -1178,7 +1178,7 @@
 											</state>
 											<transform>
 												<translation>111.859566, 5.612412, -32.064953, 0</translation>
-												<rotation>-0.01559, -0, 0.035079, 0.999263</rotation>
+												<rotation>-0.01559, 0, 0.035079, 0.999263</rotation>
 											</transform>
 											<components/>
 											<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
@@ -1223,7 +1223,7 @@
 											</state>
 											<transform>
 												<translation>308.960144, 23.248302, 86.292625, 0</translation>
-												<rotation>0.050585, 0, -0.003891, 0.998712</rotation>
+												<rotation>0.050585, -0, -0.003891, 0.998712</rotation>
 											</transform>
 											<components/>
 											<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
@@ -1373,7 +1373,7 @@
 											</state>
 											<transform>
 												<translation>-152.243485, 3.010457, 52.256245, 0</translation>
-												<rotation>-0.046669, -0, -0.031118, 0.998426</rotation>
+												<rotation>-0.046669, 0, -0.031118, 0.998426</rotation>
 											</transform>
 											<components/>
 											<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
@@ -2964,7 +2964,7 @@
 							</state>
 							<transform>
 								<translation>181.436661, 17.195286, 81.412979, 0</translation>
-								<rotation>-0.142608, 0.202234, 0.000027, 0.968899</rotation>
+								<rotation>-0.142608, 0.202234, 0.000027, 0.968898</rotation>
 							</transform>
 							<components/>
 							<entityData>{51841614-8E59-46D8-AA82-A111DA35060B}</entityData>
@@ -3714,7 +3714,7 @@
 							</state>
 							<transform>
 								<translation>227.469086, 21.721514, -176.919022, 0</translation>
-								<rotation>-0.044484, -0.984015, -0.022742, 0.170937</rotation>
+								<rotation>-0.044484, -0.984014, -0.022742, 0.170937</rotation>
 							</transform>
 							<components/>
 							<entityData>{51841614-8E59-46D8-AA82-A111DA35060B}</entityData>
@@ -3939,7 +3939,7 @@
 							</state>
 							<transform>
 								<translation>-230.215256, 18.747433, 3.361527, 0</translation>
-								<rotation>-0.045563, -0.982455, 0.028633, 0.17857</rotation>
+								<rotation>-0.045563, -0.982454, 0.028633, 0.17857</rotation>
 							</transform>
 							<components/>
 							<entityData>{E0CFEA9A-FFAE-46A5-995B-5454D5DD4578}</entityData>
@@ -4719,7 +4719,7 @@
 							</state>
 							<transform>
 								<translation>186.661316, 35.885048, 117.311218, 0</translation>
-								<rotation>-0.089861, 0.019918, 0.001797, 0.995754</rotation>
+								<rotation>-0.089861, 0.019918, 0.001797, 0.995753</rotation>
 							</transform>
 							<components/>
 							<entityData>{866684AB-577A-F845-8A2E-43BA2AD093C9}</entityData>
@@ -4794,7 +4794,7 @@
 							</state>
 							<transform>
 								<translation>241.69165, 27.934515, -204.419296, 0</translation>
-								<rotation>0.04997, 0.019974, -0.001, 0.998551</rotation>
+								<rotation>0.04997, 0.019974, -0.001, 0.99855</rotation>
 							</transform>
 							<components/>
 							<entityData>{866684AB-577A-F845-8A2E-43BA2AD093C9}</entityData>
@@ -7032,14 +7032,8 @@
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components>
-								<item type="traktor.terrain.TerrainComponentData">
+								<item type="traktor.terrain.TerrainComponentData" version="1">
 									<terrain>{48950C38-B441-7549-BC5E-1A261A6DCCFE}</terrain>
-									<patchLodDistance>4</patchLodDistance>
-									<patchLodBias>0</patchLodBias>
-									<patchLodExponent>0.001</patchLodExponent>
-									<surfaceLodDistance>4</surfaceLodDistance>
-									<surfaceLodBias>0</surfaceLodBias>
-									<surfaceLodExponent>0.001</surfaceLodExponent>
 								</item>
 								<item type="traktor.physics.RigidBodyComponentData" version="1">
 									<bodyDesc type="traktor.physics.StaticBodyDesc" version="5">

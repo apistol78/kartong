@@ -57,7 +57,7 @@
 		<colorGrading>{2FCE2D56-3358-4646-8E7E-F83F4A6281F2}</colorGrading>
 	</worldRenderSettings>
 	<worldComponents>
-		<item type="traktor.theater.TheaterComponentData">
+		<item type="traktor.theater.TheaterWorldComponentData">
 			<acts>
 				<item type="traktor.theater.ActData">
 					<name>START</name>
