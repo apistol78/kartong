@@ -97,7 +97,7 @@
 									<cloudAmbientTop>0.99, 0.98, 1.18, 1</cloudAmbientTop>
 									<cloudAmbientBottom>0.23, 0.39, 0.51, 1</cloudAmbientBottom>
 								</item>
-								<item type="traktor.world.LightComponentData" version="12">
+								<item type="traktor.world.LightComponentData" version="13">
 									<lightType>Directional</lightType>
 									<color>1, 1, 1, 0</color>
 									<intensity>1.25</intensity>

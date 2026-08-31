@@ -57,51 +57,56 @@
 		<colorGrading>{2FCE2D56-3358-4646-8E7E-F83F4A6281F2}</colorGrading>
 	</worldRenderSettings>
 	<worldComponents>
-		<item type="traktor.theater.TheaterWorldComponentData">
+		<item type="traktor.theater.TheaterWorldComponentData" version="1">
 			<acts>
 				<item type="traktor.theater.ActData">
 					<name>START</name>
 					<duration>5</duration>
 					<tracks>
-						<item type="traktor.theater.TrackData">
+						<item type="traktor.theater.TrackData" version="4">
 							<entityId>{485FEF1B-7170-F04A-915A-312559ED69CF}</entityId>
 							<lookAtEntityId>{00000000-0000-0000-0000-000000000000}</lookAtEntityId>
-							<path>
+							<events/>
+							<transform type="traktor.theater.PropertyPath" version="2">
+								<properties>
+									<item>
+										<componentType/>
+										<propertyName>transform</propertyName>
+									</item>
+								</properties>
 								<keys>
 									<item>
 										<T>0</T>
 										<tcb>0, 0, 0, 0</tcb>
-										<position>-1.053211, 27.71316, 9.383077, 1</position>
-										<orientation>2.903186, -1.259998, 0.000001, 0</orientation>
 										<values>
-											<item>0</item>
-											<item>0</item>
-											<item>0</item>
-											<item>0</item>
+											<item>
+												<value>-1.053211, 27.71316, 9.383077, 1</value>
+												<orientation>2.903186, -1.259998, 0.000001, 0</orientation>
+											</item>
 										</values>
+										<componentData/>
 									</item>
 									<item>
 										<T>2.85</T>
 										<tcb>0, 0, 0, 0</tcb>
-										<position>-0.675671, 29.221497, 0.795104, 1</position>
-										<orientation>2.903186, 0.300001, 0.000001, 0</orientation>
 										<values>
-											<item>0</item>
-											<item>0</item>
-											<item>0</item>
-											<item>0</item>
+											<item>
+												<value>-0.675671, 29.221497, 0.795104, 1</value>
+												<orientation>2.903186, 0.300001, 0.000001, 0</orientation>
+											</item>
 										</values>
+										<componentData/>
 									</item>
 								</keys>
-							</path>
+							</transform>
+							<properties/>
 						</item>
 					</tracks>
 				</item>
 			</acts>
-			<repeatActs>false</repeatActs>
 			<randomizeActs>false</randomizeActs>
 		</item>
-		<item type="traktor.world.FogComponentData" version="2">
+		<item type="traktor.world.FogComponentData" version="4">
 			<mediumColor>1, 1, 1, 1</mediumColor>
 			<mediumDensity>0.2</mediumDensity>
 			<distanceFogEnable>false</distanceFogEnable>
@@ -109,7 +114,9 @@
 			<fogElevation>32.75</fogElevation>
 			<volumetricFogEnable>false</volumetricFogEnable>
 			<maxDistance>100</maxDistance>
-			<maxScattering>10</maxScattering>
+			<phaseForward>0.7</phaseForward>
+			<phaseBackward>-0.4</phaseBackward>
+			<phaseBlend>0.2</phaseBlend>
 		</item>
 	</worldComponents>
 	<layers>
@@ -152,7 +159,7 @@
 									<cloudAmbientTop>0.941177, 0.850981, 0.32549, 0</cloudAmbientTop>
 									<cloudAmbientBottom>0.266667, 0.188235, 0.12549, 1</cloudAmbientBottom>
 								</item>
-								<item type="traktor.world.LightComponentData" version="12">
+								<item type="traktor.world.LightComponentData" version="13">
 									<lightType>Directional</lightType>
 									<color>1, 0.945098, 0.741177, 0</color>
 									<intensity>6</intensity>
@@ -419,7 +426,7 @@
 							</state>
 							<transform>
 								<translation>53.600388, 7.514562, -35.093563, 0</translation>
-								<rotation>-0.035027, -0, -0.035027, 0.998772</rotation>
+								<rotation>-0.035027, 0, -0.035027, 0.998772</rotation>
 							</transform>
 							<components/>
 							<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
@@ -987,14 +994,8 @@
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components>
-								<item type="traktor.terrain.TerrainComponentData">
+								<item type="traktor.terrain.TerrainComponentData" version="1">
 									<terrain>{090EF9AF-48B5-45F6-9432-18D15C5A72B0}</terrain>
-									<patchLodDistance>4</patchLodDistance>
-									<patchLodBias>0</patchLodBias>
-									<patchLodExponent>0.001</patchLodExponent>
-									<surfaceLodDistance>4</surfaceLodDistance>
-									<surfaceLodBias>0</surfaceLodBias>
-									<surfaceLodExponent>0.001</surfaceLodExponent>
 								</item>
 								<item type="traktor.physics.RigidBodyComponentData" version="1">
 									<bodyDesc type="traktor.physics.StaticBodyDesc" version="5">

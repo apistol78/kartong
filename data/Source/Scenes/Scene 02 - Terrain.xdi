@@ -63,62 +63,65 @@
 					<name>START</name>
 					<duration>5</duration>
 					<tracks>
-						<item type="traktor.theater.TrackData" version="1">
+						<item type="traktor.theater.TrackData" version="4">
 							<entityId>{ADD02FD9-977C-AD48-BC0E-F8131BAC160B}</entityId>
 							<lookAtEntityId>{00000000-0000-0000-0000-000000000000}</lookAtEntityId>
-							<path>
+							<events/>
+							<transform type="traktor.theater.PropertyPath" version="2">
+								<properties>
+									<item>
+										<componentType/>
+										<propertyName>transform</propertyName>
+									</item>
+								</properties>
 								<keys>
 									<item>
 										<T>0</T>
 										<tcb>0, 0, 0, 0</tcb>
-										<position>-151.481537, 76.299912, -123.496201, 1</position>
-										<orientation>1.34, 0, 0, 0</orientation>
 										<values>
-											<item>0</item>
-											<item>0</item>
-											<item>0</item>
-											<item>0</item>
+											<item>
+												<value>-151.481537, 76.299912, -123.496201, 1</value>
+												<orientation>1.34, 0, 0, 0</orientation>
+											</item>
 										</values>
+										<componentData/>
 									</item>
 									<item>
 										<T>1.546</T>
 										<tcb>0, 0, 0, 0</tcb>
-										<position>-109.812782, 44.002232, -122.533272, 1</position>
-										<orientation>1.339999, 0.44, 0, 0</orientation>
 										<values>
-											<item>0</item>
-											<item>0</item>
-											<item>0</item>
-											<item>0</item>
+											<item>
+												<value>-109.812782, 44.002232, -122.533272, 1</value>
+												<orientation>1.339999, 0.44, 0, 0</orientation>
+											</item>
 										</values>
+										<componentData/>
 									</item>
 									<item>
 										<T>2.859</T>
 										<tcb>0, 0, 0, 0</tcb>
-										<position>-93.855774, 13.272703, -119.610176, 1</position>
-										<orientation>1.34, 0, 0, 0</orientation>
 										<values>
-											<item>0</item>
-											<item>0</item>
-											<item>0</item>
-											<item>0</item>
+											<item>
+												<value>-93.855774, 13.272703, -119.610176, 1</value>
+												<orientation>1.34, 0, 0, 0</orientation>
+											</item>
 										</values>
+										<componentData/>
 									</item>
 									<item>
 										<T>5</T>
 										<tcb>0, 0, 0, 0</tcb>
-										<position>-35.372459, 13.457031, -108.896904, 1</position>
-										<orientation>1.34, 0, 0, 0</orientation>
 										<values>
-											<item>0</item>
-											<item>0</item>
-											<item>0</item>
-											<item>0</item>
+											<item>
+												<value>-35.372459, 13.457031, -108.896904, 1</value>
+												<orientation>1.34, 0, 0, 0</orientation>
+											</item>
 										</values>
+										<componentData/>
 									</item>
 								</keys>
-							</path>
-							<events/>
+							</transform>
+							<properties/>
 						</item>
 					</tracks>
 				</item>
@@ -1223,7 +1226,7 @@
 											</state>
 											<transform>
 												<translation>308.960144, 23.248302, 86.292625, 0</translation>
-												<rotation>0.050585, -0, -0.003891, 0.998712</rotation>
+												<rotation>0.050585, 0, -0.003891, 0.998712</rotation>
 											</transform>
 											<components/>
 											<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
@@ -1343,7 +1346,7 @@
 											</state>
 											<transform>
 												<translation>12.544205, -0.968295, 156.524689, 0</translation>
-												<rotation>0.038951, -0, 0.019476, 0.999051</rotation>
+												<rotation>0.038951, 0, 0.019476, 0.999051</rotation>
 											</transform>
 											<components/>
 											<entityData>{87D9EDC0-6119-45F7-9E7D-5B48295584BA}</entityData>
